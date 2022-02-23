@@ -1,0 +1,9 @@
+Simulink/*.c
+Simulink/*.mexw64
+Simulink/*.tlc
+Simulink/*.cpp
+Simulink/*.asv
+Simulink/*.mldatx
+Simulink/*.mat
+Simulink/utils/*.mat
+
