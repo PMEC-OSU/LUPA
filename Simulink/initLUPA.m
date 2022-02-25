@@ -9,10 +9,10 @@ Kt = 7.86;  % Determined experimentally  % Kt = 8.51;  % From datasheet
 Decimation = 1;
 Decimation100Hz = 0.01./Ts;
 
-appName = 'LUPACheckoutApp.mlapp';
+appName = 'LUPAapp.mlapp';
 buildDir = fullfile('C:','SimulinkBuild');
-mdlName = 'LUPACheckout';
-tgName = 'performance1';
+mdlName = 'LUPA';
+tgName = 'baseline2';
 
 mdlInfo = Simulink.MDLInfo(mdlName);
 mdlVersion = mdlInfo.ModelVersion;
@@ -29,7 +29,10 @@ commandSigs = modifySine(commandSigs,period);
 waveform = commandSigs;
 set_param(mdlName,'ExternalInput','waveform');
 
-
+%% === load excel gains =======================================
+gainTstep = 30; % time between change in gains (s)
+ExcelGains = readtable('ExcelGains/dampingOnly_20220225.xlsx');  % read from excel spreadsheet gain values
+ExcelGains = table2array(ExcelGains);
 %% === Load and compile the model =========================================
 disp('*** Load and Build Simulink Model ***')
 set_param(mdlName,'LoadExternalInput','on');
@@ -58,16 +61,10 @@ function selectXMLfile(Ts,mdlName)
 
 % set the full path to the EtherCAT config files.
 current_dir = pwd;
-if Ts == 0.0001     % 10kHz
-    LUPA_eCat_init = strcat(current_dir,'\etherCAT\LUPACheckout10kHzxml.xml');
-elseif Ts == 0.0002 % 5kHz
-    LUPA_eCat_init = strcat(current_dir,'\etherCAT\LUPACheckout5kHzxml.xml');
-elseif Ts == 0.0004 % 2.5kHz
-    LUPA_eCat_init = strcat(current_dir,'\etherCAT\LUPACheckout2_5kHzxml.xml');
-elseif Ts == 0.0005 % 2kHz
-    LUPA_eCat_init = strcat(current_dir,'\etherCAT\LUPACheckout2kHzxml.xml');
+if Ts == 0.0005     % 10kHz
+    LUPA_eCat_init = strcat(current_dir,'\EtherCAT\LUPA2kHzxml.xml');
 else
-    LUPA_eCat_init = strcat(current_dir,'\etherCAT\LUPACheckout1kHzxml.xml');
+    LUPA_eCat_init = strcat(current_dir,'\EtherCAT\LUPACheckout1kHzxml.xml');
 end
 
 set_param([mdlName,'/Initialization/EtherCAT Init'],'config_file',LUPA_eCat_init);
