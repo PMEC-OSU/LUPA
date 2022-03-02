@@ -8164,20 +8164,6 @@ Bit1: Value smaller than Limit2</Comment>
 		</Slave>
 		<Slave>
 			<Info>
-				<Name><![CDATA[Term 14 (EL9011)]]></Name>
-				<VendorId>2</VendorId>
-				<ProductCode>590557264</ProductCode>
-				<RevisionNo>0</RevisionNo>
-				<SerialNo>0</SerialNo>
-				<ProductRevision>EL9011</ProductRevision>
-			</Info>
-			<PreviousPort Selected="true">
-				<Port>B</Port>
-				<PhysAddr>1010</PhysAddr>
-			</PreviousPort>
-		</Slave>
-		<Slave>
-			<Info>
 				<Name><![CDATA[Drive 12 (Elmo Drive )]]></Name>
 				<PhysAddr>1011</PhysAddr>
 				<AutoIncAddr>65526</AutoIncAddr>

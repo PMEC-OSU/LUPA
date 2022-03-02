@@ -12,7 +12,7 @@ Decimation100Hz = 0.01./Ts;
 appName = 'LUPAapp.mlapp';
 buildDir = fullfile('C:','SimulinkBuild');
 mdlName = 'LUPA';
-tgName = 'baseline2';
+tgName = 'performance1';
 
 mdlInfo = Simulink.MDLInfo(mdlName);
 mdlVersion = mdlInfo.ModelVersion;
@@ -62,9 +62,9 @@ function selectXMLfile(Ts,mdlName)
 % set the full path to the EtherCAT config files.
 current_dir = pwd;
 if Ts == 0.0005     % 10kHz
-    LUPA_eCat_init = strcat(current_dir,'\EtherCAT\LUPA2kHzxml.xml');
+    LUPA_eCat_init = strcat(current_dir,'\EtherCAT\LUPA2kHz.xml');
 else
-    LUPA_eCat_init = strcat(current_dir,'\EtherCAT\LUPACheckout1kHzxml.xml');
+    LUPA_eCat_init = strcat(current_dir,'\EtherCAT\LUPA1kHz.xml');
 end
 
 set_param([mdlName,'/Initialization/EtherCAT Init'],'config_file',LUPA_eCat_init);

@@ -1444,11 +1444,6 @@ Bit1: Value smaller than Limit2]]></Comment>
 							</Pdo>
 						</EtherCAT>
 					</Box>
-					<Box Id="14" BoxType="9099">
-						<Name>Term 14 (EL9011)</Name>
-						<ImageId>1002</ImageId>
-						<EtherCAT CycleMBoxPollingTime="0" VendorId="#x00000002" ProductCode="#x23333050" InfoDataState="false" MaxSlotCount="256" MaxSlotGroupCount="1" SlotPdoIncrement="1" SlotIndexIncrement="16" Type="EL9011 End Terminal" Desc="EL9011" PortABoxInfo="#x0100000a"/>
-					</Box>
 				</Box>
 				<Box Id="12" BoxType="9099" BoxFlags="#x00000020">
 					<Name>Drive 12 (Elmo Drive )</Name>

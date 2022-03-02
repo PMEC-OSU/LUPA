@@ -5,12 +5,14 @@
 %% === parameters =========================================================
 tgName = 'performance1';
 buildDir = fullfile('C:','SimulinkBuild');
-mdlName = 'LUPACheckout';
+mdlName = 'LUPA';
+
 dateDir = datestr(now,'yyyymmdd');
 timeDir = datestr(now,'HHMMss');
 sharename = 'Z:';
 year = datestr(now,'yyyy');
-projname = 'DryLUPA';
+projname = app.ProjectEditField.Value;
+% projname = 'DryLUPA';
 
 matFileName = 'simdata.mat';
 
