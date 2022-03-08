@@ -67,9 +67,6 @@
 	</ImageDatas>
 	<Project ProjectGUID="{70FB56AA-7B20-42D6-99CA-C9DE193B6334}" Target64Bit="true" ShowHideConfigurations="#x106">
 		<System>
-			<Settings>
-				<Cpu BaseTime="1000"/>
-			</Settings>
 			<Tasks>
 				<Task Id="2" Priority="1" CycleTime="10000" AmsPort="301">
 					<Name>Task 2</Name>

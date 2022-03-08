@@ -1,4 +1,4 @@
- clear; clc; close all
+clear; clc; close all
 addpath(genpath('utils/'))
 %% === Assign Constants ===================================================
 disp('*** Setting model parameters ***')
@@ -24,7 +24,7 @@ open_system(mdlName);
 %% === load input signals =========================================
 disp('*** Load Input command signals ***')
 load('utils/commandSignals.mat');
-period = 1.5; % period for sine wave
+period = 2; % period for sine wave
 commandSigs = modifySine(commandSigs,period);
 waveform = commandSigs;
 set_param(mdlName,'ExternalInput','waveform');
@@ -63,8 +63,12 @@ function selectXMLfile(Ts,mdlName)
 current_dir = pwd;
 if Ts == 0.0005     % 10kHz
     LUPA_eCat_init = strcat(current_dir,'\EtherCAT\LUPA2kHz.xml');
+elseif Ts == 0.002  % 500Hz
+    LUPA_eCat_init = strcat(current_dir,'\EtherCAT\LUPA500Hz.xml');
+elseif Ts == 0.01  % 100Hz
+    LUPA_eCat_init = strcat(current_dir,'\EtherCAT\LUPA100Hz.xml');
 else
-    LUPA_eCat_init = strcat(current_dir,'\EtherCAT\LUPA1kHz.xml');
+    LUPA_eCat_init = strcat(current_dir,'\EtherCAT\LUPA1kHz_DC.xml');
 end
 
 set_param([mdlName,'/Initialization/EtherCAT Init'],'config_file',LUPA_eCat_init);
