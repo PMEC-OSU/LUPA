@@ -6,4 +6,4 @@ Simulink/*.asv
 Simulink/*.mldatx
 Simulink/*.mat
 Simulink/utils/*.mat
-
+Simulink/utils/*.asv
