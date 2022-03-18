@@ -1,7 +1,7 @@
 clear; clc; close all
 %% Choose experiment name and trialnumber for quicklook
-expname = 'Sine';
-trialnum = 9;
+expname = 'Chirp2';
+trialnum = 1;
 
 %% load data
 trialname = ['Trial',num2str(trialnum,'%02d')];
@@ -12,65 +12,61 @@ load([trialdir,'\',filename])
 
 %% plot torque data
 figure
-plot(output.TorqueTransducer.time,output.TorqueTransducer.torqueTransducer)
-hold on
 plot(output.ELMO.time,output.ELMO.torque_Nm)
+hold on
 plot(output.Control.time,output.Control.target_A*7.86)
 xlabel('time (s)')
 ylabel('Torque (Nm)')
-legend('torque transducer','Drive reported','command signal')
+legend('Drive reported','command signal')
 grid on
 
 %% rotary to linear conversion
-pulleyradius = 0.1273302/2;
+% pulleyradius = 0.0407416;   % 32 tooth pulley
+% pulleyradius = 0.0636651;   % 50 tooth pulley
+pulleyradius = 0.101854;   % 80 tooth pulley
+
+
 linpos = output.ELMO.pos_rad * pulleyradius;
 linforce = output.ELMO.torque_Nm ./ pulleyradius;
-linTTforce = output.TorqueTransducer.torqueTransducer ./ pulleyradius;
 
 
 %% calculate offsets
 dt1 = output.ShoreADC.time(2) - output.ShoreADC.time(1);
 zerorange = 4.5*1/dt1:5*1/dt1;
-sp1offset = mean(output.ShoreADC.sp1(zerorange));
+sp1offset = mean(output.Sensors.drawWire(zerorange));
 sp2offset = mean(output.ShoreADC.sp2(zerorange));
 dt2 = output.ELMO.time(2)-output.ELMO.time(1);
 zerorange = 4.5*1/dt2:5*1/dt2;
 linposoffset = mean(linpos(zerorange));
-dt3 = output.LUPAinput.time(2)-output.LUPAinput.time(1);
+dt3 = output.Sensors.time(2)-output.Sensors.time(1);
 zerorange = 4.5*1/dt3:5*1/dt3;
-LCtopoffset = mean(output.LUPAinput.LCtop(zerorange));
-LCbotoffset = mean(output.LUPAinput.LCbot(zerorange));
-dt4 = output.TorqueTransducer.time(2)-output.TorqueTransducer.time(1);
-zerorange = 4.5*1/dt4:5*1/dt4;
-linTTforceoffset = mean(linTTforce(zerorange));
+LCtopoffset = mean(output.Sensors.LCtop(zerorange));
+LCbotoffset = mean(output.Sensors.LCbot(zerorange));
 
 %% modify signals with offsets
 linPos = linpos-linposoffset;
-SP1 = -(output.ShoreADC.sp1-sp1offset);
-SP2 = output.ShoreADC.sp2-sp2offset;
-linTTForce = linTTforce-linTTforceoffset;
-totalForce = output.LUPAinput.LCbot-LCbotoffset-(output.LUPAinput.LCtop-LCtopoffset);
+SP1 = -(output.Sensors.drawWire-sp1offset);
+totalForce = output.Sensors.LCbot-LCbotoffset-(output.Sensors.LCtop-LCtopoffset);
 
 %% plot stringpots and converted rotation
 figure
-plot(output.ShoreADC.time,SP1)
+plot(output.Sensors.time,SP1)
 hold on
-plot(output.ShoreADC.time,SP2)
 plot(output.ELMO.time,linPos)
-legend('- Bottom Stringpot','Top Stringpot','converted motor rotation')
+legend('- draw wire','converted motor rotation')
 ylabel('displacement (m)')
 grid on
+ylim([-0.3 0.3])
 
 %% plot load cells
 figure
-% plot(output.LUPAinput.time,output.LUPAinput.LCbot-LCbotoffset)
+% plot(output.Sensors.time,output.Sensors.LCbot-LCbotoffset)
 % hold on
-% plot(output.LUPAinput.time,-(output.LUPAinput.LCtop-LCtopoffset))
+% plot(output.Sensors.time,-(output.Sensors.LCtop-LCtopoffset))
 plot(output.ELMO.time,linforce)
 hold on
-plot(output.TorqueTransducer.time,linTTForce)
-plot(output.LUPAinput.time,totalForce)
-legend('converted ELMO torque','converted torque transducer torque','combined top and bottom load cells')
+plot(output.Sensors.time,totalForce)
+legend('converted ELMO torque','combined top and bottom load cells')
 % legend('Bottom Load Cell','-Top Load Cell','converted ELMO torque','converted torque transducer torque','combined top and bottom load cells')
 xlabel('time (s)')
 ylabel('F(N)')
@@ -93,31 +89,31 @@ grid on
 % ylabel('Torque (Nm)')
 
 motorPower = output.ELMO.vel_radpers .* output.ELMO.torque_Nm;
-LoadCellForce = output.LUPAinput.LCbot-LCbotoffset-(output.LUPAinput.LCtop-LCtopoffset);
+LoadCellForce = output.Sensors.LCbot-LCbotoffset-(output.Sensors.LCtop-LCtopoffset);
 stringpotVelocity = gradient(output.ShoreADC.sp2-sp2offset,output.ShoreADC.time);
 beltPower = LoadCellForce .* stringpotVelocity;
 figure
 plot(output.ELMO.time,motorPower)
 hold on
-plot(output.LUPAinput.time,beltPower)
+plot(output.Sensors.time,beltPower)
 ylabel('Power (W)')
 xlabel('time (s)')
 legend('Power at Motor','Power at Load Cells')
 
-figure
-subplot(211)
-plot(output.LUPAinput.time,output.LUPAinput.LCbot)
-hold on
-plot(output.LUPAinput.time,output.LUPAinput.LCtop)
-legend('LCbot','LCtop')
-ylabel('F (N)')
-grid on
-subplot(212)
-plot(output.LUPAinput.time,output.LUPAinput.LCbot)
-hold on
-plot(output.LUPAinput.time,output.LUPAinput.LCtop)
-legend('LCbot','LCtop')
-ylabel('F (N)')
-xlim([33 35])
-grid on
-xlabel('time (s)')
+% figure
+% subplot(211)
+% plot(output.Sensors.time,output.Sensors.LCbot)
+% hold on
+% plot(output.Sensors.time,output.Sensors.LCtop)
+% legend('LCbot','LCtop')
+% ylabel('F (N)')
+% grid on
+% subplot(212)
+% plot(output.Sensors.time,output.Sensors.LCbot)
+% hold on
+% plot(output.Sensors.time,output.Sensors.LCtop)
+% legend('LCbot','LCtop')
+% ylabel('F (N)')
+% xlim([33 35])
+% grid on
+% xlabel('time (s)')
