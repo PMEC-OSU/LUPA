@@ -74,9 +74,13 @@ end
 output.Timestamp.UTCtime = datetime(output.Timestamp.timestamp,'ConvertFrom','epochtime','TicksPerSecond',1e9,'Format','eee yyyy/MM/dd HH:mm:ss.SSSSSSSSS');
 
 
+% projectName = 'DryLUPA';
+% expname = 'Sine2';
+% trialnumber = 7;
 projectName = app.ProjectEditField.Value;
 expname = app.ExperimentEditField.Value;
 trialnumber = app.TrialSpinner.Value;
+
 trialname = ['\Trial',num2str(trialnumber,'%02d')];
 
 dataexpname = ['C:\data\',projectName,'\',expname];
