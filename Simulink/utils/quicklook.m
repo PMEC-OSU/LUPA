@@ -1,7 +1,7 @@
 clear; clc; close all
 %% Choose experiment name and trialnumber for quicklook
-expname = 'Chirp2';
-trialnum = 1;
+expname = 'Sine3';
+trialnum = 6;
 
 %% load data
 trialname = ['Trial',num2str(trialnum,'%02d')];
@@ -9,6 +9,12 @@ trialdir = fullfile('Z:\projects\2022\DryLUPA\data\raw',expname,trialname);
 dircontents = dir(trialdir);
 filename = dircontents(3).name;
 load([trialdir,'\',filename])
+
+figure
+plot(diff(output.Timestamp.time))
+xlabel('samples')
+ylabel('period (s)')
+title('\Delta t variations')
 
 %% plot torque data
 figure
@@ -19,12 +25,12 @@ xlabel('time (s)')
 ylabel('Torque (Nm)')
 legend('Drive reported','command signal')
 grid on
+title('Motor Torque')
 
 %% rotary to linear conversion
 % pulleyradius = 0.0407416;   % 32 tooth pulley
 % pulleyradius = 0.0636651;   % 50 tooth pulley
 pulleyradius = 0.101854;   % 80 tooth pulley
-
 
 linpos = output.ELMO.pos_rad * pulleyradius;
 linforce = output.ELMO.torque_Nm ./ pulleyradius;
@@ -46,23 +52,31 @@ LCbotoffset = mean(output.Sensors.LCbot(zerorange));
 %% modify signals with offsets
 linPos = linpos-linposoffset;
 SP1 = -(output.Sensors.drawWire-sp1offset);
-totalForce = output.Sensors.LCbot-LCbotoffset-(output.Sensors.LCtop-LCtopoffset);
+totalForce = (output.Sensors.LCtop-LCtopoffset)-(output.Sensors.LCbot-LCbotoffset);
 
 %% plot stringpots and converted rotation
 figure
 plot(output.Sensors.time,SP1)
 hold on
 plot(output.ELMO.time,linPos)
-legend('- draw wire','converted motor rotation')
+legend('draw wire','converted motor rotation')
 ylabel('displacement (m)')
 grid on
 ylim([-0.3 0.3])
+title('Linear Position')
 
-%% plot load cells
+%% plot individual load cells
 figure
-% plot(output.Sensors.time,output.Sensors.LCbot-LCbotoffset)
-% hold on
-% plot(output.Sensors.time,-(output.Sensors.LCtop-LCtopoffset))
+plot(output.Sensors.time,output.Sensors.LCbot)
+hold on
+plot(output.Sensors.time,output.Sensors.LCtop)
+legend('bottom','top')
+grid on
+xlabel('time(s)')
+ylabel('F(N)')
+
+%% plot Forces
+figure
 plot(output.ELMO.time,linforce)
 hold on
 plot(output.Sensors.time,totalForce)
@@ -71,6 +85,7 @@ legend('converted ELMO torque','combined top and bottom load cells')
 xlabel('time (s)')
 ylabel('F(N)')
 grid on
+title('Linear Force')
 
 %% power calculations and plotting
 % 
@@ -99,6 +114,7 @@ plot(output.Sensors.time,beltPower)
 ylabel('Power (W)')
 xlabel('time (s)')
 legend('Power at Motor','Power at Load Cells')
+title('Power')
 
 % figure
 % subplot(211)
