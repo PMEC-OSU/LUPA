@@ -24,7 +24,7 @@ open_system(mdlName);
 %% === load input signals =========================================
 disp('*** Load Input command signals ***')
 load('utils/commandSignals.mat');
-period = 0.75; % period for sine wave
+period = 2; % period for sine wave
 commandSigs = modifySine(commandSigs,period);
 waveform = commandSigs;
 set_param(mdlName,'ExternalInput','waveform');
