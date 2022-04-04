@@ -72,7 +72,18 @@ for i = 1:numdatasets
 end
 %% === convert timestamp to datetime format================================
 output.Timestamp.UTCtime = datetime(output.Timestamp.timestamp,'ConvertFrom','epochtime','TicksPerSecond',1e9,'Format','eee yyyy/MM/dd HH:mm:ss.SSSSSSSSS');
-
+output.Reference.Amplitude = app.AmplitudeSpinner.Value;
+output.Reference.Signal = app.SignalDropDown.Value;
+output.Feedback.Source = app.SourceDropDown.Value;
+output.Feedback.Damping = app.DampingSpinner.Value;
+output.Feedback.Stiffness = app.StiffnessSpinner.Value;
+output.Feedback.CurrentLimit = app.CurrentLimitSpinner.Value;
+output.Reference.CurrentLimit = app.CurrentLimitSpinner.Value;
+output.TrialData.Project = app.ProjectEditField.Value;
+output.TrialData.Experiment = app.ExperimentEditField.Value;
+output.TrialData.TrialNumber = app.TrialSpinner.Value;
+output.TrialData.Ts = app.TsEditField.Value;
+output.TrialData.sprocketTeeth = app.SprocketEditField.Value;
 
 % projectName = 'DryLUPA';
 % expname = 'Sine2';
@@ -124,7 +135,7 @@ if strcmp(app.HWRLShareButton.Text,'Push to Share')
 
 else
     % don't push data to share
-    disp(['Data not saved to HWRL share'])
+    disp('Data not saved to HWRL share')
 end
 
 addpath(genpath(dataexpname))

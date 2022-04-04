@@ -6,6 +6,7 @@ disp('*** Setting model parameters ***')
 Ts = 0.001;
 CL = 7.64;  % Current limit parameter (Set in EASII)
 Kt = 7.86;  % Determined experimentally  % Kt = 8.51;  % From datasheet
+sprocketTeeth = 80;  % small:32 medium:50 large:80
 Decimation = 1;
 Decimation100Hz = 0.01./Ts;
 
