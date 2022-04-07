@@ -1,7 +1,7 @@
 clear; clc; close all
 %% Choose experiment name and trialnumber for quicklook
-expname = 'Sine3';
-trialnum = 6;
+expname = 'Ramps3';
+trialnum = 7;
 
 %% load data
 trialname = ['Trial',num2str(trialnum,'%02d')];
