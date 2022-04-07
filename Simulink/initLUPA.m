@@ -3,6 +3,7 @@ addpath(genpath('utils/'))
 %% === Assign Constants ===================================================
 disp('*** Setting model parameters ***')
 
+period = 2; % period for sine wave
 Ts = 0.001;
 CL = 7.64;  % Current limit parameter (Set in EASII)
 Kt = 7.86;  % Determined experimentally  % Kt = 8.51;  % From datasheet
@@ -25,7 +26,7 @@ open_system(mdlName);
 %% === load input signals =========================================
 disp('*** Load Input command signals ***')
 load('utils/commandSignals.mat');
-period = 2; % period for sine wave
+
 commandSigs = modifySine(commandSigs,period);
 waveform = commandSigs;
 set_param(mdlName,'ExternalInput','waveform');
