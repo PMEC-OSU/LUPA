@@ -67,11 +67,15 @@ for i = 1:numdatasets
         blockName = extractAfter(blockNameTot,pat);
         signalName = char(signalNames(j));
         output.(blockName).(signalName) = data1.data{i}.Values.(signalName).Data;
-        output.(blockName).time = data1.data{i}.Values.(signalName).Time;
+%         output.(blockName).time = data1.data{i}.Values.(signalName).Time;
     end
 end
 %% === convert timestamp to datetime format================================
-output.Timestamp.UTCtime = datetime(output.Timestamp.timestamp,'ConvertFrom','epochtime','TicksPerSecond',1e9,'Format','eee yyyy/MM/dd HH:mm:ss.SSSSSSSSS');
+output.time = data1.data{8}.Values.timestamp.Time;
+output.Timestamp.UTCtime = datetime(output.Timestamp.timestamp,'ConvertFrom','epochtime','TicksPerSecond',1e9,'Format','eee yyyy/MM/dd HH:mm:ss.SSSSSSSSS','TimeZone','UTC');
+temp = output.Timestamp.UTCtime;
+temp.TimeZone = 'America/Los_Angeles';
+output.Timestamp.LocalTime = temp;
 output.Reference.Amplitude = app.AmplitudeSpinner.Value;
 output.Reference.Signal = app.SignalDropDown.Value;
 output.Feedback.Source = app.SourceDropDown.Value;
@@ -84,7 +88,7 @@ output.TrialData.Experiment = app.ExperimentEditField.Value;
 output.TrialData.TrialNumber = app.TrialSpinner.Value;
 output.TrialData.Ts = app.TsEditField.Value;
 output.TrialData.sprocketTeeth = app.SprocketEditField.Value;
-
+output.TrialData.Mode = app.ModeEditField.Value;
 % projectName = 'DryLUPA';
 % expname = 'Sine2';
 % trialnumber = 7;

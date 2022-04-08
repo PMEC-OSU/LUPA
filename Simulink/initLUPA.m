@@ -3,6 +3,7 @@ addpath(genpath('utils/'))
 %% === Assign Constants ===================================================
 disp('*** Setting model parameters ***')
 
+Mode = 'One Body Heave Only'; % 'Two Body Heave Only' 'Six DOF'
 period = 2; % period for sine wave
 Ts = 0.001;
 CL = 7.64;  % Current limit parameter (Set in EASII)
