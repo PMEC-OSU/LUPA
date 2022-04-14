@@ -78,17 +78,19 @@ temp.TimeZone = 'America/Los_Angeles';
 output.Timestamp.LocalTime = temp;
 output.Reference.Amplitude = app.AmplitudeSpinner.Value;
 output.Reference.Signal = app.SignalDropDown.Value;
+output.Reference.CurrentLimit = app.CurrentLimitSpinner.Value;
+output.Reference.SinePeriod = app.SinePeriodEditField.Value;
 output.Feedback.Source = app.SourceDropDown.Value;
 output.Feedback.Damping = app.DampingSpinner.Value;
 output.Feedback.Stiffness = app.StiffnessSpinner.Value;
 output.Feedback.CurrentLimit = app.CurrentLimitSpinner.Value;
-output.Reference.CurrentLimit = app.CurrentLimitSpinner.Value;
 output.TrialData.Project = app.ProjectEditField.Value;
 output.TrialData.Experiment = app.ExperimentEditField.Value;
 output.TrialData.TrialNumber = app.TrialSpinner.Value;
 output.TrialData.Ts = app.TsEditField.Value;
 output.TrialData.sprocketTeeth = app.SprocketEditField.Value;
 output.TrialData.Mode = app.ModeEditField.Value;
+
 % projectName = 'DryLUPA';
 % expname = 'Sine2';
 % trialnumber = 7;
@@ -144,3 +146,4 @@ end
 
 addpath(genpath(dataexpname))
 % load([fname,'.mat'])
+
