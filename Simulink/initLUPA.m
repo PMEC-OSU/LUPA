@@ -52,7 +52,10 @@ disp('*** Build Simulink RT (Speedgoat) ***')
 slbuild(mdlName);
 % load(tg,mdlName);
 %% === Open the app =======================================================
-
+% remove any open app windows
+allfigs = findall(0,'Type', 'figure');  % get handles to *all* figures
+app2Handle = findall(allfigs, 'Name', 'LUPA');  % isolate the app's handle based on the App's name.
+app2Handle.delete
 disp('*** Start user app ***')
 run(appName)
 
