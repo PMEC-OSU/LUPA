@@ -58,34 +58,3 @@ Overview
 LUPA is an open-source scaled WEC for experimental testing. It is fundamentally a two-body heaving point absorber, the two main bodies being the toroidal float and the central cylindrical spar. LUPA was designed for deployment in the Large Wave Flume at the O.H. Hinsdale Wave Research Laboratory at Oregon State University. It is a model scale based off of the water depths at PacWave North and South test sites located off the coast of Newport, Oregon, USA. Based on Froude scaling, the scale factors for North and South sites are 20 and 25, respectively.
 
 The user interface and data acquisition are developed in MATLAB/SIMULINK. Open-source WEC-Sim numerical models of LUPA are provided in the GitHub repository and the data from these simulations are available on MHKDR. LUPA can operate as a one-body (heave only), two-body (heave only), and a two-body six degrees of freedom system. Physical specifications are shown in the table below.
-
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [Basic writing and formatting syntax](https://docs.github.com/en/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/PMEC-OSU/LUPA/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
