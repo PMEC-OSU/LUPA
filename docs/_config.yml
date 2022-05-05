@@ -1,2 +1,10 @@
 # theme: jekyll-theme-cayman
 remote_theme: just-the-docs/just-the-docs
+logo: "/assets/pmec_color.png"
+
+aux_links:
+"Visit LUPA on GitHub":
+- "//github.com/https://github.com/PMEC-OSU/LUPA"
+
+aux_links_new_tab: true
+
