@@ -6,29 +6,20 @@ The Lab Upgrade Point Absorber (LUPA) is a state of the art open-sourced laborat
 
 Whats new?
 Check out our new videos on dry testing in the O.H. Hinsdale Wave Research Laboratory!
-Helpful Links
-PMEC Overview
-- https://www.pmec.us/testing
-- Highlights LUPA among other testing capabilities supported by the Pacific Marine Energy Center
-GitHub Repository
-- https://github.com/PMEC-OSU/LUPA
-- The GitHub repository is a place to view and download code related to the LUPA user interface, data acquisition, data processing, and WEC-Sim input files. It also includes contributions from collaborators utilizing LUPA.
-CAD Models
-- https://zenodo.org/
-- The detailed CAD models and bill of materials for LUPA can be found on Zenodo.
-Data
-- https://mhkdr.openei.org/
-- The Marine Hydrokinetic Data Repository hosts a collection of experimental data from LUPA.
-Videos
-- https://vimeo.com/user164791676
-- Videos of LUPA tests are housed here on Vimeo.
 
-Publications/Presentations
+Helpful Links
+**[PMEC Overview](https://www.pmec.us/testing)**
+**[GitHub Repository](https://github.com/PMEC-OSU/LUPA)**
+**[CAD Models](https://zenodo.org/)**
+**[Data](https://mhkdr.openei.org/)**
+**[Videos](https://vimeo.com/user164791676)**
+
 Publications
+- More publications will be added here
 
 Presentations
-- WPTO R&D Deep Dive on march 22nd, 2022
-- https://youtu.be/gCcAu7H9lQI
+- **[WPTO R&D Deep Dive on march 22nd, 2022](https://youtu.be/gCcAu7H9lQI)**
+
 FAQs
 1.	How can I test with LUPA?
 a.	LUPA is housed at the O.H. Hinsdale Wave Research Laboratory, contact the Director to coordinate availability. Funding to test with LUPA could be obtained through TEAMER funding.
