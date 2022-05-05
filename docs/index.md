@@ -6,17 +6,13 @@ The Lab Upgrade Point Absorber (LUPA) is a state of the art open-sourced laborat
 Whats new?
 Check out our new videos on dry testing in the O.H. Hinsdale Wave Research Laboratory!
 
-Helpful Links
+Helpful Links  
+
 **[PMEC Overview](https://www.pmec.us/testing)**  
-
 **[GitHub Repository](https://github.com/PMEC-OSU/LUPA)**  
-
 **[CAD Models](https://zenodo.org/)**  
-
 **[Data](https://mhkdr.openei.org/)**  
-
 **[Videos](https://vimeo.com/user164791676)**  
-
 
 Publications
 - More publications will be added here
@@ -27,7 +23,7 @@ Presentations
 FAQs
 1.	How can I test with LUPA?
 a.	LUPA is housed at the O.H. Hinsdale Wave Research Laboratory, contact the Director to coordinate availability. Funding to test with LUPA could be obtained through TEAMER funding.
-2.	
+2.	More questions...
 
 ## Documentation
 The Lab Upgrade Point Absorber (LUPA) is a state of the art open-sourced laboratory-scaled wave energy converter (WEC). The objective of the LUPA project is to develop a completely open source, fully validated, numerical and physical WEC model. LUPA provides a platform for validation of hydrodynamic models, control systems, power take-off (PTO) designs, mooring designs, and hull and heave plate geometries. As a modular WEC system, LUPA allows for incremental system dynamics complexity, rapid dissemination of R&D findings without IP concerns, and a well characterized and understood platform for consistent and accelerated R&D. LUPA can operate as a one-body, two-body (heave only), and a three-body 6 degrees of freedom system. The LUPA Repository is a place to view and download code related to the LUPA user interface, data acquisition, data processing, and WEC-Sim input files. It also includes contributions from collaborators utilizing LUPA.
