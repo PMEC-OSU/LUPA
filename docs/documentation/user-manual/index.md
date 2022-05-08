@@ -1,6 +1,7 @@
 ---
 layout: default
-title: UI Components
+title: User Manual
+parent: Documentation
 nav_order: 3
 has_children: true
 ---
