@@ -1,8 +1,8 @@
 ---
 layout: default
-title: Acknowledgements
-parent: Introduction
+title: Workflow
+parent: User Manual
 grand_parent: Documentation
 nav_order: 2
 ---
-## Acknowledgments
+## Workflow
