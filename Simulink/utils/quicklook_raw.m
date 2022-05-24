@@ -1,7 +1,7 @@
 clear; clc; close all
 %% Choose experiment name and trialnumber for quicklook
-expname = 'Chirp3';
-trialnum = 1;
+expname = 'Ramps3';
+trialnum = 9;
 
 %% load data
 trialname = ['Trial',num2str(trialnum,'%02d')];
@@ -39,7 +39,7 @@ figure
 subplot(211)
 plot(output.ELMO.time,output.ELMO.torque_Nm)
 hold on
-plot(output.Control.time,output.Control.target_Nm)
+% plot(output.Control.time,output.Control.target_Nm)
 xlabel('time (s)')
 ylabel('Torque (Nm)')
 legend('Drive reported','command signal')
