@@ -1,7 +1,7 @@
 clear; clc; close all
 %% Choose experiment name and trialnumber for quicklook
 expname = 'Ramps3';
-trialnum = 9;
+trialnum = 18;
 
 %% load data
 trialname = ['Trial',num2str(trialnum,'%02d')];
@@ -11,7 +11,7 @@ filename = dircontents(3).name;
 load([trialdir,'\',filename])
 %% timestamp analysis
 figure
-plot(diff(output.Timestamp.time))
+plot(diff(output.time))
 xlabel('samples')
 ylabel('period (s)')
 title('\Delta t variations')
@@ -19,14 +19,14 @@ title('\Delta t variations')
 %% plot position data
 figure
 subplot(211)
-plot(output.ELMO.time,output.ELMO.pos_rad)
+plot(output.time,output.ELMO.pos_rad)
 grid on
 xlabel('time (s)')
 ylabel('pos (rad)')
 title('Motor Position')
 
 subplot(212)
-plot(output.Sensors.time,output.Sensors.drawWire)
+plot(output.time,output.Sensors.drawWire)
 grid on
 xlabel('time (s)')
 ylabel('pos (m)')
@@ -37,7 +37,7 @@ ylim([.25 .75])
 %% plot torque data
 figure
 subplot(211)
-plot(output.ELMO.time,output.ELMO.torque_Nm)
+plot(output.time,output.ELMO.torque_Nm)
 hold on
 % plot(output.Control.time,output.Control.target_Nm)
 xlabel('time (s)')
@@ -48,9 +48,9 @@ title('Motor Torque')
 
 %% load cell data
 subplot(212)
-plot(output.Sensors.time,output.Sensors.LCbot)
+plot(output.time,output.Sensors.LCbot)
 hold on
-plot(output.Sensors.time,output.Sensors.LCtop)
+plot(output.time,output.Sensors.LCtop)
 legend('LCbot','LCtop')
 ylabel('F (N)')
 grid on
