@@ -19,6 +19,8 @@ The Lab Upgrade Point Absorber (LUPA) is a state of the art open-sourced laborat
 [Documentation](http://example.com/){: .btn }
 </span>
 
+<button type="button" name="button" class="btn">Button element</button>
+
 
 
 
