@@ -2,3 +2,9 @@ $link-color: #0076fd;
 $link-hover-color: #0013e0;
 
 $bit-primary-color: #0076fd;
+
+.btn {
+    background-color: $bit-primary-color;
+    border-color: $bit-primary-color;
+    color: #fff;
+}
