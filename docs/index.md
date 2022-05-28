@@ -12,7 +12,7 @@ The Lab Upgrade Point Absorber (LUPA) is a state of the art open-sourced laborat
 </span> -->
 
 <span class="fs-8">
-[FAQs](http://example.com/){: .px-5 }
+[          ](http://example.com/){: .btn }
 [Documentation](http://example.com/){: .btn }
 </span>
 
