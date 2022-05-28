@@ -106,7 +106,7 @@
 					<Box Id="2" BoxType="9099" BoxFlags="#x00000020">
 						<Name>Term 2 (EL3104)</Name>
 						<ImageId>1001</ImageId>
-						<EtherCAT SlaveType="2" PdiType="#x0405" MboxDataLinkLayer="true" StateMBoxPolling="true" CycleMBoxPollingTime="0" CoeType="7" FoeType="1" VendorId="#x00000002" ProductCode="#x0c203052" RevisionNo="#x00140000" InfoDataAddr="true" InfoDataDcTimes="true" TimeoutMailbox2="2000" CheckRevisionNoType="3" PortPhys="51" MaxSlotCount="256" MaxSlotGroupCount="1" SlotPdoIncrement="1" SlotIndexIncrement="16" Type="EL3104 4Ch. Ana. Input +/-10V Diff." Desc="EL3104" PortABoxInfo="#x01000001">
+						<EtherCAT SlaveType="2" PdiType="#x0405" MboxDataLinkLayer="true" StateMBoxPolling="true" CycleMBoxPollingTime="0" CoeType="7" FoeType="1" VendorId="#x00000002" ProductCode="#x0c203052" RevisionNo="#x00140000" InfoDataAddr="true" TimeoutMailbox2="2000" CheckRevisionNoType="3" PortPhys="51" MaxSlotCount="256" MaxSlotGroupCount="1" SlotPdoIncrement="1" SlotIndexIncrement="16" Type="EL3104 4Ch. Ana. Input +/-10V Diff." Desc="EL3104" PortABoxInfo="#x01000001">
 							<SyncMan>001080002600010001000000800080008000001026010000</SyncMan>
 							<SyncMan>801080002200010002000000800080008000801022010000</SyncMan>
 							<SyncMan>001100000400000003000000000000000000001104000000</SyncMan>
@@ -114,7 +114,6 @@
 							<Fmmu>0000000000000000801100010100000002000000000000000000000000000000</Fmmu>
 							<Fmmu>00000000000000000d0800010100000003000000000000000000000000000000</Fmmu>
 							<BootStrapData>0010f400f410f400</BootStrapData>
-							<DcData>000700000000000000000000a861000001000000010000000000000000000000</DcData>
 							<DcMode>53796e6368726f6e00000000000000004672656552756e2f534d2d53796e6368726f6e00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000</DcMode>
 							<DcMode>4443000000000000000000000000000044432d53796e6368726f6e0000000000000000000000000000000000000000000000000000000000a8610000000000070100000000000000000000000000000000000000000000000000000000000000</DcMode>
 							<DcMode>4443494e00000000000000000000000044432d53796e6368726f6e2028696e7075742062617365642900000000000000000000006079feffa8610000000000070100000000000000000001000000000000000000000000000000000000000000</DcMode>
@@ -321,7 +320,7 @@ Bit1: Value smaller than Limit2]]></Comment>
 						</EtherCAT>
 					</Box>
 					<Box Id="13" BoxType="9099">
-						<Name>Term 13 (EL9011)</Name>
+						<Name>Term 24 (EL9011)</Name>
 						<ImageId>1002</ImageId>
 						<EtherCAT CycleMBoxPollingTime="0" VendorId="#x00000002" ProductCode="#x23333050" InfoDataState="false" MaxSlotCount="256" MaxSlotGroupCount="1" SlotPdoIncrement="1" SlotIndexIncrement="16" Type="EL9011 End Terminal" Desc="EL9011" PortABoxInfo="#x01000002"/>
 					</Box>
@@ -333,7 +332,7 @@ Bit1: Value smaller than Limit2]]></Comment>
 					<Box Id="4" BoxType="9099" BoxFlags="#x00000020">
 						<Name>Term 4 (EL5002)</Name>
 						<ImageId>1003</ImageId>
-						<EtherCAT SlaveType="2" PdiType="#x0405" MboxDataLinkLayer="true" StateMBoxPolling="true" CycleMBoxPollingTime="0" CoeType="7" FoeType="1" VendorId="#x00000002" ProductCode="#x138a3052" RevisionNo="#x00140000" InfoDataAddr="true" InfoDataDcTimes="true" TimeoutMailbox2="2000" CheckRevisionNoType="3" PortPhys="51" MaxSlotCount="256" MaxSlotGroupCount="1" SlotPdoIncrement="1" SlotIndexIncrement="16" Type="EL5002 2Ch. SSI Encoder" Desc="EL5002" PortABoxInfo="#x01000003">
+						<EtherCAT SlaveType="2" PdiType="#x0405" MboxDataLinkLayer="true" StateMBoxPolling="true" CycleMBoxPollingTime="0" CoeType="7" FoeType="1" VendorId="#x00000002" ProductCode="#x138a3052" RevisionNo="#x00140000" InfoDataAddr="true" TimeoutMailbox2="2000" CheckRevisionNoType="3" PortPhys="51" MaxSlotCount="256" MaxSlotGroupCount="1" SlotPdoIncrement="1" SlotIndexIncrement="16" Type="EL5002 2Ch. SSI Encoder" Desc="EL5002" PortABoxInfo="#x01000003">
 							<SyncMan>001080002600010001000000800080008000001026010000</SyncMan>
 							<SyncMan>801080002200010002000000800080008000801022010000</SyncMan>
 							<SyncMan>001100000400000003000000000000000000001104000000</SyncMan>
@@ -341,7 +340,6 @@ Bit1: Value smaller than Limit2]]></Comment>
 							<Fmmu>0000000000000000801100010100000002000000000000000000000000000000</Fmmu>
 							<Fmmu>00000000000000000d0800010100000003000000000000000000000000000000</Fmmu>
 							<BootStrapData>0010f400f410f400</BootStrapData>
-							<DcData>000700000000000000000000983a000001000000010000000000000000000000</DcData>
 							<DcMode>53796e6368726f6e00000000000000004672656552756e2f534d2d53796e6368726f6e00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000</DcMode>
 							<DcMode>4443000000000000000000000000000044432d53796e6368726f6e0000000000000000000000000000000000000000000000000000000000983a0000000000070100000000000000000000000000000000000000000000000000000000000000</DcMode>
 							<DcMode>4443494e00000000000000000000000044432d53796e6368726f6e2028696e70757420626173656429000000000000000000000000000000983a0000000000070100000000000000000001000000000000000000000000000000000000000000</DcMode>
@@ -1204,77 +1202,10 @@ Bit1: Value smaller than Limit2]]></Comment>
 							<EL60xxComPort BaudRate="9600" ByteSize="8" EnableRtsCts="true" LocalComPort="true" RxFifoFullThreshold="864"/>
 						</EtherCAT>
 					</Box>
-					<Box Id="6" BoxType="9099" BoxFlags="#x00000020">
-						<Name>Term 6 (EL3351)</Name>
-						<ImageId>1001</ImageId>
-						<EtherCAT SlaveType="2" PdiType="#x0005" MboxDataLinkLayer="true" StateMBoxPolling="true" CycleMBoxPollingTime="0" CoeType="7" FoeType="1" VendorId="#x00000002" ProductCode="#x0d173052" RevisionNo="#x00140000" InfoDataAddr="true" TimeoutMailbox2="2000" PortPhys="51" MaxSlotCount="256" MaxSlotGroupCount="1" SlotPdoIncrement="1" SlotIndexIncrement="16" Type="EL3351 1Ch. Ana. Input Resistor Bridge Terminal, Diff. 16bit" Desc="EL3351" PortABoxInfo="#x01000005">
-							<SyncMan>001080002600010001000000800080008000001026010000</SyncMan>
-							<SyncMan>801080002200010002000000800080008000801022010000</SyncMan>
-							<SyncMan>001100000400000003000000000000000000001104000000</SyncMan>
-							<SyncMan>80110c002000010004000000000000000c00801120010000</SyncMan>
-							<Fmmu>0000000000000000801100010100000002000000000000000000000000000000</Fmmu>
-							<Fmmu>00000000000000000d0800010100000003000000000000000000000000000000</Fmmu>
-							<BootStrapData>0010f400f410f400</BootStrapData>
-							<Pdo Name="AIBridge Inputs" Index="#x1a00" Flags="#x0010" SyncMan="3">
-								<Entry Name="Underrange" Index="#x6000" Sub="#x01">
-									<Type>BIT</Type>
-								</Entry>
-								<Entry Name="Overrange" Index="#x6000" Sub="#x02">
-									<Type>BIT</Type>
-								</Entry>
-								<Entry>
-									<Type GUID="{18071995-0000-0000-0000-002000000004}">ARRAY [0..3] OF BIT</Type>
-								</Entry>
-								<Entry Name="Error" Index="#x6000" Sub="#x07">
-									<Type>BIT</Type>
-								</Entry>
-								<Entry>
-									<Type GUID="{18071995-0000-0000-0000-002000000007}">ARRAY [0..6] OF BIT</Type>
-								</Entry>
-								<Entry Name="TxPDO State" Index="#x1800" Sub="#x07">
-									<Type>BIT</Type>
-								</Entry>
-								<Entry Name="TxPDO Toggle" Index="#x1800" Sub="#x09">
-									<Type>BIT</Type>
-								</Entry>
-								<Entry Name="Value" Index="#x6000" Sub="#x11">
-									<Type>DINT</Type>
-								</Entry>
-							</Pdo>
-							<Pdo Name="AISupply Inputs" Index="#x1a01" Flags="#x0010" SyncMan="3">
-								<Entry Name="Underrange" Index="#x6010" Sub="#x01">
-									<Type>BIT</Type>
-								</Entry>
-								<Entry Name="Overrange" Index="#x6010" Sub="#x02">
-									<Type>BIT</Type>
-								</Entry>
-								<Entry>
-									<Type GUID="{18071995-0000-0000-0000-002000000004}">ARRAY [0..3] OF BIT</Type>
-								</Entry>
-								<Entry Name="Error" Index="#x6010" Sub="#x07">
-									<Type>BIT</Type>
-								</Entry>
-								<Entry>
-									<Type GUID="{18071995-0000-0000-0000-002000000007}">ARRAY [0..6] OF BIT</Type>
-								</Entry>
-								<Entry Name="TxPDO State" Index="#x1801" Sub="#x07">
-									<Type>BIT</Type>
-								</Entry>
-								<Entry Name="TxPDO Toggle" Index="#x1801" Sub="#x09">
-									<Type>BIT</Type>
-								</Entry>
-								<Entry Name="Value" Index="#x6010" Sub="#x11">
-									<Type>DINT</Type>
-								</Entry>
-							</Pdo>
-							<CoeProfile ProfileNo="19665801"/>
-							<CoeProfile ProfileNo="19665801"/>
-						</EtherCAT>
-					</Box>
-					<Box Id="7" BoxType="9099">
-						<Name>Term 7 (EL9510)</Name>
+					<Box Id="6" BoxType="9099">
+						<Name>Term 6 (EL9510)</Name>
 						<ImageId>1005</ImageId>
-						<EtherCAT SlaveType="1" PdiType="#x0104" CycleMBoxPollingTime="0" VendorId="#x00000002" ProductCode="#x25263052" RevisionNo="#x00120000" RepeatSupport="true" PortPhys="51" MaxSlotCount="256" MaxSlotGroupCount="1" SlotPdoIncrement="1" SlotIndexIncrement="16" Type="EL9510 Power supply terminal 10V" Desc="EL9510" PortABoxInfo="#x01000006">
+						<EtherCAT SlaveType="1" PdiType="#x0104" CycleMBoxPollingTime="0" VendorId="#x00000002" ProductCode="#x25263052" RevisionNo="#x00110000" RepeatSupport="true" PortPhys="51" MaxSlotCount="256" MaxSlotGroupCount="1" SlotPdoIncrement="1" SlotIndexIncrement="16" Type="EL9510 Power supply terminal 10V" Desc="EL9510" PortABoxInfo="#x01000005">
 							<SyncMan>001001000000010004000000000000000000001000000000</SyncMan>
 							<Fmmu>0000000000000000001000010100000002000000000000000000000000000000</Fmmu>
 							<Pdo Name="Status Uo" Index="#x1a00" Flags="#x0011" SyncMan="0">
@@ -1287,10 +1218,10 @@ Bit1: Value smaller than Limit2]]></Comment>
 							</Pdo>
 						</EtherCAT>
 					</Box>
-					<Box Id="8" BoxType="9099" BoxFlags="#x00000020">
-						<Name>Term 8 (EL3351)</Name>
+					<Box Id="7" BoxType="9099" BoxFlags="#x00000020">
+						<Name>Term 7 (EL3351)</Name>
 						<ImageId>1001</ImageId>
-						<EtherCAT SlaveType="2" PdiType="#x0005" MboxDataLinkLayer="true" StateMBoxPolling="true" CycleMBoxPollingTime="0" CoeType="7" FoeType="1" VendorId="#x00000002" ProductCode="#x0d173052" RevisionNo="#x00140000" InfoDataAddr="true" TimeoutMailbox2="2000" PortPhys="51" MaxSlotCount="256" MaxSlotGroupCount="1" SlotPdoIncrement="1" SlotIndexIncrement="16" Type="EL3351 1Ch. Ana. Input Resistor Bridge Terminal, Diff. 16bit" Desc="EL3351" PortABoxInfo="#x01000007">
+						<EtherCAT SlaveType="2" PdiType="#x0005" MboxDataLinkLayer="true" StateMBoxPolling="true" CycleMBoxPollingTime="0" CoeType="7" FoeType="1" VendorId="#x00000002" ProductCode="#x0d173052" RevisionNo="#x00140000" InfoDataAddr="true" TimeoutMailbox2="2000" PortPhys="51" MaxSlotCount="256" MaxSlotGroupCount="1" SlotPdoIncrement="1" SlotIndexIncrement="16" Type="EL3351 1Ch. Ana. Input Resistor Bridge Terminal, Diff. 16bit" Desc="EL3351" PortABoxInfo="#x01000006">
 							<SyncMan>001080002600010001000000800080008000001026010000</SyncMan>
 							<SyncMan>801080002200010002000000800080008000801022010000</SyncMan>
 							<SyncMan>001100000400000003000000000000000000001104000000</SyncMan>
@@ -1354,10 +1285,93 @@ Bit1: Value smaller than Limit2]]></Comment>
 							<CoeProfile ProfileNo="19665801"/>
 						</EtherCAT>
 					</Box>
+					<Box Id="8" BoxType="9099">
+						<Name>Term 8 (EL9510)</Name>
+						<ImageId>1005</ImageId>
+						<EtherCAT SlaveType="1" PdiType="#x0104" CycleMBoxPollingTime="0" VendorId="#x00000002" ProductCode="#x25263052" RevisionNo="#x00120000" RepeatSupport="true" PortPhys="51" MaxSlotCount="256" MaxSlotGroupCount="1" SlotPdoIncrement="1" SlotIndexIncrement="16" Type="EL9510 Power supply terminal 10V" Desc="EL9510" PortABoxInfo="#x01000007">
+							<SyncMan>001001000000010004000000000000000000001000000000</SyncMan>
+							<Fmmu>0000000000000000001000010100000002000000000000000000000000000000</Fmmu>
+							<Pdo Name="Status Uo" Index="#x1a00" Flags="#x0011" SyncMan="0">
+								<Entry Name="Power OK" Index="#x6000" Sub="#x01">
+									<Type>BIT</Type>
+								</Entry>
+								<Entry Name="Overload" Index="#x6000" Sub="#x02">
+									<Type>BIT</Type>
+								</Entry>
+							</Pdo>
+						</EtherCAT>
+					</Box>
 					<Box Id="9" BoxType="9099" BoxFlags="#x00000020">
-						<Name>Term 9 (EL3202)</Name>
+						<Name>Term 9 (EL3351)</Name>
 						<ImageId>1001</ImageId>
-						<EtherCAT SlaveType="2" PdiType="#x0005" MboxDataLinkLayer="true" StateMBoxPolling="true" CycleMBoxPollingTime="0" CoeType="3" FoeType="1" VendorId="#x00000002" ProductCode="#x0c823052" RevisionNo="#x00160000" InfoDataAddr="true" TimeoutMailbox2="2000" CheckRevisionNoType="3" PortPhys="51" MaxSlotCount="256" MaxSlotGroupCount="1" SlotPdoIncrement="1" SlotIndexIncrement="16" Type="EL3202 2Ch. Ana. Input PT100 (RTD)" Desc="EL3202" PortABoxInfo="#x01000008">
+						<EtherCAT SlaveType="2" PdiType="#x0005" MboxDataLinkLayer="true" StateMBoxPolling="true" CycleMBoxPollingTime="0" CoeType="7" FoeType="1" VendorId="#x00000002" ProductCode="#x0d173052" RevisionNo="#x00140000" InfoDataAddr="true" TimeoutMailbox2="2000" PortPhys="51" MaxSlotCount="256" MaxSlotGroupCount="1" SlotPdoIncrement="1" SlotIndexIncrement="16" Type="EL3351 1Ch. Ana. Input Resistor Bridge Terminal, Diff. 16bit" Desc="EL3351" PortABoxInfo="#x01000008">
+							<SyncMan>001080002600010001000000800080008000001026010000</SyncMan>
+							<SyncMan>801080002200010002000000800080008000801022010000</SyncMan>
+							<SyncMan>001100000400000003000000000000000000001104000000</SyncMan>
+							<SyncMan>80110c002000010004000000000000000c00801120010000</SyncMan>
+							<Fmmu>0000000000000000801100010100000002000000000000000000000000000000</Fmmu>
+							<Fmmu>00000000000000000d0800010100000003000000000000000000000000000000</Fmmu>
+							<BootStrapData>0010f400f410f400</BootStrapData>
+							<Pdo Name="AIBridge Inputs" Index="#x1a00" Flags="#x0010" SyncMan="3">
+								<Entry Name="Underrange" Index="#x6000" Sub="#x01">
+									<Type>BIT</Type>
+								</Entry>
+								<Entry Name="Overrange" Index="#x6000" Sub="#x02">
+									<Type>BIT</Type>
+								</Entry>
+								<Entry>
+									<Type GUID="{18071995-0000-0000-0000-002000000004}">ARRAY [0..3] OF BIT</Type>
+								</Entry>
+								<Entry Name="Error" Index="#x6000" Sub="#x07">
+									<Type>BIT</Type>
+								</Entry>
+								<Entry>
+									<Type GUID="{18071995-0000-0000-0000-002000000007}">ARRAY [0..6] OF BIT</Type>
+								</Entry>
+								<Entry Name="TxPDO State" Index="#x1800" Sub="#x07">
+									<Type>BIT</Type>
+								</Entry>
+								<Entry Name="TxPDO Toggle" Index="#x1800" Sub="#x09">
+									<Type>BIT</Type>
+								</Entry>
+								<Entry Name="Value" Index="#x6000" Sub="#x11">
+									<Type>DINT</Type>
+								</Entry>
+							</Pdo>
+							<Pdo Name="AISupply Inputs" Index="#x1a01" Flags="#x0010" SyncMan="3">
+								<Entry Name="Underrange" Index="#x6010" Sub="#x01">
+									<Type>BIT</Type>
+								</Entry>
+								<Entry Name="Overrange" Index="#x6010" Sub="#x02">
+									<Type>BIT</Type>
+								</Entry>
+								<Entry>
+									<Type GUID="{18071995-0000-0000-0000-002000000004}">ARRAY [0..3] OF BIT</Type>
+								</Entry>
+								<Entry Name="Error" Index="#x6010" Sub="#x07">
+									<Type>BIT</Type>
+								</Entry>
+								<Entry>
+									<Type GUID="{18071995-0000-0000-0000-002000000007}">ARRAY [0..6] OF BIT</Type>
+								</Entry>
+								<Entry Name="TxPDO State" Index="#x1801" Sub="#x07">
+									<Type>BIT</Type>
+								</Entry>
+								<Entry Name="TxPDO Toggle" Index="#x1801" Sub="#x09">
+									<Type>BIT</Type>
+								</Entry>
+								<Entry Name="Value" Index="#x6010" Sub="#x11">
+									<Type>DINT</Type>
+								</Entry>
+							</Pdo>
+							<CoeProfile ProfileNo="19665801"/>
+							<CoeProfile ProfileNo="19665801"/>
+						</EtherCAT>
+					</Box>
+					<Box Id="10" BoxType="9099" BoxFlags="#x00000020">
+						<Name>Term 10 (EL3202)</Name>
+						<ImageId>1001</ImageId>
+						<EtherCAT SlaveType="2" PdiType="#x0005" MboxDataLinkLayer="true" StateMBoxPolling="true" CycleMBoxPollingTime="0" CoeType="3" FoeType="1" VendorId="#x00000002" ProductCode="#x0c823052" RevisionNo="#x00160000" InfoDataAddr="true" TimeoutMailbox2="2000" CheckRevisionNoType="3" PortPhys="51" MaxSlotCount="256" MaxSlotGroupCount="1" SlotPdoIncrement="1" SlotIndexIncrement="16" Type="EL3202 2Ch. Ana. Input PT100 (RTD)" Desc="EL3202" PortABoxInfo="#x01000009">
 							<SyncMan>001080002600010001000000800080008000001026010000</SyncMan>
 							<SyncMan>801080002200010002000000800080008000801022010000</SyncMan>
 							<SyncMan>001100000400000003000000000000000000001104000000</SyncMan>
@@ -1427,21 +1441,10 @@ Bit1: Value smaller than Limit2]]></Comment>
 							<CoeProfile ProfileNo="20976521"/>
 						</EtherCAT>
 					</Box>
-					<Box Id="10" BoxType="9099">
-						<Name>Term 10 (EL9510)</Name>
-						<ImageId>1005</ImageId>
-						<EtherCAT SlaveType="1" PdiType="#x0104" CycleMBoxPollingTime="0" VendorId="#x00000002" ProductCode="#x25263052" RevisionNo="#x00110000" RepeatSupport="true" PortPhys="51" MaxSlotCount="256" MaxSlotGroupCount="1" SlotPdoIncrement="1" SlotIndexIncrement="16" Type="EL9510 Power supply terminal 10V" Desc="EL9510" PortABoxInfo="#x01000009">
-							<SyncMan>001001000000010004000000000000000000001000000000</SyncMan>
-							<Fmmu>0000000000000000001000010100000002000000000000000000000000000000</Fmmu>
-							<Pdo Name="Status Uo" Index="#x1a00" Flags="#x0011" SyncMan="0">
-								<Entry Name="Power OK" Index="#x6000" Sub="#x01">
-									<Type>BIT</Type>
-								</Entry>
-								<Entry Name="Overload" Index="#x6000" Sub="#x02">
-									<Type>BIT</Type>
-								</Entry>
-							</Pdo>
-						</EtherCAT>
+					<Box Id="25" BoxType="9099">
+						<Name>Term 25 (EL9011)</Name>
+						<ImageId>1002</ImageId>
+						<EtherCAT CycleMBoxPollingTime="0" VendorId="#x00000002" ProductCode="#x23333050" InfoDataState="false" MaxSlotCount="256" MaxSlotGroupCount="1" SlotPdoIncrement="1" SlotIndexIncrement="16" Type="EL9011 End Terminal" Desc="EL9011" PortABoxInfo="#x0100000a"/>
 					</Box>
 				</Box>
 				<Box Id="12" BoxType="9099" BoxFlags="#x00000020">
@@ -1451,7 +1454,7 @@ Bit1: Value smaller than Limit2]]></Comment>
 						<SyncMan>00188c0026000100010000008c008c008c00001826010000</SyncMan>
 						<SyncMan>00198c0022000100020000008c008c008c00001922010000</SyncMan>
 						<SyncMan>001108006400010003000000000020002000001164010000</SyncMan>
-						<SyncMan>801114002000010004000000000020002000801120010000</SyncMan>
+						<SyncMan>801120002000010004000000000020002000801120010000</SyncMan>
 						<Fmmu>0000000000000000001100020100000001000000000000000000000000000000</Fmmu>
 						<Fmmu>0000000000000000801100010100000002000000000000000000000000000000</Fmmu>
 						<SwitchPortData>00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000</SwitchPortData>
@@ -1558,11 +1561,7 @@ Bit1: Value smaller than Limit2]]></Comment>
 								<Type GUID="{18071995-0000-0000-0000-002000000008}">ARRAY [0..0] OF BYTE</Type>
 							</Entry>
 						</Pdo>
-						<Pdo Name="Inputs" Index="#x1a07" Flags="#x0000">
-							<Entry Name="Drive Temperature" Index="#x22a3" Sub="#x02">
-								<Type>INT</Type>
-							</Entry>
-						</Pdo>
+						<Pdo Name="Inputs" Index="#x1a07" Flags="#x0000"/>
 						<Pdo Name="Inputs" Index="#x1a08" Flags="#x0000"/>
 						<Pdo Name="Inputs" Index="#x1a0a" Flags="#x0010" SyncMan="3">
 							<Entry Name="Status word" Index="#x6041">
@@ -1602,12 +1601,12 @@ Bit1: Value smaller than Limit2]]></Comment>
 								<Type>DINT</Type>
 							</Entry>
 						</Pdo>
-						<Pdo Name="Inputs" Index="#x1a11" Flags="#x0010">
+						<Pdo Name="Inputs" Index="#x1a11" Flags="#x0010" SyncMan="3">
 							<Entry Name="Velocity actual value" Index="#x606c">
 								<Type>DINT</Type>
 							</Entry>
 						</Pdo>
-						<Pdo Name="Inputs" Index="#x1a12" Flags="#x0010">
+						<Pdo Name="Inputs" Index="#x1a12" Flags="#x0010" SyncMan="3">
 							<Entry Name="Torque demand value" Index="#x6074">
 								<Type>INT</Type>
 							</Entry>
@@ -1657,7 +1656,7 @@ Bit1: Value smaller than Limit2]]></Comment>
 								<Type>DINT</Type>
 							</Entry>
 						</Pdo>
-						<Pdo Name="Inputs" Index="#x1a1c" Flags="#x0010">
+						<Pdo Name="Inputs" Index="#x1a1c" Flags="#x0010" SyncMan="3">
 							<Entry Name="Digital Inputs" Index="#x60fd">
 								<Type>DINT</Type>
 							</Entry>
@@ -1702,7 +1701,7 @@ Bit1: Value smaller than Limit2]]></Comment>
 								<Type>UDINT</Type>
 							</Entry>
 						</Pdo>
-						<Pdo Name="Inputs" Index="#x1a26" Flags="#x0010">
+						<Pdo Name="Inputs" Index="#x1a26" Flags="#x0010" SyncMan="3">
 							<Entry Name="Error Code" Index="#x603f">
 								<Type>UINT</Type>
 							</Entry>
