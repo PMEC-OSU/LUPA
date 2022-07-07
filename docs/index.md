@@ -12,15 +12,3 @@ The Lab Upgrade Point Absorber (LUPA) is a state of the art open-sourced laborat
 [FAQs](./faqs.md){: .btn }
 [Documentation](./documentation/index.md){: .btn }
 </span>
-
-<!-- <span class="fs-3">
-
-</span> -->
-
-<!-- <button type="button" name="button" color="red" class="btn">Button element</button> -->
-
-<!-- Publications
-- More publications will be added here
-
-Presentations
-- **[WPTO R&D Deep Dive on march 22nd, 2022](https://youtu.be/gCcAu7H9lQI)** -->

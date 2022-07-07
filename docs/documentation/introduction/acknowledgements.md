@@ -7,6 +7,6 @@ nav_order: 2
 ---
 ## Acknowledgments
 
-External Contributors
+External Contributors  
 •	Ryan Coe (Sandia)
 •	Giorgio Bacelli (Sandia)
