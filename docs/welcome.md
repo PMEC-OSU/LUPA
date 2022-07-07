@@ -1,3 +1,8 @@
+---
+layout: default
+title: Welcome
+nav_order: 1
+---
 <img width="1000vw" alt="image" src="https://user-images.githubusercontent.com/75865953/166865752-c4924ca0-913b-4bd9-9383-e20225a07192.png">   
 
 # Welcome
