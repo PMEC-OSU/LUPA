@@ -10,3 +10,5 @@ These should all be:
 I believe I caught all of these, but if something isn't working correctly this could be the reason.
 
 https://just-the-docs.github.io/just-the-docs/
+
+https://github.blog/2022-05-19-math-support-in-markdown/
