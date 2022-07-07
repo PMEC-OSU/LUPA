@@ -4,13 +4,13 @@
 The Lab Upgrade Point Absorber (LUPA) is a state of the art open-sourced laboratory-scaled wave energy converter (WEC). The objective of the LUPA project is to develop a completely open source, fully validated, numerical and physical WEC model. 
 
 <span class="fs-8">
-[What's New?](http://example.com/){: .btn }
-[Helpful Links](http://example.com/){: .btn }
+[What's New?](./whats-new.md){: .btn }
+[Helpful Links](./helpful_links/index.md){: .btn }
 </span>
 
 <span class="fs-8">
-[          ](http://example.com/){: .btn }
-[Documentation](http://example.com/){: .btn }
+[FAQs](./faqs.md){: .btn }
+[Documentation](./documentation/index.md){: .btn }
 </span>
 
 <!-- <span class="fs-3">
