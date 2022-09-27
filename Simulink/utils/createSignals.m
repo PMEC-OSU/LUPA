@@ -10,8 +10,8 @@ rLen = 600;  %% length of created signal (s) for multisine
 sig = whiteNoiseGen(fs,fmin,fmax,rLen);
 
 %% ------------Chirp-----------------------------------
-f0 = fmin;
-f1 = 1;
+f0 = 1/1;
+f1 = 1/20;
 fs = 1000;
 initLength = 10;
 numseconds = 300;
@@ -68,7 +68,7 @@ commandSigs = commandSigs.addElement(sig.WN1,'WN1');
 commandSigs = commandSigs.addElement(sig.WN2,'WN2');
 commandSigs = commandSigs.addElement(sig.WN3,'WN3');
 commandSigs = commandSigs.addElement(sig.Chirp,'Chirp');
-save('C:\Software\LUPA\Simulink\utils\commandSignals','commandSigs')
+save('C:\LUPA\Simulink\utils\commandSignals','commandSigs')
 
 figure
 subplot(311)

@@ -11,8 +11,8 @@ dateDir = datestr(now,'yyyymmdd');
 timeDir = datestr(now,'HHMMss');
 sharename = 'Z:';
 year = datestr(now,'yyyy');
-projname = app.ProjectEditField.Value;
-% projname = 'LUPA';
+% projname = app.ProjectEditField.Value;
+projname = 'LUPA';
 
 matFileName = 'simdata.mat';
 
@@ -76,27 +76,28 @@ output.Timestamp.UTCtime = datetime(output.Timestamp.timestamp,'ConvertFrom','ep
 temp = output.Timestamp.UTCtime;
 temp.TimeZone = 'America/Los_Angeles';
 output.Timestamp.LocalTime = temp;
-output.Reference.Amplitude = app.AmplitudeSpinner.Value;
-output.Reference.Signal = app.SignalDropDown.Value;
-output.Reference.CurrentLimit = app.CurrentLimitSpinner.Value;
-output.Reference.SinePeriod = app.SinePeriodEditField.Value;
-output.Feedback.Source = app.SourceDropDown.Value;
-output.Feedback.Damping = app.DampingSpinner.Value;
-output.Feedback.Stiffness = app.StiffnessSpinner.Value;
-output.Feedback.CurrentLimit = app.CurrentLimitSpinner.Value;
-output.TrialData.Project = app.ProjectEditField.Value;
-output.TrialData.Experiment = app.ExperimentEditField.Value;
-output.TrialData.TrialNumber = app.TrialSpinner.Value;
-output.TrialData.Ts = app.TsEditField.Value;
-output.TrialData.sprocketTeeth = app.SprocketEditField.Value;
-output.TrialData.Mode = app.ModeEditField.Value;
+% output.Reference.Amplitude = app.AmplitudeSpinner.Value;
+% output.Reference.Signal = app.SignalDropDown.Value;
+% output.Reference.CurrentLimit = app.CurrentLimitSpinner.Value;
+% output.Reference.SinePeriod = app.SinePeriodEditField.Value;
+% output.Feedback.Source = app.SourceDropDown.Value;
+% output.Feedback.Damping = app.DampingSpinner.Value;
+% output.Feedback.Stiffness = app.StiffnessSpinner.Value;
+% output.Feedback.CurrentLimit = app.CurrentLimitSpinner.Value;
+% output.TrialData.Project = app.ProjectEditField.Value;
+% output.TrialData.Experiment = app.ExperimentEditField.Value;
+% output.TrialData.TrialNumber = app.TrialSpinner.Value;
+% output.TrialData.Ts = app.TsEditField.Value;
+% output.TrialData.sprocketTeeth = app.SprocketEditField.Value;
+% output.TrialData.Mode = app.ModeEditField.Value;
 
-% projectName = 'LUPA';
-% expname = 'Sine2';
-% trialnumber = 7;
-projectName = app.ProjectEditField.Value;
-expname = app.ExperimentEditField.Value;
-trialnumber = app.TrialSpinner.Value;
+projectName = 'LUPA';
+expname = '20220926_ForcedOscillation';
+trialnumber = 16;
+
+% projectName = app.ProjectEditField.Value;
+% expname = app.ExperimentEditField.Value;
+% trialnumber = app.TrialSpinner.Value;
 
 trialname = ['\Trial',num2str(trialnumber,'%02d')];
 
@@ -113,7 +114,7 @@ save([datadirname,'\',fname,'.mat'],'output');
 
 disp(['Data saved to ',datadirname,'\',fname,'.mat'])
 
-if strcmp(app.HWRLShareButton.Text,'Push to Share')
+% if strcmp(app.HWRLShareButton.Text,'Push to Share')
     % push data to share
     % build the directory structure. assumes HWRL project share conventions
     if ~exist(sharename,'dir') % give up if no HWRL share
@@ -139,11 +140,11 @@ if strcmp(app.HWRLShareButton.Text,'Push to Share')
         disp(['Data saved to ',trialdirname,'\',fname,'.mat'])
     end
 
-else
-    % don't push data to share
-    disp('Data not saved to HWRL share')
-end
+% else
+%     % don't push data to share
+%     disp('Data not saved to HWRL share')
+% end
 
 addpath(genpath(dataexpname))
-load([fname,'.mat'])
+% load([fname,'.mat'])
 
