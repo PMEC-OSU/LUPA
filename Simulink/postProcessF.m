@@ -92,8 +92,8 @@ output.Timestamp.LocalTime = temp;
 % output.TrialData.Mode = app.ModeEditField.Value;
 
 projectName = 'LUPA';
-expname = '20220926_ForcedOscillation';
-trialnumber = 16;
+expname = '20220928_Stomp';
+trialnumber = 2;
 
 % projectName = app.ProjectEditField.Value;
 % expname = app.ExperimentEditField.Value;

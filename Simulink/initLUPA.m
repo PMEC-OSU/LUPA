@@ -9,10 +9,21 @@ Ts = 0.001;
 CL = 13;  % Current limit parameter (Set in EASII)
 Kt = 7.86;  % Determined experimentally  % Kt = 8.51;  % From datasheet
 sprocketTeeth = 50;  % small:32 medium:50 large:80
-sprocketPitchRadius = 0.0636651; 
+
+%% change things above this line for each run
+
+if sprocketTeeth == 32
+    sprocketPitchRadius = 0.0407416;
+elseif sprocketTeeth == 50
+    sprocketPitchRadius = 0.0636651;
+elseif sprocketTeeth == 80
+    sprocketPitchRadius = 0.101854;
+end
 
 Decimation = 1;
 Decimation100Hz = 0.01./Ts;
+
+bandpass_dt = c2d(tf([1 0],[1 2*pi/100])*tf(2*pi*200,[1 2*pi*200]),Ts,'impulse');
 
 appName = 'LUPAapp.mlapp';
 buildDir = fullfile('C:','SimulinkBuild');
