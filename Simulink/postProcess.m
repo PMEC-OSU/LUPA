@@ -71,7 +71,7 @@ for i = 1:numdatasets
     end
 end
 %% === convert timestamp to datetime format================================
-output.time = data1.data{8}.Values.timestamp.Time;
+output.time = data1.data{9}.Values.timestamp.Time;
 output.Timestamp.UTCtime = datetime(output.Timestamp.timestamp,'ConvertFrom','epochtime','TicksPerSecond',1e9,'Format','eee yyyy/MM/dd HH:mm:ss.SSSSSSSSS','TimeZone','UTC');
 temp = output.Timestamp.UTCtime;
 temp.TimeZone = 'America/Los_Angeles';

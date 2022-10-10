@@ -14,7 +14,7 @@ sprocketTeeth = 50;  % small:32 medium:50 large:80
 
 if sprocketTeeth == 32
     sprocketPitchRadius = 0.0407416;
-elseif sprocketTeeth == 50
+elseif sprocketTeeth == 50 
     sprocketPitchRadius = 0.0636651;
 elseif sprocketTeeth == 80
     sprocketPitchRadius = 0.101854;
@@ -45,8 +45,8 @@ waveform = commandSigs;
 set_param(mdlName,'ExternalInput','waveform');
 
 %% === load excel gains =======================================
-gainTstep = 30; % time between change in gains (s)
-ExcelGains = readtable('ExcelGains/dampingOnly_20220225.xlsx');  % read from excel spreadsheet gain values
+gainTstep = 2.5*20; % time between change in gains (s)
+ExcelGains = readtable('ExcelGains/dampingOnly_20221005.xlsx');  % read from excel spreadsheet gain values
 ExcelGains = table2array(ExcelGains);
 %% === Load and compile the model =========================================
 disp('*** Load and Build Simulink Model ***')
