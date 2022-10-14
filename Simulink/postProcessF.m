@@ -71,29 +71,29 @@ for i = 1:numdatasets
     end
 end
 %% === convert timestamp to datetime format================================
-output.time = data1.data{9}.Values.timestamp.Time;
-output.Timestamp.UTCtime = datetime(output.Timestamp.timestamp,'ConvertFrom','epochtime','TicksPerSecond',1e9,'Format','eee yyyy/MM/dd HH:mm:ss.SSSSSSSSS','TimeZone','UTC');
-temp = output.Timestamp.UTCtime;
+output.time = data1.data{end}.Values.timestamp.Time;
+output.timestamp.UTCtime = datetime(output.timestamp.timestamp,'ConvertFrom','epochtime','TicksPerSecond',1e9,'Format','eee yyyy/MM/dd HH:mm:ss.SSSSSSSSS','TimeZone','UTC');
+temp = output.timestamp.UTCtime;
 temp.TimeZone = 'America/Los_Angeles';
-output.Timestamp.LocalTime = temp;
-% output.Reference.Amplitude = app.AmplitudeSpinner.Value;
-% output.Reference.Signal = app.SignalDropDown.Value;
-% output.Reference.CurrentLimit = app.CurrentLimitSpinner.Value;
-% output.Reference.SinePeriod = app.SinePeriodEditField.Value;
-% output.Feedback.Source = app.SourceDropDown.Value;
-% output.Feedback.Damping = app.DampingSpinner.Value;
-% output.Feedback.Stiffness = app.StiffnessSpinner.Value;
-% output.Feedback.CurrentLimit = app.CurrentLimitSpinner.Value;
-% output.TrialData.Project = app.ProjectEditField.Value;
-% output.TrialData.Experiment = app.ExperimentEditField.Value;
-% output.TrialData.TrialNumber = app.TrialSpinner.Value;
-% output.TrialData.Ts = app.TsEditField.Value;
-% output.TrialData.sprocketTeeth = app.SprocketEditField.Value;
-% output.TrialData.Mode = app.ModeEditField.Value;
+output.timestamp.LocalTime = temp;
+% output.reference.Amplitude = app.AmplitudeSpinner.Value;
+% output.reference.Signal = app.SignalDropDown.Value;
+% output.reference.CurrentLimit = app.CurrentLimitSpinner.Value;
+% output.reference.SinePeriod = app.SinePeriodEditField.Value;
+% output.control.Source = app.SourceDropDown.Value;
+% output.feedback.Damping = app.DampingSpinner.Value;
+% output.feedback.Stiffness = app.StiffnessSpinner.Value;
+% output.control.CurrentLimit = app.CurrentLimitSpinner.Value;
+% output.trialData.Project = app.ProjectEditField.Value;
+% output.trialData.Experiment = app.ExperimentEditField.Value;
+% output.trialData.TrialNumber = app.TrialSpinner.Value;
+% output.trialData.Ts = app.TsEditField.Value;
+% output.trialData.sprocketTeeth = app.SprocketEditField.Value;
+% output.trialData.Mode = app.ModeEditField.Value;
 
 projectName = 'LUPA';
-expname = '20221010_Regular1Body1DOF';
-trialnumber = 3;
+expname = '20221013_Regular1Body1DOF';
+trialnumber = 8;
 
 % projectName = app.ProjectEditField.Value;
 % expname = app.ExperimentEditField.Value;
@@ -107,7 +107,7 @@ if ~exist(datadirname,'dir')
     mkdir(datadirname);
 end
 formatOut = 'yyyymmdd_HHMMSS';
-fname = ['d',datestr(output.Timestamp.UTCtime(1),formatOut)];
+fname = ['d',datestr(output.timestamp.UTCtime(1),formatOut)];
 
 
 save([datadirname,'\',fname,'.mat'],'output');

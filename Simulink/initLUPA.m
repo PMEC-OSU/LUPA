@@ -46,7 +46,7 @@ set_param(mdlName,'ExternalInput','waveform');
 
 %% === load excel gains =======================================
 gainTstep = 2.5*20; % time between change in gains (s)
-ExcelGains = readtable('ExcelGains/dampingOnly_20221005.xlsx');  % read from excel spreadsheet gain values
+ExcelGains = readtable('ExcelGains/dampANDstif_20221014.xlsx');  % read from excel spreadsheet gain values
 ExcelGains = table2array(ExcelGains);
 %% === Load and compile the model =========================================
 disp('*** Load and Build Simulink Model ***')
