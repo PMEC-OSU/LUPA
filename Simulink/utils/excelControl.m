@@ -8,7 +8,7 @@ rng(3);             % set random generator seed
 lhs = lhsdesign(numValues,numParameters);   % Latin hypercube sample 
 %       kp, kd
 PIlim = [-4000 0; ...       % lower limit of kp, kd
-         7000 7000];          % upper limit of kp, kd
+         7000 6500];          % upper limit of kp, kd
 
 % scale lhs to be in the desired range of values
 rr = PIlim(2,:)-PIlim(1,:); 
