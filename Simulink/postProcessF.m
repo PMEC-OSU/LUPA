@@ -92,8 +92,9 @@ output.timestamp.LocalTime = temp;
 % output.trialData.Mode = app.ModeEditField.Value;
 
 projectName = 'LUPA';
-expname = '20221013_Regular1Body1DOF';
-trialnumber = 8;
+expname = '20221128_Regular2Body6DOF';
+trialnumber = 1;
+Mode = 'Six DOF'; % 'One Body Heave Only' 'Two Body Heave Only' 'Six DOF'
 
 % projectName = app.ProjectEditField.Value;
 % expname = app.ExperimentEditField.Value;
