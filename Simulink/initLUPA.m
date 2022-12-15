@@ -3,7 +3,7 @@ addpath(genpath('utils/'))
 %% === Assign Constants ===================================================
 disp('*** Setting model parameters ***')
 
-Mode = 'Six DOF'; % 'One Body Heave Only' 'Two Body Heave Only' 'Six DOF'
+Mode = 'One Body Heave Only'; % 'One Body Heave Only' 'Two Body Heave Only' 'Six DOF'
 period = 1; % period for sine wave
 Ts = 0.001;
 CL = 13;  % Current limit parameter (Set in EASII)
@@ -45,7 +45,7 @@ waveform = commandSigs;
 set_param(mdlName,'ExternalInput','waveform');
 
 %% === load excel gains =======================================
-gainTstep = 3*20; % time between change in gains (s) (Represents the wave period times 20 waves)
+gainTstep = 1.875*20; % time between change in gains (s) (Represents the wave period times 20 waves)
 ExcelGains = readtable('ExcelGains/dampingOnly_20221128.xlsx');  % read from excel spreadsheet gain values
 ExcelGains = table2array(ExcelGains);
 %% === Load and compile the model =========================================
