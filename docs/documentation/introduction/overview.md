@@ -21,4 +21,5 @@ One major goal for this infrastructure upgrade was to design and build a tank sc
 
 The LUPA is a two-body point absorber wave energy converter with a buoyancy driven float and a spar that acts as a reactionary body. The SolidWorks design rendering and physical device are shown in Figure 1 with labels noting the major components. The motor/generator is mounted on the float along with the sensors and power electronics. The sensors onboard LUPA and deployed in the tank are shown in Table 2.
 
+<img width="1000vw" alt="image" src="[docs/assets/Figure1.png.png](https://github.com/PMEC-OSU/LUPA/blob/d86a3f20ec1dc788aa4b8bdedfd1f1720584d81e/docs/assets/Figure1.png)">  
 
