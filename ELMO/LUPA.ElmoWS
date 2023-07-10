@@ -1,0 +1,75 @@
+﻿<WorkspaceModel>
+  <Workspace>
+    <Targets>
+      <item>
+        <item_type>ElmoMotionControl.Target.Model.TargetDevices.SingleAxisTargetModel, ElmoMotionControl.Target.Model</item_type>
+        <SingleAxisTargetModel xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+          Name="Drive01"
+          TargetType="DriveNG"
+          Version="Oboe 01.01.16.00 08Mar2020B01G"
+          ID="1"
+          SerialNumber="20462081"
+          DeviceType="Unknown"
+          PersonalityDeviceType="DriveGold"
+          Selected="false"
+          Active="false"
+          ParentGMASName=""
+          CommunicationInfoString="Communication Type:USBSinglePeer;Port:COM6;"
+          ConnectWithGateway="false"
+          DisconnectWithGateway="false"
+          WS30="54542363"
+          HardwareName="Oboe"
+          MC="13"
+          BV="400">
+          <Parameters
+            AnInputCount="0"
+            AnOutputCount="0"
+            BaudRateCAN="Undefined"
+            CANCardBaudRate="KbitPerSecond500"
+            BGCycleTime="0"
+            CAN="false"
+            CycleTime="0"
+            CycleTimeDivider="Divider0"
+            CycleTimeModulo="0"
+            DiInputCount="0"
+            DiOutputCount="0"
+            DoutSupport="false"
+            Functionality="Motion"
+            HbtSupport="true"
+            IOModuleType="0"
+            MBCycleTime="0"
+            Nnc="Nc"
+            ReceiveFBstatus="false"
+            ResID="12"
+            SyncDelayTime="0" />
+          <NodeOrder>0</NodeOrder>
+          <_updateFromParamsContainer>false</_updateFromParamsContainer>
+          <WS8>3</WS8>
+          <MotionParameters>
+            <AbsolutePosition1>0</AbsolutePosition1>
+            <AbsolutePosition2>0</AbsolutePosition2>
+            <AbsoluteIsRepetitive>false</AbsoluteIsRepetitive>
+            <RelativePosition>0</RelativePosition>
+            <RelativeIsRepetitive>false</RelativeIsRepetitive>
+            <JoggingRunHeld>true</JoggingRunHeld>
+            <CurrentTorqueCommand1>0</CurrentTorqueCommand1>
+            <CurrentTorqueCommand2>0</CurrentTorqueCommand2>
+            <CurrentTorqueCommand3>0</CurrentTorqueCommand3>
+            <CurrentTorqueCommand4>0</CurrentTorqueCommand4>
+            <CurrentTorqueCommand5>0</CurrentTorqueCommand5>
+            <SineStepRunHeld>false</SineStepRunHeld>
+            <IsStep>false</IsStep>
+            <StepperCurOfCL>100</StepperCurOfCL>
+            <SocketProfilerAbsolutePosition1>0</SocketProfilerAbsolutePosition1>
+            <SocketProfilerAbsolutePosition2>0</SocketProfilerAbsolutePosition2>
+            <SocketProfilerRelativePosition>0</SocketProfilerRelativePosition>
+            <SocketProfilerJoggingRunHeld>true</SocketProfilerJoggingRunHeld>
+          </MotionParameters>
+        </SingleAxisTargetModel>
+      </item>
+    </Targets>
+  </Workspace>
+  <EoEIPOfTargetPLC></EoEIPOfTargetPLC>
+  <EoEIPOfEtherCAT></EoEIPOfEtherCAT>
+  <EoESubnetMaskEtherCAT></EoESubnetMaskEtherCAT>
+</WorkspaceModel>

@@ -68,7 +68,7 @@ commandSigs = commandSigs.addElement(sig.WN1,'WN1');
 commandSigs = commandSigs.addElement(sig.WN2,'WN2');
 commandSigs = commandSigs.addElement(sig.WN3,'WN3');
 commandSigs = commandSigs.addElement(sig.Chirp,'Chirp');
-save('C:\LUPA\Simulink\utils\commandSignals','commandSigs')
+save('C:\Software\LUPA\Simulink\utils\commandSignals','commandSigs')
 
 figure
 subplot(311)

@@ -3,8 +3,8 @@
 % clear; clc; close all
 
 %% === parameters =========================================================
-tgName = 'performance1';
-buildDir = fullfile('C:','SimulinkBuild');
+tgName = 'performance3';
+buildDir = fullfile('C:','simulink_build');
 mdlName = 'LUPA';
 
 dateDir = datestr(now,'yyyymmdd');
@@ -91,10 +91,10 @@ output.timestamp.LocalTime = temp;
 % output.trialData.sprocketTeeth = app.SprocketEditField.Value;
 % output.trialData.Mode = app.ModeEditField.Value;
 
-projectName = 'LUPA';
-expname = '20221209_Regular2Body1DOF';
-trialnumber = 4;
-Mode = 'Two Body Heave Only'; % 'One Body Heave Only' 'Two Body Heave Only' 'Six DOF'
+projectName = 'DryLUPA2';
+expname = 'EncoderDrift';
+trialnumber = 1;
+Mode = 'Dry'; % 'One Body Heave Only' 'Two Body Heave Only' 'Six DOF'
 
 % projectName = app.ProjectEditField.Value;
 % expname = app.ExperimentEditField.Value;

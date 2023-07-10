@@ -3,14 +3,20 @@ addpath(genpath('utils/'))
 %% === Assign Constants ===================================================
 disp('*** Setting model parameters ***')
 
-Mode = 'One Body Heave Only'; % 'One Body Heave Only' 'Two Body Heave Only' 'Six DOF'
+Mode = 'Dry'; % 'One Body Heave Only' 'Two Body Heave Only' 'Six DOF'
 period = 1; % period for sine wave
-Ts = 0.001;
+Ts = 0.001; % sampling period
 CL = 13;  % Current limit parameter (Set in EASII)
 Kt = 7.86;  % Determined experimentally  % Kt = 8.51;  % From datasheet
 sprocketTeeth = 50;  % small:32 medium:50 large:80
+tgName = 'performance3';
+excelFile = 'ExcelGains/dampingOnly_20221128.xlsx';
 
 %% change things above this line for each run
+
+appName = 'LUPAapp.mlapp';
+buildDir = fullfile('C:','simulink_build');
+mdlName = 'LUPA';
 
 if sprocketTeeth == 32
     sprocketPitchRadius = 0.0407416;
@@ -24,11 +30,6 @@ Decimation = 1;
 Decimation100Hz = 0.01./Ts;
 
 bandpass_dt = c2d(tf([1 0],[1 2*pi/100])*tf(2*pi*200,[1 2*pi*200]),Ts,'impulse');
-
-appName = 'LUPAapp.mlapp';
-buildDir = fullfile('C:','SimulinkBuild');
-mdlName = 'LUPA';
-tgName = 'performance1';
 
 mdlInfo = Simulink.MDLInfo(mdlName);
 mdlVersion = mdlInfo.ModelVersion;
@@ -46,7 +47,7 @@ set_param(mdlName,'ExternalInput','waveform');
 
 %% === load excel gains =======================================
 gainTstep = 1.875*20; % time between change in gains (s) (Represents the wave period times 20 waves)
-ExcelGains = readtable('ExcelGains/dampingOnly_20221128.xlsx');  % read from excel spreadsheet gain values
+ExcelGains = readtable(excelFile);  % read from excel spreadsheet gain values
 ExcelGains = table2array(ExcelGains);
 %% === Load and compile the model =========================================
 disp('*** Load and Build Simulink Model ***')

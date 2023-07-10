@@ -3,8 +3,8 @@
 % clear; clc; close all
 
 %% === parameters =========================================================
-tgName = 'performance1';
-buildDir = fullfile('C:','SimulinkBuild');
+tgName = 'performance3';
+buildDir = fullfile('C:','simulink_build');
 mdlName = 'LUPA';
 
 dateDir = datestr(now,'yyyymmdd');
@@ -12,49 +12,14 @@ timeDir = datestr(now,'HHMMss');
 sharename = 'Z:';
 year = datestr(now,'yyyy');
 projname = app.ProjectEditField.Value;
-% projname = 'LUPA';
 
 matFileName = 'simdata.mat';
 
-%% === test speedgoat connection ==========================================
-tg = slrealtime(tgName);
+tg = pull_data(tgName,dateDir,timeDir,mdlName,matFileName);
+output = structure_save_HWRL(matFileName,app,sharename,year,projname);
 
-try
-    tg.connect
-catch ME
-    fprintf('\n*** Target %s not connected. Stopping program.  Check connection.\n',tgName)
-    fprintf('\n*** Matlab error \n %s \n\n',ME.getReport)
-    return
-end
-
-if tg.isConnected
-    fprintf('\n*** Target %s is connected at IP address %s. \n\n',tg.TargetSettings.name,tg.TargetSettings.address)
-end
-ipAddress = tg.TargetSettings.address;
-
-%% === copy data from target ==============================================
-newFolder = fullfile('C:','data',dateDir,timeDir);
-mkdir(newFolder);
-
-system(['pscp -pw slrt -r slrt@', ipAddress, ':applications/',mdlName,' ',newFolder])
-
-%% === Import Logged Data into MATLAB and view in Simulation Data Inspector
-slrealtime.fileLogList('Directory',fullfile('C:/data',[dateDir,'/',timeDir]))
-slrealtime.fileLogImport(mdlName,'Directory',fullfile('C:/data',[dateDir,'/',timeDir]))
-% Simulink.sdi.view;
-
-%% === Export to .mat file from Data Inspector ============================
-runIDs = Simulink.sdi.getAllRunIDs;
-runID = runIDs(end);
-
-rtRun = Simulink.sdi.getRun(runID); % get data for last run
-
-SignalData = rtRun.export;
-
-Simulink.sdi.exportRun(runID,'to','file','filename',matFileName); % export to .mat
-
+function output = structure_save_HWRL(matFileName,app,sharename,year,projname)
 %% === convert to structure format ========================================
-
 data1 = load(matFileName);
 numdatasets = numElements(data1.data);
 
@@ -67,7 +32,7 @@ for i = 1:numdatasets
         blockName = extractAfter(blockNameTot,pat);
         signalName = char(signalNames(j));
         output.(blockName).(signalName) = data1.data{i}.Values.(signalName).Data;
-%         output.(blockName).time = data1.data{i}.Values.(signalName).Time;
+        %         output.(blockName).time = data1.data{i}.Values.(signalName).Time;
     end
 end
 %% === convert timestamp to datetime format================================
@@ -144,6 +109,46 @@ else
     disp('Data not saved to HWRL share')
 end
 
-addpath(genpath(dataexpname))
-load([fname,'.mat'])
+% addpath(genpath(dataexpname))
+% load([fname,'.mat'])
+end
 
+function tg = pull_data(tgName,dateDir,timeDir,mdlName,matFileName)
+
+%% === test speedgoat connection ==========================================
+tg = slrealtime(tgName);
+
+try
+    tg.connect
+catch ME
+    fprintf('\n*** Target %s not connected. Stopping program.  Check connection.\n',tgName)
+    fprintf('\n*** Matlab error \n %s \n\n',ME.getReport)
+    return
+end
+
+if tg.isConnected
+    fprintf('\n*** Target %s is connected at IP address %s. \n\n',tg.TargetSettings.name,tg.TargetSettings.address)
+end
+ipAddress = tg.TargetSettings.address;
+
+%% === copy data from target ==============================================
+newFolder = fullfile('C:','data',dateDir,timeDir);
+mkdir(newFolder);
+
+system(['pscp -pw slrt -r slrt@', ipAddress, ':applications/',mdlName,' ',newFolder])
+%% === Import Logged Data into MATLAB and view in Simulation Data Inspector
+slrealtime.fileLogList('Directory',fullfile('C:/data',[dateDir,'/',timeDir]))
+slrealtime.fileLogImport(mdlName,'Directory',fullfile('C:/data',[dateDir,'/',timeDir]))
+% Simulink.sdi.view;
+
+%% === Export to .mat file from Data Inspector ============================
+runIDs = Simulink.sdi.getAllRunIDs;
+runID = runIDs(end);
+
+rtRun = Simulink.sdi.getRun(runID); % get data for last run
+
+SignalData = rtRun.export;
+
+Simulink.sdi.exportRun(runID,'to','file','filename',matFileName); % export to .mat
+
+end

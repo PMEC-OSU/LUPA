@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<MotionModel xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <AbsolutePosition1>0</AbsolutePosition1>
+  <AbsolutePosition2>0</AbsolutePosition2>
+  <AbsoluteIsRepetitive>false</AbsoluteIsRepetitive>
+  <RelativePosition>0</RelativePosition>
+  <RelativeIsRepetitive>false</RelativeIsRepetitive>
+  <JoggingRunHeld>true</JoggingRunHeld>
+  <CurrentTorqueCommand1>0</CurrentTorqueCommand1>
+  <CurrentTorqueCommand2>0</CurrentTorqueCommand2>
+  <CurrentTorqueCommand3>0</CurrentTorqueCommand3>
+  <CurrentTorqueCommand4>0</CurrentTorqueCommand4>
+  <CurrentTorqueCommand5>0</CurrentTorqueCommand5>
+  <SineStepRunHeld>false</SineStepRunHeld>
+  <IsStep>false</IsStep>
+  <StepperCurOfCL>100</StepperCurOfCL>
+  <SocketProfilerAbsolutePosition1>0</SocketProfilerAbsolutePosition1>
+  <SocketProfilerAbsolutePosition2>0</SocketProfilerAbsolutePosition2>
+  <SocketProfilerRelativePosition>0</SocketProfilerRelativePosition>
+  <SocketProfilerJoggingRunHeld>true</SocketProfilerJoggingRunHeld>
+</MotionModel>
