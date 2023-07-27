@@ -11,14 +11,25 @@ dateDir = datestr(now,'yyyymmdd');
 timeDir = datestr(now,'HHMMss');
 sharename = 'Z:';
 year = datestr(now,'yyyy');
-projname = app.ProjectEditField.Value;
 
+if(~exist('app','var'))
+    %% if running this script manually change these values!!!!!
+    projectName = 'DryLUPA2';
+    expname = 'DAQTest';
+    trialNumber = 11;
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    app = [];
+else
+    projectName = [];
+    expname = [];
+    trialNumber = [];
+end
 matFileName = 'simdata.mat';
 
 tg = pull_data(tgName,dateDir,timeDir,mdlName,matFileName);
-output = structure_save_HWRL(matFileName,app,sharename,year,projname);
-
-function output = structure_save_HWRL(matFileName,app,sharename,year,projname)
+output = structure_save_HWRL(matFileName,app,sharename,year,projectName,expname,trialNumber);
+clear('app');
+function output = structure_save_HWRL(matFileName,app,sharename,year,projectName,expname,trialNumber)
 %% === convert to structure format ========================================
 data1 = load(matFileName);
 numdatasets = numElements(data1.data);
@@ -41,29 +52,33 @@ output.timestamp.UTCtime = datetime(output.timestamp.timestamp,'ConvertFrom','ep
 temp = output.timestamp.UTCtime;
 temp.TimeZone = 'America/Los_Angeles';
 output.timestamp.LocalTime = temp;
-output.reference.Amplitude = app.AmplitudeSpinner.Value;
-output.reference.Signal = app.SignalDropDown.Value;
-output.reference.CurrentLimit = app.CurrentLimitSpinner.Value;
-output.reference.SinePeriod = app.SinePeriodEditField.Value;
-output.control.Source = app.SourceDropDown.Value;
-% output.feedback.Damping = app.DampingSpinner.Value;
-% output.feedback.Stiffness = app.StiffnessSpinner.Value;
-output.control.CurrentLimit = app.CurrentLimitSpinner.Value;
-output.trialData.Project = app.ProjectEditField.Value;
-output.trialData.Experiment = app.ExperimentEditField.Value;
-output.trialData.TrialNumber = app.TrialSpinner.Value;
-output.trialData.Ts = app.TsEditField.Value;
-output.trialData.sprocketTeeth = app.SprocketEditField.Value;
-output.trialData.Mode = app.ModeEditField.Value;
+if(~isempty(app))
+    output.reference.Amplitude = app.AmplitudeSpinner.Value;
+    output.reference.Signal = app.SignalDropDown.Value;
+    output.reference.CurrentLimit = app.CurrentLimitSpinner.Value;
+    output.reference.SinePeriod = app.SinePeriodEditField.Value;
+    output.control.Source = app.SourceDropDown.Value;
+    output.feedback.Damping = app.DampingSpinner.Value;
+    output.feedback.Stiffness = app.StiffnessSpinner.Value;
+    output.control.CurrentLimit = app.CurrentLimitSpinner.Value;
+    output.trialData.Project = app.ProjectEditField.Value;
+    output.trialData.Experiment = app.ExperimentEditField.Value;
+    output.trialData.TrialNumber = app.TrialSpinner.Value;
+    output.trialData.Ts = app.TsEditField.Value;
+    output.trialData.sprocketTeeth = app.SprocketEditField.Value;
+    output.trialData.Mode = app.ModeEditField.Value;
 
-% projectName = 'LUPA';
-% expname = 'Sine2';
-% trialnumber = 7;
-projectName = app.ProjectEditField.Value;
-expname = app.ExperimentEditField.Value;
-trialnumber = app.TrialSpinner.Value;
+    projectName = app.ProjectEditField.Value;
+    expname = app.ExperimentEditField.Value;
+    trialNumber = app.TrialSpinner.Value;
 
-trialname = ['\Trial',num2str(trialnumber,'%02d')];
+else
+    output.trialData.Project = projectName;
+    output.trialData.Experiment = expname;
+    output.trialData.TrialNumber = trialNumber;
+end
+
+trialname = ['\Trial',num2str(trialNumber,'%02d')];
 
 dataexpname = ['C:\data\',projectName,'\',expname];
 datadirname = fullfile(dataexpname,trialname);
@@ -74,41 +89,42 @@ formatOut = 'yyyymmdd_HHMMSS';
 fname = ['d',datestr(output.timestamp.UTCtime(1),formatOut)];
 
 
-save([datadirname,'\',fname,'.mat'],'output');
+save([datadirname,'\',fname,'.mat'],'output','-v7.3');
 
 disp(['Data saved to ',datadirname,'\',fname,'.mat'])
 
-if strcmp(app.HWRLShareButton.Text,'Push to Share')
-    % push data to share
-    % build the directory structure. assumes HWRL project share conventions
-    if ~exist(sharename,'dir') % give up if no HWRL share
-        disp([projname,': cannot find ',sharename])
-    elseif ~exist(fullfile(sharename,'projects'),'dir') % give up if no projects folder
-        disp([projname,': cannot find ',fullfile(sharename,'projects')])
-    elseif ~exist(fullfile(sharename,'projects',year),'dir') % give up if no projects/year folder
-        disp([projname,': cannot find ',fullfile(sharename,'projects',year)])
-    elseif ~exist(fullfile(sharename,'projects',year,projname),'dir') % give up if no project folder
-        disp([projname,': cannot find ',fullfile(sharename,'projects',year,projname)])
-    elseif ~exist(fullfile(sharename,'projects',year,projname,'data','raw'),'dir') % give up if no raw folder
-        disp([projname,': cannot find ',fullfile(projname,'data','raw')])
-    else % we found the raw folder and can proceed
-        expdirname = fullfile(sharename,'projects',year,projname,'data','onboard',expname);
-        if ~exist(expdirname,'dir') % create a experiment data directory if it doesn't exist yet
-            mkdir(expdirname);
+if(~isempty(app))
+    if strcmp(app.HWRLShareButton.Text,'Push to Share')
+        % push data to share
+        % build the directory structure. assumes HWRL project share conventions
+        if ~exist(sharename,'dir') % give up if no HWRL share
+            disp([projectName,': cannot find ',sharename])
+        elseif ~exist(fullfile(sharename,'projects'),'dir') % give up if no projects folder
+            disp([projectName,': cannot find ',fullfile(sharename,'projects')])
+        elseif ~exist(fullfile(sharename,'projects',year),'dir') % give up if no projects/year folder
+            disp([projectName,': cannot find ',fullfile(sharename,'projects',year)])
+        elseif ~exist(fullfile(sharename,'projects',year,projectName),'dir') % give up if no project folder
+            disp([projectName,': cannot find ',fullfile(sharename,'projects',year,projectName)])
+        elseif ~exist(fullfile(sharename,'projects',year,projectName,'data','raw'),'dir') % give up if no raw folder
+            disp([projectName,': cannot find ',fullfile(projectName,'data','raw')])
+        else % we found the raw folder and can proceed
+            expdirname = fullfile(sharename,'projects',year,projectName,'data','onboard',expname);
+            if ~exist(expdirname,'dir') % create a experiment data directory if it doesn't exist yet
+                mkdir(expdirname);
+            end
+            trialdirname = fullfile(expdirname,trialname);
+            if ~exist(trialdirname,'dir') % create a trial data directory if it doesn't exist yet
+                mkdir(trialdirname);
+            end
+            copyfile([datadirname,'\',fname,'.mat'],trialdirname)
+            disp(['Data saved to ',trialdirname,'\',fname,'.mat'])
         end
-        trialdirname = fullfile(expdirname,trialname);
-        if ~exist(trialdirname,'dir') % create a trial data directory if it doesn't exist yet
-            mkdir(trialdirname);
-        end
-        copyfile([datadirname,'\',fname,'.mat'],trialdirname)
-        disp(['Data saved to ',trialdirname,'\',fname,'.mat'])
+
+    else
+        % don't push data to share
+        disp('Data not saved to HWRL share')
     end
-
-else
-    % don't push data to share
-    disp('Data not saved to HWRL share')
 end
-
 % addpath(genpath(dataexpname))
 % load([fname,'.mat'])
 end
