@@ -5,7 +5,7 @@ parent: Helpful Links
 nav_order: 2
 ---
 
-## Publications
+## Papers
 Bosma, B., Beringer, C., Leary, M., & Robertson, B. (2021). Design and modeling of a laboratory scale WEC point absorber. 14th European Wave and Tidal Energy Conference, 1–9.
 
 ## Data
