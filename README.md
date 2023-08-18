@@ -1,6 +1,5 @@
 # LUPA
 Laboratory Upgrade Point Absorber small scale research Wave Energy Converter
 
-https://just-the-docs.github.io/just-the-docs/
+CAD files here: https://zenodo.org/record/8156350
 
-https://github.blog/2022-05-19-math-support-in-markdown/
