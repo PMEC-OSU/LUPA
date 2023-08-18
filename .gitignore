@@ -7,3 +7,5 @@ Simulink/*.mldatx
 Simulink/*.mat
 Simulink/utils/*.mat
 Simulink/utils/*.asv
+TwinCAT/LUPAandMiniDAQ/_Boot
+TwinCAT/LUPAandMiniDAQ/_Config
