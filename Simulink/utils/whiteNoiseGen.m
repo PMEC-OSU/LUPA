@@ -1,4 +1,4 @@
-function sig = whiteNoiseGen(fs,fmin,fmax,rLen)
+function sig = whiteNoiseGen(fs,fmin,fmax,rLen,nRepeats)
 
 rng(24); % set the seed for the random number generator so we get the same thing every time
 
@@ -38,10 +38,16 @@ for i = 1:N_ph
     end
 
 end
+r = 1/t_vec(end);   % numerator number in seconds of ramp
+r_win = tukeywin(length(t_vec),r)';
+sig1 = sig1.*r_win;
+sig2 = sig2.*r_win;
+sig3 = sig3.*r_win;
 
-sig1n = [zeros(1,fs*initLength) sig1];
-sig2n = [zeros(1,fs*initLength) sig2];
-sig3n = [zeros(1,fs*initLength) sig3];
+
+sig1n = [zeros(1,fs*initLength) repmat(sig1,1,nRepeats) zeros(1,fs*initLength)];
+sig2n = [zeros(1,fs*initLength) repmat(sig2,1,nRepeats) zeros(1,fs*initLength)];
+sig3n = [zeros(1,fs*initLength) repmat(sig3,1,nRepeats) zeros(1,fs*initLength)];
 tnew = 0:dt:length(sig1n)*dt-dt;
 
 sig.WN1 = timeseries(sig1n,tnew);

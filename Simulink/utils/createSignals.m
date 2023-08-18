@@ -6,8 +6,9 @@ fmin = 0.05; % min frequency for multisine
 fmax = 1;    % max frequency for multisine
 fs = 1000;
 rLen = 600;  %% length of created signal (s) for multisine
+nRepeats = 2;
 
-sig = whiteNoiseGen(fs,fmin,fmax,rLen);
+sig = whiteNoiseGen(fs,fmin,fmax,rLen,nRepeats);
 
 %% ------------Chirp-----------------------------------
 f0 = 1/20;
