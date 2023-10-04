@@ -1,4 +1,4 @@
-function [t,f,OUT] = genMultiSine_NInput(fmin,fmax,T,options)
+function [sig] = genMultiSine_NInput(fmin,fmax,T,options)
 
 % genMultiSine   generate multisine signal
 %
@@ -47,7 +47,7 @@ function [t,f,OUT] = genMultiSine_NInput(fmin,fmax,T,options)
 %
 % Authors: Giorgio Bacelli (original), Ryan Coe (minor tweaks),
 %          Alicia (edited for N-input system)
-%
+%          Bret Bosma (adapted for use with LUPA)
 % ---------------------------------------------------------------------
 
 arguments
@@ -121,7 +121,7 @@ if size(Amp_f,2) >= NewSampleSizeGain*(options.NumInput*options.NumExp) && optio
     disp('*********** Warning: samples reduced. ***********')
 end
 
-Nsample = size(Amp_f,2)
+Nsample = size(Amp_f,2);
 
 % Conditional number
 % If a matrix is singular, then its condition number is infinite.
@@ -173,6 +173,19 @@ for ii = 1:options.NumExp
     OUT(ii).xt = repmat(signal(:,SignalSetsUsed(ii,:)),options.NumRepeat,1);
     OUT(ii).Xf = Amp_f(:,SignalSetsUsed(ii,:));
 end
+initLength = 10;
+MS1 = [zeros(1,1/dt*initLength) OUT(1).xt' zeros(1,1/dt*initLength)];
+MS2 = [zeros(1,1/dt*initLength) OUT(2).xt' zeros(1,1/dt*initLength)];
+MS3 = [zeros(1,1/dt*initLength) OUT(3).xt' zeros(1,1/dt*initLength)];
+t1 = 0:dt:length(MS1)*dt-dt;
+t2 = 0:dt:length(MS2)*dt-dt;
+t3 = 0:dt:length(MS3)*dt-dt;
+
+sig.MS1 = timeseries(MS1,t1);
+sig.MS2 = timeseries(MS2,t2);
+sig.MS3 = timeseries(MS3,t3);
+
+
 
 if options.plotFlag
 

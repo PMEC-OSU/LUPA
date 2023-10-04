@@ -2,13 +2,17 @@ clear; clc; close all
 
 
 %% ------------MultiSine-------------------------------
-fmin = 0.05; % min frequency for multisine
-fmax = 1;    % max frequency for multisine
+fmin = 0.3; % min frequency for multisine
+fmax = 0.8; % max frequency for multisine
 fs = 1000;
-rLen = 600;  %% length of created signal (s) for multisine
-nRepeats = 2;
+rLen = 300;  %% length of created signal (s) for multisine
+nRepeats = 4; % times signal is repeated
+nExp = 3; % number of phase realizations
+NumPhases = 2000;
 
-sig = whiteNoiseGen(fs,fmin,fmax,rLen,nRepeats);
+sig = genMultiSine_NInput(fmin,fmax,rLen,'numPhases',NumPhases,'plotFlag',1,'dt',1/fs,'NumExp',3,'NumRepeat',nRepeats)
+
+%sig = whiteNoiseGen(fs,fmin,fmax,rLen,nRepeats);
 
 %% ------------Chirp-----------------------------------
 f0 = 1/20;
@@ -65,9 +69,12 @@ sig.Sine = timeseries(sine,t);
 commandSigs = Simulink.SimulationData.Dataset;
 commandSigs = commandSigs.addElement(sig.Ramp,'Ramp');
 commandSigs = commandSigs.addElement(sig.Sine,'Sine');
-commandSigs = commandSigs.addElement(sig.WN1,'WN1');
-commandSigs = commandSigs.addElement(sig.WN2,'WN2');
-commandSigs = commandSigs.addElement(sig.WN3,'WN3');
+% commandSigs = commandSigs.addElement(sig.WN1,'WN1');
+% commandSigs = commandSigs.addElement(sig.WN2,'WN2');
+% commandSigs = commandSigs.addElement(sig.WN3,'WN3');
+commandSigs = commandSigs.addElement(sig.MS1,'MS1');
+commandSigs = commandSigs.addElement(sig.MS2,'MS2');
+commandSigs = commandSigs.addElement(sig.MS3,'MS3');
 commandSigs = commandSigs.addElement(sig.Chirp,'Chirp');
 save('C:\Software\LUPA\Simulink\utils\commandSignals','commandSigs')
 
@@ -83,10 +90,10 @@ xlabel('time (s)')
 ylabel('sine signal')
 
 subplot(313)
-plot(sig.WN1)
+plot(sig.MS1)
 hold on
-plot(sig.WN2)
-plot(sig.WN3)
+plot(sig.MS2)
+plot(sig.MS3)
 xlabel('time (s)')
 ylabel('white noise signal')
-legend('WN1','WN2','WN3')
+legend('MS1','MS2','MS3')
