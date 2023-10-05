@@ -3,7 +3,7 @@ addpath(genpath('utils/'))
 %% === Assign Constants ===================================================
 disp('*** Setting model parameters ***')
 
-Mode = 'Dry'; % 'One Body Heave Only' 'Two Body Heave Only' 'Six DOF'
+Mode = 'Six DOF'; % 'One Body Heave Only' 'Two Body Heave Only' 'Six DOF'
 period = 1; % period for sine wave
 Ts = 0.001; % sampling period
 CL = 13;  % Current limit parameter (Set in EASII)
@@ -20,7 +20,7 @@ mdlName = 'LUPA';
 
 if sprocketTeeth == 32
     sprocketPitchRadius = 0.0407416;
-elseif sprocketTeeth == 50 
+elseif sprocketTeeth == 50
     sprocketPitchRadius = 0.0636651;
 elseif sprocketTeeth == 80
     sprocketPitchRadius = 0.101854;
@@ -80,15 +80,8 @@ function selectXMLfile(Ts,mdlName)
 
 % set the full path to the EtherCAT config files.
 current_dir = pwd;
-if Ts == 0.0005     % 10kHz
-    LUPA_eCat_init = strcat(current_dir,'\EtherCAT\LUPA2kHz.xml');
-elseif Ts == 0.002  % 500Hz
-    LUPA_eCat_init = strcat(current_dir,'\EtherCAT\LUPA500Hz.xml');
-elseif Ts == 0.01  % 100Hz
-    LUPA_eCat_init = strcat(current_dir,'\EtherCAT\LUPA100Hz.xml');
-else
-    LUPA_eCat_init = strcat(current_dir,'\EtherCAT\LUPA1kHz_DC.xml');
-end
+
+LUPA_eCat_init = strcat(current_dir,'\EtherCAT\LUPA1kHz_DC.xml');
 
 set_param([mdlName,'/Initialization/EtherCAT Init'],'config_file',LUPA_eCat_init);
 

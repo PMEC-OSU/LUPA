@@ -174,9 +174,13 @@ for ii = 1:options.NumExp
     OUT(ii).Xf = Amp_f(:,SignalSetsUsed(ii,:));
 end
 initLength = 10;
-MS1 = [zeros(1,1/dt*initLength) OUT(1).xt' zeros(1,1/dt*initLength)];
-MS2 = [zeros(1,1/dt*initLength) OUT(2).xt' zeros(1,1/dt*initLength)];
-MS3 = [zeros(1,1/dt*initLength) OUT(3).xt' zeros(1,1/dt*initLength)];
+max1 = max(abs(OUT(1).xt));
+max2 = max(abs(OUT(2).xt));
+max3 = max(abs(OUT(3).xt));
+
+MS1 = [zeros(1,1/dt*initLength) OUT(1).xt'/max1 zeros(1,1/dt*initLength)];
+MS2 = [zeros(1,1/dt*initLength) OUT(2).xt'/max2 zeros(1,1/dt*initLength)];
+MS3 = [zeros(1,1/dt*initLength) OUT(3).xt'/max3 zeros(1,1/dt*initLength)];
 t1 = 0:dt:length(MS1)*dt-dt;
 t2 = 0:dt:length(MS2)*dt-dt;
 t3 = 0:dt:length(MS3)*dt-dt;

@@ -1,26 +1,26 @@
 clear; clc; close all
 %% Choose experiment name and trialnumber for quicklook
-expname = 'Ramps3';
-trialnum = 7;
+expname = 'DAQTest';
+trialnum = 1;
 
 %% load data
 trialname = ['Trial',num2str(trialnum,'%02d')];
-trialdir = fullfile('Z:\projects\2022\DryLUPA\data\raw',expname,trialname);
+trialdir = fullfile('Z:\projects\2023\TEAMERLUPA2\data\onboard',expname,trialname);
 dircontents = dir(trialdir);
-filename = dircontents(3).name;
+filename = dircontents(4).name;
 load([trialdir,'\',filename])
 
 figure
-plot(diff(output.Timestamp.time))
+plot(diff(output.timestamp.timestamp))
 xlabel('samples')
 ylabel('period (s)')
 title('\Delta t variations')
 
 %% plot torque data
 figure
-plot(output.ELMO.time,output.ELMO.torque_Nm)
+plot(output.time,output.ELMO.torque_Nm)
 hold on
-plot(output.Control.time,output.Control.target_A*7.86)
+plot(output.time,output.control.target_A*7.86)
 xlabel('time (s)')
 ylabel('Torque (Nm)')
 legend('Drive reported','command signal')
@@ -37,10 +37,10 @@ linforce = output.ELMO.torque_Nm ./ pulleyradius;
 
 
 %% calculate offsets
-dt1 = output.ShoreADC.time(2) - output.ShoreADC.time(1);
+dt1 = output.time(2) - output.time(1);
 zerorange = 4.5*1/dt1:5*1/dt1;
-sp1offset = mean(output.Sensors.drawWire(zerorange));
-sp2offset = mean(output.ShoreADC.sp2(zerorange));
+sp1offset = mean(output.sensors.drawWire(zerorange));
+sp2offset = mean(output.shoreADC.sp2(zerorange));
 dt2 = output.ELMO.time(2)-output.ELMO.time(1);
 zerorange = 4.5*1/dt2:5*1/dt2;
 linposoffset = mean(linpos(zerorange));
