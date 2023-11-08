@@ -2,24 +2,30 @@ clear; clc; close all
 
 
 %% ------------MultiSine-------------------------------
-fmin = 1/20; % min frequency for multisine
-fmax = 1/.5; % max frequency for multisine
+fmin = 0.05; % min frequency for multisine
+fmax = 2; % max frequency for multisine
 fs = 1000;
 rLen = 300;  %% length of created signal (s) for multisine
 nRepeats = 4; % times signal is repeated
 nExp = 3; % number of phase realizations
 NumPhases = 2000;
+fmins = [0.05 0.635 1.335];
+fmaxs = [0.765 1.465 2];
+msnames = {'MS1','MS2','MS3'};
 
-sig = genMultiSine_NInput(fmin,fmax,rLen,'numPhases',NumPhases,'plotFlag',1,'dt',1/fs,'NumExp',3,'NumRepeat',nRepeats)
-
+% sig = genMultiSine_NInput(fmin,fmax,rLen,'numPhases',NumPhases,'plotFlag',1,'dt',1/fs,'NumExp',3,'NumRepeat',nRepeats)
+for i = 1:3
+sigOld = genMultiSine_NInput(fmins(i),fmaxs(i),rLen,'numPhases',NumPhases,'plotFlag',1,'dt',1/fs,'NumExp',3,'NumRepeat',nRepeats);
+sig.(msnames{i}) = sigOld.(msnames{i});
+end
 %sig = whiteNoiseGen(fs,fmin,fmax,rLen,nRepeats);
 
 %% ------------Chirp-----------------------------------
-f0 = 1/30;
-f1 = 1/0.5;
+f0 = 1/20;
+f1 = 1/1;
 fs = 1000;
 initLength = 10;
-numseconds = 600;
+numseconds = 300;
 t = 0:1/fs:numseconds-1/fs;
 t1 = numseconds;
 chirp = chirp(t,f0,t1,f1);
@@ -29,7 +35,6 @@ chirp = chirp .* r_win;
 chirp = [zeros(1,fs*initLength) chirp];
 t = 1/fs:1/fs:length(chirp)/fs;
 sig.Chirp = timeseries(chirp,t);
-figure
 plot(sig.Chirp)
 
 %% ---------------Ramps---------------------------------
