@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<RecordingSetup docVersion="1.1" TargetType="DriveNG" FirmwareVersion="Oboe 01.01.16.00 08Mar2020B01G" RecorderGapIndex="0" RecordingLength="20" RecordingDisplayTime="0.2" RecordingBufferSize="0.20005" IsSingleAutoRecording="false">
+<RecordingSetup docVersion="1.1" TargetType="DriveNG" FirmwareVersion="Oboe 01.01.16.00 08Mar2020B01G" RecorderGapIndex="0" RecordingLength="20" RecordingDisplayTime="0.2" RecordingBufferSize="0.20009999999999997" IsSingleAutoRecording="false">
   <TriggerSetup TargetName="Drive01" Type="Immediate" SlopeType="Window" SlopeTypeGmas="IntoWindow" Low="0" High="0" Delay="0" TrigMode="Manual" />
   <SignalData />
   <AnalysisSetupModels />

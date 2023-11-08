@@ -4,7 +4,7 @@ addpath(genpath('utils/'))
 disp('*** Setting model parameters ***')
 
 Mode = 'Six DOF'; % 'One Body Heave Only' 'Two Body Heave Only' 'Six DOF'
-period = 1; % period for sine wave
+period = 3; % period for sine wave
 Ts = 0.001; % sampling period
 CL = 13;  % Current limit parameter (Set in EASII)
 Kt = 7.86;  % Determined experimentally  % Kt = 8.51;  % From datasheet

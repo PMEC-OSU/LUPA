@@ -15,8 +15,8 @@ year = datestr(now,'yyyy');
 if(~exist('app','var'))
     %% if running this script manually change these values!!!!!
     projectName = 'TEAMERLUPA2';
-    expname = 'DAQTest';
-    trialNumber = 1;
+    expname = '20231107_PinkPlusForcedOscillation';
+    trialNumber = 5;
     %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
     app = [];
 else
