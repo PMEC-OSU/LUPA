@@ -1,7 +1,7 @@
 ---
 layout: default
-title: Developers
-parent: Fall 2022 Campaign Resources
+title: Fall 2022 Campaign Resources
+parent: Documentation
 nav_order: 1
 ---
 ## Fall 2022 Campaign Resources
