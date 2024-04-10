@@ -60,6 +60,7 @@ if(~isempty(app))
     output.control.Source = app.SourceDropDown.Value;
     output.feedback.Damping = app.DampingSpinner.Value;
     output.feedback.Stiffness = app.StiffnessSpinner.Value;
+    output.feedback.time = 0:app.TsEditField.Value:length(output.feedback.vel_filt_radpers)*app.TsEditField.Value-app.TsEditField.Value;
     output.control.CurrentLimit = app.CurrentLimitSpinner.Value;
     output.trialData.Project = app.ProjectEditField.Value;
     output.trialData.Experiment = app.ExperimentEditField.Value;
@@ -94,7 +95,6 @@ save([datadirname,'\',fname,'.mat'],'output','-v7.3');
 disp(['Data saved to ',datadirname,'\',fname,'.mat'])
 
 if(~isempty(app))
-    if strcmp(app.HWRLShareButton.Text,'Push to Share')
         % push data to share
         % build the directory structure. assumes HWRL project share conventions
         if ~exist(sharename,'dir') % give up if no HWRL share
@@ -119,11 +119,6 @@ if(~isempty(app))
             copyfile([datadirname,'\',fname,'.mat'],trialdirname)
             disp(['Data saved to ',trialdirname,'\',fname,'.mat'])
         end
-
-    else
-        % don't push data to share
-        disp('Data not saved to HWRL share')
-    end
 end
 % addpath(genpath(dataexpname))
 % load([fname,'.mat'])

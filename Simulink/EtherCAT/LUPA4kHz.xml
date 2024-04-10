@@ -5,7 +5,7 @@
 			<Info>
 				<Name><![CDATA[Device 3 (EtherCAT)]]></Name>
 				<Destination>010105010000</Destination>
-				<Source>e84e06a62349</Source>
+				<Source>001b21eedd70</Source>
 				<EtherType>a488</EtherType>
 			</Info>
 			<MailboxStates>
@@ -1306,7 +1306,7 @@ Bit1: Value smaller than Limit2</Comment>
 					<Cmd>5</Cmd>
 					<Adp>1002</Adp>
 					<Ado>2464</Ado>
-					<Data>40420f00a8610000</Data>
+					<Data>90d00300a8610000</Data>
 					<Cnt>1</Cnt>
 					<Retries>3</Retries>
 				</InitCmd>
@@ -1317,7 +1317,7 @@ Bit1: Value smaller than Limit2</Comment>
 					<Cmd>5</Cmd>
 					<Adp>1002</Adp>
 					<Ado>2448</Ado>
-					<Data>0000000000000000</Data>
+					<Data>7c6efcffffffffff</Data>
 					<Cnt>1</Cnt>
 					<Retries>3</Retries>
 				</InitCmd>
@@ -1648,9 +1648,9 @@ Bit1: Value smaller than Limit2</Comment>
 			</PreviousPort>
 			<DC>
 				<ReferenceClock>true</ReferenceClock>
-				<CycleTime0>1000000</CycleTime0>
+				<CycleTime0>250000</CycleTime0>
 				<CycleTime1>25000</CycleTime1>
-				<ShiftTime>0</ShiftTime>
+				<ShiftTime>-233860</ShiftTime>
 			</DC>
 		</Slave>
 		<Slave>
@@ -2544,7 +2544,7 @@ Bit1: Value smaller than Limit2</Comment>
 					<Cmd>5</Cmd>
 					<Adp>1004</Adp>
 					<Ado>2464</Ado>
-					<Data>40420f00983a0000</Data>
+					<Data>90d00300983a0000</Data>
 					<Cnt>1</Cnt>
 					<Retries>3</Retries>
 				</InitCmd>
@@ -2555,7 +2555,7 @@ Bit1: Value smaller than Limit2</Comment>
 					<Cmd>5</Cmd>
 					<Adp>1004</Adp>
 					<Ado>2448</Ado>
-					<Data>0000000000000000</Data>
+					<Data>1cf5fdffffffffff</Data>
 					<Cnt>1</Cnt>
 					<Retries>3</Retries>
 				</InitCmd>
@@ -2886,9 +2886,9 @@ Bit1: Value smaller than Limit2</Comment>
 			</PreviousPort>
 			<DC>
 				<ReferenceClock>false</ReferenceClock>
-				<CycleTime0>1000000</CycleTime0>
+				<CycleTime0>250000</CycleTime0>
 				<CycleTime1>15000</CycleTime1>
-				<ShiftTime>0</ShiftTime>
+				<ShiftTime>-133860</ShiftTime>
 			</DC>
 		</Slave>
 		<Slave>
@@ -8696,7 +8696,7 @@ Bit1: Value smaller than Limit2</Comment>
 					<Cmd>5</Cmd>
 					<Adp>1011</Adp>
 					<Ado>2464</Ado>
-					<Data>40420f00a0860100</Data>
+					<Data>90d00300a0860100</Data>
 					<Cnt>1</Cnt>
 					<Retries>3</Retries>
 				</InitCmd>
@@ -9038,7 +9038,7 @@ Bit1: Value smaller than Limit2</Comment>
 			</PreviousPort>
 			<DC>
 				<ReferenceClock>false</ReferenceClock>
-				<CycleTime0>1000000</CycleTime0>
+				<CycleTime0>250000</CycleTime0>
 				<CycleTime1>100000</CycleTime1>
 				<ShiftTime>0</ShiftTime>
 			</DC>
@@ -9079,7 +9079,7 @@ Bit1: Value smaller than Limit2</Comment>
 				</Send>
 				<Recv>
 					<BitStart>1824</BitStart>
-					<BitLength>160</BitLength>
+					<BitLength>192</BitLength>
 				</Recv>
 				<Sm2>
 					<Type>Outputs</Type>
@@ -9106,6 +9106,7 @@ Bit1: Value smaller than Limit2</Comment>
 					<Pdo>6671</Pdo>
 					<Pdo>6675</Pdo>
 					<Pdo>6680</Pdo>
+					<Pdo>6684</Pdo>
 					<Pdo>6687</Pdo>
 				</Sm3>
 				<TxPdo Fixed="true">
@@ -9506,7 +9507,7 @@ Bit1: Value smaller than Limit2</Comment>
 						<DataType>DINT</DataType>
 					</Entry>
 				</TxPdo>
-				<TxPdo Fixed="true">
+				<TxPdo Fixed="true" Sm="3">
 					<Index>#x1a1c</Index>
 					<Name>Inputs</Name>
 					<Entry>
@@ -10323,6 +10324,15 @@ Bit1: Value smaller than Limit2</Comment>
 							<Ccs>1</Ccs>
 							<Index>7187</Index>
 							<SubIndex>7</SubIndex>
+							<Data>1c1a</Data>
+						</InitCmd>
+						<InitCmd Fixed="true">
+							<Transition>PS</Transition>
+							<Comment><![CDATA[download pdo 0x1C13:08 index]]></Comment>
+							<Timeout>0</Timeout>
+							<Ccs>1</Ccs>
+							<Index>7187</Index>
+							<SubIndex>8</SubIndex>
 							<Data>1f1a</Data>
 						</InitCmd>
 						<InitCmd Fixed="true">
@@ -10332,7 +10342,7 @@ Bit1: Value smaller than Limit2</Comment>
 							<Ccs>1</Ccs>
 							<Index>7187</Index>
 							<SubIndex>0</SubIndex>
-							<Data>07</Data>
+							<Data>08</Data>
 						</InitCmd>
 						<InitCmd>
 							<Transition>PS</Transition>
@@ -10621,7 +10631,7 @@ Bit1: Value smaller than Limit2</Comment>
 					<Cmd>5</Cmd>
 					<Adp>1012</Adp>
 					<Ado>2464</Ado>
-					<Data>40420f0000000000</Data>
+					<Data>90d0030000000000</Data>
 					<Cnt>1</Cnt>
 					<Retries>3</Retries>
 				</InitCmd>
@@ -10709,7 +10719,7 @@ Bit1: Value smaller than Limit2</Comment>
 					<Cmd>5</Cmd>
 					<Adp>1012</Adp>
 					<Ado>2072</Ado>
-					<Data>8011140020000100</Data>
+					<Data>8011180020000100</Data>
 					<Cnt>1</Cnt>
 					<Retries>3</Retries>
 				</InitCmd>
@@ -10729,7 +10739,7 @@ Bit1: Value smaller than Limit2</Comment>
 					<Cmd>5</Cmd>
 					<Adp>1012</Adp>
 					<Ado>1552</Ado>
-					<Data>00180001140000078011000101000000</Data>
+					<Data>00180001180000078011000101000000</Data>
 					<Cnt>1</Cnt>
 					<Retries>3</Retries>
 				</InitCmd>
@@ -10962,7 +10972,7 @@ Bit1: Value smaller than Limit2</Comment>
 			</PreviousPort>
 			<DC>
 				<ReferenceClock>false</ReferenceClock>
-				<CycleTime0>1000000</CycleTime0>
+				<CycleTime0>250000</CycleTime0>
 				<CycleTime1>0</CycleTime1>
 				<ShiftTime>0</ShiftTime>
 			</DC>
@@ -11651,7 +11661,7 @@ Bit1: Value smaller than Limit2</Comment>
 					<Cmd>5</Cmd>
 					<Adp>1013</Adp>
 					<Ado>2464</Ado>
-					<Data>40420f0000000000</Data>
+					<Data>90d0030000000000</Data>
 					<Cnt>1</Cnt>
 					<Retries>3</Retries>
 				</InitCmd>
@@ -11992,14 +12002,14 @@ Bit1: Value smaller than Limit2</Comment>
 			</PreviousPort>
 			<DC>
 				<ReferenceClock>false</ReferenceClock>
-				<CycleTime0>1000000</CycleTime0>
+				<CycleTime0>250000</CycleTime0>
 				<CycleTime1>0</CycleTime1>
 				<ShiftTime>2000200000</ShiftTime>
 			</DC>
 		</Slave>
 		<Cyclic>
 			<Comment><![CDATA[synchronized with task 'Task 2']]></Comment>
-			<CycleTime>1000</CycleTime>
+			<CycleTime>250</CycleTime>
 			<Priority>1</Priority>
 			<TaskId>2</TaskId>
 			<Frame>
@@ -12077,7 +12087,7 @@ Bit1: Value smaller than Limit2</Comment>
 					<Comment><![CDATA[cyclic cmd]]></Comment>
 					<Cmd>12</Cmd>
 					<Addr>16783360</Addr>
-					<DataLength>20</DataLength>
+					<DataLength>24</DataLength>
 					<Cnt>3</Cnt>
 					<InputOffs>218</InputOffs>
 					<OutputOffs>218</OutputOffs>
@@ -12092,8 +12102,8 @@ Bit1: Value smaller than Limit2</Comment>
 					<Ado>304</Ado>
 					<DataLength>2</DataLength>
 					<Cnt>13</Cnt>
-					<InputOffs>250</InputOffs>
-					<OutputOffs>250</OutputOffs>
+					<InputOffs>254</InputOffs>
+					<OutputOffs>254</OutputOffs>
 				</Cmd>
 			</Frame>
 		</Cyclic>
@@ -12731,10 +12741,16 @@ Bit1: Value smaller than Limit2</Comment>
 					<BitOffs>1936</BitOffs>
 				</Variable>
 				<Variable>
-					<Name>Drive 12 (Elmo Drive ).Inputs_6.Current actual value</Name>
+					<Name>Drive 12 (Elmo Drive ).Inputs_6.Digital Inputs</Name>
+					<DataType>DINT</DataType>
+					<BitSize>32</BitSize>
+					<BitOffs>1968</BitOffs>
+				</Variable>
+				<Variable>
+					<Name>Drive 12 (Elmo Drive ).Inputs_7.Current actual value</Name>
 					<DataType>INT</DataType>
 					<BitSize>16</BitSize>
-					<BitOffs>1968</BitOffs>
+					<BitOffs>2000</BitOffs>
 				</Variable>
 				<Variable>
 					<Name>Inputs.Frm0State</Name>
