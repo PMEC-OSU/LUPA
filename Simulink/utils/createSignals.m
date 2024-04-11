@@ -12,10 +12,11 @@ NumPhases = 2000;
 fmins = [0.05 0.635 1.335];
 fmaxs = [0.765 1.465 2];
 msnames = {'MS1','MS2','MS3'};
+seed = 13;
 
 % sig = genMultiSine_NInput(fmin,fmax,rLen,'numPhases',NumPhases,'plotFlag',1,'dt',1/fs,'NumExp',3,'NumRepeat',nRepeats)
 for i = 1:3
-sigOld = genMultiSine_NInput(fmins(i),fmaxs(i),rLen,'numPhases',NumPhases,'plotFlag',1,'dt',1/fs,'NumExp',3,'NumRepeat',nRepeats);
+sigOld = genMultiSine_NInput(fmins(i),fmaxs(i),rLen,'numPhases',NumPhases,'plotFlag',1,'dt',1/fs,'NumExp',nExp,'NumRepeat',nRepeats,'seed',seed);
 sig.(msnames{i}) = sigOld.(msnames{i});
 end
 %sig = whiteNoiseGen(fs,fmin,fmax,rLen,nRepeats);
