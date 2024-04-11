@@ -30,6 +30,7 @@ function [sig] = genMultiSine_NInput(fmin,fmax,T,options)
 %   NumExp      number of experiment (default: 1)
 %   NumInput    number of input (default: 1)
 %   NumRepeat   number of cycle (default: 3)
+%   seed        seed for repeatable random phase (default: 0--"shuffle")
 
 %
 % Returns:
@@ -63,6 +64,7 @@ arguments
     options.NumExp (1,1) {mustBeFinite,mustBeReal,mustBePositive} = 1
     options.NumInput (1,1) {mustBeFinite,mustBeReal,mustBePositive} = 1
     options.NumRepeat (1,1) {mustBeFinite,mustBeReal,mustBePositive} = 3
+    options.seed (1,1) {mustBeFinite, mustBeReal, mustBeNonnegative} = 0
 end
 
 % create time and frequency vector
@@ -75,7 +77,11 @@ w_vec = 2*pi*f_vec;
 Nf = length(f_vec);
 
 % phase randomized between -pi to pi
-rng('shuffle')
+if options.seed
+    rng(options.seed);
+else
+    rng('shuffle')
+end
 ph_mat = -pi + (pi--pi).*rand(Nf,options.numPhases);
 
 % create amplitude vector
