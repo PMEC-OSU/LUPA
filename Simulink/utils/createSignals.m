@@ -9,16 +9,13 @@ rLen = 300;  %% length of created signal (s) for multisine
 nRepeats = 4; % times signal is repeated
 nExp = 3; % number of phase realizations
 NumPhases = 2000;
-fmins = [0.05 0.635 1.335];
-fmaxs = [0.765 1.465 2];
+fmins = 0.05;
+fmaxs = 2;
 msnames = {'MS1','MS2','MS3'};
 seed = 13;
 
 % sig = genMultiSine_NInput(fmin,fmax,rLen,'numPhases',NumPhases,'plotFlag',1,'dt',1/fs,'NumExp',3,'NumRepeat',nRepeats)
-for i = 1:3
-sigOld = genMultiSine_NInput(fmins(i),fmaxs(i),rLen,'numPhases',NumPhases,'plotFlag',1,'dt',1/fs,'NumExp',nExp,'NumRepeat',nRepeats,'seed',seed);
-sig.(msnames{i}) = sigOld.(msnames{i});
-end
+sig = genMultiSine_NInput(fmins,fmaxs,rLen,'numPhases',NumPhases,'plotFlag',1,'dt',1/fs,'NumExp',nExp,'NumRepeat',nRepeats,'seed',seed);
 %sig = whiteNoiseGen(fs,fmin,fmax,rLen,nRepeats);
 
 %% ------------Chirp-----------------------------------
@@ -83,7 +80,7 @@ commandSigs = commandSigs.addElement(sig.MS1,'MS1');
 commandSigs = commandSigs.addElement(sig.MS2,'MS2');
 commandSigs = commandSigs.addElement(sig.MS3,'MS3');
 commandSigs = commandSigs.addElement(sig.Chirp,'Chirp');
-save('C:\Software\LUPA\Simulink\utils\commandSignals','commandSigs')
+save('commandSignals','commandSigs')
 
 figure
 subplot(311)
