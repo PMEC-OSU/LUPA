@@ -13,6 +13,6 @@ PIlim = [-800 0; ...       % lower limit of kp, kd
 % scale lhs to be in the desired range of values
 rr = PIlim(2,:)-PIlim(1,:); 
 ofst = PIlim(1,:);
-lhs = lhs.*rr + ofst;
+lhs = lhs.*rr + ofst; 
 
 writematrix(lhs,['../ExcelGains/','dampANDstif_',dateStr,'.xlsx']);

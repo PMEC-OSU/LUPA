@@ -2,16 +2,17 @@ clear; clc; close all
 addpath('utils')
 %% === Assign Constants ===================================================
 disp('*** Setting model parameters ***')
+period = 3; % period for sine wave
+excelFile = 'ExcelGains/dampingOnly_20221128.xlsx';
+gainTstep = 1.875*20; % time between change in excel gains (s) (Represents the wave period times 20 waves)
 
 Mode = 'One Body Heave Only'; % 'One Body Heave Only' 'Two Body Heave Only' 'Six DOF'
-period = 3; % period for sine wave
 Ts = 0.001; % sampling period 0.001, or 0.0005, or 0.00025 (doesn't get past state 2)
 CL = 13;  % Current limit parameter (Set in EASII)
 Kt = 7.86;  % Determined experimentally  % Kt = 8.51;  % From datasheet
 sprocketTeeth = 50;  % small:32 medium:50 large:80
 tgName = 'performance3';
-excelFile = 'ExcelGains/dampingOnly_20221128.xlsx';
-gainTstep = 1.875*20; % time between change in excel gains (s) (Represents the wave period times 20 waves)
+
 
 %% change things above this line for each run
 
