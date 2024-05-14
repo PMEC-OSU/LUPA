@@ -5,7 +5,7 @@
   <AbsoluteIsRepetitive>false</AbsoluteIsRepetitive>
   <RelativePosition>0</RelativePosition>
   <RelativeIsRepetitive>false</RelativeIsRepetitive>
-  <JoggingRunHeld>true</JoggingRunHeld>
+  <JoggingRunHeld>false</JoggingRunHeld>
   <CurrentTorqueCommand1>0</CurrentTorqueCommand1>
   <CurrentTorqueCommand2>0</CurrentTorqueCommand2>
   <CurrentTorqueCommand3>0</CurrentTorqueCommand3>

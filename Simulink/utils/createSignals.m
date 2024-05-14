@@ -9,8 +9,8 @@ rLen = 300;  %% length of created signal (s) for multisine
 nRepeats = 4; % times signal is repeated
 nExp = 3; % number of phase realizations
 NumPhases = 2000;
-fmins = 0.05;
-fmaxs = 2;
+fmins = 0.1;
+fmaxs = 0.6;
 msnames = {'MS1','MS2','MS3'};
 seed = 13;
 
@@ -23,7 +23,7 @@ f0 = 1/20;
 f1 = 1/1;
 fs = 1000;
 initLength = 10;
-numseconds = 300;
+numseconds = 1200;
 t = 0:1/fs:numseconds-1/fs;
 t1 = numseconds;
 chirp = chirp(t,f0,t1,f1);
@@ -59,7 +59,7 @@ sig.Ramp = timeseries(ramp,t);
 
 %% ---------------Sine---------------------------------
 period = 3; % period for sine wave
-sineDuration = 50;
+sineDuration = 50; % this changes in initLUPA.m
 initLength = 10;
 t = 1/fs:1/fs:sineDuration;
 sine = amp .* sin(2*pi./period*t);
