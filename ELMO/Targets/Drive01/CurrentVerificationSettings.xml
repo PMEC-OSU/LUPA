@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<Current-Verification-Settings Version="1.0">
+  <Frequency>100</Frequency>
+  <Min-Current>3.25</Min-Current>
+  <Max-Current>9.75</Max-Current>
+</Current-Verification-Settings>

@@ -14,9 +14,7 @@ fmaxs = 0.6;
 msnames = {'MS1','MS2','MS3'};
 seed = 13;
 
-% sig = genMultiSine_NInput(fmin,fmax,rLen,'numPhases',NumPhases,'plotFlag',1,'dt',1/fs,'NumExp',3,'NumRepeat',nRepeats)
 sig = genMultiSine_NInput(fmins,fmaxs,rLen,'numPhases',NumPhases,'plotFlag',1,'dt',1/fs,'NumExp',nExp,'NumRepeat',nRepeats,'seed',seed);
-%sig = whiteNoiseGen(fs,fmin,fmax,rLen,nRepeats);
 
 %% ------------Chirp-----------------------------------
 f0 = 1/20;

@@ -2,9 +2,9 @@ clear; clc; close all
 addpath('utils')
 %% === Assign Constants ===================================================
 disp('*** Setting model parameters ***')
-period = 2.50; % period for forced oscillation sine wave
-excelFile = 'ExcelGains/dampingANDstiffT250_20240508.xlsx';
-gainTstep = 2.50*20; % time between change in excel gains (s) (Represents the wave period times 20 waves)
+period = 1.43; % period for forced oscillation sine wave
+excelFile = 'ExcelGains/freg0p500Hz_Stiff_AND_Damping.xlsx';
+gainTstep = 1/0.5*10; % time between change in excel gains (s) (Represents the wave period times 20 waves)
 
 Mode = 'One Body Heave Only'; % 'One Body Heave Only' 'Two Body Heave Only' 'Six DOF'
 Ts = 0.001; % sampling period 0.001, or 0.0005, or 0.00025 (doesn't get past state 2)
