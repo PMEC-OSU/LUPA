@@ -10,7 +10,7 @@
 			</Info>
 			<MailboxStates>
 				<StartAddr>150994944</StartAddr>
-				<Count>6</Count>
+				<Count>5</Count>
 			</MailboxStates>
 			<EoE>
 				<MaxPorts>2</MaxPorts>
@@ -534,7 +534,7 @@
 			</Info>
 			<ProcessData>
 				<Recv>
-					<BitStart>1240</BitStart>
+					<BitStart>856</BitStart>
 					<BitLength>128</BitLength>
 				</Recv>
 				<Sm2>
@@ -1317,7 +1317,7 @@ Bit1: Value smaller than Limit2</Comment>
 					<Cmd>5</Cmd>
 					<Adp>1002</Adp>
 					<Ado>2448</Ado>
-					<Data>9cdaf7ffffffffff</Data>
+					<Data>5cedf7ffffffffff</Data>
 					<Cnt>1</Cnt>
 					<Retries>3</Retries>
 				</InitCmd>
@@ -1404,7 +1404,7 @@ Bit1: Value smaller than Limit2</Comment>
 					<Cmd>5</Cmd>
 					<Adp>1002</Adp>
 					<Ado>1536</Ado>
-					<Data>00100001100000078011000101000000</Data>
+					<Data>00080001100000078011000101000000</Data>
 					<Cnt>1</Cnt>
 					<Retries>3</Retries>
 				</InitCmd>
@@ -1650,12 +1650,12 @@ Bit1: Value smaller than Limit2</Comment>
 				<ReferenceClock>true</ReferenceClock>
 				<CycleTime0>1000000</CycleTime0>
 				<CycleTime1>25000</CycleTime1>
-				<ShiftTime>-533860</ShiftTime>
+				<ShiftTime>-529060</ShiftTime>
 			</DC>
 		</Slave>
 		<Slave>
 			<Info>
-				<Name><![CDATA[Term 14 (EL9011)]]></Name>
+				<Name><![CDATA[Term 12 (EL9011)]]></Name>
 				<VendorId>2</VendorId>
 				<ProductCode>590557264</ProductCode>
 				<RevisionNo>0</RevisionNo>
@@ -2050,7 +2050,7 @@ Bit1: Value smaller than Limit2</Comment>
 			</Info>
 			<ProcessData>
 				<Recv>
-					<BitStart>1368</BitStart>
+					<BitStart>984</BitStart>
 					<BitLength>96</BitLength>
 				</Recv>
 				<Sm2>
@@ -2555,7 +2555,7 @@ Bit1: Value smaller than Limit2</Comment>
 					<Cmd>5</Cmd>
 					<Adp>1004</Adp>
 					<Ado>2448</Ado>
-					<Data>3c61f9ffffffffff</Data>
+					<Data>fc73f9ffffffffff</Data>
 					<Cnt>1</Cnt>
 					<Retries>3</Retries>
 				</InitCmd>
@@ -2642,7 +2642,7 @@ Bit1: Value smaller than Limit2</Comment>
 					<Cmd>5</Cmd>
 					<Adp>1004</Adp>
 					<Ado>1536</Ado>
-					<Data>101000010c0000078011000101000000</Data>
+					<Data>100800010c0000078011000101000000</Data>
 					<Cnt>1</Cnt>
 					<Retries>3</Retries>
 				</InitCmd>
@@ -2888,7 +2888,7 @@ Bit1: Value smaller than Limit2</Comment>
 				<ReferenceClock>false</ReferenceClock>
 				<CycleTime0>1000000</CycleTime0>
 				<CycleTime1>15000</CycleTime1>
-				<ShiftTime>-433860</ShiftTime>
+				<ShiftTime>-429060</ShiftTime>
 			</DC>
 		</Slave>
 		<Slave>
@@ -5305,7 +5305,7 @@ Bit1: Value smaller than Limit2</Comment>
 			</Info>
 			<ProcessData>
 				<Recv>
-					<BitStart>1720</BitStart>
+					<BitStart>1336</BitStart>
 					<BitLength>2</BitLength>
 				</Recv>
 				<Sm0>
@@ -5525,7 +5525,7 @@ Bit1: Value smaller than Limit2</Comment>
 					<Cmd>5</Cmd>
 					<Adp>1006</Adp>
 					<Ado>1536</Ado>
-					<Data>3c100001010000010010000101000000</Data>
+					<Data>3c080001010000010010000101000000</Data>
 					<Cnt>1</Cnt>
 					<Retries>3</Retries>
 				</InitCmd>
@@ -5748,7 +5748,7 @@ Bit1: Value smaller than Limit2</Comment>
 			</Info>
 			<ProcessData>
 				<Recv>
-					<BitStart>1464</BitStart>
+					<BitStart>1080</BitStart>
 					<BitLength>96</BitLength>
 				</Recv>
 				<Sm2>
@@ -6220,7 +6220,7 @@ Bit1: Value smaller than Limit2</Comment>
 					<Cmd>5</Cmd>
 					<Adp>1007</Adp>
 					<Ado>1536</Ado>
-					<Data>1c1000010c0000078011000101000000</Data>
+					<Data>1c0800010c0000078011000101000000</Data>
 					<Cnt>1</Cnt>
 					<Retries>3</Retries>
 				</InitCmd>
@@ -6466,7 +6466,7 @@ Bit1: Value smaller than Limit2</Comment>
 			</Info>
 			<ProcessData>
 				<Recv>
-					<BitStart>1722</BitStart>
+					<BitStart>1338</BitStart>
 					<BitLength>2</BitLength>
 				</Recv>
 				<Sm0>
@@ -6686,7 +6686,7 @@ Bit1: Value smaller than Limit2</Comment>
 					<Cmd>5</Cmd>
 					<Adp>1008</Adp>
 					<Ado>1536</Ado>
-					<Data>3c100001010002030010000101000000</Data>
+					<Data>3c080001010002030010000101000000</Data>
 					<Cnt>1</Cnt>
 					<Retries>3</Retries>
 				</InitCmd>
@@ -6909,7 +6909,7 @@ Bit1: Value smaller than Limit2</Comment>
 			</Info>
 			<ProcessData>
 				<Recv>
-					<BitStart>1560</BitStart>
+					<BitStart>1176</BitStart>
 					<BitLength>96</BitLength>
 				</Recv>
 				<Sm2>
@@ -7381,7 +7381,7 @@ Bit1: Value smaller than Limit2</Comment>
 					<Cmd>5</Cmd>
 					<Adp>1009</Adp>
 					<Ado>1536</Ado>
-					<Data>281000010c0000078011000101000000</Data>
+					<Data>280800010c0000078011000101000000</Data>
 					<Cnt>1</Cnt>
 					<Retries>3</Retries>
 				</InitCmd>
@@ -7627,7 +7627,7 @@ Bit1: Value smaller than Limit2</Comment>
 			</Info>
 			<ProcessData>
 				<Recv>
-					<BitStart>1656</BitStart>
+					<BitStart>1272</BitStart>
 					<BitLength>64</BitLength>
 				</Recv>
 				<Sm2>
@@ -8097,7 +8097,7 @@ Bit1: Value smaller than Limit2</Comment>
 					<Cmd>5</Cmd>
 					<Adp>1010</Adp>
 					<Ado>1536</Ado>
-					<Data>34100001080000078011000101000000</Data>
+					<Data>34080001080000078011000101000000</Data>
 					<Cnt>1</Cnt>
 					<Retries>3</Retries>
 				</InitCmd>
@@ -8331,721 +8331,7 @@ Bit1: Value smaller than Limit2</Comment>
 		</Slave>
 		<Slave>
 			<Info>
-				<Name><![CDATA[Term 11 (EL4102)]]></Name>
-				<PhysAddr>1011</PhysAddr>
-				<AutoIncAddr>65526</AutoIncAddr>
-				<Physics>KK</Physics>
-				<VendorId>2</VendorId>
-				<ProductCode>268841042</ProductCode>
-				<RevisionNo>66846720</RevisionNo>
-				<SerialNo>0</SerialNo>
-				<ProductRevision>EL4102-0000-1020</ProductRevision>
-			</Info>
-			<ProcessData>
-				<Send>
-					<BitStart>1112</BitStart>
-					<BitLength>32</BitLength>
-				</Send>
-				<Sm2>
-					<Type>Outputs</Type>
-					<DefaultSize>4</DefaultSize>
-					<StartAddress>4096</StartAddress>
-					<ControlByte>36</ControlByte>
-					<Enable>1</Enable>
-					<Pdo>5632</Pdo>
-					<Pdo>5633</Pdo>
-				</Sm2>
-				<Sm3>
-					<Type>Inputs</Type>
-					<StartAddress>4352</StartAddress>
-					<ControlByte>32</ControlByte>
-					<Enable>0</Enable>
-				</Sm3>
-				<RxPdo Fixed="true" Sm="2">
-					<Index>#x1600</Index>
-					<Name>Channel 1</Name>
-					<Entry>
-						<Index>#x6411</Index>
-						<SubIndex>1</SubIndex>
-						<BitLen>16</BitLen>
-						<Name>Output</Name>
-						<DataType DScale="0-10">INT</DataType>
-					</Entry>
-				</RxPdo>
-				<RxPdo Fixed="true" Sm="2">
-					<Index>#x1601</Index>
-					<Name>Channel 2</Name>
-					<Entry>
-						<Index>#x6411</Index>
-						<SubIndex>2</SubIndex>
-						<BitLen>16</BitLen>
-						<Name>Output</Name>
-						<DataType DScale="0-10">INT</DataType>
-					</Entry>
-				</RxPdo>
-			</ProcessData>
-			<Mailbox DataLinkLayer="true">
-				<Send>
-					<Start>6144</Start>
-					<Length>246</Length>
-				</Send>
-				<Recv>
-					<Start>6390</Start>
-					<Length>246</Length>
-					<StatusBitAddr>5</StatusBitAddr>
-				</Recv>
-				<BootStrap>
-					<Send>
-						<Start>4096</Start>
-						<Length>244</Length>
-					</Send>
-					<Recv>
-						<Start>4340</Start>
-						<Length>244</Length>
-					</Recv>
-				</BootStrap>
-				<Protocol>CoE</Protocol>
-				<Protocol>FoE</Protocol>
-				<CoE>
-					<InitCmds>
-						<InitCmd Fixed="true">
-							<Transition>PS</Transition>
-							<Comment><![CDATA[clear sm pdos (0x1C12)]]></Comment>
-							<Timeout>0</Timeout>
-							<Ccs>1</Ccs>
-							<Index>7186</Index>
-							<SubIndex>0</SubIndex>
-							<Data>00</Data>
-						</InitCmd>
-						<InitCmd Fixed="true">
-							<Transition>PS</Transition>
-							<Comment><![CDATA[clear sm pdos (0x1C13)]]></Comment>
-							<Timeout>0</Timeout>
-							<Ccs>1</Ccs>
-							<Index>7187</Index>
-							<SubIndex>0</SubIndex>
-							<Data>00</Data>
-						</InitCmd>
-						<InitCmd Fixed="true">
-							<Transition>PS</Transition>
-							<Comment><![CDATA[download pdo 0x1C12:01 index]]></Comment>
-							<Timeout>0</Timeout>
-							<Ccs>1</Ccs>
-							<Index>7186</Index>
-							<SubIndex>1</SubIndex>
-							<Data>0016</Data>
-						</InitCmd>
-						<InitCmd Fixed="true">
-							<Transition>PS</Transition>
-							<Comment><![CDATA[download pdo 0x1C12:02 index]]></Comment>
-							<Timeout>0</Timeout>
-							<Ccs>1</Ccs>
-							<Index>7186</Index>
-							<SubIndex>2</SubIndex>
-							<Data>0116</Data>
-						</InitCmd>
-						<InitCmd Fixed="true">
-							<Transition>PS</Transition>
-							<Comment><![CDATA[download pdo 0x1C12 count]]></Comment>
-							<Timeout>0</Timeout>
-							<Ccs>1</Ccs>
-							<Index>7186</Index>
-							<SubIndex>0</SubIndex>
-							<Data>02</Data>
-						</InitCmd>
-					</InitCmds>
-					<Profile>
-						<ChannelInfo>
-							<ProfileNo>401</ProfileNo>
-							<AddInfo>0</AddInfo>
-						</ChannelInfo>
-						<ChannelInfo>
-							<ProfileNo>401</ProfileNo>
-							<AddInfo>0</AddInfo>
-						</ChannelInfo>
-					</Profile>
-				</CoE>
-			</Mailbox>
-			<InitCmds>
-				<InitCmd>
-					<Transition>PI</Transition>
-					<Transition>BI</Transition>
-					<Transition>SI</Transition>
-					<Transition>OI</Transition>
-					<Comment><![CDATA[set device state to INIT]]></Comment>
-					<Requires>cycle</Requires>
-					<Cmd>2</Cmd>
-					<Adp>65526</Adp>
-					<Ado>288</Ado>
-					<Data>1100</Data>
-					<Retries>3</Retries>
-					<Timeout>5000</Timeout>
-				</InitCmd>
-				<InitCmd>
-					<Transition>SI</Transition>
-					<Transition>OI</Transition>
-					<Comment><![CDATA[clear DC activation]]></Comment>
-					<Requires>cycle</Requires>
-					<Cmd>2</Cmd>
-					<Adp>65526</Adp>
-					<Ado>2432</Ado>
-					<Data>0000</Data>
-					<Retries>3</Retries>
-				</InitCmd>
-				<InitCmd>
-					<Transition>PI</Transition>
-					<Transition>SI</Transition>
-					<Transition>OI</Transition>
-					<Comment><![CDATA[check device state for INIT]]></Comment>
-					<Requires>cycle</Requires>
-					<Cmd>1</Cmd>
-					<Adp>65526</Adp>
-					<Ado>304</Ado>
-					<Data>0000</Data>
-					<Retries>3</Retries>
-					<Validate>
-						<Data>0100</Data>
-						<DataMask>0f00</DataMask>
-						<Timeout>5000</Timeout>
-					</Validate>
-				</InitCmd>
-				<InitCmd>
-					<Transition>BI</Transition>
-					<Comment><![CDATA[check device state for INIT]]></Comment>
-					<Requires>cycle</Requires>
-					<Cmd>1</Cmd>
-					<Adp>65526</Adp>
-					<Ado>304</Ado>
-					<Data>0000</Data>
-					<Retries>3</Retries>
-					<Validate>
-						<Data>0100</Data>
-						<DataMask>0f00</DataMask>
-						<Timeout>10000</Timeout>
-					</Validate>
-				</InitCmd>
-				<InitCmd>
-					<Transition>IP</Transition>
-					<Transition>IB</Transition>
-					<Comment><![CDATA[set device state to INIT]]></Comment>
-					<Requires>cycle</Requires>
-					<Cmd>2</Cmd>
-					<Adp>65526</Adp>
-					<Ado>288</Ado>
-					<Data>1100</Data>
-					<Cnt>1</Cnt>
-					<Retries>3</Retries>
-					<Timeout>3000</Timeout>
-				</InitCmd>
-				<InitCmd>
-					<Transition>IP</Transition>
-					<Transition>IB</Transition>
-					<Comment><![CDATA[check device state for INIT]]></Comment>
-					<Requires>cycle</Requires>
-					<Cmd>1</Cmd>
-					<Adp>65526</Adp>
-					<Ado>304</Ado>
-					<Data>0000</Data>
-					<Cnt>1</Cnt>
-					<Retries>3</Retries>
-					<Validate>
-						<Data>0100</Data>
-						<DataMask>0f00</DataMask>
-						<Timeout>3000</Timeout>
-					</Validate>
-				</InitCmd>
-				<InitCmd>
-					<Transition>IP</Transition>
-					<Comment><![CDATA[assign EEPROM to ECAT]]></Comment>
-					<Requires>cycle</Requires>
-					<Cmd>2</Cmd>
-					<Adp>65526</Adp>
-					<Ado>1280</Ado>
-					<Data>00</Data>
-					<Cnt>1</Cnt>
-					<Retries>3</Retries>
-				</InitCmd>
-				<InitCmd>
-					<Transition>IP</Transition>
-					<Comment><![CDATA[check vendor id]]></Comment>
-					<Cmd>2</Cmd>
-					<Adp>65526</Adp>
-					<Ado>1282</Ado>
-					<Data>000108000000</Data>
-					<Cnt>1</Cnt>
-					<Retries>3</Retries>
-				</InitCmd>
-				<InitCmd>
-					<Transition>IP</Transition>
-					<Comment><![CDATA[check vendor id]]></Comment>
-					<Requires>cycle</Requires>
-					<Cmd>1</Cmd>
-					<Adp>65526</Adp>
-					<Ado>1288</Ado>
-					<Data>00000000</Data>
-					<Cnt>1</Cnt>
-					<Retries>3</Retries>
-					<Validate>
-						<Data>02000000</Data>
-						<Timeout>100</Timeout>
-					</Validate>
-				</InitCmd>
-				<InitCmd>
-					<Transition>IP</Transition>
-					<Comment><![CDATA[check product code]]></Comment>
-					<Cmd>2</Cmd>
-					<Adp>65526</Adp>
-					<Ado>1282</Ado>
-					<Data>00010a000000</Data>
-					<Cnt>1</Cnt>
-					<Retries>3</Retries>
-				</InitCmd>
-				<InitCmd>
-					<Transition>IP</Transition>
-					<Comment><![CDATA[check product code]]></Comment>
-					<Requires>cycle</Requires>
-					<Cmd>1</Cmd>
-					<Adp>65526</Adp>
-					<Ado>1288</Ado>
-					<Data>00000000</Data>
-					<Cnt>1</Cnt>
-					<Retries>3</Retries>
-					<Validate>
-						<Data>52300610</Data>
-						<Timeout>100</Timeout>
-					</Validate>
-				</InitCmd>
-				<InitCmd>
-					<Transition>IP</Transition>
-					<Transition>IB</Transition>
-					<Comment><![CDATA[set physical address]]></Comment>
-					<Requires>cycle</Requires>
-					<Cmd>2</Cmd>
-					<Adp>65526</Adp>
-					<Ado>16</Ado>
-					<Data>f303</Data>
-					<Cnt>1</Cnt>
-					<Retries>3</Retries>
-				</InitCmd>
-				<InitCmd>
-					<Transition>IP</Transition>
-					<Transition>IB</Transition>
-					<Transition>PI</Transition>
-					<Transition>SI</Transition>
-					<Transition>OI</Transition>
-					<Comment><![CDATA[clear sm 0/1 (mailbox out/in)]]></Comment>
-					<Cmd>5</Cmd>
-					<Adp>1011</Adp>
-					<Ado>2048</Ado>
-					<Data>00000000000000000000000000000000</Data>
-					<Retries>3</Retries>
-				</InitCmd>
-				<InitCmd>
-					<Transition>BI</Transition>
-					<Comment><![CDATA[clear sm 0/1 (mailbox out/in)]]></Comment>
-					<Cmd>2</Cmd>
-					<Adp>65526</Adp>
-					<Ado>2048</Ado>
-					<Data>00000000000000000000000000000000</Data>
-					<Retries>3</Retries>
-				</InitCmd>
-				<InitCmd>
-					<Transition>IP</Transition>
-					<Comment><![CDATA[set sm 0 (mailbox out)]]></Comment>
-					<Cmd>5</Cmd>
-					<Adp>1011</Adp>
-					<Ado>2048</Ado>
-					<Data>0018f60026000100</Data>
-					<Cnt>1</Cnt>
-					<Retries>3</Retries>
-				</InitCmd>
-				<InitCmd>
-					<Transition>IP</Transition>
-					<Comment><![CDATA[set sm 1 (mailbox in)]]></Comment>
-					<Cmd>5</Cmd>
-					<Adp>1011</Adp>
-					<Ado>2056</Ado>
-					<Data>f618f60022000100</Data>
-					<Cnt>1</Cnt>
-					<Retries>3</Retries>
-				</InitCmd>
-				<InitCmd>
-					<Transition>IB</Transition>
-					<Comment><![CDATA[set sm 0 (bootstrap out)]]></Comment>
-					<Cmd>5</Cmd>
-					<Adp>1011</Adp>
-					<Ado>2048</Ado>
-					<Data>0010f40026000100</Data>
-					<Cnt>1</Cnt>
-					<Retries>3</Retries>
-				</InitCmd>
-				<InitCmd>
-					<Transition>IB</Transition>
-					<Comment><![CDATA[set sm 1 (bootstrap in)]]></Comment>
-					<Cmd>5</Cmd>
-					<Adp>1011</Adp>
-					<Ado>2056</Ado>
-					<Data>f410f40022000100</Data>
-					<Cnt>1</Cnt>
-					<Retries>3</Retries>
-				</InitCmd>
-				<InitCmd>
-					<Transition>PS</Transition>
-					<Comment><![CDATA[set DC cycle time]]></Comment>
-					<Requires>cycle</Requires>
-					<Cmd>5</Cmd>
-					<Adp>1011</Adp>
-					<Ado>2464</Ado>
-					<Data>40420f00a0860100</Data>
-					<Cnt>1</Cnt>
-					<Retries>3</Retries>
-				</InitCmd>
-				<InitCmd>
-					<Transition>PS</Transition>
-					<Comment><![CDATA[set DC start time]]></Comment>
-					<Requires>cycle</Requires>
-					<Cmd>5</Cmd>
-					<Adp>1011</Adp>
-					<Ado>2448</Ado>
-					<Data>0000000000000000</Data>
-					<Cnt>1</Cnt>
-					<Retries>3</Retries>
-				</InitCmd>
-				<InitCmd>
-					<Transition>PS</Transition>
-					<Comment><![CDATA[set DC activation]]></Comment>
-					<Requires>cycle</Requires>
-					<Cmd>5</Cmd>
-					<Adp>1011</Adp>
-					<Ado>2432</Ado>
-					<Data>0007</Data>
-					<Cnt>1</Cnt>
-					<Retries>3</Retries>
-				</InitCmd>
-				<InitCmd>
-					<Transition>PS</Transition>
-					<Comment><![CDATA[set DC latch cfg]]></Comment>
-					<Requires>cycle</Requires>
-					<Cmd>5</Cmd>
-					<Adp>1011</Adp>
-					<Ado>2472</Ado>
-					<Data>0000</Data>
-					<Retries>3</Retries>
-				</InitCmd>
-				<InitCmd>
-					<Transition>IP</Transition>
-					<Transition>PP</Transition>
-					<Comment><![CDATA[clear DC activation]]></Comment>
-					<Requires>cycle</Requires>
-					<Cmd>5</Cmd>
-					<Adp>1011</Adp>
-					<Ado>2432</Ado>
-					<Data>0000</Data>
-					<Retries>3</Retries>
-				</InitCmd>
-				<InitCmd>
-					<Transition>SP</Transition>
-					<Transition>OP</Transition>
-					<Comment><![CDATA[set device state to PREOP]]></Comment>
-					<Requires>cycle</Requires>
-					<Cmd>5</Cmd>
-					<Adp>1011</Adp>
-					<Ado>288</Ado>
-					<Data>1200</Data>
-					<Retries>300</Retries>
-					<Timeout>200</Timeout>
-				</InitCmd>
-				<InitCmd>
-					<Transition>IP</Transition>
-					<Transition>SP</Transition>
-					<Transition>SI</Transition>
-					<Transition>OP</Transition>
-					<Transition>OI</Transition>
-					<Comment><![CDATA[clear sms]]></Comment>
-					<Cmd>5</Cmd>
-					<Adp>1011</Adp>
-					<Ado>2064</Ado>
-					<Data>00000000000000000000000000000000</Data>
-					<Retries>3</Retries>
-				</InitCmd>
-				<InitCmd>
-					<Transition>PS</Transition>
-					<Comment><![CDATA[set sm 2 (outputs)]]></Comment>
-					<Cmd>5</Cmd>
-					<Adp>1011</Adp>
-					<Ado>2064</Ado>
-					<Data>0010040024000100</Data>
-					<Cnt>1</Cnt>
-					<Retries>3</Retries>
-				</InitCmd>
-				<InitCmd>
-					<Transition>PS</Transition>
-					<Comment><![CDATA[set sm 3 (inputs)]]></Comment>
-					<Cmd>5</Cmd>
-					<Adp>1011</Adp>
-					<Ado>2072</Ado>
-					<Data>0011000020000000</Data>
-					<Cnt>1</Cnt>
-					<Retries>3</Retries>
-				</InitCmd>
-				<InitCmd>
-					<Transition>PS</Transition>
-					<Comment><![CDATA[set fmmu 0 (outputs)]]></Comment>
-					<Cmd>5</Cmd>
-					<Adp>1011</Adp>
-					<Ado>1536</Ado>
-					<Data>00080001040000070010000201000000</Data>
-					<Cnt>1</Cnt>
-					<Retries>3</Retries>
-				</InitCmd>
-				<InitCmd>
-					<Transition>IP</Transition>
-					<Transition>IB</Transition>
-					<Comment><![CDATA[set fmmu 1 (mailbox state)]]></Comment>
-					<Cmd>5</Cmd>
-					<Adp>1011</Adp>
-					<Ado>1552</Ado>
-					<Data>00000009010005050d08000101000000</Data>
-					<Cnt>1</Cnt>
-					<Retries>3</Retries>
-				</InitCmd>
-				<InitCmd>
-					<Transition>OS</Transition>
-					<Comment><![CDATA[set device state to SAFEOP]]></Comment>
-					<Requires>cycle</Requires>
-					<Cmd>5</Cmd>
-					<Adp>1011</Adp>
-					<Ado>288</Ado>
-					<Data>0400</Data>
-					<Retries>3</Retries>
-					<Timeout>200</Timeout>
-				</InitCmd>
-				<InitCmd>
-					<Transition>SP</Transition>
-					<Transition>SI</Transition>
-					<Transition>OP</Transition>
-					<Transition>OI</Transition>
-					<Comment><![CDATA[clear fmmu 0]]></Comment>
-					<Cmd>5</Cmd>
-					<Adp>1011</Adp>
-					<Ado>1536</Ado>
-					<Data>00000000000000000000000000000000</Data>
-					<Retries>3</Retries>
-				</InitCmd>
-				<InitCmd>
-					<Transition>PI</Transition>
-					<Transition>BI</Transition>
-					<Transition>SI</Transition>
-					<Transition>OI</Transition>
-					<Comment><![CDATA[clear fmmu 1]]></Comment>
-					<Cmd>5</Cmd>
-					<Adp>1011</Adp>
-					<Ado>1552</Ado>
-					<Data>00000000000000000000000000000000</Data>
-					<Retries>3</Retries>
-				</InitCmd>
-				<InitCmd>
-					<Transition>SP</Transition>
-					<Transition>OP</Transition>
-					<Comment><![CDATA[clear DC activation]]></Comment>
-					<Requires>cycle</Requires>
-					<Cmd>5</Cmd>
-					<Adp>1011</Adp>
-					<Ado>2432</Ado>
-					<Data>0000</Data>
-					<Retries>3</Retries>
-				</InitCmd>
-				<InitCmd>
-					<Transition>SP</Transition>
-					<Transition>OP</Transition>
-					<Comment><![CDATA[check device state for PREOP]]></Comment>
-					<Requires>cycle</Requires>
-					<Cmd>4</Cmd>
-					<Adp>1011</Adp>
-					<Ado>304</Ado>
-					<Data>000000000000</Data>
-					<Retries>3</Retries>
-					<Validate>
-						<Data>020000000000</Data>
-						<DataMask>0f0000000000</DataMask>
-						<Timeout>5000</Timeout>
-					</Validate>
-				</InitCmd>
-				<InitCmd>
-					<Transition>IP</Transition>
-					<Transition>IB</Transition>
-					<Comment><![CDATA[assign EEPROM to PDI]]></Comment>
-					<Requires>cycle</Requires>
-					<Cmd>5</Cmd>
-					<Adp>1011</Adp>
-					<Ado>1280</Ado>
-					<Data>01</Data>
-					<Cnt>1</Cnt>
-					<Retries>3</Retries>
-				</InitCmd>
-				<InitCmd>
-					<Transition>II</Transition>
-					<Comment><![CDATA[assign EEPROM back to ECAT]]></Comment>
-					<Requires>cycle</Requires>
-					<Cmd>2</Cmd>
-					<Adp>65526</Adp>
-					<Ado>1280</Ado>
-					<Data>00</Data>
-					<Retries>3</Retries>
-				</InitCmd>
-				<InitCmd>
-					<Transition>IP</Transition>
-					<Comment><![CDATA[set device state to PREOP]]></Comment>
-					<Requires>cycle</Requires>
-					<Cmd>5</Cmd>
-					<Adp>1011</Adp>
-					<Ado>288</Ado>
-					<Data>1200</Data>
-					<Cnt>1</Cnt>
-					<Retries>300</Retries>
-					<Timeout>3000</Timeout>
-				</InitCmd>
-				<InitCmd>
-					<Transition>IP</Transition>
-					<Comment><![CDATA[check device state for PREOP]]></Comment>
-					<Requires>cycle</Requires>
-					<Cmd>4</Cmd>
-					<Adp>1011</Adp>
-					<Ado>304</Ado>
-					<Data>000000000000</Data>
-					<Cnt>1</Cnt>
-					<Retries>3</Retries>
-					<Validate>
-						<Data>020000000000</Data>
-						<DataMask>1f0000000000</DataMask>
-						<Timeout>3000</Timeout>
-					</Validate>
-				</InitCmd>
-				<InitCmd>
-					<Transition>IP</Transition>
-					<Transition>BI</Transition>
-					<Comment><![CDATA[assign EEPROM back to ECAT]]></Comment>
-					<Requires>cycle</Requires>
-					<Cmd>2</Cmd>
-					<Adp>65526</Adp>
-					<Ado>1280</Ado>
-					<Data>00</Data>
-					<Retries>3</Retries>
-				</InitCmd>
-				<InitCmd>
-					<Transition>IB</Transition>
-					<Comment><![CDATA[set device state to BOOT]]></Comment>
-					<Requires>cycle</Requires>
-					<Cmd>5</Cmd>
-					<Adp>1011</Adp>
-					<Ado>288</Ado>
-					<Data>1300</Data>
-					<Cnt>1</Cnt>
-					<Retries>3</Retries>
-					<Timeout>3000</Timeout>
-				</InitCmd>
-				<InitCmd>
-					<Transition>IB</Transition>
-					<Comment><![CDATA[check device state for BOOT]]></Comment>
-					<Requires>cycle</Requires>
-					<Cmd>4</Cmd>
-					<Adp>1011</Adp>
-					<Ado>304</Ado>
-					<Data>000000000000</Data>
-					<Cnt>1</Cnt>
-					<Retries>3</Retries>
-					<Validate>
-						<Data>030000000000</Data>
-						<DataMask>1f0000000000</DataMask>
-						<Timeout>3000</Timeout>
-					</Validate>
-				</InitCmd>
-				<InitCmd>
-					<Transition>PS</Transition>
-					<Comment><![CDATA[set device state to SAFEOP]]></Comment>
-					<Requires>cycle</Requires>
-					<Cmd>5</Cmd>
-					<Adp>1011</Adp>
-					<Ado>288</Ado>
-					<Data>0400</Data>
-					<Cnt>1</Cnt>
-					<Retries>3</Retries>
-					<Timeout>10000</Timeout>
-				</InitCmd>
-				<InitCmd>
-					<Transition>PS</Transition>
-					<Comment><![CDATA[check device state for SAFEOP]]></Comment>
-					<Requires>cycle</Requires>
-					<Cmd>4</Cmd>
-					<Adp>1011</Adp>
-					<Ado>304</Ado>
-					<Data>000000000000</Data>
-					<Cnt>1</Cnt>
-					<Retries>3</Retries>
-					<Validate>
-						<Data>040000000000</Data>
-						<DataMask>1f0000000000</DataMask>
-						<Timeout>10000</Timeout>
-					</Validate>
-				</InitCmd>
-				<InitCmd>
-					<Transition>OS</Transition>
-					<Comment><![CDATA[check device state for SAFEOP]]></Comment>
-					<Requires>cycle</Requires>
-					<Cmd>4</Cmd>
-					<Adp>1011</Adp>
-					<Ado>304</Ado>
-					<Data>000000000000</Data>
-					<Retries>3</Retries>
-					<Validate>
-						<Data>040000000000</Data>
-						<DataMask>0f0000000000</DataMask>
-						<Timeout>200</Timeout>
-					</Validate>
-				</InitCmd>
-				<InitCmd>
-					<Transition>SO</Transition>
-					<Comment><![CDATA[set device state to OP]]></Comment>
-					<Requires>cycle</Requires>
-					<Cmd>5</Cmd>
-					<Adp>1011</Adp>
-					<Ado>288</Ado>
-					<Data>0800</Data>
-					<Cnt>1</Cnt>
-					<Retries>3</Retries>
-					<Timeout>10000</Timeout>
-				</InitCmd>
-				<InitCmd>
-					<Transition>SO</Transition>
-					<Comment><![CDATA[check device state for OP]]></Comment>
-					<Requires>cycle</Requires>
-					<Cmd>4</Cmd>
-					<Adp>1011</Adp>
-					<Ado>304</Ado>
-					<Data>000000000000</Data>
-					<Cnt>1</Cnt>
-					<Retries>3</Retries>
-					<Validate>
-						<Data>080000000000</Data>
-						<DataMask>1f0000000000</DataMask>
-						<Timeout>10000</Timeout>
-					</Validate>
-				</InitCmd>
-			</InitCmds>
-			<PreviousPort Selected="true">
-				<Port>B</Port>
-				<PhysAddr>1010</PhysAddr>
-			</PreviousPort>
-			<DC>
-				<ReferenceClock>false</ReferenceClock>
-				<CycleTime0>1000000</CycleTime0>
-				<CycleTime1>100000</CycleTime1>
-				<ShiftTime>0</ShiftTime>
-			</DC>
-		</Slave>
-		<Slave>
-			<Info>
-				<Name><![CDATA[Term 15 (EL9011)]]></Name>
+				<Name><![CDATA[Term 13 (EL9011)]]></Name>
 				<VendorId>2</VendorId>
 				<ProductCode>590557264</ProductCode>
 				<RevisionNo>0</RevisionNo>
@@ -9055,14 +8341,14 @@ Bit1: Value smaller than Limit2</Comment>
 			<ProcessData/>
 			<PreviousPort Selected="true">
 				<Port>B</Port>
-				<PhysAddr>1011</PhysAddr>
+				<PhysAddr>1010</PhysAddr>
 			</PreviousPort>
 		</Slave>
 		<Slave>
 			<Info>
-				<Name><![CDATA[Drive 12 (Elmo Drive )]]></Name>
-				<PhysAddr>1012</PhysAddr>
-				<AutoIncAddr>65525</AutoIncAddr>
+				<Name><![CDATA[Drive 11 (Elmo Drive )]]></Name>
+				<PhysAddr>1011</PhysAddr>
+				<AutoIncAddr>65526</AutoIncAddr>
 				<Identification Value="0">
 					<Ado>#x0134</Ado>
 				</Identification>
@@ -9074,12 +8360,12 @@ Bit1: Value smaller than Limit2</Comment>
 			</Info>
 			<ProcessData>
 				<Send>
-					<BitStart>1824</BitStart>
-					<BitLength>64</BitLength>
+					<BitStart>1440</BitStart>
+					<BitLength>96</BitLength>
 				</Send>
 				<Recv>
-					<BitStart>1824</BitStart>
-					<BitLength>192</BitLength>
+					<BitStart>1440</BitStart>
+					<BitLength>256</BitLength>
 				</Recv>
 				<Sm2>
 					<Type>Outputs</Type>
@@ -9092,6 +8378,7 @@ Bit1: Value smaller than Limit2</Comment>
 					<Pdo>5643</Pdo>
 					<Pdo>5644</Pdo>
 					<Pdo>5645</Pdo>
+					<Pdo>5647</Pdo>
 				</Sm2>
 				<Sm3>
 					<Type>Inputs</Type>
@@ -9102,12 +8389,14 @@ Bit1: Value smaller than Limit2</Comment>
 					<Enable>1</Enable>
 					<Pdo>6666</Pdo>
 					<Pdo>6667</Pdo>
+					<Pdo>6668</Pdo>
 					<Pdo>6669</Pdo>
+					<Pdo>6670</Pdo>
 					<Pdo>6671</Pdo>
+					<Pdo>6674</Pdo>
 					<Pdo>6675</Pdo>
 					<Pdo>6680</Pdo>
-					<Pdo>6684</Pdo>
-					<Pdo>6687</Pdo>
+					<Pdo>6681</Pdo>
 				</Sm3>
 				<TxPdo Fixed="true">
 					<Index>#x1a00</Index>
@@ -9128,7 +8417,7 @@ Bit1: Value smaller than Limit2</Comment>
 						<SubIndex>0</SubIndex>
 						<BitLen>32</BitLen>
 						<Name>Digital Inputs</Name>
-						<DataType>DINT</DataType>
+						<DataType>UDINT</DataType>
 					</Entry>
 					<Entry>
 						<Index>#x6041</Index>
@@ -9233,7 +8522,7 @@ Bit1: Value smaller than Limit2</Comment>
 						<SubIndex>0</SubIndex>
 						<BitLen>32</BitLen>
 						<Name>Digital Inputs</Name>
-						<DataType>DINT</DataType>
+						<DataType>UDINT</DataType>
 					</Entry>
 					<Entry>
 						<Index>#x606c</Index>
@@ -9331,7 +8620,7 @@ Bit1: Value smaller than Limit2</Comment>
 						<BitLen>8</BitLen>
 					</Entry>
 				</TxPdo>
-				<TxPdo Fixed="true">
+				<TxPdo Fixed="true" Sm="3">
 					<Index>#x1a0c</Index>
 					<Name>Inputs</Name>
 					<Entry>
@@ -9353,7 +8642,7 @@ Bit1: Value smaller than Limit2</Comment>
 						<DataType>DINT</DataType>
 					</Entry>
 				</TxPdo>
-				<TxPdo Fixed="true">
+				<TxPdo Fixed="true" Sm="3">
 					<Index>#x1a0e</Index>
 					<Name>Inputs</Name>
 					<Entry>
@@ -9397,7 +8686,7 @@ Bit1: Value smaller than Limit2</Comment>
 						<DataType>DINT</DataType>
 					</Entry>
 				</TxPdo>
-				<TxPdo Fixed="true">
+				<TxPdo Fixed="true" Sm="3">
 					<Index>#x1a12</Index>
 					<Name>Inputs</Name>
 					<Entry>
@@ -9474,7 +8763,7 @@ Bit1: Value smaller than Limit2</Comment>
 						<DataType>UDINT</DataType>
 					</Entry>
 				</TxPdo>
-				<TxPdo Fixed="true">
+				<TxPdo Fixed="true" Sm="3">
 					<Index>#x1a19</Index>
 					<Name>Inputs</Name>
 					<Entry>
@@ -9507,7 +8796,7 @@ Bit1: Value smaller than Limit2</Comment>
 						<DataType>DINT</DataType>
 					</Entry>
 				</TxPdo>
-				<TxPdo Fixed="true" Sm="3">
+				<TxPdo Fixed="true">
 					<Index>#x1a1c</Index>
 					<Name>Inputs</Name>
 					<Entry>
@@ -9515,7 +8804,7 @@ Bit1: Value smaller than Limit2</Comment>
 						<SubIndex>0</SubIndex>
 						<BitLen>32</BitLen>
 						<Name>Digital Inputs</Name>
-						<DataType>DINT</DataType>
+						<DataType>UDINT</DataType>
 					</Entry>
 				</TxPdo>
 				<TxPdo Fixed="true">
@@ -9540,7 +8829,7 @@ Bit1: Value smaller than Limit2</Comment>
 						<DataType>DINT</DataType>
 					</Entry>
 				</TxPdo>
-				<TxPdo Fixed="true" Sm="3">
+				<TxPdo Fixed="true">
 					<Index>#x1a1f</Index>
 					<Name>Inputs</Name>
 					<Entry>
@@ -9947,7 +9236,7 @@ Bit1: Value smaller than Limit2</Comment>
 						<DataType>UINT</DataType>
 					</Entry>
 				</RxPdo>
-				<RxPdo Fixed="true">
+				<RxPdo Fixed="true" Sm="2">
 					<Index>#x160f</Index>
 					<Name>Outputs</Name>
 					<Entry>
@@ -10256,12 +9545,21 @@ Bit1: Value smaller than Limit2</Comment>
 						</InitCmd>
 						<InitCmd Fixed="true">
 							<Transition>PS</Transition>
+							<Comment><![CDATA[download pdo 0x1C12:05 index]]></Comment>
+							<Timeout>0</Timeout>
+							<Ccs>1</Ccs>
+							<Index>7186</Index>
+							<SubIndex>5</SubIndex>
+							<Data>0f16</Data>
+						</InitCmd>
+						<InitCmd Fixed="true">
+							<Transition>PS</Transition>
 							<Comment><![CDATA[download pdo 0x1C12 count]]></Comment>
 							<Timeout>0</Timeout>
 							<Ccs>1</Ccs>
 							<Index>7186</Index>
 							<SubIndex>0</SubIndex>
-							<Data>04</Data>
+							<Data>05</Data>
 						</InitCmd>
 						<InitCmd Fixed="true">
 							<Transition>PS</Transition>
@@ -10288,7 +9586,7 @@ Bit1: Value smaller than Limit2</Comment>
 							<Ccs>1</Ccs>
 							<Index>7187</Index>
 							<SubIndex>3</SubIndex>
-							<Data>0d1a</Data>
+							<Data>0c1a</Data>
 						</InitCmd>
 						<InitCmd Fixed="true">
 							<Transition>PS</Transition>
@@ -10297,7 +9595,7 @@ Bit1: Value smaller than Limit2</Comment>
 							<Ccs>1</Ccs>
 							<Index>7187</Index>
 							<SubIndex>4</SubIndex>
-							<Data>0f1a</Data>
+							<Data>0d1a</Data>
 						</InitCmd>
 						<InitCmd Fixed="true">
 							<Transition>PS</Transition>
@@ -10306,7 +9604,7 @@ Bit1: Value smaller than Limit2</Comment>
 							<Ccs>1</Ccs>
 							<Index>7187</Index>
 							<SubIndex>5</SubIndex>
-							<Data>131a</Data>
+							<Data>0e1a</Data>
 						</InitCmd>
 						<InitCmd Fixed="true">
 							<Transition>PS</Transition>
@@ -10315,7 +9613,7 @@ Bit1: Value smaller than Limit2</Comment>
 							<Ccs>1</Ccs>
 							<Index>7187</Index>
 							<SubIndex>6</SubIndex>
-							<Data>181a</Data>
+							<Data>0f1a</Data>
 						</InitCmd>
 						<InitCmd Fixed="true">
 							<Transition>PS</Transition>
@@ -10324,7 +9622,7 @@ Bit1: Value smaller than Limit2</Comment>
 							<Ccs>1</Ccs>
 							<Index>7187</Index>
 							<SubIndex>7</SubIndex>
-							<Data>1c1a</Data>
+							<Data>121a</Data>
 						</InitCmd>
 						<InitCmd Fixed="true">
 							<Transition>PS</Transition>
@@ -10333,7 +9631,25 @@ Bit1: Value smaller than Limit2</Comment>
 							<Ccs>1</Ccs>
 							<Index>7187</Index>
 							<SubIndex>8</SubIndex>
-							<Data>1f1a</Data>
+							<Data>131a</Data>
+						</InitCmd>
+						<InitCmd Fixed="true">
+							<Transition>PS</Transition>
+							<Comment><![CDATA[download pdo 0x1C13:09 index]]></Comment>
+							<Timeout>0</Timeout>
+							<Ccs>1</Ccs>
+							<Index>7187</Index>
+							<SubIndex>9</SubIndex>
+							<Data>181a</Data>
+						</InitCmd>
+						<InitCmd Fixed="true">
+							<Transition>PS</Transition>
+							<Comment><![CDATA[download pdo 0x1C13:10 index]]></Comment>
+							<Timeout>0</Timeout>
+							<Ccs>1</Ccs>
+							<Index>7187</Index>
+							<SubIndex>10</SubIndex>
+							<Data>191a</Data>
 						</InitCmd>
 						<InitCmd Fixed="true">
 							<Transition>PS</Transition>
@@ -10342,7 +9658,7 @@ Bit1: Value smaller than Limit2</Comment>
 							<Ccs>1</Ccs>
 							<Index>7187</Index>
 							<SubIndex>0</SubIndex>
-							<Data>08</Data>
+							<Data>0a</Data>
 						</InitCmd>
 						<InitCmd>
 							<Transition>PS</Transition>
@@ -10380,7 +9696,7 @@ Bit1: Value smaller than Limit2</Comment>
 					<Comment><![CDATA[set device state to INIT]]></Comment>
 					<Requires>cycle</Requires>
 					<Cmd>2</Cmd>
-					<Adp>65525</Adp>
+					<Adp>65526</Adp>
 					<Ado>288</Ado>
 					<Data>1100</Data>
 					<Retries>3</Retries>
@@ -10392,7 +9708,7 @@ Bit1: Value smaller than Limit2</Comment>
 					<Comment><![CDATA[clear DC activation]]></Comment>
 					<Requires>cycle</Requires>
 					<Cmd>2</Cmd>
-					<Adp>65525</Adp>
+					<Adp>65526</Adp>
 					<Ado>2432</Ado>
 					<Data>0000</Data>
 					<Retries>3</Retries>
@@ -10404,7 +9720,7 @@ Bit1: Value smaller than Limit2</Comment>
 					<Comment><![CDATA[check device state for INIT]]></Comment>
 					<Requires>cycle</Requires>
 					<Cmd>1</Cmd>
-					<Adp>65525</Adp>
+					<Adp>65526</Adp>
 					<Ado>304</Ado>
 					<Data>0000</Data>
 					<Retries>3</Retries>
@@ -10419,7 +9735,7 @@ Bit1: Value smaller than Limit2</Comment>
 					<Comment><![CDATA[check device state for INIT]]></Comment>
 					<Requires>cycle</Requires>
 					<Cmd>1</Cmd>
-					<Adp>65525</Adp>
+					<Adp>65526</Adp>
 					<Ado>304</Ado>
 					<Data>0000</Data>
 					<Retries>3</Retries>
@@ -10435,7 +9751,7 @@ Bit1: Value smaller than Limit2</Comment>
 					<Comment><![CDATA[set device state to INIT]]></Comment>
 					<Requires>cycle</Requires>
 					<Cmd>2</Cmd>
-					<Adp>65525</Adp>
+					<Adp>65526</Adp>
 					<Ado>288</Ado>
 					<Data>1100</Data>
 					<Cnt>1</Cnt>
@@ -10448,7 +9764,7 @@ Bit1: Value smaller than Limit2</Comment>
 					<Comment><![CDATA[check device state for INIT]]></Comment>
 					<Requires>cycle</Requires>
 					<Cmd>1</Cmd>
-					<Adp>65525</Adp>
+					<Adp>65526</Adp>
 					<Ado>304</Ado>
 					<Data>0000</Data>
 					<Cnt>1</Cnt>
@@ -10464,7 +9780,7 @@ Bit1: Value smaller than Limit2</Comment>
 					<Comment><![CDATA[assign EEPROM to ECAT]]></Comment>
 					<Requires>cycle</Requires>
 					<Cmd>2</Cmd>
-					<Adp>65525</Adp>
+					<Adp>65526</Adp>
 					<Ado>1280</Ado>
 					<Data>00</Data>
 					<Cnt>1</Cnt>
@@ -10474,7 +9790,7 @@ Bit1: Value smaller than Limit2</Comment>
 					<Transition>IP</Transition>
 					<Comment><![CDATA[check vendor id]]></Comment>
 					<Cmd>2</Cmd>
-					<Adp>65525</Adp>
+					<Adp>65526</Adp>
 					<Ado>1282</Ado>
 					<Data>000108000000</Data>
 					<Cnt>1</Cnt>
@@ -10485,7 +9801,7 @@ Bit1: Value smaller than Limit2</Comment>
 					<Comment><![CDATA[check vendor id]]></Comment>
 					<Requires>cycle</Requires>
 					<Cmd>1</Cmd>
-					<Adp>65525</Adp>
+					<Adp>65526</Adp>
 					<Ado>1288</Ado>
 					<Data>00000000</Data>
 					<Cnt>1</Cnt>
@@ -10499,7 +9815,7 @@ Bit1: Value smaller than Limit2</Comment>
 					<Transition>IP</Transition>
 					<Comment><![CDATA[check product code]]></Comment>
 					<Cmd>2</Cmd>
-					<Adp>65525</Adp>
+					<Adp>65526</Adp>
 					<Ado>1282</Ado>
 					<Data>00010a000000</Data>
 					<Cnt>1</Cnt>
@@ -10510,7 +9826,7 @@ Bit1: Value smaller than Limit2</Comment>
 					<Comment><![CDATA[check product code]]></Comment>
 					<Requires>cycle</Requires>
 					<Cmd>1</Cmd>
-					<Adp>65525</Adp>
+					<Adp>65526</Adp>
 					<Ado>1288</Ado>
 					<Data>00000000</Data>
 					<Cnt>1</Cnt>
@@ -10526,9 +9842,9 @@ Bit1: Value smaller than Limit2</Comment>
 					<Comment><![CDATA[set physical address]]></Comment>
 					<Requires>cycle</Requires>
 					<Cmd>2</Cmd>
-					<Adp>65525</Adp>
+					<Adp>65526</Adp>
 					<Ado>16</Ado>
-					<Data>f403</Data>
+					<Data>f303</Data>
 					<Cnt>1</Cnt>
 					<Retries>3</Retries>
 				</InitCmd>
@@ -10536,7 +9852,7 @@ Bit1: Value smaller than Limit2</Comment>
 					<Transition>IP</Transition>
 					<Comment><![CDATA[set watchdog divider]]></Comment>
 					<Cmd>5</Cmd>
-					<Adp>1012</Adp>
+					<Adp>1011</Adp>
 					<Ado>1024</Ado>
 					<Data>c209</Data>
 					<Cnt>1</Cnt>
@@ -10546,7 +9862,7 @@ Bit1: Value smaller than Limit2</Comment>
 					<Transition>IP</Transition>
 					<Comment><![CDATA[set PDI watchdog]]></Comment>
 					<Cmd>5</Cmd>
-					<Adp>1012</Adp>
+					<Adp>1011</Adp>
 					<Ado>1040</Ado>
 					<Data>e803</Data>
 					<Cnt>1</Cnt>
@@ -10556,7 +9872,7 @@ Bit1: Value smaller than Limit2</Comment>
 					<Transition>IP</Transition>
 					<Comment><![CDATA[set SM watchdog]]></Comment>
 					<Cmd>5</Cmd>
-					<Adp>1012</Adp>
+					<Adp>1011</Adp>
 					<Ado>1056</Ado>
 					<Data>1027</Data>
 					<Cnt>1</Cnt>
@@ -10570,7 +9886,7 @@ Bit1: Value smaller than Limit2</Comment>
 					<Transition>OI</Transition>
 					<Comment><![CDATA[clear sm 0/1 (mailbox out/in)]]></Comment>
 					<Cmd>5</Cmd>
-					<Adp>1012</Adp>
+					<Adp>1011</Adp>
 					<Ado>2048</Ado>
 					<Data>00000000000000000000000000000000</Data>
 					<Retries>3</Retries>
@@ -10579,7 +9895,7 @@ Bit1: Value smaller than Limit2</Comment>
 					<Transition>BI</Transition>
 					<Comment><![CDATA[clear sm 0/1 (mailbox out/in)]]></Comment>
 					<Cmd>2</Cmd>
-					<Adp>65525</Adp>
+					<Adp>65526</Adp>
 					<Ado>2048</Ado>
 					<Data>00000000000000000000000000000000</Data>
 					<Retries>3</Retries>
@@ -10588,7 +9904,7 @@ Bit1: Value smaller than Limit2</Comment>
 					<Transition>IP</Transition>
 					<Comment><![CDATA[set sm 0 (mailbox out)]]></Comment>
 					<Cmd>5</Cmd>
-					<Adp>1012</Adp>
+					<Adp>1011</Adp>
 					<Ado>2048</Ado>
 					<Data>00188c0026000100</Data>
 					<Cnt>1</Cnt>
@@ -10598,7 +9914,7 @@ Bit1: Value smaller than Limit2</Comment>
 					<Transition>IP</Transition>
 					<Comment><![CDATA[set sm 1 (mailbox in)]]></Comment>
 					<Cmd>5</Cmd>
-					<Adp>1012</Adp>
+					<Adp>1011</Adp>
 					<Ado>2056</Ado>
 					<Data>00198c0022000100</Data>
 					<Cnt>1</Cnt>
@@ -10608,7 +9924,7 @@ Bit1: Value smaller than Limit2</Comment>
 					<Transition>IB</Transition>
 					<Comment><![CDATA[set sm 0 (bootstrap out)]]></Comment>
 					<Cmd>5</Cmd>
-					<Adp>1012</Adp>
+					<Adp>1011</Adp>
 					<Ado>2048</Ado>
 					<Data>00188c0026000100</Data>
 					<Cnt>1</Cnt>
@@ -10618,7 +9934,7 @@ Bit1: Value smaller than Limit2</Comment>
 					<Transition>IB</Transition>
 					<Comment><![CDATA[set sm 1 (bootstrap in)]]></Comment>
 					<Cmd>5</Cmd>
-					<Adp>1012</Adp>
+					<Adp>1011</Adp>
 					<Ado>2056</Ado>
 					<Data>00198c0022000100</Data>
 					<Cnt>1</Cnt>
@@ -10629,7 +9945,7 @@ Bit1: Value smaller than Limit2</Comment>
 					<Comment><![CDATA[set DC cycle time]]></Comment>
 					<Requires>cycle</Requires>
 					<Cmd>5</Cmd>
-					<Adp>1012</Adp>
+					<Adp>1011</Adp>
 					<Ado>2464</Ado>
 					<Data>40420f0000000000</Data>
 					<Cnt>1</Cnt>
@@ -10640,7 +9956,7 @@ Bit1: Value smaller than Limit2</Comment>
 					<Comment><![CDATA[set DC start time]]></Comment>
 					<Requires>cycle</Requires>
 					<Cmd>5</Cmd>
-					<Adp>1012</Adp>
+					<Adp>1011</Adp>
 					<Ado>2448</Ado>
 					<Data>0000000000000000</Data>
 					<Cnt>1</Cnt>
@@ -10651,7 +9967,7 @@ Bit1: Value smaller than Limit2</Comment>
 					<Comment><![CDATA[set DC activation]]></Comment>
 					<Requires>cycle</Requires>
 					<Cmd>5</Cmd>
-					<Adp>1012</Adp>
+					<Adp>1011</Adp>
 					<Ado>2432</Ado>
 					<Data>0003</Data>
 					<Cnt>1</Cnt>
@@ -10662,7 +9978,7 @@ Bit1: Value smaller than Limit2</Comment>
 					<Comment><![CDATA[set DC latch cfg]]></Comment>
 					<Requires>cycle</Requires>
 					<Cmd>5</Cmd>
-					<Adp>1012</Adp>
+					<Adp>1011</Adp>
 					<Ado>2472</Ado>
 					<Data>0000</Data>
 					<Retries>3</Retries>
@@ -10673,7 +9989,7 @@ Bit1: Value smaller than Limit2</Comment>
 					<Comment><![CDATA[clear DC activation]]></Comment>
 					<Requires>cycle</Requires>
 					<Cmd>5</Cmd>
-					<Adp>1012</Adp>
+					<Adp>1011</Adp>
 					<Ado>2432</Ado>
 					<Data>0000</Data>
 					<Retries>3</Retries>
@@ -10684,7 +10000,7 @@ Bit1: Value smaller than Limit2</Comment>
 					<Comment><![CDATA[set device state to PREOP]]></Comment>
 					<Requires>cycle</Requires>
 					<Cmd>5</Cmd>
-					<Adp>1012</Adp>
+					<Adp>1011</Adp>
 					<Ado>288</Ado>
 					<Data>1200</Data>
 					<Retries>300</Retries>
@@ -10698,7 +10014,7 @@ Bit1: Value smaller than Limit2</Comment>
 					<Transition>OI</Transition>
 					<Comment><![CDATA[clear sms]]></Comment>
 					<Cmd>5</Cmd>
-					<Adp>1012</Adp>
+					<Adp>1011</Adp>
 					<Ado>2064</Ado>
 					<Data>00000000000000000000000000000000</Data>
 					<Retries>3</Retries>
@@ -10707,9 +10023,9 @@ Bit1: Value smaller than Limit2</Comment>
 					<Transition>PS</Transition>
 					<Comment><![CDATA[set sm 2 (outputs)]]></Comment>
 					<Cmd>5</Cmd>
-					<Adp>1012</Adp>
+					<Adp>1011</Adp>
 					<Ado>2064</Ado>
-					<Data>0011080064000100</Data>
+					<Data>00110c0064000100</Data>
 					<Cnt>1</Cnt>
 					<Retries>3</Retries>
 				</InitCmd>
@@ -10717,9 +10033,9 @@ Bit1: Value smaller than Limit2</Comment>
 					<Transition>PS</Transition>
 					<Comment><![CDATA[set sm 3 (inputs)]]></Comment>
 					<Cmd>5</Cmd>
-					<Adp>1012</Adp>
+					<Adp>1011</Adp>
 					<Ado>2072</Ado>
-					<Data>8011180020000100</Data>
+					<Data>8011200020000100</Data>
 					<Cnt>1</Cnt>
 					<Retries>3</Retries>
 				</InitCmd>
@@ -10727,9 +10043,9 @@ Bit1: Value smaller than Limit2</Comment>
 					<Transition>PS</Transition>
 					<Comment><![CDATA[set fmmu 0 (outputs)]]></Comment>
 					<Cmd>5</Cmd>
-					<Adp>1012</Adp>
+					<Adp>1011</Adp>
 					<Ado>1536</Ado>
-					<Data>00180001080000070011000201000000</Data>
+					<Data>001000010c0000070011000201000000</Data>
 					<Cnt>1</Cnt>
 					<Retries>3</Retries>
 				</InitCmd>
@@ -10737,9 +10053,9 @@ Bit1: Value smaller than Limit2</Comment>
 					<Transition>PS</Transition>
 					<Comment><![CDATA[set fmmu 1 (inputs)]]></Comment>
 					<Cmd>5</Cmd>
-					<Adp>1012</Adp>
+					<Adp>1011</Adp>
 					<Ado>1552</Ado>
-					<Data>00180001180000078011000101000000</Data>
+					<Data>00100001200000078011000101000000</Data>
 					<Cnt>1</Cnt>
 					<Retries>3</Retries>
 				</InitCmd>
@@ -10748,7 +10064,7 @@ Bit1: Value smaller than Limit2</Comment>
 					<Comment><![CDATA[set device state to SAFEOP]]></Comment>
 					<Requires>cycle</Requires>
 					<Cmd>5</Cmd>
-					<Adp>1012</Adp>
+					<Adp>1011</Adp>
 					<Ado>288</Ado>
 					<Data>0400</Data>
 					<Retries>3</Retries>
@@ -10761,7 +10077,7 @@ Bit1: Value smaller than Limit2</Comment>
 					<Transition>OI</Transition>
 					<Comment><![CDATA[clear fmmu 0]]></Comment>
 					<Cmd>5</Cmd>
-					<Adp>1012</Adp>
+					<Adp>1011</Adp>
 					<Ado>1536</Ado>
 					<Data>00000000000000000000000000000000</Data>
 					<Retries>3</Retries>
@@ -10773,7 +10089,7 @@ Bit1: Value smaller than Limit2</Comment>
 					<Transition>OI</Transition>
 					<Comment><![CDATA[clear fmmu 1]]></Comment>
 					<Cmd>5</Cmd>
-					<Adp>1012</Adp>
+					<Adp>1011</Adp>
 					<Ado>1552</Ado>
 					<Data>00000000000000000000000000000000</Data>
 					<Retries>3</Retries>
@@ -10784,7 +10100,7 @@ Bit1: Value smaller than Limit2</Comment>
 					<Comment><![CDATA[clear DC activation]]></Comment>
 					<Requires>cycle</Requires>
 					<Cmd>5</Cmd>
-					<Adp>1012</Adp>
+					<Adp>1011</Adp>
 					<Ado>2432</Ado>
 					<Data>0000</Data>
 					<Retries>3</Retries>
@@ -10795,7 +10111,7 @@ Bit1: Value smaller than Limit2</Comment>
 					<Comment><![CDATA[check device state for PREOP]]></Comment>
 					<Requires>cycle</Requires>
 					<Cmd>4</Cmd>
-					<Adp>1012</Adp>
+					<Adp>1011</Adp>
 					<Ado>304</Ado>
 					<Data>000000000000</Data>
 					<Retries>3</Retries>
@@ -10811,7 +10127,7 @@ Bit1: Value smaller than Limit2</Comment>
 					<Comment><![CDATA[assign EEPROM to PDI]]></Comment>
 					<Requires>cycle</Requires>
 					<Cmd>5</Cmd>
-					<Adp>1012</Adp>
+					<Adp>1011</Adp>
 					<Ado>1280</Ado>
 					<Data>01</Data>
 					<Cnt>1</Cnt>
@@ -10822,7 +10138,7 @@ Bit1: Value smaller than Limit2</Comment>
 					<Comment><![CDATA[assign EEPROM back to ECAT]]></Comment>
 					<Requires>cycle</Requires>
 					<Cmd>2</Cmd>
-					<Adp>65525</Adp>
+					<Adp>65526</Adp>
 					<Ado>1280</Ado>
 					<Data>00</Data>
 					<Retries>3</Retries>
@@ -10832,7 +10148,7 @@ Bit1: Value smaller than Limit2</Comment>
 					<Comment><![CDATA[set device state to PREOP]]></Comment>
 					<Requires>cycle</Requires>
 					<Cmd>5</Cmd>
-					<Adp>1012</Adp>
+					<Adp>1011</Adp>
 					<Ado>288</Ado>
 					<Data>1200</Data>
 					<Cnt>1</Cnt>
@@ -10844,7 +10160,7 @@ Bit1: Value smaller than Limit2</Comment>
 					<Comment><![CDATA[check device state for PREOP]]></Comment>
 					<Requires>cycle</Requires>
 					<Cmd>4</Cmd>
-					<Adp>1012</Adp>
+					<Adp>1011</Adp>
 					<Ado>304</Ado>
 					<Data>000000000000</Data>
 					<Cnt>1</Cnt>
@@ -10861,7 +10177,7 @@ Bit1: Value smaller than Limit2</Comment>
 					<Comment><![CDATA[assign EEPROM back to ECAT]]></Comment>
 					<Requires>cycle</Requires>
 					<Cmd>2</Cmd>
-					<Adp>65525</Adp>
+					<Adp>65526</Adp>
 					<Ado>1280</Ado>
 					<Data>00</Data>
 					<Retries>3</Retries>
@@ -10871,7 +10187,7 @@ Bit1: Value smaller than Limit2</Comment>
 					<Comment><![CDATA[set device state to BOOT]]></Comment>
 					<Requires>cycle</Requires>
 					<Cmd>5</Cmd>
-					<Adp>1012</Adp>
+					<Adp>1011</Adp>
 					<Ado>288</Ado>
 					<Data>1300</Data>
 					<Cnt>1</Cnt>
@@ -10883,7 +10199,7 @@ Bit1: Value smaller than Limit2</Comment>
 					<Comment><![CDATA[check device state for BOOT]]></Comment>
 					<Requires>cycle</Requires>
 					<Cmd>4</Cmd>
-					<Adp>1012</Adp>
+					<Adp>1011</Adp>
 					<Ado>304</Ado>
 					<Data>000000000000</Data>
 					<Cnt>1</Cnt>
@@ -10899,7 +10215,7 @@ Bit1: Value smaller than Limit2</Comment>
 					<Comment><![CDATA[set device state to SAFEOP]]></Comment>
 					<Requires>cycle</Requires>
 					<Cmd>5</Cmd>
-					<Adp>1012</Adp>
+					<Adp>1011</Adp>
 					<Ado>288</Ado>
 					<Data>0400</Data>
 					<Cnt>1</Cnt>
@@ -10911,7 +10227,7 @@ Bit1: Value smaller than Limit2</Comment>
 					<Comment><![CDATA[check device state for SAFEOP]]></Comment>
 					<Requires>cycle</Requires>
 					<Cmd>4</Cmd>
-					<Adp>1012</Adp>
+					<Adp>1011</Adp>
 					<Ado>304</Ado>
 					<Data>000000000000</Data>
 					<Cnt>1</Cnt>
@@ -10927,7 +10243,7 @@ Bit1: Value smaller than Limit2</Comment>
 					<Comment><![CDATA[check device state for SAFEOP]]></Comment>
 					<Requires>cycle</Requires>
 					<Cmd>4</Cmd>
-					<Adp>1012</Adp>
+					<Adp>1011</Adp>
 					<Ado>304</Ado>
 					<Data>000000000000</Data>
 					<Retries>3</Retries>
@@ -10942,7 +10258,7 @@ Bit1: Value smaller than Limit2</Comment>
 					<Comment><![CDATA[set device state to OP]]></Comment>
 					<Requires>cycle</Requires>
 					<Cmd>5</Cmd>
-					<Adp>1012</Adp>
+					<Adp>1011</Adp>
 					<Ado>288</Ado>
 					<Data>0800</Data>
 					<Cnt>1</Cnt>
@@ -10954,7 +10270,7 @@ Bit1: Value smaller than Limit2</Comment>
 					<Comment><![CDATA[check device state for OP]]></Comment>
 					<Requires>cycle</Requires>
 					<Cmd>4</Cmd>
-					<Adp>1012</Adp>
+					<Adp>1011</Adp>
 					<Ado>304</Ado>
 					<Data>000000000000</Data>
 					<Cnt>1</Cnt>
@@ -10975,1036 +10291,6 @@ Bit1: Value smaller than Limit2</Comment>
 				<CycleTime0>1000000</CycleTime0>
 				<CycleTime1>0</CycleTime1>
 				<ShiftTime>0</ShiftTime>
-			</DC>
-		</Slave>
-		<Slave>
-			<Info>
-				<Name><![CDATA[Box 13 (EasyCAT 32+32 rev 1)]]></Name>
-				<PhysAddr>1013</PhysAddr>
-				<AutoIncAddr>65524</AutoIncAddr>
-				<Physics>YY</Physics>
-				<VendorId>1946</VendorId>
-				<ProductCode>14614238</ProductCode>
-				<RevisionNo>23041</RevisionNo>
-				<SerialNo>0</SerialNo>
-			</Info>
-			<ProcessData>
-				<Send>
-					<BitStart>760</BitStart>
-					<BitLength>256</BitLength>
-				</Send>
-				<Recv>
-					<BitStart>760</BitStart>
-					<BitLength>256</BitLength>
-				</Recv>
-				<Sm0>
-					<Type>Outputs</Type>
-					<StartAddress>4096</StartAddress>
-					<ControlByte>100</ControlByte>
-					<Enable>1</Enable>
-					<Pdo>5632</Pdo>
-				</Sm0>
-				<Sm1>
-					<Type>Inputs</Type>
-					<StartAddress>4608</StartAddress>
-					<ControlByte>32</ControlByte>
-					<Enable>1</Enable>
-					<Pdo>6656</Pdo>
-				</Sm1>
-				<TxPdo Fixed="true" Mandatory="true" Sm="1">
-					<Index>#x1a00</Index>
-					<Name>Inputs</Name>
-					<Entry>
-						<Index>#x6</Index>
-						<SubIndex>1</SubIndex>
-						<BitLen>8</BitLen>
-						<Name>Byte0</Name>
-						<DataType>USINT</DataType>
-					</Entry>
-					<Entry>
-						<Index>#x6</Index>
-						<SubIndex>2</SubIndex>
-						<BitLen>8</BitLen>
-						<Name>Byte1</Name>
-						<DataType>USINT</DataType>
-					</Entry>
-					<Entry>
-						<Index>#x6</Index>
-						<SubIndex>3</SubIndex>
-						<BitLen>8</BitLen>
-						<Name>Byte2</Name>
-						<DataType>USINT</DataType>
-					</Entry>
-					<Entry>
-						<Index>#x6</Index>
-						<SubIndex>4</SubIndex>
-						<BitLen>8</BitLen>
-						<Name>Byte3</Name>
-						<DataType>USINT</DataType>
-					</Entry>
-					<Entry>
-						<Index>#x6</Index>
-						<SubIndex>5</SubIndex>
-						<BitLen>8</BitLen>
-						<Name>Byte4</Name>
-						<DataType>USINT</DataType>
-					</Entry>
-					<Entry>
-						<Index>#x6</Index>
-						<SubIndex>6</SubIndex>
-						<BitLen>8</BitLen>
-						<Name>Byte5</Name>
-						<DataType>USINT</DataType>
-					</Entry>
-					<Entry>
-						<Index>#x6</Index>
-						<SubIndex>7</SubIndex>
-						<BitLen>8</BitLen>
-						<Name>Byte6</Name>
-						<DataType>USINT</DataType>
-					</Entry>
-					<Entry>
-						<Index>#x6</Index>
-						<SubIndex>8</SubIndex>
-						<BitLen>8</BitLen>
-						<Name>Byte7</Name>
-						<DataType>USINT</DataType>
-					</Entry>
-					<Entry>
-						<Index>#x6</Index>
-						<SubIndex>9</SubIndex>
-						<BitLen>8</BitLen>
-						<Name>Byte8</Name>
-						<DataType>USINT</DataType>
-					</Entry>
-					<Entry>
-						<Index>#x6</Index>
-						<SubIndex>10</SubIndex>
-						<BitLen>8</BitLen>
-						<Name>Byte9</Name>
-						<DataType>USINT</DataType>
-					</Entry>
-					<Entry>
-						<Index>#x6</Index>
-						<SubIndex>11</SubIndex>
-						<BitLen>8</BitLen>
-						<Name>Byte10</Name>
-						<DataType>USINT</DataType>
-					</Entry>
-					<Entry>
-						<Index>#x6</Index>
-						<SubIndex>12</SubIndex>
-						<BitLen>8</BitLen>
-						<Name>Byte11</Name>
-						<DataType>USINT</DataType>
-					</Entry>
-					<Entry>
-						<Index>#x6</Index>
-						<SubIndex>13</SubIndex>
-						<BitLen>8</BitLen>
-						<Name>Byte12</Name>
-						<DataType>USINT</DataType>
-					</Entry>
-					<Entry>
-						<Index>#x6</Index>
-						<SubIndex>14</SubIndex>
-						<BitLen>8</BitLen>
-						<Name>Byte13</Name>
-						<DataType>USINT</DataType>
-					</Entry>
-					<Entry>
-						<Index>#x6</Index>
-						<SubIndex>15</SubIndex>
-						<BitLen>8</BitLen>
-						<Name>Byte14</Name>
-						<DataType>USINT</DataType>
-					</Entry>
-					<Entry>
-						<Index>#x6</Index>
-						<SubIndex>16</SubIndex>
-						<BitLen>8</BitLen>
-						<Name>Byte15</Name>
-						<DataType>USINT</DataType>
-					</Entry>
-					<Entry>
-						<Index>#x6</Index>
-						<SubIndex>17</SubIndex>
-						<BitLen>8</BitLen>
-						<Name>Byte16</Name>
-						<DataType>USINT</DataType>
-					</Entry>
-					<Entry>
-						<Index>#x6</Index>
-						<SubIndex>18</SubIndex>
-						<BitLen>8</BitLen>
-						<Name>Byte17</Name>
-						<DataType>USINT</DataType>
-					</Entry>
-					<Entry>
-						<Index>#x6</Index>
-						<SubIndex>19</SubIndex>
-						<BitLen>8</BitLen>
-						<Name>Byte18</Name>
-						<DataType>USINT</DataType>
-					</Entry>
-					<Entry>
-						<Index>#x6</Index>
-						<SubIndex>20</SubIndex>
-						<BitLen>8</BitLen>
-						<Name>Byte19</Name>
-						<DataType>USINT</DataType>
-					</Entry>
-					<Entry>
-						<Index>#x6</Index>
-						<SubIndex>21</SubIndex>
-						<BitLen>8</BitLen>
-						<Name>Byte20</Name>
-						<DataType>USINT</DataType>
-					</Entry>
-					<Entry>
-						<Index>#x6</Index>
-						<SubIndex>22</SubIndex>
-						<BitLen>8</BitLen>
-						<Name>Byte21</Name>
-						<DataType>USINT</DataType>
-					</Entry>
-					<Entry>
-						<Index>#x6</Index>
-						<SubIndex>23</SubIndex>
-						<BitLen>8</BitLen>
-						<Name>Byte22</Name>
-						<DataType>USINT</DataType>
-					</Entry>
-					<Entry>
-						<Index>#x6</Index>
-						<SubIndex>24</SubIndex>
-						<BitLen>8</BitLen>
-						<Name>Byte23</Name>
-						<DataType>USINT</DataType>
-					</Entry>
-					<Entry>
-						<Index>#x6</Index>
-						<SubIndex>25</SubIndex>
-						<BitLen>8</BitLen>
-						<Name>Byte24</Name>
-						<DataType>USINT</DataType>
-					</Entry>
-					<Entry>
-						<Index>#x6</Index>
-						<SubIndex>26</SubIndex>
-						<BitLen>8</BitLen>
-						<Name>Byte25</Name>
-						<DataType>USINT</DataType>
-					</Entry>
-					<Entry>
-						<Index>#x6</Index>
-						<SubIndex>27</SubIndex>
-						<BitLen>8</BitLen>
-						<Name>Byte26</Name>
-						<DataType>USINT</DataType>
-					</Entry>
-					<Entry>
-						<Index>#x6</Index>
-						<SubIndex>28</SubIndex>
-						<BitLen>8</BitLen>
-						<Name>Byte27</Name>
-						<DataType>USINT</DataType>
-					</Entry>
-					<Entry>
-						<Index>#x6</Index>
-						<SubIndex>29</SubIndex>
-						<BitLen>8</BitLen>
-						<Name>Byte28</Name>
-						<DataType>USINT</DataType>
-					</Entry>
-					<Entry>
-						<Index>#x6</Index>
-						<SubIndex>30</SubIndex>
-						<BitLen>8</BitLen>
-						<Name>Byte29</Name>
-						<DataType>USINT</DataType>
-					</Entry>
-					<Entry>
-						<Index>#x6</Index>
-						<SubIndex>31</SubIndex>
-						<BitLen>8</BitLen>
-						<Name>Byte30</Name>
-						<DataType>USINT</DataType>
-					</Entry>
-					<Entry>
-						<Index>#x6</Index>
-						<SubIndex>32</SubIndex>
-						<BitLen>8</BitLen>
-						<Name>Byte31</Name>
-						<DataType>USINT</DataType>
-					</Entry>
-				</TxPdo>
-				<RxPdo Fixed="true" Mandatory="true" Sm="0">
-					<Index>#x1600</Index>
-					<Name>Outputs</Name>
-					<Entry>
-						<Index>#x5</Index>
-						<SubIndex>1</SubIndex>
-						<BitLen>8</BitLen>
-						<Name>Byte0</Name>
-						<DataType>USINT</DataType>
-					</Entry>
-					<Entry>
-						<Index>#x5</Index>
-						<SubIndex>2</SubIndex>
-						<BitLen>8</BitLen>
-						<Name>Byte1</Name>
-						<DataType>USINT</DataType>
-					</Entry>
-					<Entry>
-						<Index>#x5</Index>
-						<SubIndex>3</SubIndex>
-						<BitLen>8</BitLen>
-						<Name>Byte2</Name>
-						<DataType>USINT</DataType>
-					</Entry>
-					<Entry>
-						<Index>#x5</Index>
-						<SubIndex>4</SubIndex>
-						<BitLen>8</BitLen>
-						<Name>Byte3</Name>
-						<DataType>USINT</DataType>
-					</Entry>
-					<Entry>
-						<Index>#x5</Index>
-						<SubIndex>5</SubIndex>
-						<BitLen>8</BitLen>
-						<Name>Byte4</Name>
-						<DataType>USINT</DataType>
-					</Entry>
-					<Entry>
-						<Index>#x5</Index>
-						<SubIndex>6</SubIndex>
-						<BitLen>8</BitLen>
-						<Name>Byte5</Name>
-						<DataType>USINT</DataType>
-					</Entry>
-					<Entry>
-						<Index>#x5</Index>
-						<SubIndex>7</SubIndex>
-						<BitLen>8</BitLen>
-						<Name>Byte6</Name>
-						<DataType>USINT</DataType>
-					</Entry>
-					<Entry>
-						<Index>#x5</Index>
-						<SubIndex>8</SubIndex>
-						<BitLen>8</BitLen>
-						<Name>Byte7</Name>
-						<DataType>USINT</DataType>
-					</Entry>
-					<Entry>
-						<Index>#x5</Index>
-						<SubIndex>9</SubIndex>
-						<BitLen>8</BitLen>
-						<Name>Byte8</Name>
-						<DataType>USINT</DataType>
-					</Entry>
-					<Entry>
-						<Index>#x5</Index>
-						<SubIndex>10</SubIndex>
-						<BitLen>8</BitLen>
-						<Name>Byte9</Name>
-						<DataType>USINT</DataType>
-					</Entry>
-					<Entry>
-						<Index>#x5</Index>
-						<SubIndex>11</SubIndex>
-						<BitLen>8</BitLen>
-						<Name>Byte10</Name>
-						<DataType>USINT</DataType>
-					</Entry>
-					<Entry>
-						<Index>#x5</Index>
-						<SubIndex>12</SubIndex>
-						<BitLen>8</BitLen>
-						<Name>Byte11</Name>
-						<DataType>USINT</DataType>
-					</Entry>
-					<Entry>
-						<Index>#x5</Index>
-						<SubIndex>13</SubIndex>
-						<BitLen>8</BitLen>
-						<Name>Byte12</Name>
-						<DataType>USINT</DataType>
-					</Entry>
-					<Entry>
-						<Index>#x5</Index>
-						<SubIndex>14</SubIndex>
-						<BitLen>8</BitLen>
-						<Name>Byte13</Name>
-						<DataType>USINT</DataType>
-					</Entry>
-					<Entry>
-						<Index>#x5</Index>
-						<SubIndex>15</SubIndex>
-						<BitLen>8</BitLen>
-						<Name>Byte14</Name>
-						<DataType>USINT</DataType>
-					</Entry>
-					<Entry>
-						<Index>#x5</Index>
-						<SubIndex>16</SubIndex>
-						<BitLen>8</BitLen>
-						<Name>Byte15</Name>
-						<DataType>USINT</DataType>
-					</Entry>
-					<Entry>
-						<Index>#x5</Index>
-						<SubIndex>17</SubIndex>
-						<BitLen>8</BitLen>
-						<Name>Byte16</Name>
-						<DataType>USINT</DataType>
-					</Entry>
-					<Entry>
-						<Index>#x5</Index>
-						<SubIndex>18</SubIndex>
-						<BitLen>8</BitLen>
-						<Name>Byte17</Name>
-						<DataType>USINT</DataType>
-					</Entry>
-					<Entry>
-						<Index>#x5</Index>
-						<SubIndex>19</SubIndex>
-						<BitLen>8</BitLen>
-						<Name>Byte18</Name>
-						<DataType>USINT</DataType>
-					</Entry>
-					<Entry>
-						<Index>#x5</Index>
-						<SubIndex>20</SubIndex>
-						<BitLen>8</BitLen>
-						<Name>Byte19</Name>
-						<DataType>USINT</DataType>
-					</Entry>
-					<Entry>
-						<Index>#x5</Index>
-						<SubIndex>21</SubIndex>
-						<BitLen>8</BitLen>
-						<Name>Byte20</Name>
-						<DataType>USINT</DataType>
-					</Entry>
-					<Entry>
-						<Index>#x5</Index>
-						<SubIndex>22</SubIndex>
-						<BitLen>8</BitLen>
-						<Name>Byte21</Name>
-						<DataType>USINT</DataType>
-					</Entry>
-					<Entry>
-						<Index>#x5</Index>
-						<SubIndex>23</SubIndex>
-						<BitLen>8</BitLen>
-						<Name>Byte22</Name>
-						<DataType>USINT</DataType>
-					</Entry>
-					<Entry>
-						<Index>#x5</Index>
-						<SubIndex>24</SubIndex>
-						<BitLen>8</BitLen>
-						<Name>Byte23</Name>
-						<DataType>USINT</DataType>
-					</Entry>
-					<Entry>
-						<Index>#x5</Index>
-						<SubIndex>25</SubIndex>
-						<BitLen>8</BitLen>
-						<Name>Byte24</Name>
-						<DataType>USINT</DataType>
-					</Entry>
-					<Entry>
-						<Index>#x5</Index>
-						<SubIndex>26</SubIndex>
-						<BitLen>8</BitLen>
-						<Name>Byte25</Name>
-						<DataType>USINT</DataType>
-					</Entry>
-					<Entry>
-						<Index>#x5</Index>
-						<SubIndex>27</SubIndex>
-						<BitLen>8</BitLen>
-						<Name>Byte26</Name>
-						<DataType>USINT</DataType>
-					</Entry>
-					<Entry>
-						<Index>#x5</Index>
-						<SubIndex>28</SubIndex>
-						<BitLen>8</BitLen>
-						<Name>Byte27</Name>
-						<DataType>USINT</DataType>
-					</Entry>
-					<Entry>
-						<Index>#x5</Index>
-						<SubIndex>29</SubIndex>
-						<BitLen>8</BitLen>
-						<Name>Byte28</Name>
-						<DataType>USINT</DataType>
-					</Entry>
-					<Entry>
-						<Index>#x5</Index>
-						<SubIndex>30</SubIndex>
-						<BitLen>8</BitLen>
-						<Name>Byte29</Name>
-						<DataType>USINT</DataType>
-					</Entry>
-					<Entry>
-						<Index>#x5</Index>
-						<SubIndex>31</SubIndex>
-						<BitLen>8</BitLen>
-						<Name>Byte30</Name>
-						<DataType>USINT</DataType>
-					</Entry>
-					<Entry>
-						<Index>#x5</Index>
-						<SubIndex>32</SubIndex>
-						<BitLen>8</BitLen>
-						<Name>Byte31</Name>
-						<DataType>USINT</DataType>
-					</Entry>
-				</RxPdo>
-			</ProcessData>
-			<InitCmds>
-				<InitCmd>
-					<Transition>PI</Transition>
-					<Transition>BI</Transition>
-					<Transition>SI</Transition>
-					<Transition>OI</Transition>
-					<Comment><![CDATA[set device state to INIT]]></Comment>
-					<Requires>cycle</Requires>
-					<Cmd>2</Cmd>
-					<Adp>65524</Adp>
-					<Ado>288</Ado>
-					<Data>0100</Data>
-					<Retries>3</Retries>
-					<Timeout>5000</Timeout>
-				</InitCmd>
-				<InitCmd>
-					<Transition>SI</Transition>
-					<Transition>OI</Transition>
-					<Comment><![CDATA[clear DC activation]]></Comment>
-					<Requires>cycle</Requires>
-					<Cmd>2</Cmd>
-					<Adp>65524</Adp>
-					<Ado>2432</Ado>
-					<Data>0000</Data>
-					<Retries>3</Retries>
-				</InitCmd>
-				<InitCmd>
-					<Transition>PI</Transition>
-					<Transition>SI</Transition>
-					<Transition>OI</Transition>
-					<Comment><![CDATA[check device state for INIT]]></Comment>
-					<Requires>cycle</Requires>
-					<Cmd>1</Cmd>
-					<Adp>65524</Adp>
-					<Ado>304</Ado>
-					<Data>0000</Data>
-					<Retries>3</Retries>
-					<Validate>
-						<Data>0100</Data>
-						<DataMask>0f00</DataMask>
-						<Timeout>5000</Timeout>
-					</Validate>
-				</InitCmd>
-				<InitCmd>
-					<Transition>BI</Transition>
-					<Comment><![CDATA[check device state for INIT]]></Comment>
-					<Requires>cycle</Requires>
-					<Cmd>1</Cmd>
-					<Adp>65524</Adp>
-					<Ado>304</Ado>
-					<Data>0000</Data>
-					<Retries>3</Retries>
-					<Validate>
-						<Data>0100</Data>
-						<DataMask>0f00</DataMask>
-						<Timeout>10000</Timeout>
-					</Validate>
-				</InitCmd>
-				<InitCmd>
-					<Transition>IP</Transition>
-					<Transition>IB</Transition>
-					<Comment><![CDATA[set device state to INIT]]></Comment>
-					<Requires>cycle</Requires>
-					<Cmd>2</Cmd>
-					<Adp>65524</Adp>
-					<Ado>288</Ado>
-					<Data>0100</Data>
-					<Cnt>1</Cnt>
-					<Retries>3</Retries>
-					<Timeout>3000</Timeout>
-				</InitCmd>
-				<InitCmd>
-					<Transition>IP</Transition>
-					<Transition>IB</Transition>
-					<Comment><![CDATA[check device state for INIT]]></Comment>
-					<Requires>cycle</Requires>
-					<Cmd>1</Cmd>
-					<Adp>65524</Adp>
-					<Ado>304</Ado>
-					<Data>0000</Data>
-					<Cnt>1</Cnt>
-					<Retries>3</Retries>
-					<Validate>
-						<Data>0100</Data>
-						<DataMask>0f00</DataMask>
-						<Timeout>3000</Timeout>
-					</Validate>
-				</InitCmd>
-				<InitCmd>
-					<Transition>IP</Transition>
-					<Comment><![CDATA[assign EEPROM to ECAT]]></Comment>
-					<Requires>cycle</Requires>
-					<Cmd>2</Cmd>
-					<Adp>65524</Adp>
-					<Ado>1280</Ado>
-					<Data>00</Data>
-					<Cnt>1</Cnt>
-					<Retries>3</Retries>
-				</InitCmd>
-				<InitCmd>
-					<Transition>IP</Transition>
-					<Comment><![CDATA[check vendor id]]></Comment>
-					<Cmd>2</Cmd>
-					<Adp>65524</Adp>
-					<Ado>1282</Ado>
-					<Data>000108000000</Data>
-					<Cnt>1</Cnt>
-					<Retries>3</Retries>
-				</InitCmd>
-				<InitCmd>
-					<Transition>IP</Transition>
-					<Comment><![CDATA[check vendor id]]></Comment>
-					<Requires>cycle</Requires>
-					<Cmd>1</Cmd>
-					<Adp>65524</Adp>
-					<Ado>1288</Ado>
-					<Data>00000000</Data>
-					<Cnt>1</Cnt>
-					<Retries>3</Retries>
-					<Validate>
-						<Data>9a070000</Data>
-						<Timeout>100</Timeout>
-					</Validate>
-				</InitCmd>
-				<InitCmd>
-					<Transition>IP</Transition>
-					<Comment><![CDATA[check product code]]></Comment>
-					<Cmd>2</Cmd>
-					<Adp>65524</Adp>
-					<Ado>1282</Ado>
-					<Data>00010a000000</Data>
-					<Cnt>1</Cnt>
-					<Retries>3</Retries>
-				</InitCmd>
-				<InitCmd>
-					<Transition>IP</Transition>
-					<Comment><![CDATA[check product code]]></Comment>
-					<Requires>cycle</Requires>
-					<Cmd>1</Cmd>
-					<Adp>65524</Adp>
-					<Ado>1288</Ado>
-					<Data>00000000</Data>
-					<Cnt>1</Cnt>
-					<Retries>3</Retries>
-					<Validate>
-						<Data>defede00</Data>
-						<Timeout>100</Timeout>
-					</Validate>
-				</InitCmd>
-				<InitCmd>
-					<Transition>IP</Transition>
-					<Comment><![CDATA[check revision number (>=)]]></Comment>
-					<Cmd>2</Cmd>
-					<Adp>65524</Adp>
-					<Ado>1282</Ado>
-					<Data>00010c000000</Data>
-					<Cnt>1</Cnt>
-					<Retries>3</Retries>
-				</InitCmd>
-				<InitCmd>
-					<Transition>IP</Transition>
-					<Comment><![CDATA[check revision number (>=)]]></Comment>
-					<Requires>cycle</Requires>
-					<Cmd>1</Cmd>
-					<Adp>65524</Adp>
-					<Ado>1288</Ado>
-					<Data>00000000</Data>
-					<Cnt>1</Cnt>
-					<Retries>3</Retries>
-					<Validate>
-						<Data>015a0000</Data>
-						<Timeout>100</Timeout>
-					</Validate>
-				</InitCmd>
-				<InitCmd>
-					<Transition>IP</Transition>
-					<Transition>IB</Transition>
-					<Comment><![CDATA[set physical address]]></Comment>
-					<Requires>cycle</Requires>
-					<Cmd>2</Cmd>
-					<Adp>65524</Adp>
-					<Ado>16</Ado>
-					<Data>f503</Data>
-					<Cnt>1</Cnt>
-					<Retries>3</Retries>
-				</InitCmd>
-				<InitCmd>
-					<Transition>PS</Transition>
-					<Comment><![CDATA[set DC cycle time]]></Comment>
-					<Requires>cycle</Requires>
-					<Cmd>5</Cmd>
-					<Adp>1013</Adp>
-					<Ado>2464</Ado>
-					<Data>40420f0000000000</Data>
-					<Cnt>1</Cnt>
-					<Retries>3</Retries>
-				</InitCmd>
-				<InitCmd>
-					<Transition>PS</Transition>
-					<Comment><![CDATA[set DC start time]]></Comment>
-					<Requires>cycle</Requires>
-					<Cmd>5</Cmd>
-					<Adp>1013</Adp>
-					<Ado>2448</Ado>
-					<Data>40a1387700000000</Data>
-					<Cnt>1</Cnt>
-					<Retries>3</Retries>
-				</InitCmd>
-				<InitCmd>
-					<Transition>PS</Transition>
-					<Comment><![CDATA[set DC activation]]></Comment>
-					<Requires>cycle</Requires>
-					<Cmd>5</Cmd>
-					<Adp>1013</Adp>
-					<Ado>2432</Ado>
-					<Data>0003</Data>
-					<Cnt>1</Cnt>
-					<Retries>3</Retries>
-				</InitCmd>
-				<InitCmd>
-					<Transition>PS</Transition>
-					<Comment><![CDATA[set DC latch cfg]]></Comment>
-					<Requires>cycle</Requires>
-					<Cmd>5</Cmd>
-					<Adp>1013</Adp>
-					<Ado>2472</Ado>
-					<Data>0000</Data>
-					<Retries>3</Retries>
-				</InitCmd>
-				<InitCmd>
-					<Transition>IP</Transition>
-					<Transition>PP</Transition>
-					<Comment><![CDATA[clear DC activation]]></Comment>
-					<Requires>cycle</Requires>
-					<Cmd>5</Cmd>
-					<Adp>1013</Adp>
-					<Ado>2432</Ado>
-					<Data>0000</Data>
-					<Retries>3</Retries>
-				</InitCmd>
-				<InitCmd>
-					<Transition>SP</Transition>
-					<Transition>OP</Transition>
-					<Comment><![CDATA[set device state to PREOP]]></Comment>
-					<Requires>cycle</Requires>
-					<Cmd>5</Cmd>
-					<Adp>1013</Adp>
-					<Ado>288</Ado>
-					<Data>0200</Data>
-					<Retries>300</Retries>
-					<Timeout>200</Timeout>
-				</InitCmd>
-				<InitCmd>
-					<Transition>IP</Transition>
-					<Transition>SP</Transition>
-					<Transition>SI</Transition>
-					<Transition>OP</Transition>
-					<Transition>OI</Transition>
-					<Comment><![CDATA[clear sms]]></Comment>
-					<Cmd>5</Cmd>
-					<Adp>1013</Adp>
-					<Ado>2064</Ado>
-					<Data>00000000000000000000000000000000</Data>
-					<Retries>3</Retries>
-				</InitCmd>
-				<InitCmd>
-					<Transition>PS</Transition>
-					<Comment><![CDATA[set sm 0 (outputs)]]></Comment>
-					<Cmd>5</Cmd>
-					<Adp>1013</Adp>
-					<Ado>2048</Ado>
-					<Data>0010200064000100</Data>
-					<Cnt>1</Cnt>
-					<Retries>3</Retries>
-				</InitCmd>
-				<InitCmd>
-					<Transition>PS</Transition>
-					<Comment><![CDATA[set sm 1 (inputs)]]></Comment>
-					<Cmd>5</Cmd>
-					<Adp>1013</Adp>
-					<Ado>2056</Ado>
-					<Data>0012200020000100</Data>
-					<Cnt>1</Cnt>
-					<Retries>3</Retries>
-				</InitCmd>
-				<InitCmd>
-					<Transition>PS</Transition>
-					<Comment><![CDATA[set fmmu 0 (outputs)]]></Comment>
-					<Cmd>5</Cmd>
-					<Adp>1013</Adp>
-					<Ado>1536</Ado>
-					<Data>18000001200000070010000201000000</Data>
-					<Cnt>1</Cnt>
-					<Retries>3</Retries>
-				</InitCmd>
-				<InitCmd>
-					<Transition>PS</Transition>
-					<Comment><![CDATA[set fmmu 1 (inputs)]]></Comment>
-					<Cmd>5</Cmd>
-					<Adp>1013</Adp>
-					<Ado>1552</Ado>
-					<Data>18000001200000070012000101000000</Data>
-					<Cnt>1</Cnt>
-					<Retries>3</Retries>
-				</InitCmd>
-				<InitCmd>
-					<Transition>OS</Transition>
-					<Comment><![CDATA[set device state to SAFEOP]]></Comment>
-					<Requires>cycle</Requires>
-					<Cmd>5</Cmd>
-					<Adp>1013</Adp>
-					<Ado>288</Ado>
-					<Data>0400</Data>
-					<Retries>3</Retries>
-					<Timeout>200</Timeout>
-				</InitCmd>
-				<InitCmd>
-					<Transition>SP</Transition>
-					<Transition>SI</Transition>
-					<Transition>OP</Transition>
-					<Transition>OI</Transition>
-					<Comment><![CDATA[clear fmmu 0]]></Comment>
-					<Cmd>5</Cmd>
-					<Adp>1013</Adp>
-					<Ado>1536</Ado>
-					<Data>00000000000000000000000000000000</Data>
-					<Retries>3</Retries>
-				</InitCmd>
-				<InitCmd>
-					<Transition>SP</Transition>
-					<Transition>SI</Transition>
-					<Transition>OP</Transition>
-					<Transition>OI</Transition>
-					<Comment><![CDATA[clear fmmu 1]]></Comment>
-					<Cmd>5</Cmd>
-					<Adp>1013</Adp>
-					<Ado>1552</Ado>
-					<Data>00000000000000000000000000000000</Data>
-					<Retries>3</Retries>
-				</InitCmd>
-				<InitCmd>
-					<Transition>SP</Transition>
-					<Transition>OP</Transition>
-					<Comment><![CDATA[clear DC activation]]></Comment>
-					<Requires>cycle</Requires>
-					<Cmd>5</Cmd>
-					<Adp>1013</Adp>
-					<Ado>2432</Ado>
-					<Data>0000</Data>
-					<Retries>3</Retries>
-				</InitCmd>
-				<InitCmd>
-					<Transition>SP</Transition>
-					<Transition>OP</Transition>
-					<Comment><![CDATA[check device state for PREOP]]></Comment>
-					<Requires>cycle</Requires>
-					<Cmd>4</Cmd>
-					<Adp>1013</Adp>
-					<Ado>304</Ado>
-					<Data>000000000000</Data>
-					<Retries>3</Retries>
-					<Validate>
-						<Data>020000000000</Data>
-						<DataMask>0f0000000000</DataMask>
-						<Timeout>5000</Timeout>
-					</Validate>
-				</InitCmd>
-				<InitCmd>
-					<Transition>IP</Transition>
-					<Transition>IB</Transition>
-					<Comment><![CDATA[assign EEPROM to PDI]]></Comment>
-					<Requires>cycle</Requires>
-					<Cmd>5</Cmd>
-					<Adp>1013</Adp>
-					<Ado>1280</Ado>
-					<Data>01</Data>
-					<Cnt>1</Cnt>
-					<Retries>3</Retries>
-				</InitCmd>
-				<InitCmd>
-					<Transition>II</Transition>
-					<Comment><![CDATA[assign EEPROM back to ECAT]]></Comment>
-					<Requires>cycle</Requires>
-					<Cmd>2</Cmd>
-					<Adp>65524</Adp>
-					<Ado>1280</Ado>
-					<Data>00</Data>
-					<Retries>3</Retries>
-				</InitCmd>
-				<InitCmd>
-					<Transition>IP</Transition>
-					<Comment><![CDATA[set device state to PREOP]]></Comment>
-					<Requires>cycle</Requires>
-					<Cmd>5</Cmd>
-					<Adp>1013</Adp>
-					<Ado>288</Ado>
-					<Data>0200</Data>
-					<Cnt>1</Cnt>
-					<Retries>300</Retries>
-					<Timeout>3000</Timeout>
-				</InitCmd>
-				<InitCmd>
-					<Transition>IP</Transition>
-					<Comment><![CDATA[check device state for PREOP]]></Comment>
-					<Requires>cycle</Requires>
-					<Cmd>4</Cmd>
-					<Adp>1013</Adp>
-					<Ado>304</Ado>
-					<Data>000000000000</Data>
-					<Cnt>1</Cnt>
-					<Retries>3</Retries>
-					<Validate>
-						<Data>020000000000</Data>
-						<DataMask>1f0000000000</DataMask>
-						<Timeout>3000</Timeout>
-					</Validate>
-				</InitCmd>
-				<InitCmd>
-					<Transition>IP</Transition>
-					<Transition>BI</Transition>
-					<Comment><![CDATA[assign EEPROM back to ECAT]]></Comment>
-					<Requires>cycle</Requires>
-					<Cmd>2</Cmd>
-					<Adp>65524</Adp>
-					<Ado>1280</Ado>
-					<Data>00</Data>
-					<Retries>3</Retries>
-				</InitCmd>
-				<InitCmd>
-					<Transition>IB</Transition>
-					<Comment><![CDATA[set device state to BOOT]]></Comment>
-					<Requires>cycle</Requires>
-					<Cmd>5</Cmd>
-					<Adp>1013</Adp>
-					<Ado>288</Ado>
-					<Data>0300</Data>
-					<Cnt>1</Cnt>
-					<Retries>3</Retries>
-					<Timeout>3000</Timeout>
-				</InitCmd>
-				<InitCmd>
-					<Transition>IB</Transition>
-					<Comment><![CDATA[check device state for BOOT]]></Comment>
-					<Requires>cycle</Requires>
-					<Cmd>4</Cmd>
-					<Adp>1013</Adp>
-					<Ado>304</Ado>
-					<Data>000000000000</Data>
-					<Cnt>1</Cnt>
-					<Retries>3</Retries>
-					<Validate>
-						<Data>030000000000</Data>
-						<DataMask>1f0000000000</DataMask>
-						<Timeout>3000</Timeout>
-					</Validate>
-				</InitCmd>
-				<InitCmd>
-					<Transition>PS</Transition>
-					<Comment><![CDATA[set device state to SAFEOP]]></Comment>
-					<Requires>cycle</Requires>
-					<Cmd>5</Cmd>
-					<Adp>1013</Adp>
-					<Ado>288</Ado>
-					<Data>0400</Data>
-					<Cnt>1</Cnt>
-					<Retries>3</Retries>
-					<Timeout>10000</Timeout>
-				</InitCmd>
-				<InitCmd>
-					<Transition>PS</Transition>
-					<Comment><![CDATA[check device state for SAFEOP]]></Comment>
-					<Requires>cycle</Requires>
-					<Cmd>4</Cmd>
-					<Adp>1013</Adp>
-					<Ado>304</Ado>
-					<Data>000000000000</Data>
-					<Cnt>1</Cnt>
-					<Retries>3</Retries>
-					<Validate>
-						<Data>040000000000</Data>
-						<DataMask>1f0000000000</DataMask>
-						<Timeout>10000</Timeout>
-					</Validate>
-				</InitCmd>
-				<InitCmd>
-					<Transition>OS</Transition>
-					<Comment><![CDATA[check device state for SAFEOP]]></Comment>
-					<Requires>cycle</Requires>
-					<Cmd>4</Cmd>
-					<Adp>1013</Adp>
-					<Ado>304</Ado>
-					<Data>000000000000</Data>
-					<Retries>3</Retries>
-					<Validate>
-						<Data>040000000000</Data>
-						<DataMask>0f0000000000</DataMask>
-						<Timeout>200</Timeout>
-					</Validate>
-				</InitCmd>
-				<InitCmd>
-					<Transition>SO</Transition>
-					<Comment><![CDATA[set device state to OP]]></Comment>
-					<Requires>cycle</Requires>
-					<Cmd>5</Cmd>
-					<Adp>1013</Adp>
-					<Ado>288</Ado>
-					<Data>0800</Data>
-					<Cnt>1</Cnt>
-					<Retries>3</Retries>
-					<Timeout>10000</Timeout>
-				</InitCmd>
-				<InitCmd>
-					<Transition>SO</Transition>
-					<Comment><![CDATA[check device state for OP]]></Comment>
-					<Requires>cycle</Requires>
-					<Cmd>4</Cmd>
-					<Adp>1013</Adp>
-					<Ado>304</Ado>
-					<Data>000000000000</Data>
-					<Cnt>1</Cnt>
-					<Retries>3</Retries>
-					<Validate>
-						<Data>080000000000</Data>
-						<DataMask>1f0000000000</DataMask>
-						<Timeout>10000</Timeout>
-					</Validate>
-				</InitCmd>
-			</InitCmds>
-			<PreviousPort Selected="true">
-				<Port>B</Port>
-				<PhysAddr>1012</PhysAddr>
-			</PreviousPort>
-			<DC>
-				<ReferenceClock>false</ReferenceClock>
-				<CycleTime0>1000000</CycleTime0>
-				<CycleTime1>0</CycleTime1>
-				<ShiftTime>2000200000</ShiftTime>
 			</DC>
 		</Slave>
 		<Cyclic>
@@ -12054,8 +10340,8 @@ Bit1: Value smaller than Limit2</Comment>
 					<Comment><![CDATA[cyclic cmd]]></Comment>
 					<Cmd>12</Cmd>
 					<Addr>16777216</Addr>
-					<DataLength>56</DataLength>
-					<Cnt>6</Cnt>
+					<DataLength>24</DataLength>
+					<Cnt>3</Cnt>
 					<InputOffs>61</InputOffs>
 					<OutputOffs>61</OutputOffs>
 				</Cmd>
@@ -12063,34 +10349,23 @@ Bit1: Value smaller than Limit2</Comment>
 					<State>SAFEOP</State>
 					<State>OP</State>
 					<Comment><![CDATA[cyclic cmd]]></Comment>
-					<Cmd>11</Cmd>
-					<Addr>16779264</Addr>
-					<DataLength>4</DataLength>
-					<Cnt>1</Cnt>
-					<InputOffs>129</InputOffs>
-					<OutputOffs>129</OutputOffs>
-				</Cmd>
-				<Cmd>
-					<State>SAFEOP</State>
-					<State>OP</State>
-					<Comment><![CDATA[cyclic cmd]]></Comment>
 					<Cmd>10</Cmd>
-					<Addr>16781312</Addr>
+					<Addr>16779264</Addr>
 					<DataLength>61</DataLength>
 					<Cnt>7</Cnt>
-					<InputOffs>145</InputOffs>
-					<OutputOffs>145</OutputOffs>
+					<InputOffs>97</InputOffs>
+					<OutputOffs>97</OutputOffs>
 				</Cmd>
 				<Cmd>
 					<State>SAFEOP</State>
 					<State>OP</State>
 					<Comment><![CDATA[cyclic cmd]]></Comment>
 					<Cmd>12</Cmd>
-					<Addr>16783360</Addr>
-					<DataLength>24</DataLength>
+					<Addr>16781312</Addr>
+					<DataLength>32</DataLength>
 					<Cnt>3</Cnt>
-					<InputOffs>218</InputOffs>
-					<OutputOffs>218</OutputOffs>
+					<InputOffs>170</InputOffs>
+					<OutputOffs>170</OutputOffs>
 				</Cmd>
 				<Cmd>
 					<State>PREOP</State>
@@ -12101,9 +10376,9 @@ Bit1: Value smaller than Limit2</Comment>
 					<Adp>0</Adp>
 					<Ado>304</Ado>
 					<DataLength>2</DataLength>
-					<Cnt>13</Cnt>
-					<InputOffs>254</InputOffs>
-					<OutputOffs>254</OutputOffs>
+					<Cnt>11</Cnt>
+					<InputOffs>214</InputOffs>
+					<OutputOffs>214</OutputOffs>
 				</Cmd>
 			</Frame>
 		</Cyclic>
@@ -12249,508 +10524,328 @@ Bit1: Value smaller than Limit2</Comment>
 					<BitOffs>752</BitOffs>
 				</Variable>
 				<Variable>
-					<Name>Box 13 (EasyCAT 32+32 rev 1).Inputs.Byte0</Name>
-					<DataType>USINT</DataType>
-					<BitSize>8</BitSize>
-					<BitOffs>760</BitOffs>
-				</Variable>
-				<Variable>
-					<Name>Box 13 (EasyCAT 32+32 rev 1).Inputs.Byte1</Name>
-					<DataType>USINT</DataType>
-					<BitSize>8</BitSize>
-					<BitOffs>768</BitOffs>
-				</Variable>
-				<Variable>
-					<Name>Box 13 (EasyCAT 32+32 rev 1).Inputs.Byte2</Name>
-					<DataType>USINT</DataType>
-					<BitSize>8</BitSize>
-					<BitOffs>776</BitOffs>
-				</Variable>
-				<Variable>
-					<Name>Box 13 (EasyCAT 32+32 rev 1).Inputs.Byte3</Name>
-					<DataType>USINT</DataType>
-					<BitSize>8</BitSize>
-					<BitOffs>784</BitOffs>
-				</Variable>
-				<Variable>
-					<Name>Box 13 (EasyCAT 32+32 rev 1).Inputs.Byte4</Name>
-					<DataType>USINT</DataType>
-					<BitSize>8</BitSize>
-					<BitOffs>792</BitOffs>
-				</Variable>
-				<Variable>
-					<Name>Box 13 (EasyCAT 32+32 rev 1).Inputs.Byte5</Name>
-					<DataType>USINT</DataType>
-					<BitSize>8</BitSize>
-					<BitOffs>800</BitOffs>
-				</Variable>
-				<Variable>
-					<Name>Box 13 (EasyCAT 32+32 rev 1).Inputs.Byte6</Name>
-					<DataType>USINT</DataType>
-					<BitSize>8</BitSize>
-					<BitOffs>808</BitOffs>
-				</Variable>
-				<Variable>
-					<Name>Box 13 (EasyCAT 32+32 rev 1).Inputs.Byte7</Name>
-					<DataType>USINT</DataType>
-					<BitSize>8</BitSize>
-					<BitOffs>816</BitOffs>
-				</Variable>
-				<Variable>
-					<Name>Box 13 (EasyCAT 32+32 rev 1).Inputs.Byte8</Name>
-					<DataType>USINT</DataType>
-					<BitSize>8</BitSize>
-					<BitOffs>824</BitOffs>
-				</Variable>
-				<Variable>
-					<Name>Box 13 (EasyCAT 32+32 rev 1).Inputs.Byte9</Name>
-					<DataType>USINT</DataType>
-					<BitSize>8</BitSize>
-					<BitOffs>832</BitOffs>
-				</Variable>
-				<Variable>
-					<Name>Box 13 (EasyCAT 32+32 rev 1).Inputs.Byte10</Name>
-					<DataType>USINT</DataType>
-					<BitSize>8</BitSize>
-					<BitOffs>840</BitOffs>
-				</Variable>
-				<Variable>
-					<Name>Box 13 (EasyCAT 32+32 rev 1).Inputs.Byte11</Name>
-					<DataType>USINT</DataType>
-					<BitSize>8</BitSize>
-					<BitOffs>848</BitOffs>
-				</Variable>
-				<Variable>
-					<Name>Box 13 (EasyCAT 32+32 rev 1).Inputs.Byte12</Name>
-					<DataType>USINT</DataType>
-					<BitSize>8</BitSize>
-					<BitOffs>856</BitOffs>
-				</Variable>
-				<Variable>
-					<Name>Box 13 (EasyCAT 32+32 rev 1).Inputs.Byte13</Name>
-					<DataType>USINT</DataType>
-					<BitSize>8</BitSize>
-					<BitOffs>864</BitOffs>
-				</Variable>
-				<Variable>
-					<Name>Box 13 (EasyCAT 32+32 rev 1).Inputs.Byte14</Name>
-					<DataType>USINT</DataType>
-					<BitSize>8</BitSize>
-					<BitOffs>872</BitOffs>
-				</Variable>
-				<Variable>
-					<Name>Box 13 (EasyCAT 32+32 rev 1).Inputs.Byte15</Name>
-					<DataType>USINT</DataType>
-					<BitSize>8</BitSize>
-					<BitOffs>880</BitOffs>
-				</Variable>
-				<Variable>
-					<Name>Box 13 (EasyCAT 32+32 rev 1).Inputs.Byte16</Name>
-					<DataType>USINT</DataType>
-					<BitSize>8</BitSize>
-					<BitOffs>888</BitOffs>
-				</Variable>
-				<Variable>
-					<Name>Box 13 (EasyCAT 32+32 rev 1).Inputs.Byte17</Name>
-					<DataType>USINT</DataType>
-					<BitSize>8</BitSize>
-					<BitOffs>896</BitOffs>
-				</Variable>
-				<Variable>
-					<Name>Box 13 (EasyCAT 32+32 rev 1).Inputs.Byte18</Name>
-					<DataType>USINT</DataType>
-					<BitSize>8</BitSize>
-					<BitOffs>904</BitOffs>
-				</Variable>
-				<Variable>
-					<Name>Box 13 (EasyCAT 32+32 rev 1).Inputs.Byte19</Name>
-					<DataType>USINT</DataType>
-					<BitSize>8</BitSize>
-					<BitOffs>912</BitOffs>
-				</Variable>
-				<Variable>
-					<Name>Box 13 (EasyCAT 32+32 rev 1).Inputs.Byte20</Name>
-					<DataType>USINT</DataType>
-					<BitSize>8</BitSize>
-					<BitOffs>920</BitOffs>
-				</Variable>
-				<Variable>
-					<Name>Box 13 (EasyCAT 32+32 rev 1).Inputs.Byte21</Name>
-					<DataType>USINT</DataType>
-					<BitSize>8</BitSize>
-					<BitOffs>928</BitOffs>
-				</Variable>
-				<Variable>
-					<Name>Box 13 (EasyCAT 32+32 rev 1).Inputs.Byte22</Name>
-					<DataType>USINT</DataType>
-					<BitSize>8</BitSize>
-					<BitOffs>936</BitOffs>
-				</Variable>
-				<Variable>
-					<Name>Box 13 (EasyCAT 32+32 rev 1).Inputs.Byte23</Name>
-					<DataType>USINT</DataType>
-					<BitSize>8</BitSize>
-					<BitOffs>944</BitOffs>
-				</Variable>
-				<Variable>
-					<Name>Box 13 (EasyCAT 32+32 rev 1).Inputs.Byte24</Name>
-					<DataType>USINT</DataType>
-					<BitSize>8</BitSize>
-					<BitOffs>952</BitOffs>
-				</Variable>
-				<Variable>
-					<Name>Box 13 (EasyCAT 32+32 rev 1).Inputs.Byte25</Name>
-					<DataType>USINT</DataType>
-					<BitSize>8</BitSize>
-					<BitOffs>960</BitOffs>
-				</Variable>
-				<Variable>
-					<Name>Box 13 (EasyCAT 32+32 rev 1).Inputs.Byte26</Name>
-					<DataType>USINT</DataType>
-					<BitSize>8</BitSize>
-					<BitOffs>968</BitOffs>
-				</Variable>
-				<Variable>
-					<Name>Box 13 (EasyCAT 32+32 rev 1).Inputs.Byte27</Name>
-					<DataType>USINT</DataType>
-					<BitSize>8</BitSize>
-					<BitOffs>976</BitOffs>
-				</Variable>
-				<Variable>
-					<Name>Box 13 (EasyCAT 32+32 rev 1).Inputs.Byte28</Name>
-					<DataType>USINT</DataType>
-					<BitSize>8</BitSize>
-					<BitOffs>984</BitOffs>
-				</Variable>
-				<Variable>
-					<Name>Box 13 (EasyCAT 32+32 rev 1).Inputs.Byte29</Name>
-					<DataType>USINT</DataType>
-					<BitSize>8</BitSize>
-					<BitOffs>992</BitOffs>
-				</Variable>
-				<Variable>
-					<Name>Box 13 (EasyCAT 32+32 rev 1).Inputs.Byte30</Name>
-					<DataType>USINT</DataType>
-					<BitSize>8</BitSize>
-					<BitOffs>1000</BitOffs>
-				</Variable>
-				<Variable>
-					<Name>Box 13 (EasyCAT 32+32 rev 1).Inputs.Byte31</Name>
-					<DataType>USINT</DataType>
-					<BitSize>8</BitSize>
-					<BitOffs>1008</BitOffs>
-				</Variable>
-				<Variable>
 					<Name>Term 2 (EL3104).AI Standard Channel 1.Status</Name>
 					<DataType>Status_7EBB4A47</DataType>
 					<BitSize>16</BitSize>
-					<BitOffs>1240</BitOffs>
+					<BitOffs>856</BitOffs>
 				</Variable>
 				<Variable>
 					<Name>Term 2 (EL3104).AI Standard Channel 1.Value</Name>
 					<DataType>INT</DataType>
 					<BitSize>16</BitSize>
-					<BitOffs>1256</BitOffs>
+					<BitOffs>872</BitOffs>
 				</Variable>
 				<Variable>
 					<Name>Term 2 (EL3104).AI Standard Channel 2.Status</Name>
 					<DataType>Status_7EBB4A47</DataType>
 					<BitSize>16</BitSize>
-					<BitOffs>1272</BitOffs>
+					<BitOffs>888</BitOffs>
 				</Variable>
 				<Variable>
 					<Name>Term 2 (EL3104).AI Standard Channel 2.Value</Name>
 					<DataType>INT</DataType>
 					<BitSize>16</BitSize>
-					<BitOffs>1288</BitOffs>
+					<BitOffs>904</BitOffs>
 				</Variable>
 				<Variable>
 					<Name>Term 2 (EL3104).AI Standard Channel 3.Status</Name>
 					<DataType>Status_7EBB4A47</DataType>
 					<BitSize>16</BitSize>
-					<BitOffs>1304</BitOffs>
+					<BitOffs>920</BitOffs>
 				</Variable>
 				<Variable>
 					<Name>Term 2 (EL3104).AI Standard Channel 3.Value</Name>
 					<DataType>INT</DataType>
 					<BitSize>16</BitSize>
-					<BitOffs>1320</BitOffs>
+					<BitOffs>936</BitOffs>
 				</Variable>
 				<Variable>
 					<Name>Term 2 (EL3104).AI Standard Channel 4.Status</Name>
 					<DataType>Status_7EBB4A47</DataType>
 					<BitSize>16</BitSize>
-					<BitOffs>1336</BitOffs>
+					<BitOffs>952</BitOffs>
 				</Variable>
 				<Variable>
 					<Name>Term 2 (EL3104).AI Standard Channel 4.Value</Name>
 					<DataType>INT</DataType>
 					<BitSize>16</BitSize>
-					<BitOffs>1352</BitOffs>
+					<BitOffs>968</BitOffs>
 				</Variable>
 				<Variable>
 					<Name>Term 4 (EL5002).SSI Inputs Channel 1.Status</Name>
 					<DataType>Status_0F76ABEC</DataType>
 					<BitSize>16</BitSize>
-					<BitOffs>1368</BitOffs>
+					<BitOffs>984</BitOffs>
 				</Variable>
 				<Variable>
 					<Name>Term 4 (EL5002).SSI Inputs Channel 1.Counter value</Name>
 					<DataType>UDINT</DataType>
 					<BitSize>32</BitSize>
-					<BitOffs>1384</BitOffs>
+					<BitOffs>1000</BitOffs>
 				</Variable>
 				<Variable>
 					<Name>Term 4 (EL5002).SSI Inputs Channel 2.Status</Name>
 					<DataType>Status_0F76ABEC</DataType>
 					<BitSize>16</BitSize>
-					<BitOffs>1416</BitOffs>
+					<BitOffs>1032</BitOffs>
 				</Variable>
 				<Variable>
 					<Name>Term 4 (EL5002).SSI Inputs Channel 2.Counter value</Name>
 					<DataType>UDINT</DataType>
 					<BitSize>32</BitSize>
-					<BitOffs>1432</BitOffs>
+					<BitOffs>1048</BitOffs>
 				</Variable>
 				<Variable>
 					<Name>Term 7 (EL3351).AIBridge Inputs.Underrange</Name>
 					<DataType>BIT</DataType>
 					<BitSize>1</BitSize>
-					<BitOffs>1464</BitOffs>
+					<BitOffs>1080</BitOffs>
 				</Variable>
 				<Variable>
 					<Name>Term 7 (EL3351).AIBridge Inputs.Overrange</Name>
 					<DataType>BIT</DataType>
 					<BitSize>1</BitSize>
-					<BitOffs>1465</BitOffs>
+					<BitOffs>1081</BitOffs>
 				</Variable>
 				<Variable>
 					<Name>Term 7 (EL3351).AIBridge Inputs.Error</Name>
 					<DataType>BIT</DataType>
 					<BitSize>1</BitSize>
-					<BitOffs>1470</BitOffs>
+					<BitOffs>1086</BitOffs>
 				</Variable>
 				<Variable>
 					<Name>Term 7 (EL3351).AIBridge Inputs.TxPDO State</Name>
 					<DataType>BIT</DataType>
 					<BitSize>1</BitSize>
-					<BitOffs>1478</BitOffs>
+					<BitOffs>1094</BitOffs>
 				</Variable>
 				<Variable>
 					<Name>Term 7 (EL3351).AIBridge Inputs.TxPDO Toggle</Name>
 					<DataType>BIT</DataType>
 					<BitSize>1</BitSize>
-					<BitOffs>1479</BitOffs>
+					<BitOffs>1095</BitOffs>
 				</Variable>
 				<Variable>
 					<Name>Term 7 (EL3351).AIBridge Inputs.Value</Name>
 					<DataType>DINT</DataType>
 					<BitSize>32</BitSize>
-					<BitOffs>1480</BitOffs>
+					<BitOffs>1096</BitOffs>
 				</Variable>
 				<Variable>
 					<Name>Term 7 (EL3351).AISupply Inputs.Underrange</Name>
 					<DataType>BIT</DataType>
 					<BitSize>1</BitSize>
-					<BitOffs>1512</BitOffs>
+					<BitOffs>1128</BitOffs>
 				</Variable>
 				<Variable>
 					<Name>Term 7 (EL3351).AISupply Inputs.Overrange</Name>
 					<DataType>BIT</DataType>
 					<BitSize>1</BitSize>
-					<BitOffs>1513</BitOffs>
+					<BitOffs>1129</BitOffs>
 				</Variable>
 				<Variable>
 					<Name>Term 7 (EL3351).AISupply Inputs.Error</Name>
 					<DataType>BIT</DataType>
 					<BitSize>1</BitSize>
-					<BitOffs>1518</BitOffs>
+					<BitOffs>1134</BitOffs>
 				</Variable>
 				<Variable>
 					<Name>Term 7 (EL3351).AISupply Inputs.TxPDO State</Name>
 					<DataType>BIT</DataType>
 					<BitSize>1</BitSize>
-					<BitOffs>1526</BitOffs>
+					<BitOffs>1142</BitOffs>
 				</Variable>
 				<Variable>
 					<Name>Term 7 (EL3351).AISupply Inputs.TxPDO Toggle</Name>
 					<DataType>BIT</DataType>
 					<BitSize>1</BitSize>
-					<BitOffs>1527</BitOffs>
+					<BitOffs>1143</BitOffs>
 				</Variable>
 				<Variable>
 					<Name>Term 7 (EL3351).AISupply Inputs.Value</Name>
 					<DataType>DINT</DataType>
 					<BitSize>32</BitSize>
-					<BitOffs>1528</BitOffs>
+					<BitOffs>1144</BitOffs>
 				</Variable>
 				<Variable>
 					<Name>Term 9 (EL3351).AIBridge Inputs.Underrange</Name>
 					<DataType>BIT</DataType>
 					<BitSize>1</BitSize>
-					<BitOffs>1560</BitOffs>
+					<BitOffs>1176</BitOffs>
 				</Variable>
 				<Variable>
 					<Name>Term 9 (EL3351).AIBridge Inputs.Overrange</Name>
 					<DataType>BIT</DataType>
 					<BitSize>1</BitSize>
-					<BitOffs>1561</BitOffs>
+					<BitOffs>1177</BitOffs>
 				</Variable>
 				<Variable>
 					<Name>Term 9 (EL3351).AIBridge Inputs.Error</Name>
 					<DataType>BIT</DataType>
 					<BitSize>1</BitSize>
-					<BitOffs>1566</BitOffs>
+					<BitOffs>1182</BitOffs>
 				</Variable>
 				<Variable>
 					<Name>Term 9 (EL3351).AIBridge Inputs.TxPDO State</Name>
 					<DataType>BIT</DataType>
 					<BitSize>1</BitSize>
-					<BitOffs>1574</BitOffs>
+					<BitOffs>1190</BitOffs>
 				</Variable>
 				<Variable>
 					<Name>Term 9 (EL3351).AIBridge Inputs.TxPDO Toggle</Name>
 					<DataType>BIT</DataType>
 					<BitSize>1</BitSize>
-					<BitOffs>1575</BitOffs>
+					<BitOffs>1191</BitOffs>
 				</Variable>
 				<Variable>
 					<Name>Term 9 (EL3351).AIBridge Inputs.Value</Name>
 					<DataType>DINT</DataType>
 					<BitSize>32</BitSize>
-					<BitOffs>1576</BitOffs>
+					<BitOffs>1192</BitOffs>
 				</Variable>
 				<Variable>
 					<Name>Term 9 (EL3351).AISupply Inputs.Underrange</Name>
 					<DataType>BIT</DataType>
 					<BitSize>1</BitSize>
-					<BitOffs>1608</BitOffs>
+					<BitOffs>1224</BitOffs>
 				</Variable>
 				<Variable>
 					<Name>Term 9 (EL3351).AISupply Inputs.Overrange</Name>
 					<DataType>BIT</DataType>
 					<BitSize>1</BitSize>
-					<BitOffs>1609</BitOffs>
+					<BitOffs>1225</BitOffs>
 				</Variable>
 				<Variable>
 					<Name>Term 9 (EL3351).AISupply Inputs.Error</Name>
 					<DataType>BIT</DataType>
 					<BitSize>1</BitSize>
-					<BitOffs>1614</BitOffs>
+					<BitOffs>1230</BitOffs>
 				</Variable>
 				<Variable>
 					<Name>Term 9 (EL3351).AISupply Inputs.TxPDO State</Name>
 					<DataType>BIT</DataType>
 					<BitSize>1</BitSize>
-					<BitOffs>1622</BitOffs>
+					<BitOffs>1238</BitOffs>
 				</Variable>
 				<Variable>
 					<Name>Term 9 (EL3351).AISupply Inputs.TxPDO Toggle</Name>
 					<DataType>BIT</DataType>
 					<BitSize>1</BitSize>
-					<BitOffs>1623</BitOffs>
+					<BitOffs>1239</BitOffs>
 				</Variable>
 				<Variable>
 					<Name>Term 9 (EL3351).AISupply Inputs.Value</Name>
 					<DataType>DINT</DataType>
 					<BitSize>32</BitSize>
-					<BitOffs>1624</BitOffs>
+					<BitOffs>1240</BitOffs>
 				</Variable>
 				<Variable>
 					<Name>Term 10 (EL3202).RTD Inputs Channel 1.Status</Name>
 					<DataType>Status_90F1E868</DataType>
 					<BitSize>16</BitSize>
-					<BitOffs>1656</BitOffs>
+					<BitOffs>1272</BitOffs>
 				</Variable>
 				<Variable>
 					<Name>Term 10 (EL3202).RTD Inputs Channel 1.Value</Name>
 					<DataType>INT</DataType>
 					<BitSize>16</BitSize>
-					<BitOffs>1672</BitOffs>
+					<BitOffs>1288</BitOffs>
 				</Variable>
 				<Variable>
 					<Name>Term 10 (EL3202).RTD Inputs Channel 2.Status</Name>
 					<DataType>Status_90F1E868</DataType>
 					<BitSize>16</BitSize>
-					<BitOffs>1688</BitOffs>
+					<BitOffs>1304</BitOffs>
 				</Variable>
 				<Variable>
 					<Name>Term 10 (EL3202).RTD Inputs Channel 2.Value</Name>
 					<DataType>INT</DataType>
 					<BitSize>16</BitSize>
-					<BitOffs>1704</BitOffs>
+					<BitOffs>1320</BitOffs>
 				</Variable>
 				<Variable>
 					<Name>Term 6 (EL9510).Status Uo.Power OK</Name>
 					<DataType>BIT</DataType>
 					<BitSize>1</BitSize>
-					<BitOffs>1720</BitOffs>
+					<BitOffs>1336</BitOffs>
 				</Variable>
 				<Variable>
 					<Name>Term 6 (EL9510).Status Uo.Overload</Name>
 					<DataType>BIT</DataType>
 					<BitSize>1</BitSize>
-					<BitOffs>1721</BitOffs>
+					<BitOffs>1337</BitOffs>
 				</Variable>
 				<Variable>
 					<Name>Term 8 (EL9510).Status Uo.Power OK</Name>
 					<DataType>BIT</DataType>
 					<BitSize>1</BitSize>
-					<BitOffs>1722</BitOffs>
+					<BitOffs>1338</BitOffs>
 				</Variable>
 				<Variable>
 					<Name>Term 8 (EL9510).Status Uo.Overload</Name>
 					<DataType>BIT</DataType>
 					<BitSize>1</BitSize>
-					<BitOffs>1723</BitOffs>
+					<BitOffs>1339</BitOffs>
 				</Variable>
 				<Variable>
-					<Name>Drive 12 (Elmo Drive ).Inputs.Status word</Name>
+					<Name>Drive 11 (Elmo Drive ).Inputs.Status word</Name>
 					<DataType>UINT</DataType>
 					<BitSize>16</BitSize>
-					<BitOffs>1824</BitOffs>
+					<BitOffs>1440</BitOffs>
 				</Variable>
 				<Variable>
-					<Name>Drive 12 (Elmo Drive ).Inputs_1.Mode of operation display</Name>
+					<Name>Drive 11 (Elmo Drive ).Inputs_1.Mode of operation display</Name>
 					<DataType>SINT</DataType>
 					<BitSize>8</BitSize>
-					<BitOffs>1840</BitOffs>
+					<BitOffs>1456</BitOffs>
 				</Variable>
 				<Variable>
-					<Name>Drive 12 (Elmo Drive ).Inputs_2.Actual position [counts]</Name>
+					<Name>Drive 11 (Elmo Drive ).Inputs_2.Position Demand [UU]</Name>
 					<DataType>DINT</DataType>
 					<BitSize>32</BitSize>
-					<BitOffs>1856</BitOffs>
+					<BitOffs>1472</BitOffs>
 				</Variable>
 				<Variable>
-					<Name>Drive 12 (Elmo Drive ).Inputs_3.Velocity sensor actual value [counts/sec]</Name>
+					<Name>Drive 11 (Elmo Drive ).Inputs_3.Actual position [counts]</Name>
 					<DataType>DINT</DataType>
 					<BitSize>32</BitSize>
-					<BitOffs>1888</BitOffs>
+					<BitOffs>1504</BitOffs>
 				</Variable>
 				<Variable>
-					<Name>Drive 12 (Elmo Drive ).Inputs_4.Torque actual value</Name>
+					<Name>Drive 11 (Elmo Drive ).Inputs_4.Position actual value</Name>
+					<DataType>DINT</DataType>
+					<BitSize>32</BitSize>
+					<BitOffs>1536</BitOffs>
+				</Variable>
+				<Variable>
+					<Name>Drive 11 (Elmo Drive ).Inputs_5.Velocity sensor actual value [counts/sec]</Name>
+					<DataType>DINT</DataType>
+					<BitSize>32</BitSize>
+					<BitOffs>1568</BitOffs>
+				</Variable>
+				<Variable>
+					<Name>Drive 11 (Elmo Drive ).Inputs_6.Torque demand value</Name>
 					<DataType>INT</DataType>
 					<BitSize>16</BitSize>
-					<BitOffs>1920</BitOffs>
+					<BitOffs>1600</BitOffs>
 				</Variable>
 				<Variable>
-					<Name>Drive 12 (Elmo Drive ).Inputs_5.DC link circuit voltage</Name>
+					<Name>Drive 11 (Elmo Drive ).Inputs_7.Torque actual value</Name>
+					<DataType>INT</DataType>
+					<BitSize>16</BitSize>
+					<BitOffs>1616</BitOffs>
+				</Variable>
+				<Variable>
+					<Name>Drive 11 (Elmo Drive ).Inputs_8.DC link circuit voltage</Name>
 					<DataType>UDINT</DataType>
 					<BitSize>32</BitSize>
-					<BitOffs>1936</BitOffs>
+					<BitOffs>1632</BitOffs>
 				</Variable>
 				<Variable>
-					<Name>Drive 12 (Elmo Drive ).Inputs_6.Digital Inputs</Name>
+					<Name>Drive 11 (Elmo Drive ).Inputs_9.Position Following error</Name>
 					<DataType>DINT</DataType>
 					<BitSize>32</BitSize>
-					<BitOffs>1968</BitOffs>
-				</Variable>
-				<Variable>
-					<Name>Drive 12 (Elmo Drive ).Inputs_7.Current actual value</Name>
-					<DataType>INT</DataType>
-					<BitSize>16</BitSize>
-					<BitOffs>2000</BitOffs>
+					<BitOffs>1664</BitOffs>
 				</Variable>
 				<Variable>
 					<Name>Inputs.Frm0State</Name>
@@ -12788,16 +10883,7 @@ Bit1: Value smaller than Limit2</Comment>
 					<BitOffs>12179</BitOffs>
 				</Variable>
 				<Variable>
-					<Name>Box 13 (EasyCAT 32+32 rev 1).WcState.WcState</Name>
-					<Comment><![CDATA[0 = Data valid
-1 = Data invalid
-]]></Comment>
-					<DataType>BIT</DataType>
-					<BitSize>1</BitSize>
-					<BitOffs>12179</BitOffs>
-				</Variable>
-				<Variable>
-					<Name>Term 11 (EL4102).WcState.WcState</Name>
+					<Name>Term 10 (EL3202).WcState.WcState</Name>
 					<Comment><![CDATA[0 = Data valid
 1 = Data invalid
 ]]></Comment>
@@ -12806,22 +10892,13 @@ Bit1: Value smaller than Limit2</Comment>
 					<BitOffs>12180</BitOffs>
 				</Variable>
 				<Variable>
-					<Name>Term 10 (EL3202).WcState.WcState</Name>
-					<Comment><![CDATA[0 = Data valid
-1 = Data invalid
-]]></Comment>
-					<DataType>BIT</DataType>
-					<BitSize>1</BitSize>
-					<BitOffs>12181</BitOffs>
-				</Variable>
-				<Variable>
 					<Name>Term 9 (EL3351).WcState.WcState</Name>
 					<Comment><![CDATA[0 = Data valid
 1 = Data invalid
 ]]></Comment>
 					<DataType>BIT</DataType>
 					<BitSize>1</BitSize>
-					<BitOffs>12181</BitOffs>
+					<BitOffs>12180</BitOffs>
 				</Variable>
 				<Variable>
 					<Name>Term 8 (EL9510).WcState.WcState</Name>
@@ -12830,7 +10907,7 @@ Bit1: Value smaller than Limit2</Comment>
 ]]></Comment>
 					<DataType>BIT</DataType>
 					<BitSize>1</BitSize>
-					<BitOffs>12181</BitOffs>
+					<BitOffs>12180</BitOffs>
 				</Variable>
 				<Variable>
 					<Name>Term 7 (EL3351).WcState.WcState</Name>
@@ -12839,7 +10916,7 @@ Bit1: Value smaller than Limit2</Comment>
 ]]></Comment>
 					<DataType>BIT</DataType>
 					<BitSize>1</BitSize>
-					<BitOffs>12181</BitOffs>
+					<BitOffs>12180</BitOffs>
 				</Variable>
 				<Variable>
 					<Name>Term 6 (EL9510).WcState.WcState</Name>
@@ -12848,7 +10925,7 @@ Bit1: Value smaller than Limit2</Comment>
 ]]></Comment>
 					<DataType>BIT</DataType>
 					<BitSize>1</BitSize>
-					<BitOffs>12181</BitOffs>
+					<BitOffs>12180</BitOffs>
 				</Variable>
 				<Variable>
 					<Name>Term 4 (EL5002).WcState.WcState</Name>
@@ -12857,7 +10934,7 @@ Bit1: Value smaller than Limit2</Comment>
 ]]></Comment>
 					<DataType>BIT</DataType>
 					<BitSize>1</BitSize>
-					<BitOffs>12181</BitOffs>
+					<BitOffs>12180</BitOffs>
 				</Variable>
 				<Variable>
 					<Name>Term 2 (EL3104).WcState.WcState</Name>
@@ -12866,16 +10943,16 @@ Bit1: Value smaller than Limit2</Comment>
 ]]></Comment>
 					<DataType>BIT</DataType>
 					<BitSize>1</BitSize>
-					<BitOffs>12181</BitOffs>
+					<BitOffs>12180</BitOffs>
 				</Variable>
 				<Variable>
-					<Name>Drive 12 (Elmo Drive ).WcState.WcState</Name>
+					<Name>Drive 11 (Elmo Drive ).WcState.WcState</Name>
 					<Comment><![CDATA[0 = Data valid
 1 = Data invalid
 ]]></Comment>
 					<DataType>BIT</DataType>
 					<BitSize>1</BitSize>
-					<BitOffs>12182</BitOffs>
+					<BitOffs>12181</BitOffs>
 				</Variable>
 				<Variable>
 					<Name>Inputs.Frm0InputToggle</Name>
@@ -12897,58 +10974,52 @@ Bit1: Value smaller than Limit2</Comment>
 					<BitOffs>12195</BitOffs>
 				</Variable>
 				<Variable>
-					<Name>Box 13 (EasyCAT 32+32 rev 1).WcState.InputToggle</Name>
-					<DataType>BIT</DataType>
-					<BitSize>1</BitSize>
-					<BitOffs>12195</BitOffs>
-				</Variable>
-				<Variable>
 					<Name>Term 10 (EL3202).WcState.InputToggle</Name>
 					<DataType>BIT</DataType>
 					<BitSize>1</BitSize>
-					<BitOffs>12197</BitOffs>
+					<BitOffs>12196</BitOffs>
 				</Variable>
 				<Variable>
 					<Name>Term 9 (EL3351).WcState.InputToggle</Name>
 					<DataType>BIT</DataType>
 					<BitSize>1</BitSize>
-					<BitOffs>12197</BitOffs>
+					<BitOffs>12196</BitOffs>
 				</Variable>
 				<Variable>
 					<Name>Term 8 (EL9510).WcState.InputToggle</Name>
 					<DataType>BIT</DataType>
 					<BitSize>1</BitSize>
-					<BitOffs>12197</BitOffs>
+					<BitOffs>12196</BitOffs>
 				</Variable>
 				<Variable>
 					<Name>Term 7 (EL3351).WcState.InputToggle</Name>
 					<DataType>BIT</DataType>
 					<BitSize>1</BitSize>
-					<BitOffs>12197</BitOffs>
+					<BitOffs>12196</BitOffs>
 				</Variable>
 				<Variable>
 					<Name>Term 6 (EL9510).WcState.InputToggle</Name>
 					<DataType>BIT</DataType>
 					<BitSize>1</BitSize>
-					<BitOffs>12197</BitOffs>
+					<BitOffs>12196</BitOffs>
 				</Variable>
 				<Variable>
 					<Name>Term 4 (EL5002).WcState.InputToggle</Name>
 					<DataType>BIT</DataType>
 					<BitSize>1</BitSize>
-					<BitOffs>12197</BitOffs>
+					<BitOffs>12196</BitOffs>
 				</Variable>
 				<Variable>
 					<Name>Term 2 (EL3104).WcState.InputToggle</Name>
 					<DataType>BIT</DataType>
 					<BitSize>1</BitSize>
-					<BitOffs>12197</BitOffs>
+					<BitOffs>12196</BitOffs>
 				</Variable>
 				<Variable>
-					<Name>Drive 12 (Elmo Drive ).WcState.InputToggle</Name>
+					<Name>Drive 11 (Elmo Drive ).WcState.InputToggle</Name>
 					<DataType>BIT</DataType>
 					<BitSize>1</BitSize>
-					<BitOffs>12198</BitOffs>
+					<BitOffs>12197</BitOffs>
 				</Variable>
 				<Variable>
 					<Name>SyncUnits.&lt;default&gt;.&lt;unreferenced&gt;.WcState.WcState</Name>
@@ -13339,7 +11410,7 @@ Bit1: Value smaller than Limit2</Comment>
 					<BitOffs>12992</BitOffs>
 				</Variable>
 				<Variable>
-					<Name>Term 11 (EL4102).InfoData.State</Name>
+					<Name>Drive 11 (Elmo Drive ).InfoData.State</Name>
 					<Comment><![CDATA[0x___1 = Slave in 'INIT' state
 0x___2 = Slave in 'PREOP' state
 0x___3 = Slave in 'BOOT' state
@@ -13363,115 +11434,36 @@ Bit1: Value smaller than Limit2</Comment>
 					<BitOffs>13056</BitOffs>
 				</Variable>
 				<Variable>
-					<Name>Term 11 (EL4102).InfoData.AdsAddr</Name>
+					<Name>Drive 11 (Elmo Drive ).InfoData.AdsAddr</Name>
 					<Comment><![CDATA[Complete ADS address to access the slave (mailbox)]]></Comment>
 					<DataType>AMSADDR</DataType>
 					<BitSize>64</BitSize>
 					<BitOffs>13072</BitOffs>
 				</Variable>
 				<Variable>
-					<Name>Term 11 (EL4102).InfoData.DcOutputShift</Name>
-					<DataType>DINT</DataType>
-					<BitSize>32</BitSize>
-					<BitOffs>13136</BitOffs>
-				</Variable>
-				<Variable>
-					<Name>Term 11 (EL4102).InfoData.DcInputShift</Name>
-					<DataType>DINT</DataType>
-					<BitSize>32</BitSize>
-					<BitOffs>13168</BitOffs>
-				</Variable>
-				<Variable>
-					<Name>Drive 12 (Elmo Drive ).InfoData.State</Name>
-					<Comment><![CDATA[0x___1 = Slave in 'INIT' state
-0x___2 = Slave in 'PREOP' state
-0x___3 = Slave in 'BOOT' state
-0x___4 = Slave in 'SAFEOP' state
-0x___8 = Slave in 'OP' state
-0x001_ = Slave signals error
-0x002_ = Invalid vendorId, productCode... read
-0x004_ = Initialization error occurred
-0x008_ = Slave disabled
-0x010_ = Slave not present
-0x020_ = Slave signals link error
-0x040_ = Slave signals missing link
-0x080_ = Slave signals unexpected link
-0x100_ = Communication port A
-0x200_ = Communication port B
-0x400_ = Communication port C
-0x800_ = Communication port D
-]]></Comment>
-					<DataType>UINT</DataType>
-					<BitSize>16</BitSize>
-					<BitOffs>13200</BitOffs>
-				</Variable>
-				<Variable>
-					<Name>Drive 12 (Elmo Drive ).InfoData.AdsAddr</Name>
-					<Comment><![CDATA[Complete ADS address to access the slave (mailbox)]]></Comment>
-					<DataType>AMSADDR</DataType>
-					<BitSize>64</BitSize>
-					<BitOffs>13216</BitOffs>
-				</Variable>
-				<Variable>
-					<Name>Drive 12 (Elmo Drive ).InfoData.Chn0</Name>
+					<Name>Drive 11 (Elmo Drive ).InfoData.Chn0</Name>
 					<Comment><![CDATA[Slave has a channel]]></Comment>
 					<DataType>USINT</DataType>
 					<BitSize>8</BitSize>
-					<BitOffs>13280</BitOffs>
+					<BitOffs>13136</BitOffs>
 				</Variable>
 				<Variable>
-					<Name>Drive 12 (Elmo Drive ).InfoData.DcOutputShift</Name>
+					<Name>Drive 11 (Elmo Drive ).InfoData.DcOutputShift</Name>
 					<DataType>DINT</DataType>
 					<BitSize>32</BitSize>
-					<BitOffs>13288</BitOffs>
+					<BitOffs>13144</BitOffs>
 				</Variable>
 				<Variable>
-					<Name>Drive 12 (Elmo Drive ).InfoData.DcInputShift</Name>
+					<Name>Drive 11 (Elmo Drive ).InfoData.DcInputShift</Name>
 					<DataType>DINT</DataType>
 					<BitSize>32</BitSize>
-					<BitOffs>13320</BitOffs>
-				</Variable>
-				<Variable>
-					<Name>Box 13 (EasyCAT 32+32 rev 1).InfoData.State</Name>
-					<Comment><![CDATA[0x___1 = Slave in 'INIT' state
-0x___2 = Slave in 'PREOP' state
-0x___3 = Slave in 'BOOT' state
-0x___4 = Slave in 'SAFEOP' state
-0x___8 = Slave in 'OP' state
-0x001_ = Slave signals error
-0x002_ = Invalid vendorId, productCode... read
-0x004_ = Initialization error occurred
-0x008_ = Slave disabled
-0x010_ = Slave not present
-0x020_ = Slave signals link error
-0x040_ = Slave signals missing link
-0x080_ = Slave signals unexpected link
-0x100_ = Communication port A
-0x200_ = Communication port B
-0x400_ = Communication port C
-0x800_ = Communication port D
-]]></Comment>
-					<DataType>UINT</DataType>
-					<BitSize>16</BitSize>
-					<BitOffs>13352</BitOffs>
-				</Variable>
-				<Variable>
-					<Name>Box 13 (EasyCAT 32+32 rev 1).InfoData.DcOutputShift</Name>
-					<DataType>DINT</DataType>
-					<BitSize>32</BitSize>
-					<BitOffs>13368</BitOffs>
-				</Variable>
-				<Variable>
-					<Name>Box 13 (EasyCAT 32+32 rev 1).InfoData.DcInputShift</Name>
-					<DataType>DINT</DataType>
-					<BitSize>32</BitSize>
-					<BitOffs>13400</BitOffs>
+					<BitOffs>13176</BitOffs>
 				</Variable>
 				<Variable>
 					<Name>SyncUnits.&lt;default&gt;.&lt;unreferenced&gt;.InfoData.ObjectId</Name>
 					<DataType>OTCID</DataType>
 					<BitSize>32</BitSize>
-					<BitOffs>13432</BitOffs>
+					<BitOffs>13208</BitOffs>
 				</Variable>
 				<Variable>
 					<Name>SyncUnits.&lt;default&gt;.&lt;unreferenced&gt;.InfoData.State</Name>
@@ -13491,20 +11483,20 @@ Bit1: Value smaller than Limit2</Comment>
 ]]></Comment>
 					<DataType>UINT</DataType>
 					<BitSize>16</BitSize>
-					<BitOffs>13464</BitOffs>
+					<BitOffs>13240</BitOffs>
 				</Variable>
 				<Variable>
 					<Name>SyncUnits.&lt;default&gt;.&lt;unreferenced&gt;.InfoData.SlaveCount</Name>
 					<Comment><![CDATA[Info data slave counter]]></Comment>
 					<DataType>UINT</DataType>
 					<BitSize>16</BitSize>
-					<BitOffs>13480</BitOffs>
+					<BitOffs>13256</BitOffs>
 				</Variable>
 				<Variable>
 					<Name>SyncUnits.&lt;default&gt;.Task 2.InfoData.ObjectId</Name>
 					<DataType>OTCID</DataType>
 					<BitSize>32</BitSize>
-					<BitOffs>13496</BitOffs>
+					<BitOffs>13272</BitOffs>
 				</Variable>
 				<Variable>
 					<Name>SyncUnits.&lt;default&gt;.Task 2.InfoData.State</Name>
@@ -13524,20 +11516,20 @@ Bit1: Value smaller than Limit2</Comment>
 ]]></Comment>
 					<DataType>UINT</DataType>
 					<BitSize>16</BitSize>
-					<BitOffs>13528</BitOffs>
+					<BitOffs>13304</BitOffs>
 				</Variable>
 				<Variable>
 					<Name>SyncUnits.&lt;default&gt;.Task 2.InfoData.SlaveCount</Name>
 					<Comment><![CDATA[Info data slave counter]]></Comment>
 					<DataType>UINT</DataType>
 					<BitSize>16</BitSize>
-					<BitOffs>13544</BitOffs>
+					<BitOffs>13320</BitOffs>
 				</Variable>
 				<Variable>
 					<Name>SyncUnits.Drive.&lt;unreferenced&gt;.InfoData.ObjectId</Name>
 					<DataType>OTCID</DataType>
 					<BitSize>32</BitSize>
-					<BitOffs>13560</BitOffs>
+					<BitOffs>13336</BitOffs>
 				</Variable>
 				<Variable>
 					<Name>SyncUnits.Drive.&lt;unreferenced&gt;.InfoData.State</Name>
@@ -13557,14 +11549,14 @@ Bit1: Value smaller than Limit2</Comment>
 ]]></Comment>
 					<DataType>UINT</DataType>
 					<BitSize>16</BitSize>
-					<BitOffs>13592</BitOffs>
+					<BitOffs>13368</BitOffs>
 				</Variable>
 				<Variable>
 					<Name>SyncUnits.Drive.&lt;unreferenced&gt;.InfoData.SlaveCount</Name>
 					<Comment><![CDATA[Info data slave counter]]></Comment>
 					<DataType>UINT</DataType>
 					<BitSize>16</BitSize>
-					<BitOffs>13608</BitOffs>
+					<BitOffs>13384</BitOffs>
 				</Variable>
 			</Inputs>
 			<Outputs>
@@ -13708,232 +11700,34 @@ Bit1: Value smaller than Limit2</Comment>
 					<BitOffs>752</BitOffs>
 				</Variable>
 				<Variable>
-					<Name>Box 13 (EasyCAT 32+32 rev 1).Outputs.Byte0</Name>
-					<DataType>USINT</DataType>
-					<BitSize>8</BitSize>
-					<BitOffs>760</BitOffs>
-				</Variable>
-				<Variable>
-					<Name>Box 13 (EasyCAT 32+32 rev 1).Outputs.Byte1</Name>
-					<DataType>USINT</DataType>
-					<BitSize>8</BitSize>
-					<BitOffs>768</BitOffs>
-				</Variable>
-				<Variable>
-					<Name>Box 13 (EasyCAT 32+32 rev 1).Outputs.Byte2</Name>
-					<DataType>USINT</DataType>
-					<BitSize>8</BitSize>
-					<BitOffs>776</BitOffs>
-				</Variable>
-				<Variable>
-					<Name>Box 13 (EasyCAT 32+32 rev 1).Outputs.Byte3</Name>
-					<DataType>USINT</DataType>
-					<BitSize>8</BitSize>
-					<BitOffs>784</BitOffs>
-				</Variable>
-				<Variable>
-					<Name>Box 13 (EasyCAT 32+32 rev 1).Outputs.Byte4</Name>
-					<DataType>USINT</DataType>
-					<BitSize>8</BitSize>
-					<BitOffs>792</BitOffs>
-				</Variable>
-				<Variable>
-					<Name>Box 13 (EasyCAT 32+32 rev 1).Outputs.Byte5</Name>
-					<DataType>USINT</DataType>
-					<BitSize>8</BitSize>
-					<BitOffs>800</BitOffs>
-				</Variable>
-				<Variable>
-					<Name>Box 13 (EasyCAT 32+32 rev 1).Outputs.Byte6</Name>
-					<DataType>USINT</DataType>
-					<BitSize>8</BitSize>
-					<BitOffs>808</BitOffs>
-				</Variable>
-				<Variable>
-					<Name>Box 13 (EasyCAT 32+32 rev 1).Outputs.Byte7</Name>
-					<DataType>USINT</DataType>
-					<BitSize>8</BitSize>
-					<BitOffs>816</BitOffs>
-				</Variable>
-				<Variable>
-					<Name>Box 13 (EasyCAT 32+32 rev 1).Outputs.Byte8</Name>
-					<DataType>USINT</DataType>
-					<BitSize>8</BitSize>
-					<BitOffs>824</BitOffs>
-				</Variable>
-				<Variable>
-					<Name>Box 13 (EasyCAT 32+32 rev 1).Outputs.Byte9</Name>
-					<DataType>USINT</DataType>
-					<BitSize>8</BitSize>
-					<BitOffs>832</BitOffs>
-				</Variable>
-				<Variable>
-					<Name>Box 13 (EasyCAT 32+32 rev 1).Outputs.Byte10</Name>
-					<DataType>USINT</DataType>
-					<BitSize>8</BitSize>
-					<BitOffs>840</BitOffs>
-				</Variable>
-				<Variable>
-					<Name>Box 13 (EasyCAT 32+32 rev 1).Outputs.Byte11</Name>
-					<DataType>USINT</DataType>
-					<BitSize>8</BitSize>
-					<BitOffs>848</BitOffs>
-				</Variable>
-				<Variable>
-					<Name>Box 13 (EasyCAT 32+32 rev 1).Outputs.Byte12</Name>
-					<DataType>USINT</DataType>
-					<BitSize>8</BitSize>
-					<BitOffs>856</BitOffs>
-				</Variable>
-				<Variable>
-					<Name>Box 13 (EasyCAT 32+32 rev 1).Outputs.Byte13</Name>
-					<DataType>USINT</DataType>
-					<BitSize>8</BitSize>
-					<BitOffs>864</BitOffs>
-				</Variable>
-				<Variable>
-					<Name>Box 13 (EasyCAT 32+32 rev 1).Outputs.Byte14</Name>
-					<DataType>USINT</DataType>
-					<BitSize>8</BitSize>
-					<BitOffs>872</BitOffs>
-				</Variable>
-				<Variable>
-					<Name>Box 13 (EasyCAT 32+32 rev 1).Outputs.Byte15</Name>
-					<DataType>USINT</DataType>
-					<BitSize>8</BitSize>
-					<BitOffs>880</BitOffs>
-				</Variable>
-				<Variable>
-					<Name>Box 13 (EasyCAT 32+32 rev 1).Outputs.Byte16</Name>
-					<DataType>USINT</DataType>
-					<BitSize>8</BitSize>
-					<BitOffs>888</BitOffs>
-				</Variable>
-				<Variable>
-					<Name>Box 13 (EasyCAT 32+32 rev 1).Outputs.Byte17</Name>
-					<DataType>USINT</DataType>
-					<BitSize>8</BitSize>
-					<BitOffs>896</BitOffs>
-				</Variable>
-				<Variable>
-					<Name>Box 13 (EasyCAT 32+32 rev 1).Outputs.Byte18</Name>
-					<DataType>USINT</DataType>
-					<BitSize>8</BitSize>
-					<BitOffs>904</BitOffs>
-				</Variable>
-				<Variable>
-					<Name>Box 13 (EasyCAT 32+32 rev 1).Outputs.Byte19</Name>
-					<DataType>USINT</DataType>
-					<BitSize>8</BitSize>
-					<BitOffs>912</BitOffs>
-				</Variable>
-				<Variable>
-					<Name>Box 13 (EasyCAT 32+32 rev 1).Outputs.Byte20</Name>
-					<DataType>USINT</DataType>
-					<BitSize>8</BitSize>
-					<BitOffs>920</BitOffs>
-				</Variable>
-				<Variable>
-					<Name>Box 13 (EasyCAT 32+32 rev 1).Outputs.Byte21</Name>
-					<DataType>USINT</DataType>
-					<BitSize>8</BitSize>
-					<BitOffs>928</BitOffs>
-				</Variable>
-				<Variable>
-					<Name>Box 13 (EasyCAT 32+32 rev 1).Outputs.Byte22</Name>
-					<DataType>USINT</DataType>
-					<BitSize>8</BitSize>
-					<BitOffs>936</BitOffs>
-				</Variable>
-				<Variable>
-					<Name>Box 13 (EasyCAT 32+32 rev 1).Outputs.Byte23</Name>
-					<DataType>USINT</DataType>
-					<BitSize>8</BitSize>
-					<BitOffs>944</BitOffs>
-				</Variable>
-				<Variable>
-					<Name>Box 13 (EasyCAT 32+32 rev 1).Outputs.Byte24</Name>
-					<DataType>USINT</DataType>
-					<BitSize>8</BitSize>
-					<BitOffs>952</BitOffs>
-				</Variable>
-				<Variable>
-					<Name>Box 13 (EasyCAT 32+32 rev 1).Outputs.Byte25</Name>
-					<DataType>USINT</DataType>
-					<BitSize>8</BitSize>
-					<BitOffs>960</BitOffs>
-				</Variable>
-				<Variable>
-					<Name>Box 13 (EasyCAT 32+32 rev 1).Outputs.Byte26</Name>
-					<DataType>USINT</DataType>
-					<BitSize>8</BitSize>
-					<BitOffs>968</BitOffs>
-				</Variable>
-				<Variable>
-					<Name>Box 13 (EasyCAT 32+32 rev 1).Outputs.Byte27</Name>
-					<DataType>USINT</DataType>
-					<BitSize>8</BitSize>
-					<BitOffs>976</BitOffs>
-				</Variable>
-				<Variable>
-					<Name>Box 13 (EasyCAT 32+32 rev 1).Outputs.Byte28</Name>
-					<DataType>USINT</DataType>
-					<BitSize>8</BitSize>
-					<BitOffs>984</BitOffs>
-				</Variable>
-				<Variable>
-					<Name>Box 13 (EasyCAT 32+32 rev 1).Outputs.Byte29</Name>
-					<DataType>USINT</DataType>
-					<BitSize>8</BitSize>
-					<BitOffs>992</BitOffs>
-				</Variable>
-				<Variable>
-					<Name>Box 13 (EasyCAT 32+32 rev 1).Outputs.Byte30</Name>
-					<DataType>USINT</DataType>
-					<BitSize>8</BitSize>
-					<BitOffs>1000</BitOffs>
-				</Variable>
-				<Variable>
-					<Name>Box 13 (EasyCAT 32+32 rev 1).Outputs.Byte31</Name>
-					<DataType>USINT</DataType>
-					<BitSize>8</BitSize>
-					<BitOffs>1008</BitOffs>
-				</Variable>
-				<Variable>
-					<Name>Term 11 (EL4102).Channel 1.Output</Name>
-					<DataType>INT</DataType>
-					<BitSize>16</BitSize>
-					<BitOffs>1112</BitOffs>
-				</Variable>
-				<Variable>
-					<Name>Term 11 (EL4102).Channel 2.Output</Name>
-					<DataType>INT</DataType>
-					<BitSize>16</BitSize>
-					<BitOffs>1128</BitOffs>
-				</Variable>
-				<Variable>
-					<Name>Drive 12 (Elmo Drive ).Outputs.Control word</Name>
+					<Name>Drive 11 (Elmo Drive ).Outputs.Control word</Name>
 					<DataType>UINT</DataType>
 					<BitSize>16</BitSize>
-					<BitOffs>1824</BitOffs>
+					<BitOffs>1440</BitOffs>
 				</Variable>
 				<Variable>
-					<Name>Drive 12 (Elmo Drive ).Outputs_1.Mode of operation</Name>
+					<Name>Drive 11 (Elmo Drive ).Outputs_1.Mode of operation</Name>
 					<DataType>SINT</DataType>
 					<BitSize>8</BitSize>
-					<BitOffs>1840</BitOffs>
+					<BitOffs>1456</BitOffs>
 				</Variable>
 				<Variable>
-					<Name>Drive 12 (Elmo Drive ).Outputs_2.Target Torque</Name>
+					<Name>Drive 11 (Elmo Drive ).Outputs_2.Target Torque</Name>
 					<DataType>INT</DataType>
 					<BitSize>16</BitSize>
-					<BitOffs>1856</BitOffs>
+					<BitOffs>1472</BitOffs>
 				</Variable>
 				<Variable>
-					<Name>Drive 12 (Elmo Drive ).Outputs_3.Max. Torque</Name>
+					<Name>Drive 11 (Elmo Drive ).Outputs_3.Max. Torque</Name>
 					<DataType>UINT</DataType>
 					<BitSize>16</BitSize>
-					<BitOffs>1872</BitOffs>
+					<BitOffs>1488</BitOffs>
+				</Variable>
+				<Variable>
+					<Name>Drive 11 (Elmo Drive ).Outputs_4.Target Position</Name>
+					<DataType>DINT</DataType>
+					<BitSize>32</BitSize>
+					<BitOffs>1504</BitOffs>
 				</Variable>
 				<Variable>
 					<Name>Outputs.Frm0Ctrl</Name>

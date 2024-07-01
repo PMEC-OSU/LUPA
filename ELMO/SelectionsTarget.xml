@@ -7,53 +7,13 @@
       </key>
       <value>
         <item_type>System.String, mscorlib</item_type>
-        <string>Drive01</string>
-      </value>
-    </item>
-    <item>
-      <key>
-        <item_type>System.String, mscorlib</item_type>
-        <string>SolutionTreeSelectionModel</string>
-      </key>
-      <value>
-        <item_type>System.String, mscorlib</item_type>
-        <string>Solution</string>
-      </value>
-    </item>
-    <item>
-      <key>
-        <item_type>System.String, mscorlib</item_type>
-        <string>DriveSingleSelectionModel</string>
-      </key>
-      <value>
-        <item_type>System.String, mscorlib</item_type>
-        <string>Drive01</string>
+        <string>Workspace "LUPA2"</string>
       </value>
     </item>
     <item>
       <key>
         <item_type>System.String, mscorlib</item_type>
         <string>DriveAxisSelectionModel</string>
-      </key>
-      <value>
-        <item_type>System.String, mscorlib</item_type>
-        <string>Drive01</string>
-      </value>
-    </item>
-    <item>
-      <key>
-        <item_type>System.String, mscorlib</item_type>
-        <string>ParametersExplorerSelectionModel</string>
-      </key>
-      <value>
-        <item_type>System.String, mscorlib</item_type>
-        <string>Drive01</string>
-      </value>
-    </item>
-    <item>
-      <key>
-        <item_type>System.String, mscorlib</item_type>
-        <string>DriveAxisAndGroupSelectionModel</string>
       </key>
       <value>
         <item_type>System.String, mscorlib</item_type>
