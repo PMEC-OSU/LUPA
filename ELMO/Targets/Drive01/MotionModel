@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <MotionModel xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <AbsolutePosition1>0</AbsolutePosition1>
-  <AbsolutePosition2>0</AbsolutePosition2>
+  <AbsolutePosition2>1000000</AbsolutePosition2>
   <AbsoluteIsRepetitive>false</AbsoluteIsRepetitive>
   <RelativePosition>0</RelativePosition>
   <RelativeIsRepetitive>false</RelativeIsRepetitive>
