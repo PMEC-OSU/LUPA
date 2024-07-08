@@ -11,7 +11,7 @@ Ts = 0.001; % sampling period 0.001, or 0.0005, or 0.00025 (doesn't get past sta
 CL = 13;  % Current limit parameter (Set in EASII)
 Kt = 7.86;  % Determined experimentally  % Kt = 8.51;  % From datasheet
 sprocketTeeth = 50;  % small:32 medium:50 large:80
-tgName = 'performance3';
+tgName = 'performance2';
 
 
 %% change things above this line for each run

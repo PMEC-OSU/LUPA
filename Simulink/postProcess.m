@@ -27,7 +27,8 @@ end
 matFileName = 'simdata.mat';
 
 tg = pull_data(tgName,dateDir,timeDir,mdlName,matFileName);
-output = structure_save_HWRL(matFileName,app,sharename,year,projectName,expname,trialNumber);
+
+% output = structure_save_HWRL(matFileName,app,sharename,year,projectName,expname,trialNumber);
 clear('app');
 function output = structure_save_HWRL(matFileName,app,sharename,year,projectName,expname,trialNumber)
 %% === convert to structure format ========================================
