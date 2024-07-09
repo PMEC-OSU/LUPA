@@ -1067,17 +1067,6 @@ Bit1: Value smaller than Limit2</Comment>
 					<Timeout>5000</Timeout>
 				</InitCmd>
 				<InitCmd>
-					<Transition>SI</Transition>
-					<Transition>OI</Transition>
-					<Comment><![CDATA[clear DC activation]]></Comment>
-					<Requires>cycle</Requires>
-					<Cmd>2</Cmd>
-					<Adp>65535</Adp>
-					<Ado>2432</Ado>
-					<Data>0000</Data>
-					<Retries>3</Retries>
-				</InitCmd>
-				<InitCmd>
 					<Transition>PI</Transition>
 					<Transition>SI</Transition>
 					<Transition>OI</Transition>
@@ -1300,60 +1289,6 @@ Bit1: Value smaller than Limit2</Comment>
 					<Retries>3</Retries>
 				</InitCmd>
 				<InitCmd>
-					<Transition>PS</Transition>
-					<Comment><![CDATA[set DC cycle time]]></Comment>
-					<Requires>cycle</Requires>
-					<Cmd>5</Cmd>
-					<Adp>1002</Adp>
-					<Ado>2464</Ado>
-					<Data>40420f00a8610000</Data>
-					<Cnt>1</Cnt>
-					<Retries>3</Retries>
-				</InitCmd>
-				<InitCmd>
-					<Transition>PS</Transition>
-					<Comment><![CDATA[set DC start time]]></Comment>
-					<Requires>cycle</Requires>
-					<Cmd>5</Cmd>
-					<Adp>1002</Adp>
-					<Ado>2448</Ado>
-					<Data>fcedf7ffffffffff</Data>
-					<Cnt>1</Cnt>
-					<Retries>3</Retries>
-				</InitCmd>
-				<InitCmd>
-					<Transition>PS</Transition>
-					<Comment><![CDATA[set DC activation]]></Comment>
-					<Requires>cycle</Requires>
-					<Cmd>5</Cmd>
-					<Adp>1002</Adp>
-					<Ado>2432</Ado>
-					<Data>0007</Data>
-					<Cnt>1</Cnt>
-					<Retries>3</Retries>
-				</InitCmd>
-				<InitCmd>
-					<Transition>PS</Transition>
-					<Comment><![CDATA[set DC latch cfg]]></Comment>
-					<Requires>cycle</Requires>
-					<Cmd>5</Cmd>
-					<Adp>1002</Adp>
-					<Ado>2472</Ado>
-					<Data>0000</Data>
-					<Retries>3</Retries>
-				</InitCmd>
-				<InitCmd>
-					<Transition>IP</Transition>
-					<Transition>PP</Transition>
-					<Comment><![CDATA[clear DC activation]]></Comment>
-					<Requires>cycle</Requires>
-					<Cmd>5</Cmd>
-					<Adp>1002</Adp>
-					<Ado>2432</Ado>
-					<Data>0000</Data>
-					<Retries>3</Retries>
-				</InitCmd>
-				<InitCmd>
 					<Transition>SP</Transition>
 					<Transition>OP</Transition>
 					<Comment><![CDATA[set device state to PREOP]]></Comment>
@@ -1452,17 +1387,6 @@ Bit1: Value smaller than Limit2</Comment>
 					<Adp>1002</Adp>
 					<Ado>1552</Ado>
 					<Data>00000000000000000000000000000000</Data>
-					<Retries>3</Retries>
-				</InitCmd>
-				<InitCmd>
-					<Transition>SP</Transition>
-					<Transition>OP</Transition>
-					<Comment><![CDATA[clear DC activation]]></Comment>
-					<Requires>cycle</Requires>
-					<Cmd>5</Cmd>
-					<Adp>1002</Adp>
-					<Ado>2432</Ado>
-					<Data>0000</Data>
 					<Retries>3</Retries>
 				</InitCmd>
 				<InitCmd>
@@ -1646,12 +1570,6 @@ Bit1: Value smaller than Limit2</Comment>
 				<Port>B</Port>
 				<PhysAddr>1001</PhysAddr>
 			</PreviousPort>
-			<DC>
-				<ReferenceClock>true</ReferenceClock>
-				<CycleTime0>1000000</CycleTime0>
-				<CycleTime1>25000</CycleTime1>
-				<ShiftTime>-528900</ShiftTime>
-			</DC>
 		</Slave>
 		<Slave>
 			<Info>
@@ -2051,7 +1969,7 @@ Bit1: Value smaller than Limit2</Comment>
 			<ProcessData>
 				<Recv>
 					<BitStart>984</BitStart>
-					<BitLength>48</BitLength>
+					<BitLength>96</BitLength>
 				</Recv>
 				<Sm2>
 					<Type>Outputs</Type>
@@ -2066,6 +1984,7 @@ Bit1: Value smaller than Limit2</Comment>
 					<ControlByte>32</ControlByte>
 					<Enable>1</Enable>
 					<Pdo>6656</Pdo>
+					<Pdo>6657</Pdo>
 				</Sm3>
 				<TxPdo Fixed="true" Sm="3">
 					<Index>#x1a00</Index>
@@ -2132,7 +2051,7 @@ Bit1: Value smaller than Limit2</Comment>
 						<DataType>UDINT</DataType>
 					</Entry>
 				</TxPdo>
-				<TxPdo Fixed="true">
+				<TxPdo Fixed="true" Sm="3">
 					<Index>#x1a01</Index>
 					<Name>SSI Inputs Channel 2</Name>
 					<Entry>
@@ -2251,12 +2170,21 @@ Bit1: Value smaller than Limit2</Comment>
 						</InitCmd>
 						<InitCmd Fixed="true">
 							<Transition>PS</Transition>
+							<Comment><![CDATA[download pdo 0x1C13:02 index]]></Comment>
+							<Timeout>0</Timeout>
+							<Ccs>1</Ccs>
+							<Index>7187</Index>
+							<SubIndex>2</SubIndex>
+							<Data>011a</Data>
+						</InitCmd>
+						<InitCmd Fixed="true">
+							<Transition>PS</Transition>
 							<Comment><![CDATA[download pdo 0x1C13 count]]></Comment>
 							<Timeout>0</Timeout>
 							<Ccs>1</Ccs>
 							<Index>7187</Index>
 							<SubIndex>0</SubIndex>
-							<Data>01</Data>
+							<Data>02</Data>
 						</InitCmd>
 						<InitCmd>
 							<Transition>PS</Transition>
@@ -2293,17 +2221,6 @@ Bit1: Value smaller than Limit2</Comment>
 					<Data>1100</Data>
 					<Retries>3</Retries>
 					<Timeout>5000</Timeout>
-				</InitCmd>
-				<InitCmd>
-					<Transition>SI</Transition>
-					<Transition>OI</Transition>
-					<Comment><![CDATA[clear DC activation]]></Comment>
-					<Requires>cycle</Requires>
-					<Cmd>2</Cmd>
-					<Adp>65533</Adp>
-					<Ado>2432</Ado>
-					<Data>0000</Data>
-					<Retries>3</Retries>
 				</InitCmd>
 				<InitCmd>
 					<Transition>PI</Transition>
@@ -2528,60 +2445,6 @@ Bit1: Value smaller than Limit2</Comment>
 					<Retries>3</Retries>
 				</InitCmd>
 				<InitCmd>
-					<Transition>PS</Transition>
-					<Comment><![CDATA[set DC cycle time]]></Comment>
-					<Requires>cycle</Requires>
-					<Cmd>5</Cmd>
-					<Adp>1004</Adp>
-					<Ado>2464</Ado>
-					<Data>40420f00983a0000</Data>
-					<Cnt>1</Cnt>
-					<Retries>3</Retries>
-				</InitCmd>
-				<InitCmd>
-					<Transition>PS</Transition>
-					<Comment><![CDATA[set DC start time]]></Comment>
-					<Requires>cycle</Requires>
-					<Cmd>5</Cmd>
-					<Adp>1004</Adp>
-					<Ado>2448</Ado>
-					<Data>0000000000000000</Data>
-					<Cnt>1</Cnt>
-					<Retries>3</Retries>
-				</InitCmd>
-				<InitCmd>
-					<Transition>PS</Transition>
-					<Comment><![CDATA[set DC activation]]></Comment>
-					<Requires>cycle</Requires>
-					<Cmd>5</Cmd>
-					<Adp>1004</Adp>
-					<Ado>2432</Ado>
-					<Data>0007</Data>
-					<Cnt>1</Cnt>
-					<Retries>3</Retries>
-				</InitCmd>
-				<InitCmd>
-					<Transition>PS</Transition>
-					<Comment><![CDATA[set DC latch cfg]]></Comment>
-					<Requires>cycle</Requires>
-					<Cmd>5</Cmd>
-					<Adp>1004</Adp>
-					<Ado>2472</Ado>
-					<Data>0000</Data>
-					<Retries>3</Retries>
-				</InitCmd>
-				<InitCmd>
-					<Transition>IP</Transition>
-					<Transition>PP</Transition>
-					<Comment><![CDATA[clear DC activation]]></Comment>
-					<Requires>cycle</Requires>
-					<Cmd>5</Cmd>
-					<Adp>1004</Adp>
-					<Ado>2432</Ado>
-					<Data>0000</Data>
-					<Retries>3</Retries>
-				</InitCmd>
-				<InitCmd>
 					<Transition>SP</Transition>
 					<Transition>OP</Transition>
 					<Comment><![CDATA[set device state to PREOP]]></Comment>
@@ -2622,7 +2485,7 @@ Bit1: Value smaller than Limit2</Comment>
 					<Cmd>5</Cmd>
 					<Adp>1004</Adp>
 					<Ado>2072</Ado>
-					<Data>8011060020000100</Data>
+					<Data>80110c0020000100</Data>
 					<Cnt>1</Cnt>
 					<Retries>3</Retries>
 				</InitCmd>
@@ -2632,7 +2495,7 @@ Bit1: Value smaller than Limit2</Comment>
 					<Cmd>5</Cmd>
 					<Adp>1004</Adp>
 					<Ado>1536</Ado>
-					<Data>10080001060000078011000101000000</Data>
+					<Data>100800010c0000078011000101000000</Data>
 					<Cnt>1</Cnt>
 					<Retries>3</Retries>
 				</InitCmd>
@@ -2680,17 +2543,6 @@ Bit1: Value smaller than Limit2</Comment>
 					<Adp>1004</Adp>
 					<Ado>1552</Ado>
 					<Data>00000000000000000000000000000000</Data>
-					<Retries>3</Retries>
-				</InitCmd>
-				<InitCmd>
-					<Transition>SP</Transition>
-					<Transition>OP</Transition>
-					<Comment><![CDATA[clear DC activation]]></Comment>
-					<Requires>cycle</Requires>
-					<Cmd>5</Cmd>
-					<Adp>1004</Adp>
-					<Ado>2432</Ado>
-					<Data>0000</Data>
 					<Retries>3</Retries>
 				</InitCmd>
 				<InitCmd>
@@ -2874,12 +2726,6 @@ Bit1: Value smaller than Limit2</Comment>
 				<Port>B</Port>
 				<PhysAddr>1003</PhysAddr>
 			</PreviousPort>
-			<DC>
-				<ReferenceClock>false</ReferenceClock>
-				<CycleTime0>1000000</CycleTime0>
-				<CycleTime1>15000</CycleTime1>
-				<ShiftTime>0</ShiftTime>
-			</DC>
 		</Slave>
 		<Slave>
 			<Info>
@@ -5295,7 +5141,7 @@ Bit1: Value smaller than Limit2</Comment>
 			</Info>
 			<ProcessData>
 				<Recv>
-					<BitStart>1288</BitStart>
+					<BitStart>1336</BitStart>
 					<BitLength>2</BitLength>
 				</Recv>
 				<Sm0>
@@ -5515,7 +5361,7 @@ Bit1: Value smaller than Limit2</Comment>
 					<Cmd>5</Cmd>
 					<Adp>1006</Adp>
 					<Ado>1536</Ado>
-					<Data>36080001010000010010000101000000</Data>
+					<Data>3c080001010000010010000101000000</Data>
 					<Cnt>1</Cnt>
 					<Retries>3</Retries>
 				</InitCmd>
@@ -5738,7 +5584,7 @@ Bit1: Value smaller than Limit2</Comment>
 			</Info>
 			<ProcessData>
 				<Recv>
-					<BitStart>1032</BitStart>
+					<BitStart>1080</BitStart>
 					<BitLength>96</BitLength>
 				</Recv>
 				<Sm2>
@@ -6210,7 +6056,7 @@ Bit1: Value smaller than Limit2</Comment>
 					<Cmd>5</Cmd>
 					<Adp>1007</Adp>
 					<Ado>1536</Ado>
-					<Data>160800010c0000078011000101000000</Data>
+					<Data>1c0800010c0000078011000101000000</Data>
 					<Cnt>1</Cnt>
 					<Retries>3</Retries>
 				</InitCmd>
@@ -6456,7 +6302,7 @@ Bit1: Value smaller than Limit2</Comment>
 			</Info>
 			<ProcessData>
 				<Recv>
-					<BitStart>1290</BitStart>
+					<BitStart>1338</BitStart>
 					<BitLength>2</BitLength>
 				</Recv>
 				<Sm0>
@@ -6676,7 +6522,7 @@ Bit1: Value smaller than Limit2</Comment>
 					<Cmd>5</Cmd>
 					<Adp>1008</Adp>
 					<Ado>1536</Ado>
-					<Data>36080001010002030010000101000000</Data>
+					<Data>3c080001010002030010000101000000</Data>
 					<Cnt>1</Cnt>
 					<Retries>3</Retries>
 				</InitCmd>
@@ -6899,7 +6745,7 @@ Bit1: Value smaller than Limit2</Comment>
 			</Info>
 			<ProcessData>
 				<Recv>
-					<BitStart>1128</BitStart>
+					<BitStart>1176</BitStart>
 					<BitLength>96</BitLength>
 				</Recv>
 				<Sm2>
@@ -7371,7 +7217,7 @@ Bit1: Value smaller than Limit2</Comment>
 					<Cmd>5</Cmd>
 					<Adp>1009</Adp>
 					<Ado>1536</Ado>
-					<Data>220800010c0000078011000101000000</Data>
+					<Data>280800010c0000078011000101000000</Data>
 					<Cnt>1</Cnt>
 					<Retries>3</Retries>
 				</InitCmd>
@@ -7617,7 +7463,7 @@ Bit1: Value smaller than Limit2</Comment>
 			</Info>
 			<ProcessData>
 				<Recv>
-					<BitStart>1224</BitStart>
+					<BitStart>1272</BitStart>
 					<BitLength>64</BitLength>
 				</Recv>
 				<Sm2>
@@ -8087,7 +7933,7 @@ Bit1: Value smaller than Limit2</Comment>
 					<Cmd>5</Cmd>
 					<Adp>1010</Adp>
 					<Ado>1536</Ado>
-					<Data>2e080001080000078011000101000000</Data>
+					<Data>34080001080000078011000101000000</Data>
 					<Cnt>1</Cnt>
 					<Retries>3</Retries>
 				</InitCmd>
@@ -8350,12 +8196,12 @@ Bit1: Value smaller than Limit2</Comment>
 			</Info>
 			<ProcessData>
 				<Send>
-					<BitStart>1392</BitStart>
-					<BitLength>96</BitLength>
+					<BitStart>1440</BitStart>
+					<BitLength>80</BitLength>
 				</Send>
 				<Recv>
-					<BitStart>1392</BitStart>
-					<BitLength>288</BitLength>
+					<BitStart>1440</BitStart>
+					<BitLength>256</BitLength>
 				</Recv>
 				<Sm2>
 					<Type>Outputs</Type>
@@ -8366,7 +8212,6 @@ Bit1: Value smaller than Limit2</Comment>
 					<Enable>1</Enable>
 					<Pdo>5642</Pdo>
 					<Pdo>5643</Pdo>
-					<Pdo>5644</Pdo>
 					<Pdo>5645</Pdo>
 					<Pdo>5647</Pdo>
 				</Sm2>
@@ -8377,19 +8222,16 @@ Bit1: Value smaller than Limit2</Comment>
 					<StartAddress>4480</StartAddress>
 					<ControlByte>32</ControlByte>
 					<Enable>1</Enable>
-					<Pdo>6666</Pdo>
+					<Pdo>6656</Pdo>
 					<Pdo>6667</Pdo>
-					<Pdo>6668</Pdo>
 					<Pdo>6669</Pdo>
-					<Pdo>6670</Pdo>
 					<Pdo>6671</Pdo>
-					<Pdo>6674</Pdo>
 					<Pdo>6675</Pdo>
 					<Pdo>6680</Pdo>
 					<Pdo>6681</Pdo>
-					<Pdo>6684</Pdo>
+					<Pdo>6687</Pdo>
 				</Sm3>
-				<TxPdo Fixed="true">
+				<TxPdo Fixed="true" Sm="3">
 					<Index>#x1a00</Index>
 					<Name>Inputs</Name>
 					<Exclude>#x1a01</Exclude>
@@ -8585,7 +8427,7 @@ Bit1: Value smaller than Limit2</Comment>
 					<Index>#x1a08</Index>
 					<Name>Inputs</Name>
 				</TxPdo>
-				<TxPdo Fixed="true" Sm="3">
+				<TxPdo Fixed="true">
 					<Index>#x1a0a</Index>
 					<Name>Inputs</Name>
 					<Entry>
@@ -8611,7 +8453,7 @@ Bit1: Value smaller than Limit2</Comment>
 						<BitLen>8</BitLen>
 					</Entry>
 				</TxPdo>
-				<TxPdo Fixed="true" Sm="3">
+				<TxPdo Fixed="true">
 					<Index>#x1a0c</Index>
 					<Name>Inputs</Name>
 					<Entry>
@@ -8633,7 +8475,7 @@ Bit1: Value smaller than Limit2</Comment>
 						<DataType>DINT</DataType>
 					</Entry>
 				</TxPdo>
-				<TxPdo Fixed="true" Sm="3">
+				<TxPdo Fixed="true">
 					<Index>#x1a0e</Index>
 					<Name>Inputs</Name>
 					<Entry>
@@ -8677,7 +8519,7 @@ Bit1: Value smaller than Limit2</Comment>
 						<DataType>DINT</DataType>
 					</Entry>
 				</TxPdo>
-				<TxPdo Fixed="true" Sm="3">
+				<TxPdo Fixed="true">
 					<Index>#x1a12</Index>
 					<Name>Inputs</Name>
 					<Entry>
@@ -8787,7 +8629,7 @@ Bit1: Value smaller than Limit2</Comment>
 						<DataType>DINT</DataType>
 					</Entry>
 				</TxPdo>
-				<TxPdo Fixed="true" Sm="3">
+				<TxPdo Fixed="true">
 					<Index>#x1a1c</Index>
 					<Name>Inputs</Name>
 					<Entry>
@@ -8820,7 +8662,7 @@ Bit1: Value smaller than Limit2</Comment>
 						<DataType>DINT</DataType>
 					</Entry>
 				</TxPdo>
-				<TxPdo Fixed="true">
+				<TxPdo Fixed="true" Sm="3">
 					<Index>#x1a1f</Index>
 					<Name>Inputs</Name>
 					<Entry>
@@ -9194,7 +9036,7 @@ Bit1: Value smaller than Limit2</Comment>
 						<BitLen>8</BitLen>
 					</Entry>
 				</RxPdo>
-				<RxPdo Fixed="true" Sm="2">
+				<RxPdo Fixed="true">
 					<Index>#x160c</Index>
 					<Name>Outputs</Name>
 					<Entry>
@@ -9523,7 +9365,7 @@ Bit1: Value smaller than Limit2</Comment>
 							<Ccs>1</Ccs>
 							<Index>7186</Index>
 							<SubIndex>3</SubIndex>
-							<Data>0c16</Data>
+							<Data>0d16</Data>
 						</InitCmd>
 						<InitCmd Fixed="true">
 							<Transition>PS</Transition>
@@ -9532,15 +9374,6 @@ Bit1: Value smaller than Limit2</Comment>
 							<Ccs>1</Ccs>
 							<Index>7186</Index>
 							<SubIndex>4</SubIndex>
-							<Data>0d16</Data>
-						</InitCmd>
-						<InitCmd Fixed="true">
-							<Transition>PS</Transition>
-							<Comment><![CDATA[download pdo 0x1C12:05 index]]></Comment>
-							<Timeout>0</Timeout>
-							<Ccs>1</Ccs>
-							<Index>7186</Index>
-							<SubIndex>5</SubIndex>
 							<Data>0f16</Data>
 						</InitCmd>
 						<InitCmd Fixed="true">
@@ -9550,7 +9383,7 @@ Bit1: Value smaller than Limit2</Comment>
 							<Ccs>1</Ccs>
 							<Index>7186</Index>
 							<SubIndex>0</SubIndex>
-							<Data>05</Data>
+							<Data>04</Data>
 						</InitCmd>
 						<InitCmd Fixed="true">
 							<Transition>PS</Transition>
@@ -9559,7 +9392,7 @@ Bit1: Value smaller than Limit2</Comment>
 							<Ccs>1</Ccs>
 							<Index>7187</Index>
 							<SubIndex>1</SubIndex>
-							<Data>0a1a</Data>
+							<Data>001a</Data>
 						</InitCmd>
 						<InitCmd Fixed="true">
 							<Transition>PS</Transition>
@@ -9577,7 +9410,7 @@ Bit1: Value smaller than Limit2</Comment>
 							<Ccs>1</Ccs>
 							<Index>7187</Index>
 							<SubIndex>3</SubIndex>
-							<Data>0c1a</Data>
+							<Data>0d1a</Data>
 						</InitCmd>
 						<InitCmd Fixed="true">
 							<Transition>PS</Transition>
@@ -9586,7 +9419,7 @@ Bit1: Value smaller than Limit2</Comment>
 							<Ccs>1</Ccs>
 							<Index>7187</Index>
 							<SubIndex>4</SubIndex>
-							<Data>0d1a</Data>
+							<Data>0f1a</Data>
 						</InitCmd>
 						<InitCmd Fixed="true">
 							<Transition>PS</Transition>
@@ -9595,7 +9428,7 @@ Bit1: Value smaller than Limit2</Comment>
 							<Ccs>1</Ccs>
 							<Index>7187</Index>
 							<SubIndex>5</SubIndex>
-							<Data>0e1a</Data>
+							<Data>131a</Data>
 						</InitCmd>
 						<InitCmd Fixed="true">
 							<Transition>PS</Transition>
@@ -9604,7 +9437,7 @@ Bit1: Value smaller than Limit2</Comment>
 							<Ccs>1</Ccs>
 							<Index>7187</Index>
 							<SubIndex>6</SubIndex>
-							<Data>0f1a</Data>
+							<Data>181a</Data>
 						</InitCmd>
 						<InitCmd Fixed="true">
 							<Transition>PS</Transition>
@@ -9613,7 +9446,7 @@ Bit1: Value smaller than Limit2</Comment>
 							<Ccs>1</Ccs>
 							<Index>7187</Index>
 							<SubIndex>7</SubIndex>
-							<Data>121a</Data>
+							<Data>191a</Data>
 						</InitCmd>
 						<InitCmd Fixed="true">
 							<Transition>PS</Transition>
@@ -9622,34 +9455,7 @@ Bit1: Value smaller than Limit2</Comment>
 							<Ccs>1</Ccs>
 							<Index>7187</Index>
 							<SubIndex>8</SubIndex>
-							<Data>131a</Data>
-						</InitCmd>
-						<InitCmd Fixed="true">
-							<Transition>PS</Transition>
-							<Comment><![CDATA[download pdo 0x1C13:09 index]]></Comment>
-							<Timeout>0</Timeout>
-							<Ccs>1</Ccs>
-							<Index>7187</Index>
-							<SubIndex>9</SubIndex>
-							<Data>181a</Data>
-						</InitCmd>
-						<InitCmd Fixed="true">
-							<Transition>PS</Transition>
-							<Comment><![CDATA[download pdo 0x1C13:10 index]]></Comment>
-							<Timeout>0</Timeout>
-							<Ccs>1</Ccs>
-							<Index>7187</Index>
-							<SubIndex>10</SubIndex>
-							<Data>191a</Data>
-						</InitCmd>
-						<InitCmd Fixed="true">
-							<Transition>PS</Transition>
-							<Comment><![CDATA[download pdo 0x1C13:11 index]]></Comment>
-							<Timeout>0</Timeout>
-							<Ccs>1</Ccs>
-							<Index>7187</Index>
-							<SubIndex>11</SubIndex>
-							<Data>1c1a</Data>
+							<Data>1f1a</Data>
 						</InitCmd>
 						<InitCmd Fixed="true">
 							<Transition>PS</Transition>
@@ -9658,7 +9464,7 @@ Bit1: Value smaller than Limit2</Comment>
 							<Ccs>1</Ccs>
 							<Index>7187</Index>
 							<SubIndex>0</SubIndex>
-							<Data>0b</Data>
+							<Data>08</Data>
 						</InitCmd>
 						<InitCmd>
 							<Transition>PS</Transition>
@@ -10025,7 +9831,7 @@ Bit1: Value smaller than Limit2</Comment>
 					<Cmd>5</Cmd>
 					<Adp>1011</Adp>
 					<Ado>2064</Ado>
-					<Data>00110c0064000100</Data>
+					<Data>00110a0064000100</Data>
 					<Cnt>1</Cnt>
 					<Retries>3</Retries>
 				</InitCmd>
@@ -10035,7 +9841,7 @@ Bit1: Value smaller than Limit2</Comment>
 					<Cmd>5</Cmd>
 					<Adp>1011</Adp>
 					<Ado>2072</Ado>
-					<Data>8011240020000100</Data>
+					<Data>8011200020000100</Data>
 					<Cnt>1</Cnt>
 					<Retries>3</Retries>
 				</InitCmd>
@@ -10045,7 +9851,7 @@ Bit1: Value smaller than Limit2</Comment>
 					<Cmd>5</Cmd>
 					<Adp>1011</Adp>
 					<Ado>1536</Ado>
-					<Data>001000010c0000070011000201000000</Data>
+					<Data>001000010a0000070011000201000000</Data>
 					<Cnt>1</Cnt>
 					<Retries>3</Retries>
 				</InitCmd>
@@ -10055,7 +9861,7 @@ Bit1: Value smaller than Limit2</Comment>
 					<Cmd>5</Cmd>
 					<Adp>1011</Adp>
 					<Ado>1552</Ado>
-					<Data>00100001240000078011000101000000</Data>
+					<Data>00100001200000078011000101000000</Data>
 					<Cnt>1</Cnt>
 					<Retries>3</Retries>
 				</InitCmd>
@@ -10287,7 +10093,7 @@ Bit1: Value smaller than Limit2</Comment>
 				<PhysAddr>1003</PhysAddr>
 			</PreviousPort>
 			<DC>
-				<ReferenceClock>false</ReferenceClock>
+				<ReferenceClock>true</ReferenceClock>
 				<CycleTime0>1000000</CycleTime0>
 				<CycleTime1>0</CycleTime1>
 				<ShiftTime>0</ShiftTime>
@@ -10317,7 +10123,7 @@ Bit1: Value smaller than Limit2</Comment>
 					<State>OP</State>
 					<Comment><![CDATA[cyclic cmd]]></Comment>
 					<Cmd>13</Cmd>
-					<Adp>65535</Adp>
+					<Adp>65526</Adp>
 					<Ado>2320</Ado>
 					<DataLength>4</DataLength>
 					<InputOffs>32</InputOffs>
@@ -10351,7 +10157,7 @@ Bit1: Value smaller than Limit2</Comment>
 					<Comment><![CDATA[cyclic cmd]]></Comment>
 					<Cmd>10</Cmd>
 					<Addr>16779264</Addr>
-					<DataLength>55</DataLength>
+					<DataLength>61</DataLength>
 					<Cnt>7</Cnt>
 					<InputOffs>97</InputOffs>
 					<OutputOffs>97</OutputOffs>
@@ -10362,10 +10168,10 @@ Bit1: Value smaller than Limit2</Comment>
 					<Comment><![CDATA[cyclic cmd]]></Comment>
 					<Cmd>12</Cmd>
 					<Addr>16781312</Addr>
-					<DataLength>36</DataLength>
+					<DataLength>32</DataLength>
 					<Cnt>3</Cnt>
-					<InputOffs>164</InputOffs>
-					<OutputOffs>164</OutputOffs>
+					<InputOffs>170</InputOffs>
+					<OutputOffs>170</OutputOffs>
 				</Cmd>
 				<Cmd>
 					<State>PREOP</State>
@@ -10377,8 +10183,8 @@ Bit1: Value smaller than Limit2</Comment>
 					<Ado>304</Ado>
 					<DataLength>2</DataLength>
 					<Cnt>11</Cnt>
-					<InputOffs>212</InputOffs>
-					<OutputOffs>212</OutputOffs>
+					<InputOffs>214</InputOffs>
+					<OutputOffs>214</OutputOffs>
 				</Cmd>
 			</Frame>
 		</Cyclic>
@@ -10584,262 +10390,268 @@ Bit1: Value smaller than Limit2</Comment>
 					<BitOffs>1000</BitOffs>
 				</Variable>
 				<Variable>
-					<Name>Term 7 (EL3351).AIBridge Inputs.Underrange</Name>
-					<DataType>BIT</DataType>
-					<BitSize>1</BitSize>
+					<Name>Term 4 (EL5002).SSI Inputs Channel 2.Status</Name>
+					<DataType>Status_0F76ABEC</DataType>
+					<BitSize>16</BitSize>
 					<BitOffs>1032</BitOffs>
 				</Variable>
 				<Variable>
-					<Name>Term 7 (EL3351).AIBridge Inputs.Overrange</Name>
-					<DataType>BIT</DataType>
-					<BitSize>1</BitSize>
-					<BitOffs>1033</BitOffs>
-				</Variable>
-				<Variable>
-					<Name>Term 7 (EL3351).AIBridge Inputs.Error</Name>
-					<DataType>BIT</DataType>
-					<BitSize>1</BitSize>
-					<BitOffs>1038</BitOffs>
-				</Variable>
-				<Variable>
-					<Name>Term 7 (EL3351).AIBridge Inputs.TxPDO State</Name>
-					<DataType>BIT</DataType>
-					<BitSize>1</BitSize>
-					<BitOffs>1046</BitOffs>
-				</Variable>
-				<Variable>
-					<Name>Term 7 (EL3351).AIBridge Inputs.TxPDO Toggle</Name>
-					<DataType>BIT</DataType>
-					<BitSize>1</BitSize>
-					<BitOffs>1047</BitOffs>
-				</Variable>
-				<Variable>
-					<Name>Term 7 (EL3351).AIBridge Inputs.Value</Name>
-					<DataType>DINT</DataType>
+					<Name>Term 4 (EL5002).SSI Inputs Channel 2.Counter value</Name>
+					<DataType>UDINT</DataType>
 					<BitSize>32</BitSize>
 					<BitOffs>1048</BitOffs>
 				</Variable>
 				<Variable>
-					<Name>Term 7 (EL3351).AISupply Inputs.Underrange</Name>
+					<Name>Term 7 (EL3351).AIBridge Inputs.Underrange</Name>
 					<DataType>BIT</DataType>
 					<BitSize>1</BitSize>
 					<BitOffs>1080</BitOffs>
 				</Variable>
 				<Variable>
-					<Name>Term 7 (EL3351).AISupply Inputs.Overrange</Name>
+					<Name>Term 7 (EL3351).AIBridge Inputs.Overrange</Name>
 					<DataType>BIT</DataType>
 					<BitSize>1</BitSize>
 					<BitOffs>1081</BitOffs>
 				</Variable>
 				<Variable>
-					<Name>Term 7 (EL3351).AISupply Inputs.Error</Name>
+					<Name>Term 7 (EL3351).AIBridge Inputs.Error</Name>
 					<DataType>BIT</DataType>
 					<BitSize>1</BitSize>
 					<BitOffs>1086</BitOffs>
 				</Variable>
 				<Variable>
-					<Name>Term 7 (EL3351).AISupply Inputs.TxPDO State</Name>
+					<Name>Term 7 (EL3351).AIBridge Inputs.TxPDO State</Name>
 					<DataType>BIT</DataType>
 					<BitSize>1</BitSize>
 					<BitOffs>1094</BitOffs>
 				</Variable>
 				<Variable>
-					<Name>Term 7 (EL3351).AISupply Inputs.TxPDO Toggle</Name>
+					<Name>Term 7 (EL3351).AIBridge Inputs.TxPDO Toggle</Name>
 					<DataType>BIT</DataType>
 					<BitSize>1</BitSize>
 					<BitOffs>1095</BitOffs>
 				</Variable>
 				<Variable>
-					<Name>Term 7 (EL3351).AISupply Inputs.Value</Name>
+					<Name>Term 7 (EL3351).AIBridge Inputs.Value</Name>
 					<DataType>DINT</DataType>
 					<BitSize>32</BitSize>
 					<BitOffs>1096</BitOffs>
 				</Variable>
 				<Variable>
-					<Name>Term 9 (EL3351).AIBridge Inputs.Underrange</Name>
+					<Name>Term 7 (EL3351).AISupply Inputs.Underrange</Name>
 					<DataType>BIT</DataType>
 					<BitSize>1</BitSize>
 					<BitOffs>1128</BitOffs>
 				</Variable>
 				<Variable>
-					<Name>Term 9 (EL3351).AIBridge Inputs.Overrange</Name>
+					<Name>Term 7 (EL3351).AISupply Inputs.Overrange</Name>
 					<DataType>BIT</DataType>
 					<BitSize>1</BitSize>
 					<BitOffs>1129</BitOffs>
 				</Variable>
 				<Variable>
-					<Name>Term 9 (EL3351).AIBridge Inputs.Error</Name>
+					<Name>Term 7 (EL3351).AISupply Inputs.Error</Name>
 					<DataType>BIT</DataType>
 					<BitSize>1</BitSize>
 					<BitOffs>1134</BitOffs>
 				</Variable>
 				<Variable>
-					<Name>Term 9 (EL3351).AIBridge Inputs.TxPDO State</Name>
+					<Name>Term 7 (EL3351).AISupply Inputs.TxPDO State</Name>
 					<DataType>BIT</DataType>
 					<BitSize>1</BitSize>
 					<BitOffs>1142</BitOffs>
 				</Variable>
 				<Variable>
-					<Name>Term 9 (EL3351).AIBridge Inputs.TxPDO Toggle</Name>
+					<Name>Term 7 (EL3351).AISupply Inputs.TxPDO Toggle</Name>
 					<DataType>BIT</DataType>
 					<BitSize>1</BitSize>
 					<BitOffs>1143</BitOffs>
 				</Variable>
 				<Variable>
-					<Name>Term 9 (EL3351).AIBridge Inputs.Value</Name>
+					<Name>Term 7 (EL3351).AISupply Inputs.Value</Name>
 					<DataType>DINT</DataType>
 					<BitSize>32</BitSize>
 					<BitOffs>1144</BitOffs>
 				</Variable>
 				<Variable>
-					<Name>Term 9 (EL3351).AISupply Inputs.Underrange</Name>
+					<Name>Term 9 (EL3351).AIBridge Inputs.Underrange</Name>
 					<DataType>BIT</DataType>
 					<BitSize>1</BitSize>
 					<BitOffs>1176</BitOffs>
 				</Variable>
 				<Variable>
-					<Name>Term 9 (EL3351).AISupply Inputs.Overrange</Name>
+					<Name>Term 9 (EL3351).AIBridge Inputs.Overrange</Name>
 					<DataType>BIT</DataType>
 					<BitSize>1</BitSize>
 					<BitOffs>1177</BitOffs>
 				</Variable>
 				<Variable>
-					<Name>Term 9 (EL3351).AISupply Inputs.Error</Name>
+					<Name>Term 9 (EL3351).AIBridge Inputs.Error</Name>
 					<DataType>BIT</DataType>
 					<BitSize>1</BitSize>
 					<BitOffs>1182</BitOffs>
 				</Variable>
 				<Variable>
-					<Name>Term 9 (EL3351).AISupply Inputs.TxPDO State</Name>
+					<Name>Term 9 (EL3351).AIBridge Inputs.TxPDO State</Name>
 					<DataType>BIT</DataType>
 					<BitSize>1</BitSize>
 					<BitOffs>1190</BitOffs>
 				</Variable>
 				<Variable>
-					<Name>Term 9 (EL3351).AISupply Inputs.TxPDO Toggle</Name>
+					<Name>Term 9 (EL3351).AIBridge Inputs.TxPDO Toggle</Name>
 					<DataType>BIT</DataType>
 					<BitSize>1</BitSize>
 					<BitOffs>1191</BitOffs>
 				</Variable>
 				<Variable>
-					<Name>Term 9 (EL3351).AISupply Inputs.Value</Name>
+					<Name>Term 9 (EL3351).AIBridge Inputs.Value</Name>
 					<DataType>DINT</DataType>
 					<BitSize>32</BitSize>
 					<BitOffs>1192</BitOffs>
 				</Variable>
 				<Variable>
+					<Name>Term 9 (EL3351).AISupply Inputs.Underrange</Name>
+					<DataType>BIT</DataType>
+					<BitSize>1</BitSize>
+					<BitOffs>1224</BitOffs>
+				</Variable>
+				<Variable>
+					<Name>Term 9 (EL3351).AISupply Inputs.Overrange</Name>
+					<DataType>BIT</DataType>
+					<BitSize>1</BitSize>
+					<BitOffs>1225</BitOffs>
+				</Variable>
+				<Variable>
+					<Name>Term 9 (EL3351).AISupply Inputs.Error</Name>
+					<DataType>BIT</DataType>
+					<BitSize>1</BitSize>
+					<BitOffs>1230</BitOffs>
+				</Variable>
+				<Variable>
+					<Name>Term 9 (EL3351).AISupply Inputs.TxPDO State</Name>
+					<DataType>BIT</DataType>
+					<BitSize>1</BitSize>
+					<BitOffs>1238</BitOffs>
+				</Variable>
+				<Variable>
+					<Name>Term 9 (EL3351).AISupply Inputs.TxPDO Toggle</Name>
+					<DataType>BIT</DataType>
+					<BitSize>1</BitSize>
+					<BitOffs>1239</BitOffs>
+				</Variable>
+				<Variable>
+					<Name>Term 9 (EL3351).AISupply Inputs.Value</Name>
+					<DataType>DINT</DataType>
+					<BitSize>32</BitSize>
+					<BitOffs>1240</BitOffs>
+				</Variable>
+				<Variable>
 					<Name>Term 10 (EL3202).RTD Inputs Channel 1.Status</Name>
 					<DataType>Status_90F1E868</DataType>
 					<BitSize>16</BitSize>
-					<BitOffs>1224</BitOffs>
+					<BitOffs>1272</BitOffs>
 				</Variable>
 				<Variable>
 					<Name>Term 10 (EL3202).RTD Inputs Channel 1.Value</Name>
 					<DataType>INT</DataType>
 					<BitSize>16</BitSize>
-					<BitOffs>1240</BitOffs>
+					<BitOffs>1288</BitOffs>
 				</Variable>
 				<Variable>
 					<Name>Term 10 (EL3202).RTD Inputs Channel 2.Status</Name>
 					<DataType>Status_90F1E868</DataType>
 					<BitSize>16</BitSize>
-					<BitOffs>1256</BitOffs>
+					<BitOffs>1304</BitOffs>
 				</Variable>
 				<Variable>
 					<Name>Term 10 (EL3202).RTD Inputs Channel 2.Value</Name>
 					<DataType>INT</DataType>
 					<BitSize>16</BitSize>
-					<BitOffs>1272</BitOffs>
+					<BitOffs>1320</BitOffs>
 				</Variable>
 				<Variable>
 					<Name>Term 6 (EL9510).Status Uo.Power OK</Name>
 					<DataType>BIT</DataType>
 					<BitSize>1</BitSize>
-					<BitOffs>1288</BitOffs>
+					<BitOffs>1336</BitOffs>
 				</Variable>
 				<Variable>
 					<Name>Term 6 (EL9510).Status Uo.Overload</Name>
 					<DataType>BIT</DataType>
 					<BitSize>1</BitSize>
-					<BitOffs>1289</BitOffs>
+					<BitOffs>1337</BitOffs>
 				</Variable>
 				<Variable>
 					<Name>Term 8 (EL9510).Status Uo.Power OK</Name>
 					<DataType>BIT</DataType>
 					<BitSize>1</BitSize>
-					<BitOffs>1290</BitOffs>
+					<BitOffs>1338</BitOffs>
 				</Variable>
 				<Variable>
 					<Name>Term 8 (EL9510).Status Uo.Overload</Name>
 					<DataType>BIT</DataType>
 					<BitSize>1</BitSize>
-					<BitOffs>1291</BitOffs>
+					<BitOffs>1339</BitOffs>
+				</Variable>
+				<Variable>
+					<Name>Drive 11 (Elmo Drive ).Inputs.Position actual value</Name>
+					<DataType>DINT</DataType>
+					<BitSize>32</BitSize>
+					<BitOffs>1440</BitOffs>
+				</Variable>
+				<Variable>
+					<Name>Drive 11 (Elmo Drive ).Inputs.Digital Inputs</Name>
+					<DataType>UDINT</DataType>
+					<BitSize>32</BitSize>
+					<BitOffs>1472</BitOffs>
 				</Variable>
 				<Variable>
 					<Name>Drive 11 (Elmo Drive ).Inputs.Status word</Name>
 					<DataType>UINT</DataType>
 					<BitSize>16</BitSize>
-					<BitOffs>1392</BitOffs>
+					<BitOffs>1504</BitOffs>
 				</Variable>
 				<Variable>
 					<Name>Drive 11 (Elmo Drive ).Inputs_1.Mode of operation display</Name>
 					<DataType>SINT</DataType>
 					<BitSize>8</BitSize>
-					<BitOffs>1408</BitOffs>
-				</Variable>
-				<Variable>
-					<Name>Drive 11 (Elmo Drive ).Inputs_2.Position Demand [UU]</Name>
-					<DataType>DINT</DataType>
-					<BitSize>32</BitSize>
-					<BitOffs>1424</BitOffs>
-				</Variable>
-				<Variable>
-					<Name>Drive 11 (Elmo Drive ).Inputs_3.Actual position [counts]</Name>
-					<DataType>DINT</DataType>
-					<BitSize>32</BitSize>
-					<BitOffs>1456</BitOffs>
-				</Variable>
-				<Variable>
-					<Name>Drive 11 (Elmo Drive ).Inputs_4.Position actual value</Name>
-					<DataType>DINT</DataType>
-					<BitSize>32</BitSize>
-					<BitOffs>1488</BitOffs>
-				</Variable>
-				<Variable>
-					<Name>Drive 11 (Elmo Drive ).Inputs_5.Velocity sensor actual value [counts/sec]</Name>
-					<DataType>DINT</DataType>
-					<BitSize>32</BitSize>
 					<BitOffs>1520</BitOffs>
 				</Variable>
 				<Variable>
-					<Name>Drive 11 (Elmo Drive ).Inputs_6.Torque demand value</Name>
-					<DataType>INT</DataType>
-					<BitSize>16</BitSize>
-					<BitOffs>1552</BitOffs>
+					<Name>Drive 11 (Elmo Drive ).Inputs_2.Actual position [counts]</Name>
+					<DataType>DINT</DataType>
+					<BitSize>32</BitSize>
+					<BitOffs>1536</BitOffs>
 				</Variable>
 				<Variable>
-					<Name>Drive 11 (Elmo Drive ).Inputs_7.Torque actual value</Name>
-					<DataType>INT</DataType>
-					<BitSize>16</BitSize>
+					<Name>Drive 11 (Elmo Drive ).Inputs_3.Velocity sensor actual value [counts/sec]</Name>
+					<DataType>DINT</DataType>
+					<BitSize>32</BitSize>
 					<BitOffs>1568</BitOffs>
 				</Variable>
 				<Variable>
-					<Name>Drive 11 (Elmo Drive ).Inputs_8.DC link circuit voltage</Name>
-					<DataType>UDINT</DataType>
-					<BitSize>32</BitSize>
-					<BitOffs>1584</BitOffs>
+					<Name>Drive 11 (Elmo Drive ).Inputs_4.Torque actual value</Name>
+					<DataType>INT</DataType>
+					<BitSize>16</BitSize>
+					<BitOffs>1600</BitOffs>
 				</Variable>
 				<Variable>
-					<Name>Drive 11 (Elmo Drive ).Inputs_9.Position Following error</Name>
-					<DataType>DINT</DataType>
+					<Name>Drive 11 (Elmo Drive ).Inputs_5.DC link circuit voltage</Name>
+					<DataType>UDINT</DataType>
 					<BitSize>32</BitSize>
 					<BitOffs>1616</BitOffs>
 				</Variable>
 				<Variable>
-					<Name>Drive 11 (Elmo Drive ).Inputs_10.Digital Inputs</Name>
-					<DataType>UDINT</DataType>
+					<Name>Drive 11 (Elmo Drive ).Inputs_6.Position Following error</Name>
+					<DataType>DINT</DataType>
 					<BitSize>32</BitSize>
 					<BitOffs>1648</BitOffs>
+				</Variable>
+				<Variable>
+					<Name>Drive 11 (Elmo Drive ).Inputs_7.Current actual value</Name>
+					<DataType>INT</DataType>
+					<BitSize>16</BitSize>
+					<BitOffs>1680</BitOffs>
 				</Variable>
 				<Variable>
 					<Name>Inputs.Frm0State</Name>
@@ -11153,18 +10965,6 @@ Bit1: Value smaller than Limit2</Comment>
 					<BitOffs>12416</BitOffs>
 				</Variable>
 				<Variable>
-					<Name>Term 2 (EL3104).InfoData.DcOutputShift</Name>
-					<DataType>DINT</DataType>
-					<BitSize>32</BitSize>
-					<BitOffs>12480</BitOffs>
-				</Variable>
-				<Variable>
-					<Name>Term 2 (EL3104).InfoData.DcInputShift</Name>
-					<DataType>DINT</DataType>
-					<BitSize>32</BitSize>
-					<BitOffs>12512</BitOffs>
-				</Variable>
-				<Variable>
 					<Name>Term 3 (EK1100).InfoData.State</Name>
 					<Comment><![CDATA[0x___1 = Slave in 'INIT' state
 0x___2 = Slave in 'PREOP' state
@@ -11186,7 +10986,7 @@ Bit1: Value smaller than Limit2</Comment>
 ]]></Comment>
 					<DataType>UINT</DataType>
 					<BitSize>16</BitSize>
-					<BitOffs>12544</BitOffs>
+					<BitOffs>12480</BitOffs>
 				</Variable>
 				<Variable>
 					<Name>Term 4 (EL5002).InfoData.State</Name>
@@ -11210,26 +11010,14 @@ Bit1: Value smaller than Limit2</Comment>
 ]]></Comment>
 					<DataType>UINT</DataType>
 					<BitSize>16</BitSize>
-					<BitOffs>12560</BitOffs>
+					<BitOffs>12496</BitOffs>
 				</Variable>
 				<Variable>
 					<Name>Term 4 (EL5002).InfoData.AdsAddr</Name>
 					<Comment><![CDATA[Complete ADS address to access the slave (mailbox)]]></Comment>
 					<DataType>AMSADDR</DataType>
 					<BitSize>64</BitSize>
-					<BitOffs>12576</BitOffs>
-				</Variable>
-				<Variable>
-					<Name>Term 4 (EL5002).InfoData.DcOutputShift</Name>
-					<DataType>DINT</DataType>
-					<BitSize>32</BitSize>
-					<BitOffs>12640</BitOffs>
-				</Variable>
-				<Variable>
-					<Name>Term 4 (EL5002).InfoData.DcInputShift</Name>
-					<DataType>DINT</DataType>
-					<BitSize>32</BitSize>
-					<BitOffs>12672</BitOffs>
+					<BitOffs>12512</BitOffs>
 				</Variable>
 				<Variable>
 					<Name>Term 5 (EL6001).InfoData.State</Name>
@@ -11253,14 +11041,14 @@ Bit1: Value smaller than Limit2</Comment>
 ]]></Comment>
 					<DataType>UINT</DataType>
 					<BitSize>16</BitSize>
-					<BitOffs>12704</BitOffs>
+					<BitOffs>12576</BitOffs>
 				</Variable>
 				<Variable>
 					<Name>Term 5 (EL6001).InfoData.AdsAddr</Name>
 					<Comment><![CDATA[Complete ADS address to access the slave (mailbox)]]></Comment>
 					<DataType>AMSADDR</DataType>
 					<BitSize>64</BitSize>
-					<BitOffs>12720</BitOffs>
+					<BitOffs>12592</BitOffs>
 				</Variable>
 				<Variable>
 					<Name>Term 6 (EL9510).InfoData.State</Name>
@@ -11284,7 +11072,7 @@ Bit1: Value smaller than Limit2</Comment>
 ]]></Comment>
 					<DataType>UINT</DataType>
 					<BitSize>16</BitSize>
-					<BitOffs>12784</BitOffs>
+					<BitOffs>12656</BitOffs>
 				</Variable>
 				<Variable>
 					<Name>Term 7 (EL3351).InfoData.State</Name>
@@ -11308,14 +11096,14 @@ Bit1: Value smaller than Limit2</Comment>
 ]]></Comment>
 					<DataType>UINT</DataType>
 					<BitSize>16</BitSize>
-					<BitOffs>12800</BitOffs>
+					<BitOffs>12672</BitOffs>
 				</Variable>
 				<Variable>
 					<Name>Term 7 (EL3351).InfoData.AdsAddr</Name>
 					<Comment><![CDATA[Complete ADS address to access the slave (mailbox)]]></Comment>
 					<DataType>AMSADDR</DataType>
 					<BitSize>64</BitSize>
-					<BitOffs>12816</BitOffs>
+					<BitOffs>12688</BitOffs>
 				</Variable>
 				<Variable>
 					<Name>Term 8 (EL9510).InfoData.State</Name>
@@ -11339,7 +11127,7 @@ Bit1: Value smaller than Limit2</Comment>
 ]]></Comment>
 					<DataType>UINT</DataType>
 					<BitSize>16</BitSize>
-					<BitOffs>12880</BitOffs>
+					<BitOffs>12752</BitOffs>
 				</Variable>
 				<Variable>
 					<Name>Term 9 (EL3351).InfoData.State</Name>
@@ -11363,14 +11151,14 @@ Bit1: Value smaller than Limit2</Comment>
 ]]></Comment>
 					<DataType>UINT</DataType>
 					<BitSize>16</BitSize>
-					<BitOffs>12896</BitOffs>
+					<BitOffs>12768</BitOffs>
 				</Variable>
 				<Variable>
 					<Name>Term 9 (EL3351).InfoData.AdsAddr</Name>
 					<Comment><![CDATA[Complete ADS address to access the slave (mailbox)]]></Comment>
 					<DataType>AMSADDR</DataType>
 					<BitSize>64</BitSize>
-					<BitOffs>12912</BitOffs>
+					<BitOffs>12784</BitOffs>
 				</Variable>
 				<Variable>
 					<Name>Term 10 (EL3202).InfoData.State</Name>
@@ -11394,14 +11182,14 @@ Bit1: Value smaller than Limit2</Comment>
 ]]></Comment>
 					<DataType>UINT</DataType>
 					<BitSize>16</BitSize>
-					<BitOffs>12976</BitOffs>
+					<BitOffs>12848</BitOffs>
 				</Variable>
 				<Variable>
 					<Name>Term 10 (EL3202).InfoData.AdsAddr</Name>
 					<Comment><![CDATA[Complete ADS address to access the slave (mailbox)]]></Comment>
 					<DataType>AMSADDR</DataType>
 					<BitSize>64</BitSize>
-					<BitOffs>12992</BitOffs>
+					<BitOffs>12864</BitOffs>
 				</Variable>
 				<Variable>
 					<Name>Drive 11 (Elmo Drive ).InfoData.State</Name>
@@ -11425,39 +11213,39 @@ Bit1: Value smaller than Limit2</Comment>
 ]]></Comment>
 					<DataType>UINT</DataType>
 					<BitSize>16</BitSize>
-					<BitOffs>13056</BitOffs>
+					<BitOffs>12928</BitOffs>
 				</Variable>
 				<Variable>
 					<Name>Drive 11 (Elmo Drive ).InfoData.AdsAddr</Name>
 					<Comment><![CDATA[Complete ADS address to access the slave (mailbox)]]></Comment>
 					<DataType>AMSADDR</DataType>
 					<BitSize>64</BitSize>
-					<BitOffs>13072</BitOffs>
+					<BitOffs>12944</BitOffs>
 				</Variable>
 				<Variable>
 					<Name>Drive 11 (Elmo Drive ).InfoData.Chn0</Name>
 					<Comment><![CDATA[Slave has a channel]]></Comment>
 					<DataType>USINT</DataType>
 					<BitSize>8</BitSize>
-					<BitOffs>13136</BitOffs>
+					<BitOffs>13008</BitOffs>
 				</Variable>
 				<Variable>
 					<Name>Drive 11 (Elmo Drive ).InfoData.DcOutputShift</Name>
 					<DataType>DINT</DataType>
 					<BitSize>32</BitSize>
-					<BitOffs>13144</BitOffs>
+					<BitOffs>13016</BitOffs>
 				</Variable>
 				<Variable>
 					<Name>Drive 11 (Elmo Drive ).InfoData.DcInputShift</Name>
 					<DataType>DINT</DataType>
 					<BitSize>32</BitSize>
-					<BitOffs>13176</BitOffs>
+					<BitOffs>13048</BitOffs>
 				</Variable>
 				<Variable>
 					<Name>SyncUnits.&lt;default&gt;.&lt;unreferenced&gt;.InfoData.ObjectId</Name>
 					<DataType>OTCID</DataType>
 					<BitSize>32</BitSize>
-					<BitOffs>13208</BitOffs>
+					<BitOffs>13080</BitOffs>
 				</Variable>
 				<Variable>
 					<Name>SyncUnits.&lt;default&gt;.&lt;unreferenced&gt;.InfoData.State</Name>
@@ -11477,20 +11265,20 @@ Bit1: Value smaller than Limit2</Comment>
 ]]></Comment>
 					<DataType>UINT</DataType>
 					<BitSize>16</BitSize>
-					<BitOffs>13240</BitOffs>
+					<BitOffs>13112</BitOffs>
 				</Variable>
 				<Variable>
 					<Name>SyncUnits.&lt;default&gt;.&lt;unreferenced&gt;.InfoData.SlaveCount</Name>
 					<Comment><![CDATA[Info data slave counter]]></Comment>
 					<DataType>UINT</DataType>
 					<BitSize>16</BitSize>
-					<BitOffs>13256</BitOffs>
+					<BitOffs>13128</BitOffs>
 				</Variable>
 				<Variable>
 					<Name>SyncUnits.&lt;default&gt;.Task 2.InfoData.ObjectId</Name>
 					<DataType>OTCID</DataType>
 					<BitSize>32</BitSize>
-					<BitOffs>13272</BitOffs>
+					<BitOffs>13144</BitOffs>
 				</Variable>
 				<Variable>
 					<Name>SyncUnits.&lt;default&gt;.Task 2.InfoData.State</Name>
@@ -11510,20 +11298,20 @@ Bit1: Value smaller than Limit2</Comment>
 ]]></Comment>
 					<DataType>UINT</DataType>
 					<BitSize>16</BitSize>
-					<BitOffs>13304</BitOffs>
+					<BitOffs>13176</BitOffs>
 				</Variable>
 				<Variable>
 					<Name>SyncUnits.&lt;default&gt;.Task 2.InfoData.SlaveCount</Name>
 					<Comment><![CDATA[Info data slave counter]]></Comment>
 					<DataType>UINT</DataType>
 					<BitSize>16</BitSize>
-					<BitOffs>13320</BitOffs>
+					<BitOffs>13192</BitOffs>
 				</Variable>
 				<Variable>
 					<Name>SyncUnits.Drive.&lt;unreferenced&gt;.InfoData.ObjectId</Name>
 					<DataType>OTCID</DataType>
 					<BitSize>32</BitSize>
-					<BitOffs>13336</BitOffs>
+					<BitOffs>13208</BitOffs>
 				</Variable>
 				<Variable>
 					<Name>SyncUnits.Drive.&lt;unreferenced&gt;.InfoData.State</Name>
@@ -11543,14 +11331,14 @@ Bit1: Value smaller than Limit2</Comment>
 ]]></Comment>
 					<DataType>UINT</DataType>
 					<BitSize>16</BitSize>
-					<BitOffs>13368</BitOffs>
+					<BitOffs>13240</BitOffs>
 				</Variable>
 				<Variable>
 					<Name>SyncUnits.Drive.&lt;unreferenced&gt;.InfoData.SlaveCount</Name>
 					<Comment><![CDATA[Info data slave counter]]></Comment>
 					<DataType>UINT</DataType>
 					<BitSize>16</BitSize>
-					<BitOffs>13384</BitOffs>
+					<BitOffs>13256</BitOffs>
 				</Variable>
 			</Inputs>
 			<Outputs>
@@ -11697,31 +11485,25 @@ Bit1: Value smaller than Limit2</Comment>
 					<Name>Drive 11 (Elmo Drive ).Outputs.Control word</Name>
 					<DataType>UINT</DataType>
 					<BitSize>16</BitSize>
-					<BitOffs>1392</BitOffs>
+					<BitOffs>1440</BitOffs>
 				</Variable>
 				<Variable>
 					<Name>Drive 11 (Elmo Drive ).Outputs_1.Mode of operation</Name>
 					<DataType>SINT</DataType>
 					<BitSize>8</BitSize>
-					<BitOffs>1408</BitOffs>
+					<BitOffs>1456</BitOffs>
 				</Variable>
 				<Variable>
-					<Name>Drive 11 (Elmo Drive ).Outputs_2.Target Torque</Name>
-					<DataType>INT</DataType>
-					<BitSize>16</BitSize>
-					<BitOffs>1424</BitOffs>
-				</Variable>
-				<Variable>
-					<Name>Drive 11 (Elmo Drive ).Outputs_3.Max. Torque</Name>
+					<Name>Drive 11 (Elmo Drive ).Outputs_2.Max. Torque</Name>
 					<DataType>UINT</DataType>
 					<BitSize>16</BitSize>
-					<BitOffs>1440</BitOffs>
+					<BitOffs>1472</BitOffs>
 				</Variable>
 				<Variable>
-					<Name>Drive 11 (Elmo Drive ).Outputs_4.Target Position</Name>
+					<Name>Drive 11 (Elmo Drive ).Outputs_3.Target Position</Name>
 					<DataType>DINT</DataType>
 					<BitSize>32</BitSize>
-					<BitOffs>1456</BitOffs>
+					<BitOffs>1488</BitOffs>
 				</Variable>
 				<Variable>
 					<Name>Outputs.Frm0Ctrl</Name>

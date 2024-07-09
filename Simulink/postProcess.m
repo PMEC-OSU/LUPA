@@ -3,9 +3,10 @@
 % clear; clc; close all
 
 %% === parameters =========================================================
-tgName = 'performance3';
-buildDir = fullfile('C:','simulink_build');
-mdlName = 'LUPA';
+mdlName = bdroot;
+modelWorkspace = get_param(mdlName,'ModelWorkspace');
+tgName = getVariable(modelWorkspace,'tgName');
+
 
 dateDir = datestr(now,'yyyymmdd');
 timeDir = datestr(now,'HHMMss');
@@ -14,6 +15,9 @@ year = datestr(now,'yyyy');
 
 if(~exist('app','var'))
     %% if running this script manually change these values!!!!!
+    buildDir = fullfile('C:','simulink_build');
+    % mdlName = 'LUPA';
+    tgName = 'performance2';
     projectName = 'MultiphysicsLUPA3';
     expname = '20240508_Regular';
     trialNumber = 4;
@@ -28,7 +32,7 @@ matFileName = 'simdata.mat';
 
 tg = pull_data(tgName,dateDir,timeDir,mdlName,matFileName);
 
-% output = structure_save_HWRL(matFileName,app,sharename,year,projectName,expname,trialNumber);
+output = structure_save_HWRL(matFileName,app,sharename,year,projectName,expname,trialNumber);
 clear('app');
 function output = structure_save_HWRL(matFileName,app,sharename,year,projectName,expname,trialNumber)
 %% === convert to structure format ========================================
@@ -95,32 +99,32 @@ save([datadirname,'\',fname,'.mat'],'output','-v7.3');
 
 disp(['Data saved to ',datadirname,'\',fname,'.mat'])
 
-if(~isempty(app))
-        % push data to share
-        % build the directory structure. assumes HWRL project share conventions
-        if ~exist(sharename,'dir') % give up if no HWRL share
-            disp([projectName,': cannot find ',sharename])
-        elseif ~exist(fullfile(sharename,'projects'),'dir') % give up if no projects folder
-            disp([projectName,': cannot find ',fullfile(sharename,'projects')])
-        elseif ~exist(fullfile(sharename,'projects',year),'dir') % give up if no projects/year folder
-            disp([projectName,': cannot find ',fullfile(sharename,'projects',year)])
-        elseif ~exist(fullfile(sharename,'projects',year,projectName),'dir') % give up if no project folder
-            disp([projectName,': cannot find ',fullfile(sharename,'projects',year,projectName)])
-        elseif ~exist(fullfile(sharename,'projects',year,projectName,'data','raw'),'dir') % give up if no raw folder
-            disp([projectName,': cannot find ',fullfile(projectName,'data','raw')])
-        else % we found the raw folder and can proceed
-            expdirname = fullfile(sharename,'projects',year,projectName,'data','onboard',expname);
-            if ~exist(expdirname,'dir') % create a experiment data directory if it doesn't exist yet
-                mkdir(expdirname);
-            end
-            trialdirname = fullfile(expdirname,trialname);
-            if ~exist(trialdirname,'dir') % create a trial data directory if it doesn't exist yet
-                mkdir(trialdirname);
-            end
-            copyfile([datadirname,'\',fname,'.mat'],trialdirname)
-            disp(['Data saved to ',trialdirname,'\',fname,'.mat'])
-        end
-end
+% if(~isempty(app))
+%         % push data to share
+%         % build the directory structure. assumes HWRL project share conventions
+%         if ~exist(sharename,'dir') % give up if no HWRL share
+%             disp([projectName,': cannot find ',sharename])
+%         elseif ~exist(fullfile(sharename,'projects'),'dir') % give up if no projects folder
+%             disp([projectName,': cannot find ',fullfile(sharename,'projects')])
+%         elseif ~exist(fullfile(sharename,'projects',year),'dir') % give up if no projects/year folder
+%             disp([projectName,': cannot find ',fullfile(sharename,'projects',year)])
+%         elseif ~exist(fullfile(sharename,'projects',year,projectName),'dir') % give up if no project folder
+%             disp([projectName,': cannot find ',fullfile(sharename,'projects',year,projectName)])
+%         elseif ~exist(fullfile(sharename,'projects',year,projectName,'data','raw'),'dir') % give up if no raw folder
+%             disp([projectName,': cannot find ',fullfile(projectName,'data','raw')])
+%         else % we found the raw folder and can proceed
+%             expdirname = fullfile(sharename,'projects',year,projectName,'data','onboard',expname);
+%             if ~exist(expdirname,'dir') % create a experiment data directory if it doesn't exist yet
+%                 mkdir(expdirname);
+%             end
+%             trialdirname = fullfile(expdirname,trialname);
+%             if ~exist(trialdirname,'dir') % create a trial data directory if it doesn't exist yet
+%                 mkdir(trialdirname);
+%             end
+%             copyfile([datadirname,'\',fname,'.mat'],trialdirname)
+%             disp(['Data saved to ',trialdirname,'\',fname,'.mat'])
+%         end
+% end
 % addpath(genpath(dataexpname))
 % load([fname,'.mat'])
 end

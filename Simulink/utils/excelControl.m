@@ -1,4 +1,4 @@
-clear; clc; close all
+lear; clc; close all
 dateStr = datestr(now,'yyyymmdd');
 
 numParameters = 2;  % stiffness and damping values

@@ -1454,8 +1454,8 @@ Bit1: Value smaller than Limit2]]></Comment>
 					<EtherCAT SlaveType="2" PdiType="#x0c05" CycleMBoxPolling="true" CoeType="15" EoeType="1" FoeType="1" VendorId="#x0000009a" ProductCode="#x00030925" RevisionNo="#x00010420" InfoDataAddr="true" InfoDataSoeDS401="true" InfoDataDcTimes="true" DdTime0420="10000" EnableWdDivider0400="true" EnableWdTime0410="true" EnableWdTime0420="true" PortPhys="17" IdentificationAdo="308" MaxSlotCount="256" MaxSlotGroupCount="1" SlotPdoIncrement="1" SlotIndexIncrement="16" Type="Gold EtherCAT GCON Drive ID Selector Rev:0x00010420" Desc="Elmo Drive " PortABoxInfo="#x02000003">
 						<SyncMan>00188c0026000100010000008c008c008c00001826010000</SyncMan>
 						<SyncMan>00198c0022000100020000008c008c008c00001922010000</SyncMan>
-						<SyncMan>00110c006400010003000000000020002000001164010000</SyncMan>
-						<SyncMan>801124002000010004000000000020002000801120010000</SyncMan>
+						<SyncMan>001108006400010003000000000020002000001164010000</SyncMan>
+						<SyncMan>801120002000010004000000000020002000801120010000</SyncMan>
 						<Fmmu>0000000000000000001100020100000001000000000000000000000000000000</Fmmu>
 						<Fmmu>0000000000000000801100010100000002000000000000000000000000000000</Fmmu>
 						<SwitchPortData>00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000</SwitchPortData>
@@ -1607,7 +1607,7 @@ Bit1: Value smaller than Limit2]]></Comment>
 								<Type>DINT</Type>
 							</Entry>
 						</Pdo>
-						<Pdo Name="Inputs" Index="#x1a12" Flags="#x0010" SyncMan="3">
+						<Pdo Name="Inputs" Index="#x1a12" Flags="#x0010">
 							<Entry Name="Torque demand value" Index="#x6074">
 								<Type>INT</Type>
 							</Entry>
@@ -1642,7 +1642,7 @@ Bit1: Value smaller than Limit2]]></Comment>
 								<Type>UDINT</Type>
 							</Entry>
 						</Pdo>
-						<Pdo Name="Inputs" Index="#x1a19" Flags="#x0010" SyncMan="3">
+						<Pdo Name="Inputs" Index="#x1a19" Flags="#x0010">
 							<Entry Name="Position Following error" Index="#x60f4">
 								<Type>DINT</Type>
 							</Entry>
@@ -1672,7 +1672,7 @@ Bit1: Value smaller than Limit2]]></Comment>
 								<Type>DINT</Type>
 							</Entry>
 						</Pdo>
-						<Pdo Name="Inputs" Index="#x1a1f" Flags="#x0010">
+						<Pdo Name="Inputs" Index="#x1a1f" Flags="#x0010" SyncMan="3">
 							<Entry Name="Current actual value" Index="#x6078">
 								<Type>INT</Type>
 							</Entry>
@@ -1877,7 +1877,7 @@ Bit1: Value smaller than Limit2]]></Comment>
 								<Type>UINT</Type>
 							</Entry>
 						</Pdo>
-						<Pdo Name="Outputs" Index="#x160f" InOut="1" Flags="#x0010" SyncMan="2">
+						<Pdo Name="Outputs" Index="#x160f" InOut="1" Flags="#x0010">
 							<Entry Name="Target Position" Index="#x607a">
 								<Type>DINT</Type>
 							</Entry>
