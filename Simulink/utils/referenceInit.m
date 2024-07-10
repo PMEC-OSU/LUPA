@@ -6,4 +6,4 @@ Tsin = 2;
 stepTime = 10;
 t = 25:25:200;
 
-save('referenceInit.mat')
+save('modelWorkspace.mat','-append')
