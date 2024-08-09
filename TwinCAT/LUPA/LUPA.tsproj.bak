@@ -1455,7 +1455,7 @@ Bit1: Value smaller than Limit2]]></Comment>
 						<SyncMan>00188c0026000100010000008c008c008c00001826010000</SyncMan>
 						<SyncMan>00198c0022000100020000008c008c008c00001922010000</SyncMan>
 						<SyncMan>001108006400010003000000000020002000001164010000</SyncMan>
-						<SyncMan>801122002000010004000000000020002000801120010000</SyncMan>
+						<SyncMan>801120002000010004000000000020002000801120010000</SyncMan>
 						<Fmmu>0000000000000000001100020100000001000000000000000000000000000000</Fmmu>
 						<Fmmu>0000000000000000801100010100000002000000000000000000000000000000</Fmmu>
 						<SwitchPortData>00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000</SwitchPortData>
@@ -1466,7 +1466,7 @@ Bit1: Value smaller than Limit2]]></Comment>
 						<DcMode>4443204f666600000000000000000000444320756e757365640000000000000000000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000</DcMode>
 						<MBoxUserCmdData>02000300090000000700000003000000000000000000000000000000000000002060600001000000084f70206d6f646500</MBoxUserCmdData>
 						<MBoxUserCmdData>02000300090000000a000000030000000000000000000000000000000000000020c2600101000000014379636c652074696d6500</MBoxUserCmdData>
-						<Pdo Name="Inputs" Index="#x1a00" Flags="#x0010" SyncMan="3">
+						<Pdo Name="Inputs" Index="#x1a00" Flags="#x0010">
 							<ExcludePdo>#x1a01</ExcludePdo>
 							<ExcludePdo>#x1a02</ExcludePdo>
 							<ExcludePdo>#x1a03</ExcludePdo>
@@ -1564,7 +1564,7 @@ Bit1: Value smaller than Limit2]]></Comment>
 						</Pdo>
 						<Pdo Name="Inputs" Index="#x1a07" Flags="#x0000"/>
 						<Pdo Name="Inputs" Index="#x1a08" Flags="#x0000"/>
-						<Pdo Name="Inputs" Index="#x1a0a" Flags="#x0010">
+						<Pdo Name="Inputs" Index="#x1a0a" Flags="#x0010" SyncMan="3">
 							<Entry Name="Status word" Index="#x6041">
 								<Type>UINT</Type>
 							</Entry>
@@ -1657,7 +1657,7 @@ Bit1: Value smaller than Limit2]]></Comment>
 								<Type>DINT</Type>
 							</Entry>
 						</Pdo>
-						<Pdo Name="Inputs" Index="#x1a1c" Flags="#x0010">
+						<Pdo Name="Inputs" Index="#x1a1c" Flags="#x0010" SyncMan="3">
 							<Entry Name="Digital Inputs" Index="#x60fd">
 								<Type>UDINT</Type>
 							</Entry>
@@ -1672,7 +1672,7 @@ Bit1: Value smaller than Limit2]]></Comment>
 								<Type>DINT</Type>
 							</Entry>
 						</Pdo>
-						<Pdo Name="Inputs" Index="#x1a1f" Flags="#x0010">
+						<Pdo Name="Inputs" Index="#x1a1f" Flags="#x0010" SyncMan="3">
 							<Entry Name="Current actual value" Index="#x6078">
 								<Type>INT</Type>
 							</Entry>
