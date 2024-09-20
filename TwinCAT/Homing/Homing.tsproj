@@ -38,6 +38,24 @@
 			</ArrayInfo>
 		</DataType>
 		<DataType>
+			<Name GUID="{18071995-0000-0000-0000-002000000010}" IecBaseType="true" AutoDeleteType="true" HideSubItems="true">ARRAY [0..1] OF BYTE</Name>
+			<BitSize>16</BitSize>
+			<BaseType GUID="{18071995-0000-0000-0000-000000000001}">BYTE</BaseType>
+			<ArrayInfo>
+				<LBound>0</LBound>
+				<Elements>2</Elements>
+			</ArrayInfo>
+		</DataType>
+		<DataType>
+			<Name GUID="{18071995-0000-0000-0000-00200000000E}" IecBaseType="true" AutoDeleteType="true" HideSubItems="true">ARRAY [0..13] OF BIT</Name>
+			<BitSize>14</BitSize>
+			<BaseType GUID="{18071995-0000-0000-0000-000000000010}">BIT</BaseType>
+			<ArrayInfo>
+				<LBound>0</LBound>
+				<Elements>14</Elements>
+			</ArrayInfo>
+		</DataType>
+		<DataType>
 			<Name GUID="{18071995-0000-0000-0000-002000000007}" IecBaseType="true" BitType="true" AutoDeleteType="true" HideSubItems="true">ARRAY [0..6] OF BIT</Name>
 			<BitSize>7</BitSize>
 			<BaseType GUID="{18071995-0000-0000-0000-000000000010}">BIT</BaseType>
@@ -62,7 +80,7 @@
 		<ImageData Id="1002">424dd6020000000000003600000028000000100000000e0000000100180000000000a0020000c40e0000c40e00000000000000000000ff00ffff00ffff00ffff00ffff00ffff00ff808080808080808080ff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffc0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffc0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffc0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffc0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffc0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffc0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ffff00ffff00ff007fff007fff007fff007fff007fff007fffc0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ffff00ffff00ff007fff007fff007fff007fff007fff007fffc0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ffff00ffff00ff007fff007fff007fff007fff007fff007fffc0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ffff00ffff00ff007fff007fff007fff007fff007fff007fffc0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ffff00ffff00ff007fff007fff007fff007fff007fff007fffc0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ffff00ffff00ff007fff007fff007fff007fff007fff007fffc0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ffff00ffff00ff007fff007fff007fff007fff007fff007fffc0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ffff00ffff00ff</ImageData>
 		<ImageData Id="1003">424dd6020000000000003600000028000000100000000e0000000100180000000000a0020000c40e0000c40e00000000000000000000000000ff00ffff00ffff00ff000000ff00ff808080808080808080808080808080ff00ffff00ffff00ffff00ffff00ff000000ff00ffff00ffff00ff000000ff00ffc0c0c0000000c0c0c0000000808080ff00ffff00ffff00ffff00ffff00ff000000ff00ffff00ffff00ff000000ff00ffc0c0c000ffffc0c0c000ffff808080ff00ffff00ffff00ffff00ffff00ff000000ff00ff000000ff00ff000000ff00ffc0c0c0c0c0c0c0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ff000000000000ff00ff000000000000ff00ffc0c0c0000000c0c0c0000000808080ff00ffff00ffff00ffff00ffff00ff000000ff00ffff00ffff00ff000000ff00ffc0c0c0ff0000c0c0c0ff0000808080ff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffc0c0c0c0c0c0c0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ff007fff007fff007fff007fff007fff007fffc0c0c0000000c0c0c0000000808080ff00ffff00ffff00ffff00ffff00ff007fff007fff007fff007fff007fff007fffc0c0c00000ffc0c0c00000ff808080ff00ffff00ffff00ffff00ffff00ff007fff007fff007fff007fff007fff007fffc0c0c0c0c0c0c0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ff007fff007fff007fff007fff007fff007fffc0c0c0000000c0c0c0000000808080ff00ffff00ffff00ffff00ffff00ff007fff007fff007fff007fff007fff007fffc0c0c0c0c0c0c0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ff007fff007fff007fff007fff007fff007fffc0c0c0008000c0c0c0008000808080ff00ffff00ffff00ffff00ffff00ff007fff007fff007fff007fff007fff007fffc0c0c0c0c0c0c0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ff</ImageData>
 		<ImageData Id="1004">424dd6020000000000003600000028000000100000000e0000000100180000000000a0020000c40e0000c40e00000000000000000000ff00ff000000000000ff00ffff00ffff00ff808080808080808080808080808080ff00ffff00ffff00ffff00ffff00ff000000ff00ffff00ff000000ff00ffff00ffc0c0c0000000c0c0c0000000808080ff00ffff00ffff00ffff00ffff00ff000000ff00ffff00ffff00ffff00ffff00ffc0c0c000ffffc0c0c000ffff808080ff00ffff00ffff00ffff00ffff00ff000000ff00ffff00ffff00ffff00ffff00ffc0c0c0c0c0c0c0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ff000000ff00ffff00ff000000ff00ffff00ffc0c0c0000000c0c0c0000000808080ff00ffff00ffff00ffff00ffff00ffff00ff000000000000ff00ffff00ffff00ffc0c0c0ff0000c0c0c0ff0000808080ff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffc0c0c0c0c0c0c0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ff007fff007fff007fff007fff007fff007fffc0c0c0000000c0c0c0000000808080ff00ffff00ffff00ffff00ffff00ff007fff007fff007fff007fff007fff007fffc0c0c00000ffc0c0c00000ff808080ff00ffff00ffff00ffff00ffff00ff007fff007fff007fff007fff007fff007fffc0c0c0c0c0c0c0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ff007fff007fff007fff007fff007fff007fffc0c0c0000000c0c0c0000000808080ff00ffff00ffff00ffff00ffff00ff007fff007fff007fff007fff007fff007fffc0c0c0c0c0c0c0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ff007fff007fff007fff007fff007fff007fffc0c0c0008000c0c0c0008000808080ff00ffff00ffff00ffff00ffff00ff007fff007fff007fff007fff007fff007fffc0c0c0c0c0c0c0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ff</ImageData>
-		<ImageData Id="1005">424dd6020000000000003600000028000000100000000e0000000100180000000000a0020000c40e0000c40e00000000000000000000ff00ffff00ffff00ffff00ffff00ffff00ff808080808080808080808080808080ff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffc0c0c0000000c0c0c0000000808080ff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffc0c0c000ffffc0c0c000ffff808080ff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffc0c0c0c0c0c0c0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffc0c0c0000000c0c0c0000000808080ff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffc0c0c0ff0000c0c0c0ff0000808080ff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffc0c0c0c0c0c0c0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ff007fff007fff007fff007fff007fff007fffc0c0c0000000c0c0c0000000808080ff00ffff00ffff00ffff00ffff00ff007fff007fff007fff007fff007fff007fffc0c0c00000ffc0c0c00000ff808080ff00ffff00ffff00ffff00ffff00ff007fff007fff007fff007fff007fff007fffc0c0c0c0c0c0c0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ff007fff007fff007fff007fff007fff007fffc0c0c0000000c0c0c0000000808080ff00ffff00ffff00ffff00ffff00ff007fff007fff007fff007fff007fff007fffc0c0c0c0c0c0c0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ff007fff007fff007fff007fff007fff007fffc0c0c0008000c0c0c0008000808080ff00ffff00ffff00ffff00ffff00ff007fff007fff007fff007fff007fff007fffc0c0c0c0c0c0c0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ff</ImageData>
+		<ImageData Id="1005">424dd6020000000000003600000028000000100000000e0000000100180000000000a002000000000000000000000000000000000000ff00ffff00ffff00ffff00ffff00ffff00ff808080808080808080808080808080ff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffc0c0c0000000c0c0c0000000808080ff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffc0c0c000ffffc0c0c000ffff808080ff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffc0c0c0c0c0c0c0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffc0c0c0000000c0c0c0000000808080ff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffc0c0c0ff0000c0c0c0ff0000808080ff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffc0c0c0c0c0c0c0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ff00ff0000ff0000ff0000ff0000ff0000ff00c0c0c0000000c0c0c0000000808080ff00ffff00ffff00ffff00ffff00ff00ff0000ff0000ff0000ff0000ff0000ff00c0c0c00000ffc0c0c00000ff808080ff00ffff00ffff00ffff00ffff00ff00ff0000ff0000ff0000ff0000ff0000ff00c0c0c0c0c0c0c0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ff00ff0000ff0000ff0000ff0000ff0000ff00c0c0c0000000c0c0c0000000808080ff00ffff00ffff00ffff00ffff00ff00ff0000ff0000ff0000ff0000ff0000ff00c0c0c0c0c0c0c0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ff00ff0000ff0000ff0000ff0000ff0000ff00c0c0c0008000c0c0c0008000808080ff00ffff00ffff00ffff00ffff00ff00ff0000ff0000ff0000ff0000ff0000ff00c0c0c0c0c0c0c0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ff</ImageData>
 		<ImageData Id="1006">424de6000000000000007600000028000000100000000e000000010004000000000070000000c40e0000c40e000000000000000000000000000000008000008000000080800080000000800080008080000080808000c0c0c0000000ff0000ff000000ffff00ff000000ff00ff00ffff0000ffffff00ffffffffffffffffffffffffffffffff79999997ffffffff99977999ffffffff9998ff89ffffffff99999fffffffffff999997ffff777777999999ffff777777799999ffff877777fffffffffff77777ffffffff78ff8777ffffffff77777777ffffffff77777777ffffffffffffffff</ImageData>
 	</ImageDatas>
 	<Project ProjectGUID="{578B8B02-579B-4FE0-93D3-880C573AE43F}" Target64Bit="true" ShowHideConfigurations="#x6">
@@ -99,14 +117,14 @@
 				<Image Id="2" AddrType="9" ImageType="3">
 					<Name>Image</Name>
 				</Image>
-				<Box Id="1" BoxType="9099">
-					<Name>Term 1 (EK1100)</Name>
+				<Box Id="14" BoxType="9099">
+					<Name>Term 14 (EK1100)</Name>
 					<ImageId>1000</ImageId>
 					<EtherCAT SlaveType="1" PdiType="#x0d00" CycleMBoxPollingTime="0" VendorId="#x00000002" ProductCode="#x044c2c52" RevisionNo="#x00120000" PortPhys="305" MaxSlotCount="256" MaxSlotGroupCount="1" SlotPdoIncrement="1" SlotIndexIncrement="16" Type="EK1100 EtherCAT Coupler (2A E-Bus)" Desc="EK1100" PortABoxInfo="#x00ffffff"/>
-					<Box Id="2" BoxType="9099" BoxFlags="#x00000020">
-						<Name>Term 2 (EL3104)</Name>
+					<Box Id="15" BoxType="9099" BoxFlags="#x00000020">
+						<Name>Term 15 (EL3104)</Name>
 						<ImageId>1001</ImageId>
-						<EtherCAT SlaveType="2" PdiType="#x0405" MboxDataLinkLayer="true" StateMBoxPolling="true" CycleMBoxPollingTime="0" CoeType="7" FoeType="1" VendorId="#x00000002" ProductCode="#x0c203052" RevisionNo="#x00140000" InfoDataAddr="true" TimeoutMailbox2="2000" CheckRevisionNoType="3" PortPhys="51" MaxSlotCount="256" MaxSlotGroupCount="1" SlotPdoIncrement="1" SlotIndexIncrement="16" Type="EL3104 4Ch. Ana. Input +/-10V Diff." Desc="EL3104" PortABoxInfo="#x01000001">
+						<EtherCAT SlaveType="2" PdiType="#x0405" MboxDataLinkLayer="true" StateMBoxPolling="true" CycleMBoxPollingTime="0" CoeType="7" FoeType="1" VendorId="#x00000002" ProductCode="#x0c203052" RevisionNo="#x00140000" InfoDataAddr="true" InfoDataDcTimes="true" TimeoutMailbox2="2000" CheckRevisionNoType="3" PortPhys="51" MaxSlotCount="256" MaxSlotGroupCount="1" SlotPdoIncrement="1" SlotIndexIncrement="16" Type="EL3104 4Ch. Ana. Input +/-10V Diff." Desc="EL3104" PortABoxInfo="#x0100000e">
 							<SyncMan>001080002600010001000000800080008000001026010000</SyncMan>
 							<SyncMan>801080002200010002000000800080008000801022010000</SyncMan>
 							<SyncMan>001100000400000003000000000000000000001104000000</SyncMan>
@@ -114,6 +132,7 @@
 							<Fmmu>0000000000000000801100010100000002000000000000000000000000000000</Fmmu>
 							<Fmmu>00000000000000000d0800010100000003000000000000000000000000000000</Fmmu>
 							<BootStrapData>0010f400f410f400</BootStrapData>
+							<DcData>00070000000000006079feffa861000001000000020100000000000000000000</DcData>
 							<DcMode>53796e6368726f6e00000000000000004672656552756e2f534d2d53796e6368726f6e00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000</DcMode>
 							<DcMode>4443000000000000000000000000000044432d53796e6368726f6e0000000000000000000000000000000000000000000000000000000000a8610000000000070100000000000000000000000000000000000000000000000000000000000000</DcMode>
 							<DcMode>4443494e00000000000000000000000044432d53796e6368726f6e2028696e7075742062617365642900000000000000000000006079feffa8610000000000070100000000000000000001000000000000000000000000000000000000000000</DcMode>
@@ -319,20 +338,20 @@ Bit1: Value smaller than Limit2]]></Comment>
 							<CoeProfile ProfileNo="19665801"/>
 						</EtherCAT>
 					</Box>
-					<Box Id="12" BoxType="9099">
-						<Name>Term 12 (EL9011)</Name>
+					<Box Id="23" BoxType="9099">
+						<Name>Term 23 (EL9011)</Name>
 						<ImageId>1002</ImageId>
-						<EtherCAT CycleMBoxPollingTime="0" VendorId="#x00000002" ProductCode="#x23333050" InfoDataState="false" MaxSlotCount="256" MaxSlotGroupCount="1" SlotPdoIncrement="1" SlotIndexIncrement="16" Type="EL9011 End Terminal" Desc="EL9011" PortABoxInfo="#x01000002"/>
+						<EtherCAT CycleMBoxPollingTime="0" VendorId="#x00000002" ProductCode="#x23333050" InfoDataState="false" MaxSlotCount="256" MaxSlotGroupCount="1" SlotPdoIncrement="1" SlotIndexIncrement="16" Type="EL9011 End Terminal" Desc="EL9011" PortABoxInfo="#x0100000f"/>
 					</Box>
 				</Box>
-				<Box Id="3" BoxType="9099">
-					<Name>Term 3 (EK1100)</Name>
+				<Box Id="16" BoxType="9099">
+					<Name>Term 16 (EK1100)</Name>
 					<ImageId>1000</ImageId>
-					<EtherCAT SlaveType="1" PdiType="#x0d00" CycleMBoxPollingTime="0" VendorId="#x00000002" ProductCode="#x044c2c52" RevisionNo="#x00120000" PortPhys="305" MaxSlotCount="256" MaxSlotGroupCount="1" SlotPdoIncrement="1" SlotIndexIncrement="16" Type="EK1100 EtherCAT Coupler (2A E-Bus)" Desc="EK1100" PortABoxInfo="#x02000001"/>
-					<Box Id="4" BoxType="9099" BoxFlags="#x00000020">
-						<Name>Term 4 (EL5002)</Name>
+					<EtherCAT SlaveType="1" PdiType="#x0d00" CycleMBoxPollingTime="0" VendorId="#x00000002" ProductCode="#x044c2c52" RevisionNo="#x00120000" PortPhys="305" MaxSlotCount="256" MaxSlotGroupCount="1" SlotPdoIncrement="1" SlotIndexIncrement="16" Type="EK1100 EtherCAT Coupler (2A E-Bus)" Desc="EK1100" PortABoxInfo="#x0200000e"/>
+					<Box Id="17" BoxType="9099" BoxFlags="#x00000020">
+						<Name>Term 17 (EL5002)</Name>
 						<ImageId>1003</ImageId>
-						<EtherCAT SlaveType="2" PdiType="#x0405" MboxDataLinkLayer="true" StateMBoxPolling="true" CycleMBoxPollingTime="0" CoeType="7" FoeType="1" VendorId="#x00000002" ProductCode="#x138a3052" RevisionNo="#x00140000" InfoDataAddr="true" TimeoutMailbox2="2000" CheckRevisionNoType="3" PortPhys="51" MaxSlotCount="256" MaxSlotGroupCount="1" SlotPdoIncrement="1" SlotIndexIncrement="16" Type="EL5002 2Ch. SSI Encoder" Desc="EL5002" PortABoxInfo="#x01000003">
+						<EtherCAT SlaveType="2" PdiType="#x0405" MboxDataLinkLayer="true" StateMBoxPolling="true" CycleMBoxPollingTime="0" CoeType="7" FoeType="1" VendorId="#x00000002" ProductCode="#x138a3052" RevisionNo="#x00140000" InfoDataAddr="true" InfoDataDcTimes="true" TimeoutMailbox2="2000" CheckRevisionNoType="3" PortPhys="51" MaxSlotCount="256" MaxSlotGroupCount="1" SlotPdoIncrement="1" SlotIndexIncrement="16" Type="EL5002 2Ch. SSI Encoder" Desc="EL5002" PortABoxInfo="#x01000010">
 							<SyncMan>001080002600010001000000800080008000001026010000</SyncMan>
 							<SyncMan>801080002200010002000000800080008000801022010000</SyncMan>
 							<SyncMan>001100000400000003000000000000000000001104000000</SyncMan>
@@ -340,6 +359,7 @@ Bit1: Value smaller than Limit2]]></Comment>
 							<Fmmu>0000000000000000801100010100000002000000000000000000000000000000</Fmmu>
 							<Fmmu>00000000000000000d0800010100000003000000000000000000000000000000</Fmmu>
 							<BootStrapData>0010f400f410f400</BootStrapData>
+							<DcData>000700000000000000000000983a000001000000020100000000000000000000</DcData>
 							<DcMode>53796e6368726f6e00000000000000004672656552756e2f534d2d53796e6368726f6e00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000</DcMode>
 							<DcMode>4443000000000000000000000000000044432d53796e6368726f6e0000000000000000000000000000000000000000000000000000000000983a0000000000070100000000000000000000000000000000000000000000000000000000000000</DcMode>
 							<DcMode>4443494e00000000000000000000000044432d53796e6368726f6e2028696e70757420626173656429000000000000000000000000000000983a0000000000070100000000000000000001000000000000000000000000000000000000000000</DcMode>
@@ -406,10 +426,10 @@ Bit1: Value smaller than Limit2]]></Comment>
 							<CoeProfile ProfileNo="32838537"/>
 						</EtherCAT>
 					</Box>
-					<Box Id="5" BoxType="9101" BoxFlags="#x00000020">
-						<Name>Term 5 (EL6001)</Name>
+					<Box Id="18" BoxType="9101" BoxFlags="#x00000020">
+						<Name>Term 18 (EL6001)</Name>
 						<ImageId>1004</ImageId>
-						<EtherCAT SlaveType="7" PdiType="#x0005" MboxDataLinkLayer="true" CycleMBoxPolling="true" CoeType="7" FoeType="1" VendorId="#x00000002" ProductCode="#x17713052" RevisionNo="#x00140000" InfoDataAddr="true" TimeoutMailbox2="2000" CheckRevisionNoType="3" PortPhys="51" MaxSlotCount="256" MaxSlotGroupCount="1" SlotPdoIncrement="1" SlotIndexIncrement="16" Type="EL6001 Interface (RS232)" Desc="EL6001" PortABoxInfo="#x01000004">
+						<EtherCAT SlaveType="7" PdiType="#x0005" MboxDataLinkLayer="true" CycleMBoxPolling="true" CoeType="7" FoeType="1" VendorId="#x00000002" ProductCode="#x17713052" RevisionNo="#x00140000" InfoDataAddr="true" TimeoutMailbox2="2000" CheckRevisionNoType="3" PortPhys="51" MaxSlotCount="256" MaxSlotGroupCount="1" SlotPdoIncrement="1" SlotIndexIncrement="16" Type="EL6001 Interface (RS232)" Desc="EL6001" PortABoxInfo="#x01000011">
 							<SyncMan>0018f6002600010001000000f600f600f600001826010000</SyncMan>
 							<SyncMan>f618f6002200010002000000f600f600f600f61822010000</SyncMan>
 							<SyncMan>001018002400010003000000000000001800001024010000</SyncMan>
@@ -1201,30 +1221,2799 @@ Bit1: Value smaller than Limit2]]></Comment>
 							<CoeProfile ProfileNo="5001"/>
 						</EtherCAT>
 					</Box>
-					<Box Id="6" BoxType="9099">
-						<Name>Term 6 (EL9510)</Name>
+					<Box Id="19" BoxType="9099" BoxFlags="#x00000020">
+						<Name>Term 19 (EL3751)</Name>
 						<ImageId>1005</ImageId>
-						<EtherCAT SlaveType="1" PdiType="#x0104" CycleMBoxPollingTime="0" VendorId="#x00000002" ProductCode="#x25263052" RevisionNo="#x00110000" RepeatSupport="true" PortPhys="51" MaxSlotCount="256" MaxSlotGroupCount="1" SlotPdoIncrement="1" SlotIndexIncrement="16" Type="EL9510 Power supply terminal 10V" Desc="EL9510" PortABoxInfo="#x01000005">
-							<SyncMan>001001000000010004000000000000000000001000000000</SyncMan>
-							<Fmmu>0000000000000000001000010100000002000000000000000000000000000000</Fmmu>
-							<Pdo Name="Status Uo" Index="#x1a00" Flags="#x0011" SyncMan="0">
-								<Entry Name="Power OK" Index="#x6000" Sub="#x01">
+						<Xml>
+							<BeckhoffEcatSlavePlugIn>
+								<Channel>
+									<ChannelNo>0</ChannelNo>
+									<Data>070000000000000001000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001e000000000000000b000000010000000300000000000000040000000000000000000000010000000000000001000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000</Data>
+								</Channel>
+							</BeckhoffEcatSlavePlugIn>
+						</Xml>
+						<EtherCAT SlaveType="2" PdiType="#x0405" MboxDataLinkLayer="true" StateMBoxPolling="true" CfgModeSafeOp="true" CycleMBoxPollingTime="0" CoeType="39" FoeType="1" VendorId="#x00000002" ProductCode="#x0ea73052" RevisionNo="#x00170000" InfoDataAddr="true" InfoDataDcTimes="true" TimeoutMailbox2="2000" CheckRevisionNoType="3" PortPhys="51" MaxSlotCount="256" MaxSlotGroupCount="1" SlotPdoIncrement="1" SlotIndexIncrement="16" Type="EL3751 1Ch. Ana. Input +/-30V, +/-20mA, RTD, Resistor Bridge, 24 bit, high precision" Desc="EL3751" PortABoxInfo="#x01000012">
+							<SyncMan>001040002600010001000000400040004000001026010000</SyncMan>
+							<SyncMan>401040002200010002000000400040004000401022010000</SyncMan>
+							<SyncMan>801000002400000003000000000000000000801024010000</SyncMan>
+							<SyncMan>981034002000010004000000000000001000981020010000</SyncMan>
+							<Fmmu>0000000000000000000000020000000001000000000000000000000000000000</Fmmu>
+							<Fmmu>0000000000000000981000010100000002000000000000000000000000000000</Fmmu>
+							<Fmmu>00000000000000000d0800010100000003000000000000000000000000000000</Fmmu>
+							<BootStrapData>0010f400f410f400</BootStrapData>
+							<DcData>0007000000000000702ffcff0000000001000000000100000000000000000000</DcData>
+							<DcMode>4443494e00000000000000000000000044432d53796e6368726f6e2028696e707574206261736564290000000000000000000000702ffcff00000000000000070100000000000000000001000000000000000000000000000000000000000000</DcMode>
+							<DcMode>4443000000000000000000000000000044432d53796e6368726f6e000000000000000000000000000000000000000000000000000000000000000000000000070100000000000000000000000000000000000000000000000000000000000000</DcMode>
+							<DcMode>53796e6368726f6e0000000000000000534d2d53796e6368726f6e000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000</DcMode>
+							<MBoxUserCmdData>020003000a0000000000000000000000000000000000000000000000000000002000800102000000370000</MBoxUserCmdData>
+							<MBoxUserCmdData>020003000a00000000000000000000000000000000000000000000000000000020008002020000000a0000</MBoxUserCmdData>
+							<MBoxUserCmdData>020003000900000000000000000000000000000000000000000000000000000020008004010000000000</MBoxUserCmdData>
+							<MBoxUserCmdData>020003000a0000000000000000000000000000000000000000000000000000002000801402000000000000</MBoxUserCmdData>
+							<MBoxUserCmdData>020003000a0000000000000000000000000000000000000000000000000000002000801602000000020000</MBoxUserCmdData>
+							<MBoxUserCmdData>020003000a0000000000000000000000000000000000000000000000000000002000801802000000010000</MBoxUserCmdData>
+							<MBoxUserCmdData>020003000a0000000000000000000000000000000000000000000000000000002000801902000000030000</MBoxUserCmdData>
+							<MBoxUserCmdData>020003000a0000000000000000000000000000000000000000000000000000002000801b02000000c80000</MBoxUserCmdData>
+							<MBoxUserCmdData>02000300090000000000000000000000000000000000000000000000000000002000801c010000000000</MBoxUserCmdData>
+							<MBoxUserCmdData>020003000a0000000000000000000000000000000000000000000000000000002000802b02000000000000</MBoxUserCmdData>
+							<MBoxUserCmdData>020003000a0000000000000000000000000000000000000000000000000000002000802c02000000000000</MBoxUserCmdData>
+							<MBoxUserCmdData>020003000a0000000000000000000000000000000000000000000000000000002000802d02000000010000</MBoxUserCmdData>
+							<MBoxUserCmdData>020003000a0000000000000000000000000000000000000000000000000000002000802e02000000000000</MBoxUserCmdData>
+							<MBoxUserCmdData>020003000c00000000000000000000000000000000000000000000000000000020058001040000000000000000</MBoxUserCmdData>
+							<MBoxUserCmdData>020003000c00000000000000000000000000000000000000000000000000000020058002040000000000010000</MBoxUserCmdData>
+							<Pdo Name="PAI Status" Index="#x1a00" Flags="#x0010" SyncMan="3">
+								<Entry Name="Status__No of Samples" BitLen="8" Index="#x6000" Sub="#x01">
+									<Type>USINT</Type>
+									<Comment><![CDATA[number of valid samples in the PDO samples]]></Comment>
+								</Entry>
+								<Entry Name="Status__Error" BitLen="1" Index="#x6000" Sub="#x09">
+									<Type>BIT</Type>
+									<Comment><![CDATA[TRUE: general Error]]></Comment>
+								</Entry>
+								<Entry Name="Status__Underrange" BitLen="1" Index="#x6000" Sub="#x0a">
+									<Type>BIT</Type>
+									<Comment><![CDATA[TRUE: measurement Underrange event]]></Comment>
+								</Entry>
+								<Entry Name="Status__Overrange" BitLen="1" Index="#x6000" Sub="#x0b">
+									<Type>BIT</Type>
+									<Comment><![CDATA[TRUE: measurement Overrange event]]></Comment>
+								</Entry>
+								<Entry Name="Status__" BitLen="1">
+									<Type GUID="{18071995-0000-0000-0000-002000000001}">ARRAY [0..0] OF BIT</Type>
+								</Entry>
+								<Entry Name="Status__Diag" BitLen="1" Index="#x6000" Sub="#x0d">
 									<Type>BIT</Type>
 								</Entry>
-								<Entry Name="Overload" Index="#x6000" Sub="#x02">
+								<Entry Name="Status__TxPDO State" BitLen="1" Index="#x6000" Sub="#x0e">
 									<Type>BIT</Type>
+								</Entry>
+								<Entry Name="Status__Input cycle counter" BitLen="2" Index="#x6000" Sub="#x0f">
+									<Type>BIT2</Type>
+								</Entry>
+								<Entry Name="Status__" BitLen="16">
+									<Type GUID="{18071995-0000-0000-0000-002000000010}">ARRAY [0..1] OF BYTE</Type>
 								</Entry>
 							</Pdo>
+							<Pdo Name="PAI Samples 1" Index="#x1a01" Flags="#x0010">
+								<ExcludePdo>#x1a02</ExcludePdo>
+								<ExcludePdo>#x1a03</ExcludePdo>
+								<ExcludePdo>#x1a04</ExcludePdo>
+								<ExcludePdo>#x1a05</ExcludePdo>
+								<ExcludePdo>#x1a06</ExcludePdo>
+								<ExcludePdo>#x1a07</ExcludePdo>
+								<ExcludePdo>#x1a08</ExcludePdo>
+								<ExcludePdo>#x1a09</ExcludePdo>
+								<ExcludePdo>#x1a0a</ExcludePdo>
+								<ExcludePdo>#x1a0b</ExcludePdo>
+								<ExcludePdo>#x1a0c</ExcludePdo>
+								<ExcludePdo>#x1a0d</ExcludePdo>
+								<Entry Name="Samples__ARRAY [0]" BitLen="32" Index="#x6001" Sub="#x01">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+							</Pdo>
+							<Pdo Name="PAI Samples 2" Index="#x1a02" Flags="#x0010">
+								<ExcludePdo>#x1a01</ExcludePdo>
+								<ExcludePdo>#x1a03</ExcludePdo>
+								<ExcludePdo>#x1a04</ExcludePdo>
+								<ExcludePdo>#x1a05</ExcludePdo>
+								<ExcludePdo>#x1a06</ExcludePdo>
+								<ExcludePdo>#x1a07</ExcludePdo>
+								<ExcludePdo>#x1a08</ExcludePdo>
+								<ExcludePdo>#x1a09</ExcludePdo>
+								<ExcludePdo>#x1a0a</ExcludePdo>
+								<ExcludePdo>#x1a0b</ExcludePdo>
+								<ExcludePdo>#x1a0c</ExcludePdo>
+								<ExcludePdo>#x1a0d</ExcludePdo>
+								<Entry Name="Samples__ARRAY [0]" BitLen="32" Index="#x6001" Sub="#x01">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [1]" BitLen="32" Index="#x6001" Sub="#x02">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+							</Pdo>
+							<Pdo Name="PAI Samples 4" Index="#x1a03" Flags="#x0010">
+								<ExcludePdo>#x1a01</ExcludePdo>
+								<ExcludePdo>#x1a02</ExcludePdo>
+								<ExcludePdo>#x1a04</ExcludePdo>
+								<ExcludePdo>#x1a05</ExcludePdo>
+								<ExcludePdo>#x1a06</ExcludePdo>
+								<ExcludePdo>#x1a07</ExcludePdo>
+								<ExcludePdo>#x1a08</ExcludePdo>
+								<ExcludePdo>#x1a09</ExcludePdo>
+								<ExcludePdo>#x1a0a</ExcludePdo>
+								<ExcludePdo>#x1a0b</ExcludePdo>
+								<ExcludePdo>#x1a0c</ExcludePdo>
+								<ExcludePdo>#x1a0d</ExcludePdo>
+								<Entry Name="Samples__ARRAY [0]" BitLen="32" Index="#x6001" Sub="#x01">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [1]" BitLen="32" Index="#x6001" Sub="#x02">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [2]" BitLen="32" Index="#x6001" Sub="#x03">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [3]" BitLen="32" Index="#x6001" Sub="#x04">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+							</Pdo>
+							<Pdo Name="PAI Samples 5" Index="#x1a04" Flags="#x0010">
+								<ExcludePdo>#x1a01</ExcludePdo>
+								<ExcludePdo>#x1a02</ExcludePdo>
+								<ExcludePdo>#x1a03</ExcludePdo>
+								<ExcludePdo>#x1a05</ExcludePdo>
+								<ExcludePdo>#x1a06</ExcludePdo>
+								<ExcludePdo>#x1a07</ExcludePdo>
+								<ExcludePdo>#x1a08</ExcludePdo>
+								<ExcludePdo>#x1a09</ExcludePdo>
+								<ExcludePdo>#x1a0a</ExcludePdo>
+								<ExcludePdo>#x1a0b</ExcludePdo>
+								<ExcludePdo>#x1a0c</ExcludePdo>
+								<ExcludePdo>#x1a0d</ExcludePdo>
+								<Entry Name="Samples__ARRAY [0]" BitLen="32" Index="#x6001" Sub="#x01">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [1]" BitLen="32" Index="#x6001" Sub="#x02">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [2]" BitLen="32" Index="#x6001" Sub="#x03">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [3]" BitLen="32" Index="#x6001" Sub="#x04">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [4]" BitLen="32" Index="#x6001" Sub="#x05">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+							</Pdo>
+							<Pdo Name="PAI Samples 8" Index="#x1a05" Flags="#x0010">
+								<ExcludePdo>#x1a01</ExcludePdo>
+								<ExcludePdo>#x1a02</ExcludePdo>
+								<ExcludePdo>#x1a03</ExcludePdo>
+								<ExcludePdo>#x1a04</ExcludePdo>
+								<ExcludePdo>#x1a06</ExcludePdo>
+								<ExcludePdo>#x1a07</ExcludePdo>
+								<ExcludePdo>#x1a08</ExcludePdo>
+								<ExcludePdo>#x1a09</ExcludePdo>
+								<ExcludePdo>#x1a0a</ExcludePdo>
+								<ExcludePdo>#x1a0b</ExcludePdo>
+								<ExcludePdo>#x1a0c</ExcludePdo>
+								<ExcludePdo>#x1a0d</ExcludePdo>
+								<Entry Name="Samples__ARRAY [0]" BitLen="32" Index="#x6001" Sub="#x01">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [1]" BitLen="32" Index="#x6001" Sub="#x02">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [2]" BitLen="32" Index="#x6001" Sub="#x03">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [3]" BitLen="32" Index="#x6001" Sub="#x04">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [4]" BitLen="32" Index="#x6001" Sub="#x05">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [5]" BitLen="32" Index="#x6001" Sub="#x06">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [6]" BitLen="32" Index="#x6001" Sub="#x07">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [7]" BitLen="32" Index="#x6001" Sub="#x08">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+							</Pdo>
+							<Pdo Name="PAI Samples 10" Index="#x1a06" Flags="#x0010" SyncMan="3">
+								<ExcludePdo>#x1a01</ExcludePdo>
+								<ExcludePdo>#x1a02</ExcludePdo>
+								<ExcludePdo>#x1a03</ExcludePdo>
+								<ExcludePdo>#x1a04</ExcludePdo>
+								<ExcludePdo>#x1a05</ExcludePdo>
+								<ExcludePdo>#x1a07</ExcludePdo>
+								<ExcludePdo>#x1a08</ExcludePdo>
+								<ExcludePdo>#x1a09</ExcludePdo>
+								<ExcludePdo>#x1a0a</ExcludePdo>
+								<ExcludePdo>#x1a0b</ExcludePdo>
+								<ExcludePdo>#x1a0c</ExcludePdo>
+								<ExcludePdo>#x1a0d</ExcludePdo>
+								<Entry Name="Samples__ARRAY [0]" BitLen="32" Index="#x6001" Sub="#x01">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [1]" BitLen="32" Index="#x6001" Sub="#x02">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [2]" BitLen="32" Index="#x6001" Sub="#x03">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [3]" BitLen="32" Index="#x6001" Sub="#x04">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [4]" BitLen="32" Index="#x6001" Sub="#x05">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [5]" BitLen="32" Index="#x6001" Sub="#x06">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [6]" BitLen="32" Index="#x6001" Sub="#x07">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [7]" BitLen="32" Index="#x6001" Sub="#x08">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [8]" BitLen="32" Index="#x6001" Sub="#x09">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [9]" BitLen="32" Index="#x6001" Sub="#x0a">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+							</Pdo>
+							<Pdo Name="PAI Samples 16" Index="#x1a07" Flags="#x0010">
+								<ExcludePdo>#x1a01</ExcludePdo>
+								<ExcludePdo>#x1a02</ExcludePdo>
+								<ExcludePdo>#x1a03</ExcludePdo>
+								<ExcludePdo>#x1a04</ExcludePdo>
+								<ExcludePdo>#x1a05</ExcludePdo>
+								<ExcludePdo>#x1a06</ExcludePdo>
+								<ExcludePdo>#x1a08</ExcludePdo>
+								<ExcludePdo>#x1a09</ExcludePdo>
+								<ExcludePdo>#x1a0a</ExcludePdo>
+								<ExcludePdo>#x1a0b</ExcludePdo>
+								<ExcludePdo>#x1a0c</ExcludePdo>
+								<ExcludePdo>#x1a0d</ExcludePdo>
+								<Entry Name="Samples__ARRAY [0]" BitLen="32" Index="#x6001" Sub="#x01">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [1]" BitLen="32" Index="#x6001" Sub="#x02">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [2]" BitLen="32" Index="#x6001" Sub="#x03">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [3]" BitLen="32" Index="#x6001" Sub="#x04">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [4]" BitLen="32" Index="#x6001" Sub="#x05">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [5]" BitLen="32" Index="#x6001" Sub="#x06">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [6]" BitLen="32" Index="#x6001" Sub="#x07">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [7]" BitLen="32" Index="#x6001" Sub="#x08">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [8]" BitLen="32" Index="#x6001" Sub="#x09">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [9]" BitLen="32" Index="#x6001" Sub="#x0a">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [10]" BitLen="32" Index="#x6001" Sub="#x0b">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [11]" BitLen="32" Index="#x6001" Sub="#x0c">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [12]" BitLen="32" Index="#x6001" Sub="#x0d">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [13]" BitLen="32" Index="#x6001" Sub="#x0e">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [14]" BitLen="32" Index="#x6001" Sub="#x0f">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [15]" BitLen="32" Index="#x6001" Sub="#x10">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+							</Pdo>
+							<Pdo Name="PAI Samples 20" Index="#x1a08" Flags="#x0010">
+								<ExcludePdo>#x1a01</ExcludePdo>
+								<ExcludePdo>#x1a02</ExcludePdo>
+								<ExcludePdo>#x1a03</ExcludePdo>
+								<ExcludePdo>#x1a04</ExcludePdo>
+								<ExcludePdo>#x1a05</ExcludePdo>
+								<ExcludePdo>#x1a06</ExcludePdo>
+								<ExcludePdo>#x1a07</ExcludePdo>
+								<ExcludePdo>#x1a09</ExcludePdo>
+								<ExcludePdo>#x1a0a</ExcludePdo>
+								<ExcludePdo>#x1a0b</ExcludePdo>
+								<ExcludePdo>#x1a0c</ExcludePdo>
+								<ExcludePdo>#x1a0d</ExcludePdo>
+								<Entry Name="Samples__ARRAY [0]" BitLen="32" Index="#x6001" Sub="#x01">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [1]" BitLen="32" Index="#x6001" Sub="#x02">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [2]" BitLen="32" Index="#x6001" Sub="#x03">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [3]" BitLen="32" Index="#x6001" Sub="#x04">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [4]" BitLen="32" Index="#x6001" Sub="#x05">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [5]" BitLen="32" Index="#x6001" Sub="#x06">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [6]" BitLen="32" Index="#x6001" Sub="#x07">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [7]" BitLen="32" Index="#x6001" Sub="#x08">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [8]" BitLen="32" Index="#x6001" Sub="#x09">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [9]" BitLen="32" Index="#x6001" Sub="#x0a">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [10]" BitLen="32" Index="#x6001" Sub="#x0b">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [11]" BitLen="32" Index="#x6001" Sub="#x0c">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [12]" BitLen="32" Index="#x6001" Sub="#x0d">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [13]" BitLen="32" Index="#x6001" Sub="#x0e">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [14]" BitLen="32" Index="#x6001" Sub="#x0f">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [15]" BitLen="32" Index="#x6001" Sub="#x10">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [16]" BitLen="32" Index="#x6001" Sub="#x11">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [17]" BitLen="32" Index="#x6001" Sub="#x12">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [18]" BitLen="32" Index="#x6001" Sub="#x13">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [19]" BitLen="32" Index="#x6001" Sub="#x14">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+							</Pdo>
+							<Pdo Name="PAI Samples 25" Index="#x1a09" Flags="#x0010">
+								<ExcludePdo>#x1a01</ExcludePdo>
+								<ExcludePdo>#x1a02</ExcludePdo>
+								<ExcludePdo>#x1a03</ExcludePdo>
+								<ExcludePdo>#x1a04</ExcludePdo>
+								<ExcludePdo>#x1a05</ExcludePdo>
+								<ExcludePdo>#x1a06</ExcludePdo>
+								<ExcludePdo>#x1a07</ExcludePdo>
+								<ExcludePdo>#x1a08</ExcludePdo>
+								<ExcludePdo>#x1a0a</ExcludePdo>
+								<ExcludePdo>#x1a0b</ExcludePdo>
+								<ExcludePdo>#x1a0c</ExcludePdo>
+								<ExcludePdo>#x1a0d</ExcludePdo>
+								<Entry Name="Samples__ARRAY [0]" BitLen="32" Index="#x6001" Sub="#x01">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [1]" BitLen="32" Index="#x6001" Sub="#x02">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [2]" BitLen="32" Index="#x6001" Sub="#x03">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [3]" BitLen="32" Index="#x6001" Sub="#x04">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [4]" BitLen="32" Index="#x6001" Sub="#x05">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [5]" BitLen="32" Index="#x6001" Sub="#x06">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [6]" BitLen="32" Index="#x6001" Sub="#x07">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [7]" BitLen="32" Index="#x6001" Sub="#x08">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [8]" BitLen="32" Index="#x6001" Sub="#x09">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [9]" BitLen="32" Index="#x6001" Sub="#x0a">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [10]" BitLen="32" Index="#x6001" Sub="#x0b">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [11]" BitLen="32" Index="#x6001" Sub="#x0c">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [12]" BitLen="32" Index="#x6001" Sub="#x0d">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [13]" BitLen="32" Index="#x6001" Sub="#x0e">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [14]" BitLen="32" Index="#x6001" Sub="#x0f">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [15]" BitLen="32" Index="#x6001" Sub="#x10">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [16]" BitLen="32" Index="#x6001" Sub="#x11">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [17]" BitLen="32" Index="#x6001" Sub="#x12">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [18]" BitLen="32" Index="#x6001" Sub="#x13">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [19]" BitLen="32" Index="#x6001" Sub="#x14">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [20]" BitLen="32" Index="#x6001" Sub="#x15">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [21]" BitLen="32" Index="#x6001" Sub="#x16">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [22]" BitLen="32" Index="#x6001" Sub="#x17">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [23]" BitLen="32" Index="#x6001" Sub="#x18">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [24]" BitLen="32" Index="#x6001" Sub="#x19">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+							</Pdo>
+							<Pdo Name="PAI Samples 32" Index="#x1a0a" Flags="#x0010">
+								<ExcludePdo>#x1a01</ExcludePdo>
+								<ExcludePdo>#x1a02</ExcludePdo>
+								<ExcludePdo>#x1a03</ExcludePdo>
+								<ExcludePdo>#x1a04</ExcludePdo>
+								<ExcludePdo>#x1a05</ExcludePdo>
+								<ExcludePdo>#x1a06</ExcludePdo>
+								<ExcludePdo>#x1a07</ExcludePdo>
+								<ExcludePdo>#x1a08</ExcludePdo>
+								<ExcludePdo>#x1a09</ExcludePdo>
+								<ExcludePdo>#x1a0b</ExcludePdo>
+								<ExcludePdo>#x1a0c</ExcludePdo>
+								<ExcludePdo>#x1a0d</ExcludePdo>
+								<Entry Name="Samples__ARRAY [0]" BitLen="32" Index="#x6001" Sub="#x01">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [1]" BitLen="32" Index="#x6001" Sub="#x02">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [2]" BitLen="32" Index="#x6001" Sub="#x03">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [3]" BitLen="32" Index="#x6001" Sub="#x04">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [4]" BitLen="32" Index="#x6001" Sub="#x05">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [5]" BitLen="32" Index="#x6001" Sub="#x06">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [6]" BitLen="32" Index="#x6001" Sub="#x07">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [7]" BitLen="32" Index="#x6001" Sub="#x08">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [8]" BitLen="32" Index="#x6001" Sub="#x09">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [9]" BitLen="32" Index="#x6001" Sub="#x0a">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [10]" BitLen="32" Index="#x6001" Sub="#x0b">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [11]" BitLen="32" Index="#x6001" Sub="#x0c">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [12]" BitLen="32" Index="#x6001" Sub="#x0d">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [13]" BitLen="32" Index="#x6001" Sub="#x0e">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [14]" BitLen="32" Index="#x6001" Sub="#x0f">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [15]" BitLen="32" Index="#x6001" Sub="#x10">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [16]" BitLen="32" Index="#x6001" Sub="#x11">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [17]" BitLen="32" Index="#x6001" Sub="#x12">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [18]" BitLen="32" Index="#x6001" Sub="#x13">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [19]" BitLen="32" Index="#x6001" Sub="#x14">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [20]" BitLen="32" Index="#x6001" Sub="#x15">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [21]" BitLen="32" Index="#x6001" Sub="#x16">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [22]" BitLen="32" Index="#x6001" Sub="#x17">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [23]" BitLen="32" Index="#x6001" Sub="#x18">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [24]" BitLen="32" Index="#x6001" Sub="#x19">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [25]" BitLen="32" Index="#x6001" Sub="#x1a">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [26]" BitLen="32" Index="#x6001" Sub="#x1b">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [27]" BitLen="32" Index="#x6001" Sub="#x1c">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [28]" BitLen="32" Index="#x6001" Sub="#x1d">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [29]" BitLen="32" Index="#x6001" Sub="#x1e">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [30]" BitLen="32" Index="#x6001" Sub="#x1f">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [31]" BitLen="32" Index="#x6001" Sub="#x20">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+							</Pdo>
+							<Pdo Name="PAI Samples 40" Index="#x1a0b" Flags="#x0010">
+								<ExcludePdo>#x1a01</ExcludePdo>
+								<ExcludePdo>#x1a02</ExcludePdo>
+								<ExcludePdo>#x1a03</ExcludePdo>
+								<ExcludePdo>#x1a04</ExcludePdo>
+								<ExcludePdo>#x1a05</ExcludePdo>
+								<ExcludePdo>#x1a06</ExcludePdo>
+								<ExcludePdo>#x1a07</ExcludePdo>
+								<ExcludePdo>#x1a08</ExcludePdo>
+								<ExcludePdo>#x1a09</ExcludePdo>
+								<ExcludePdo>#x1a0a</ExcludePdo>
+								<ExcludePdo>#x1a0c</ExcludePdo>
+								<ExcludePdo>#x1a0d</ExcludePdo>
+								<Entry Name="Samples__ARRAY [0]" BitLen="32" Index="#x6001" Sub="#x01">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [1]" BitLen="32" Index="#x6001" Sub="#x02">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [2]" BitLen="32" Index="#x6001" Sub="#x03">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [3]" BitLen="32" Index="#x6001" Sub="#x04">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [4]" BitLen="32" Index="#x6001" Sub="#x05">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [5]" BitLen="32" Index="#x6001" Sub="#x06">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [6]" BitLen="32" Index="#x6001" Sub="#x07">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [7]" BitLen="32" Index="#x6001" Sub="#x08">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [8]" BitLen="32" Index="#x6001" Sub="#x09">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [9]" BitLen="32" Index="#x6001" Sub="#x0a">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [10]" BitLen="32" Index="#x6001" Sub="#x0b">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [11]" BitLen="32" Index="#x6001" Sub="#x0c">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [12]" BitLen="32" Index="#x6001" Sub="#x0d">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [13]" BitLen="32" Index="#x6001" Sub="#x0e">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [14]" BitLen="32" Index="#x6001" Sub="#x0f">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [15]" BitLen="32" Index="#x6001" Sub="#x10">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [16]" BitLen="32" Index="#x6001" Sub="#x11">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [17]" BitLen="32" Index="#x6001" Sub="#x12">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [18]" BitLen="32" Index="#x6001" Sub="#x13">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [19]" BitLen="32" Index="#x6001" Sub="#x14">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [20]" BitLen="32" Index="#x6001" Sub="#x15">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [21]" BitLen="32" Index="#x6001" Sub="#x16">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [22]" BitLen="32" Index="#x6001" Sub="#x17">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [23]" BitLen="32" Index="#x6001" Sub="#x18">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [24]" BitLen="32" Index="#x6001" Sub="#x19">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [25]" BitLen="32" Index="#x6001" Sub="#x1a">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [26]" BitLen="32" Index="#x6001" Sub="#x1b">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [27]" BitLen="32" Index="#x6001" Sub="#x1c">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [28]" BitLen="32" Index="#x6001" Sub="#x1d">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [29]" BitLen="32" Index="#x6001" Sub="#x1e">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [30]" BitLen="32" Index="#x6001" Sub="#x1f">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [31]" BitLen="32" Index="#x6001" Sub="#x20">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [32]" BitLen="32" Index="#x6001" Sub="#x21">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [33]" BitLen="32" Index="#x6001" Sub="#x22">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [34]" BitLen="32" Index="#x6001" Sub="#x23">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [35]" BitLen="32" Index="#x6001" Sub="#x24">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [36]" BitLen="32" Index="#x6001" Sub="#x25">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [37]" BitLen="32" Index="#x6001" Sub="#x26">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [38]" BitLen="32" Index="#x6001" Sub="#x27">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [39]" BitLen="32" Index="#x6001" Sub="#x28">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+							</Pdo>
+							<Pdo Name="PAI Samples 50" Index="#x1a0c" Flags="#x0010">
+								<ExcludePdo>#x1a01</ExcludePdo>
+								<ExcludePdo>#x1a02</ExcludePdo>
+								<ExcludePdo>#x1a03</ExcludePdo>
+								<ExcludePdo>#x1a04</ExcludePdo>
+								<ExcludePdo>#x1a05</ExcludePdo>
+								<ExcludePdo>#x1a06</ExcludePdo>
+								<ExcludePdo>#x1a07</ExcludePdo>
+								<ExcludePdo>#x1a08</ExcludePdo>
+								<ExcludePdo>#x1a09</ExcludePdo>
+								<ExcludePdo>#x1a0a</ExcludePdo>
+								<ExcludePdo>#x1a0b</ExcludePdo>
+								<ExcludePdo>#x1a0d</ExcludePdo>
+								<Entry Name="Samples__ARRAY [0]" BitLen="32" Index="#x6001" Sub="#x01">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [1]" BitLen="32" Index="#x6001" Sub="#x02">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [2]" BitLen="32" Index="#x6001" Sub="#x03">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [3]" BitLen="32" Index="#x6001" Sub="#x04">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [4]" BitLen="32" Index="#x6001" Sub="#x05">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [5]" BitLen="32" Index="#x6001" Sub="#x06">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [6]" BitLen="32" Index="#x6001" Sub="#x07">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [7]" BitLen="32" Index="#x6001" Sub="#x08">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [8]" BitLen="32" Index="#x6001" Sub="#x09">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [9]" BitLen="32" Index="#x6001" Sub="#x0a">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [10]" BitLen="32" Index="#x6001" Sub="#x0b">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [11]" BitLen="32" Index="#x6001" Sub="#x0c">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [12]" BitLen="32" Index="#x6001" Sub="#x0d">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [13]" BitLen="32" Index="#x6001" Sub="#x0e">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [14]" BitLen="32" Index="#x6001" Sub="#x0f">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [15]" BitLen="32" Index="#x6001" Sub="#x10">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [16]" BitLen="32" Index="#x6001" Sub="#x11">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [17]" BitLen="32" Index="#x6001" Sub="#x12">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [18]" BitLen="32" Index="#x6001" Sub="#x13">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [19]" BitLen="32" Index="#x6001" Sub="#x14">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [20]" BitLen="32" Index="#x6001" Sub="#x15">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [21]" BitLen="32" Index="#x6001" Sub="#x16">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [22]" BitLen="32" Index="#x6001" Sub="#x17">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [23]" BitLen="32" Index="#x6001" Sub="#x18">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [24]" BitLen="32" Index="#x6001" Sub="#x19">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [25]" BitLen="32" Index="#x6001" Sub="#x1a">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [26]" BitLen="32" Index="#x6001" Sub="#x1b">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [27]" BitLen="32" Index="#x6001" Sub="#x1c">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [28]" BitLen="32" Index="#x6001" Sub="#x1d">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [29]" BitLen="32" Index="#x6001" Sub="#x1e">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [30]" BitLen="32" Index="#x6001" Sub="#x1f">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [31]" BitLen="32" Index="#x6001" Sub="#x20">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [32]" BitLen="32" Index="#x6001" Sub="#x21">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [33]" BitLen="32" Index="#x6001" Sub="#x22">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [34]" BitLen="32" Index="#x6001" Sub="#x23">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [35]" BitLen="32" Index="#x6001" Sub="#x24">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [36]" BitLen="32" Index="#x6001" Sub="#x25">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [37]" BitLen="32" Index="#x6001" Sub="#x26">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [38]" BitLen="32" Index="#x6001" Sub="#x27">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [39]" BitLen="32" Index="#x6001" Sub="#x28">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [40]" BitLen="32" Index="#x6001" Sub="#x29">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [41]" BitLen="32" Index="#x6001" Sub="#x2a">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [42]" BitLen="32" Index="#x6001" Sub="#x2b">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [43]" BitLen="32" Index="#x6001" Sub="#x2c">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [44]" BitLen="32" Index="#x6001" Sub="#x2d">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [45]" BitLen="32" Index="#x6001" Sub="#x2e">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [46]" BitLen="32" Index="#x6001" Sub="#x2f">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [47]" BitLen="32" Index="#x6001" Sub="#x30">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [48]" BitLen="32" Index="#x6001" Sub="#x31">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [49]" BitLen="32" Index="#x6001" Sub="#x32">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+							</Pdo>
+							<Pdo Name="PAI Samples 64" Index="#x1a0d" Flags="#x0010">
+								<ExcludePdo>#x1a01</ExcludePdo>
+								<ExcludePdo>#x1a02</ExcludePdo>
+								<ExcludePdo>#x1a03</ExcludePdo>
+								<ExcludePdo>#x1a04</ExcludePdo>
+								<ExcludePdo>#x1a05</ExcludePdo>
+								<ExcludePdo>#x1a06</ExcludePdo>
+								<ExcludePdo>#x1a07</ExcludePdo>
+								<ExcludePdo>#x1a08</ExcludePdo>
+								<ExcludePdo>#x1a09</ExcludePdo>
+								<ExcludePdo>#x1a0a</ExcludePdo>
+								<ExcludePdo>#x1a0b</ExcludePdo>
+								<ExcludePdo>#x1a0c</ExcludePdo>
+								<Entry Name="Samples__ARRAY [0]" BitLen="32" Index="#x6001" Sub="#x01">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [1]" BitLen="32" Index="#x6001" Sub="#x02">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [2]" BitLen="32" Index="#x6001" Sub="#x03">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [3]" BitLen="32" Index="#x6001" Sub="#x04">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [4]" BitLen="32" Index="#x6001" Sub="#x05">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [5]" BitLen="32" Index="#x6001" Sub="#x06">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [6]" BitLen="32" Index="#x6001" Sub="#x07">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [7]" BitLen="32" Index="#x6001" Sub="#x08">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [8]" BitLen="32" Index="#x6001" Sub="#x09">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [9]" BitLen="32" Index="#x6001" Sub="#x0a">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [10]" BitLen="32" Index="#x6001" Sub="#x0b">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [11]" BitLen="32" Index="#x6001" Sub="#x0c">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [12]" BitLen="32" Index="#x6001" Sub="#x0d">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [13]" BitLen="32" Index="#x6001" Sub="#x0e">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [14]" BitLen="32" Index="#x6001" Sub="#x0f">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [15]" BitLen="32" Index="#x6001" Sub="#x10">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [16]" BitLen="32" Index="#x6001" Sub="#x11">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [17]" BitLen="32" Index="#x6001" Sub="#x12">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [18]" BitLen="32" Index="#x6001" Sub="#x13">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [19]" BitLen="32" Index="#x6001" Sub="#x14">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [20]" BitLen="32" Index="#x6001" Sub="#x15">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [21]" BitLen="32" Index="#x6001" Sub="#x16">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [22]" BitLen="32" Index="#x6001" Sub="#x17">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [23]" BitLen="32" Index="#x6001" Sub="#x18">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [24]" BitLen="32" Index="#x6001" Sub="#x19">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [25]" BitLen="32" Index="#x6001" Sub="#x1a">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [26]" BitLen="32" Index="#x6001" Sub="#x1b">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [27]" BitLen="32" Index="#x6001" Sub="#x1c">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [28]" BitLen="32" Index="#x6001" Sub="#x1d">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [29]" BitLen="32" Index="#x6001" Sub="#x1e">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [30]" BitLen="32" Index="#x6001" Sub="#x1f">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [31]" BitLen="32" Index="#x6001" Sub="#x20">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [32]" BitLen="32" Index="#x6001" Sub="#x21">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [33]" BitLen="32" Index="#x6001" Sub="#x22">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [34]" BitLen="32" Index="#x6001" Sub="#x23">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [35]" BitLen="32" Index="#x6001" Sub="#x24">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [36]" BitLen="32" Index="#x6001" Sub="#x25">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [37]" BitLen="32" Index="#x6001" Sub="#x26">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [38]" BitLen="32" Index="#x6001" Sub="#x27">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [39]" BitLen="32" Index="#x6001" Sub="#x28">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [40]" BitLen="32" Index="#x6001" Sub="#x29">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [41]" BitLen="32" Index="#x6001" Sub="#x2a">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [42]" BitLen="32" Index="#x6001" Sub="#x2b">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [43]" BitLen="32" Index="#x6001" Sub="#x2c">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [44]" BitLen="32" Index="#x6001" Sub="#x2d">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [45]" BitLen="32" Index="#x6001" Sub="#x2e">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [46]" BitLen="32" Index="#x6001" Sub="#x2f">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [47]" BitLen="32" Index="#x6001" Sub="#x30">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [48]" BitLen="32" Index="#x6001" Sub="#x31">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [49]" BitLen="32" Index="#x6001" Sub="#x32">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [50]" BitLen="32" Index="#x6001" Sub="#x33">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [51]" BitLen="32" Index="#x6001" Sub="#x34">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [52]" BitLen="32" Index="#x6001" Sub="#x35">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [53]" BitLen="32" Index="#x6001" Sub="#x36">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [54]" BitLen="32" Index="#x6001" Sub="#x37">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [55]" BitLen="32" Index="#x6001" Sub="#x38">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [56]" BitLen="32" Index="#x6001" Sub="#x39">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [57]" BitLen="32" Index="#x6001" Sub="#x3a">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [58]" BitLen="32" Index="#x6001" Sub="#x3b">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [59]" BitLen="32" Index="#x6001" Sub="#x3c">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [60]" BitLen="32" Index="#x6001" Sub="#x3d">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [61]" BitLen="32" Index="#x6001" Sub="#x3e">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [62]" BitLen="32" Index="#x6001" Sub="#x3f">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [63]" BitLen="32" Index="#x6001" Sub="#x40">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+							</Pdo>
+							<Pdo Name="PAI Synchronous Oversampling" Index="#x1a0e" Flags="#x0010">
+								<Entry Name="Synchronous Oversampling__Internal Buffer" BitLen="16" Index="#x6002" Sub="#x01">
+									<Type>UINT</Type>
+								</Entry>
+							</Pdo>
+							<Pdo Name="PAI Timestamp" Index="#x1a10" Flags="#x0010" SyncMan="3">
+								<Entry Name="StartTimeNextLatch__Low" BitLen="32" Index="#xf600" Sub="#x01">
+									<Type>UDINT</Type>
+								</Entry>
+								<Entry Name="StartTimeNextLatch__Hi" BitLen="32" Index="#xf600" Sub="#x02">
+									<Type>UDINT</Type>
+								</Entry>
+							</Pdo>
+							<Pdo Name="PAI Control" Index="#x1600" InOut="1" Flags="#x0010">
+								<Entry Name="Control__Integrator Reset" BitLen="1" Index="#x7000" Sub="#x01">
+									<Type>BIT</Type>
+									<Comment><![CDATA[restart of integration on rising edge]]></Comment>
+								</Entry>
+								<Entry Name="Control__Peak Hold Reset" BitLen="1" Index="#x7000" Sub="#x02">
+									<Type>BIT</Type>
+									<Comment><![CDATA[starts new peak hold measurement on rising edge]]></Comment>
+								</Entry>
+								<Entry Name="Control__" BitLen="14">
+									<Type GUID="{18071995-0000-0000-0000-00200000000E}">ARRAY [0..13] OF BIT</Type>
+								</Entry>
+							</Pdo>
+							<CoeProfile ProfileNo="22942601"/>
 						</EtherCAT>
 					</Box>
-					<Box Id="7" BoxType="9099" BoxFlags="#x00000020">
-						<Name>Term 7 (EL3351)</Name>
+					<Box Id="20" BoxType="9099" BoxFlags="#x00000020">
+						<Name>Term 20 (EL3751)</Name>
+						<ImageId>1005</ImageId>
+						<Xml>
+							<BeckhoffEcatSlavePlugIn>
+								<Channel>
+									<ChannelNo>0</ChannelNo>
+									<Data>070000000000000001000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001e000000000000000b000000010000000300000000000000040000000000000000000000010000000000000001000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000</Data>
+								</Channel>
+							</BeckhoffEcatSlavePlugIn>
+						</Xml>
+						<EtherCAT SlaveType="2" PdiType="#x0405" MboxDataLinkLayer="true" StateMBoxPolling="true" CfgModeSafeOp="true" CycleMBoxPollingTime="0" CoeType="39" FoeType="1" VendorId="#x00000002" ProductCode="#x0ea73052" RevisionNo="#x00180000" InfoDataAddr="true" InfoDataDcTimes="true" TimeoutMailbox2="2000" CheckRevisionNoType="3" PortPhys="51" MaxSlotCount="256" MaxSlotGroupCount="1" SlotPdoIncrement="1" SlotIndexIncrement="16" Type="EL3751 1Ch. Ana. Input +/-30V, +/-20mA, RTD, Resistor Bridge, 24 bit, high precision" Desc="EL3751" PortABoxInfo="#x01000013">
+							<SyncMan>001040002600010001000000400040004000001026010000</SyncMan>
+							<SyncMan>401040002200010002000000400040004000401022010000</SyncMan>
+							<SyncMan>801000002400000003000000000000000000801024010000</SyncMan>
+							<SyncMan>981034002000010004000000000000001000981020010000</SyncMan>
+							<Fmmu>0000000000000000000000020000000001000000000000000000000000000000</Fmmu>
+							<Fmmu>0000000000000000981000010100000002000000000000000000000000000000</Fmmu>
+							<Fmmu>00000000000000000d0800010100000003000000000000000000000000000000</Fmmu>
+							<BootStrapData>0010f400f410f400</BootStrapData>
+							<DcData>0007000000000000702ffcff0000000001000000000100000000000000000000</DcData>
+							<DcMode>4443494e00000000000000000000000044432d53796e6368726f6e2028696e707574206261736564290000000000000000000000702ffcff00000000000000070100000000000000000001000000000000000000000000000000000000000000</DcMode>
+							<DcMode>4443000000000000000000000000000044432d53796e6368726f6e000000000000000000000000000000000000000000000000000000000000000000000000070100000000000000000000000000000000000000000000000000000000000000</DcMode>
+							<DcMode>53796e6368726f6e0000000000000000534d2d53796e6368726f6e000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000</DcMode>
+							<MBoxUserCmdData>020003000a0000000000000000000000000000000000000000000000000000002000800102000000370000</MBoxUserCmdData>
+							<MBoxUserCmdData>020003000a00000000000000000000000000000000000000000000000000000020008002020000000a0000</MBoxUserCmdData>
+							<MBoxUserCmdData>020003000900000000000000000000000000000000000000000000000000000020008004010000000000</MBoxUserCmdData>
+							<MBoxUserCmdData>020003000a0000000000000000000000000000000000000000000000000000002000801402000000000000</MBoxUserCmdData>
+							<MBoxUserCmdData>020003000a0000000000000000000000000000000000000000000000000000002000801602000000020000</MBoxUserCmdData>
+							<MBoxUserCmdData>020003000a0000000000000000000000000000000000000000000000000000002000801802000000010000</MBoxUserCmdData>
+							<MBoxUserCmdData>020003000a0000000000000000000000000000000000000000000000000000002000801902000000030000</MBoxUserCmdData>
+							<MBoxUserCmdData>020003000a0000000000000000000000000000000000000000000000000000002000801b02000000c80000</MBoxUserCmdData>
+							<MBoxUserCmdData>02000300090000000000000000000000000000000000000000000000000000002000801c010000000000</MBoxUserCmdData>
+							<MBoxUserCmdData>020003000a0000000000000000000000000000000000000000000000000000002000802b02000000000000</MBoxUserCmdData>
+							<MBoxUserCmdData>020003000a0000000000000000000000000000000000000000000000000000002000802c02000000000000</MBoxUserCmdData>
+							<MBoxUserCmdData>020003000a0000000000000000000000000000000000000000000000000000002000802d02000000010000</MBoxUserCmdData>
+							<MBoxUserCmdData>020003000a0000000000000000000000000000000000000000000000000000002000802e02000000000000</MBoxUserCmdData>
+							<MBoxUserCmdData>020003000c00000000000000000000000000000000000000000000000000000020058001040000000000000000</MBoxUserCmdData>
+							<MBoxUserCmdData>020003000c00000000000000000000000000000000000000000000000000000020058002040000000000010000</MBoxUserCmdData>
+							<Pdo Name="PAI Status" Index="#x1a00" Flags="#x0010" SyncMan="3">
+								<Entry Name="Status__No of Samples" BitLen="8" Index="#x6000" Sub="#x01">
+									<Type>USINT</Type>
+									<Comment><![CDATA[number of valid samples in the PDO samples]]></Comment>
+								</Entry>
+								<Entry Name="Status__Error" BitLen="1" Index="#x6000" Sub="#x09">
+									<Type>BIT</Type>
+									<Comment><![CDATA[TRUE: general Error]]></Comment>
+								</Entry>
+								<Entry Name="Status__Underrange" BitLen="1" Index="#x6000" Sub="#x0a">
+									<Type>BIT</Type>
+									<Comment><![CDATA[TRUE: measurement Underrange event]]></Comment>
+								</Entry>
+								<Entry Name="Status__Overrange" BitLen="1" Index="#x6000" Sub="#x0b">
+									<Type>BIT</Type>
+									<Comment><![CDATA[TRUE: measurement Overrange event]]></Comment>
+								</Entry>
+								<Entry Name="Status__" BitLen="1">
+									<Type GUID="{18071995-0000-0000-0000-002000000001}">ARRAY [0..0] OF BIT</Type>
+								</Entry>
+								<Entry Name="Status__Diag" BitLen="1" Index="#x6000" Sub="#x0d">
+									<Type>BIT</Type>
+									<Comment><![CDATA[DiagMessage ready for readout]]></Comment>
+								</Entry>
+								<Entry Name="Status__TxPDO State" BitLen="1" Index="#x6000" Sub="#x0e">
+									<Type>BIT</Type>
+									<Comment><![CDATA[TRUE when this TxPDO is not valid]]></Comment>
+								</Entry>
+								<Entry Name="Status__Input cycle counter" BitLen="2" Index="#x6000" Sub="#x0f">
+									<Type>BIT2</Type>
+									<Comment><![CDATA[2 Bit counter, increments in each EtherCAT cycle +1]]></Comment>
+								</Entry>
+								<Entry Name="Status__" BitLen="16">
+									<Type GUID="{18071995-0000-0000-0000-002000000010}">ARRAY [0..1] OF BYTE</Type>
+								</Entry>
+							</Pdo>
+							<Pdo Name="PAI Samples 1" Index="#x1a01" Flags="#x0010">
+								<ExcludePdo>#x1a02</ExcludePdo>
+								<ExcludePdo>#x1a03</ExcludePdo>
+								<ExcludePdo>#x1a04</ExcludePdo>
+								<ExcludePdo>#x1a05</ExcludePdo>
+								<ExcludePdo>#x1a06</ExcludePdo>
+								<ExcludePdo>#x1a07</ExcludePdo>
+								<ExcludePdo>#x1a08</ExcludePdo>
+								<ExcludePdo>#x1a09</ExcludePdo>
+								<ExcludePdo>#x1a0a</ExcludePdo>
+								<ExcludePdo>#x1a0b</ExcludePdo>
+								<ExcludePdo>#x1a0c</ExcludePdo>
+								<ExcludePdo>#x1a0d</ExcludePdo>
+								<Entry Name="Samples__ARRAY [0]" BitLen="32" Index="#x6001" Sub="#x01">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+							</Pdo>
+							<Pdo Name="PAI Samples 2" Index="#x1a02" Flags="#x0010">
+								<ExcludePdo>#x1a01</ExcludePdo>
+								<ExcludePdo>#x1a03</ExcludePdo>
+								<ExcludePdo>#x1a04</ExcludePdo>
+								<ExcludePdo>#x1a05</ExcludePdo>
+								<ExcludePdo>#x1a06</ExcludePdo>
+								<ExcludePdo>#x1a07</ExcludePdo>
+								<ExcludePdo>#x1a08</ExcludePdo>
+								<ExcludePdo>#x1a09</ExcludePdo>
+								<ExcludePdo>#x1a0a</ExcludePdo>
+								<ExcludePdo>#x1a0b</ExcludePdo>
+								<ExcludePdo>#x1a0c</ExcludePdo>
+								<ExcludePdo>#x1a0d</ExcludePdo>
+								<Entry Name="Samples__ARRAY [0]" BitLen="32" Index="#x6001" Sub="#x01">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [1]" BitLen="32" Index="#x6001" Sub="#x02">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+							</Pdo>
+							<Pdo Name="PAI Samples 4" Index="#x1a03" Flags="#x0010">
+								<ExcludePdo>#x1a01</ExcludePdo>
+								<ExcludePdo>#x1a02</ExcludePdo>
+								<ExcludePdo>#x1a04</ExcludePdo>
+								<ExcludePdo>#x1a05</ExcludePdo>
+								<ExcludePdo>#x1a06</ExcludePdo>
+								<ExcludePdo>#x1a07</ExcludePdo>
+								<ExcludePdo>#x1a08</ExcludePdo>
+								<ExcludePdo>#x1a09</ExcludePdo>
+								<ExcludePdo>#x1a0a</ExcludePdo>
+								<ExcludePdo>#x1a0b</ExcludePdo>
+								<ExcludePdo>#x1a0c</ExcludePdo>
+								<ExcludePdo>#x1a0d</ExcludePdo>
+								<Entry Name="Samples__ARRAY [0]" BitLen="32" Index="#x6001" Sub="#x01">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [1]" BitLen="32" Index="#x6001" Sub="#x02">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [2]" BitLen="32" Index="#x6001" Sub="#x03">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [3]" BitLen="32" Index="#x6001" Sub="#x04">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+							</Pdo>
+							<Pdo Name="PAI Samples 5" Index="#x1a04" Flags="#x0010">
+								<ExcludePdo>#x1a01</ExcludePdo>
+								<ExcludePdo>#x1a02</ExcludePdo>
+								<ExcludePdo>#x1a03</ExcludePdo>
+								<ExcludePdo>#x1a05</ExcludePdo>
+								<ExcludePdo>#x1a06</ExcludePdo>
+								<ExcludePdo>#x1a07</ExcludePdo>
+								<ExcludePdo>#x1a08</ExcludePdo>
+								<ExcludePdo>#x1a09</ExcludePdo>
+								<ExcludePdo>#x1a0a</ExcludePdo>
+								<ExcludePdo>#x1a0b</ExcludePdo>
+								<ExcludePdo>#x1a0c</ExcludePdo>
+								<ExcludePdo>#x1a0d</ExcludePdo>
+								<Entry Name="Samples__ARRAY [0]" BitLen="32" Index="#x6001" Sub="#x01">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [1]" BitLen="32" Index="#x6001" Sub="#x02">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [2]" BitLen="32" Index="#x6001" Sub="#x03">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [3]" BitLen="32" Index="#x6001" Sub="#x04">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [4]" BitLen="32" Index="#x6001" Sub="#x05">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+							</Pdo>
+							<Pdo Name="PAI Samples 8" Index="#x1a05" Flags="#x0010">
+								<ExcludePdo>#x1a01</ExcludePdo>
+								<ExcludePdo>#x1a02</ExcludePdo>
+								<ExcludePdo>#x1a03</ExcludePdo>
+								<ExcludePdo>#x1a04</ExcludePdo>
+								<ExcludePdo>#x1a06</ExcludePdo>
+								<ExcludePdo>#x1a07</ExcludePdo>
+								<ExcludePdo>#x1a08</ExcludePdo>
+								<ExcludePdo>#x1a09</ExcludePdo>
+								<ExcludePdo>#x1a0a</ExcludePdo>
+								<ExcludePdo>#x1a0b</ExcludePdo>
+								<ExcludePdo>#x1a0c</ExcludePdo>
+								<ExcludePdo>#x1a0d</ExcludePdo>
+								<Entry Name="Samples__ARRAY [0]" BitLen="32" Index="#x6001" Sub="#x01">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [1]" BitLen="32" Index="#x6001" Sub="#x02">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [2]" BitLen="32" Index="#x6001" Sub="#x03">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [3]" BitLen="32" Index="#x6001" Sub="#x04">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [4]" BitLen="32" Index="#x6001" Sub="#x05">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [5]" BitLen="32" Index="#x6001" Sub="#x06">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [6]" BitLen="32" Index="#x6001" Sub="#x07">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [7]" BitLen="32" Index="#x6001" Sub="#x08">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+							</Pdo>
+							<Pdo Name="PAI Samples 10" Index="#x1a06" Flags="#x0010" SyncMan="3">
+								<ExcludePdo>#x1a01</ExcludePdo>
+								<ExcludePdo>#x1a02</ExcludePdo>
+								<ExcludePdo>#x1a03</ExcludePdo>
+								<ExcludePdo>#x1a04</ExcludePdo>
+								<ExcludePdo>#x1a05</ExcludePdo>
+								<ExcludePdo>#x1a07</ExcludePdo>
+								<ExcludePdo>#x1a08</ExcludePdo>
+								<ExcludePdo>#x1a09</ExcludePdo>
+								<ExcludePdo>#x1a0a</ExcludePdo>
+								<ExcludePdo>#x1a0b</ExcludePdo>
+								<ExcludePdo>#x1a0c</ExcludePdo>
+								<ExcludePdo>#x1a0d</ExcludePdo>
+								<Entry Name="Samples__ARRAY [0]" BitLen="32" Index="#x6001" Sub="#x01">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [1]" BitLen="32" Index="#x6001" Sub="#x02">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [2]" BitLen="32" Index="#x6001" Sub="#x03">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [3]" BitLen="32" Index="#x6001" Sub="#x04">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [4]" BitLen="32" Index="#x6001" Sub="#x05">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [5]" BitLen="32" Index="#x6001" Sub="#x06">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [6]" BitLen="32" Index="#x6001" Sub="#x07">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [7]" BitLen="32" Index="#x6001" Sub="#x08">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [8]" BitLen="32" Index="#x6001" Sub="#x09">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [9]" BitLen="32" Index="#x6001" Sub="#x0a">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+							</Pdo>
+							<Pdo Name="PAI Samples 16" Index="#x1a07" Flags="#x0010">
+								<ExcludePdo>#x1a01</ExcludePdo>
+								<ExcludePdo>#x1a02</ExcludePdo>
+								<ExcludePdo>#x1a03</ExcludePdo>
+								<ExcludePdo>#x1a04</ExcludePdo>
+								<ExcludePdo>#x1a05</ExcludePdo>
+								<ExcludePdo>#x1a06</ExcludePdo>
+								<ExcludePdo>#x1a08</ExcludePdo>
+								<ExcludePdo>#x1a09</ExcludePdo>
+								<ExcludePdo>#x1a0a</ExcludePdo>
+								<ExcludePdo>#x1a0b</ExcludePdo>
+								<ExcludePdo>#x1a0c</ExcludePdo>
+								<ExcludePdo>#x1a0d</ExcludePdo>
+								<Entry Name="Samples__ARRAY [0]" BitLen="32" Index="#x6001" Sub="#x01">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [1]" BitLen="32" Index="#x6001" Sub="#x02">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [2]" BitLen="32" Index="#x6001" Sub="#x03">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [3]" BitLen="32" Index="#x6001" Sub="#x04">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [4]" BitLen="32" Index="#x6001" Sub="#x05">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [5]" BitLen="32" Index="#x6001" Sub="#x06">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [6]" BitLen="32" Index="#x6001" Sub="#x07">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [7]" BitLen="32" Index="#x6001" Sub="#x08">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [8]" BitLen="32" Index="#x6001" Sub="#x09">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [9]" BitLen="32" Index="#x6001" Sub="#x0a">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [10]" BitLen="32" Index="#x6001" Sub="#x0b">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [11]" BitLen="32" Index="#x6001" Sub="#x0c">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [12]" BitLen="32" Index="#x6001" Sub="#x0d">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [13]" BitLen="32" Index="#x6001" Sub="#x0e">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [14]" BitLen="32" Index="#x6001" Sub="#x0f">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [15]" BitLen="32" Index="#x6001" Sub="#x10">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+							</Pdo>
+							<Pdo Name="PAI Samples 20" Index="#x1a08" Flags="#x0010">
+								<ExcludePdo>#x1a01</ExcludePdo>
+								<ExcludePdo>#x1a02</ExcludePdo>
+								<ExcludePdo>#x1a03</ExcludePdo>
+								<ExcludePdo>#x1a04</ExcludePdo>
+								<ExcludePdo>#x1a05</ExcludePdo>
+								<ExcludePdo>#x1a06</ExcludePdo>
+								<ExcludePdo>#x1a07</ExcludePdo>
+								<ExcludePdo>#x1a09</ExcludePdo>
+								<ExcludePdo>#x1a0a</ExcludePdo>
+								<ExcludePdo>#x1a0b</ExcludePdo>
+								<ExcludePdo>#x1a0c</ExcludePdo>
+								<ExcludePdo>#x1a0d</ExcludePdo>
+								<Entry Name="Samples__ARRAY [0]" BitLen="32" Index="#x6001" Sub="#x01">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [1]" BitLen="32" Index="#x6001" Sub="#x02">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [2]" BitLen="32" Index="#x6001" Sub="#x03">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [3]" BitLen="32" Index="#x6001" Sub="#x04">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [4]" BitLen="32" Index="#x6001" Sub="#x05">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [5]" BitLen="32" Index="#x6001" Sub="#x06">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [6]" BitLen="32" Index="#x6001" Sub="#x07">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [7]" BitLen="32" Index="#x6001" Sub="#x08">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [8]" BitLen="32" Index="#x6001" Sub="#x09">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [9]" BitLen="32" Index="#x6001" Sub="#x0a">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [10]" BitLen="32" Index="#x6001" Sub="#x0b">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [11]" BitLen="32" Index="#x6001" Sub="#x0c">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [12]" BitLen="32" Index="#x6001" Sub="#x0d">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [13]" BitLen="32" Index="#x6001" Sub="#x0e">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [14]" BitLen="32" Index="#x6001" Sub="#x0f">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [15]" BitLen="32" Index="#x6001" Sub="#x10">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [16]" BitLen="32" Index="#x6001" Sub="#x11">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [17]" BitLen="32" Index="#x6001" Sub="#x12">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [18]" BitLen="32" Index="#x6001" Sub="#x13">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [19]" BitLen="32" Index="#x6001" Sub="#x14">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+							</Pdo>
+							<Pdo Name="PAI Samples 25" Index="#x1a09" Flags="#x0010">
+								<ExcludePdo>#x1a01</ExcludePdo>
+								<ExcludePdo>#x1a02</ExcludePdo>
+								<ExcludePdo>#x1a03</ExcludePdo>
+								<ExcludePdo>#x1a04</ExcludePdo>
+								<ExcludePdo>#x1a05</ExcludePdo>
+								<ExcludePdo>#x1a06</ExcludePdo>
+								<ExcludePdo>#x1a07</ExcludePdo>
+								<ExcludePdo>#x1a08</ExcludePdo>
+								<ExcludePdo>#x1a0a</ExcludePdo>
+								<ExcludePdo>#x1a0b</ExcludePdo>
+								<ExcludePdo>#x1a0c</ExcludePdo>
+								<ExcludePdo>#x1a0d</ExcludePdo>
+								<Entry Name="Samples__ARRAY [0]" BitLen="32" Index="#x6001" Sub="#x01">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [1]" BitLen="32" Index="#x6001" Sub="#x02">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [2]" BitLen="32" Index="#x6001" Sub="#x03">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [3]" BitLen="32" Index="#x6001" Sub="#x04">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [4]" BitLen="32" Index="#x6001" Sub="#x05">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [5]" BitLen="32" Index="#x6001" Sub="#x06">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [6]" BitLen="32" Index="#x6001" Sub="#x07">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [7]" BitLen="32" Index="#x6001" Sub="#x08">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [8]" BitLen="32" Index="#x6001" Sub="#x09">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [9]" BitLen="32" Index="#x6001" Sub="#x0a">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [10]" BitLen="32" Index="#x6001" Sub="#x0b">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [11]" BitLen="32" Index="#x6001" Sub="#x0c">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [12]" BitLen="32" Index="#x6001" Sub="#x0d">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [13]" BitLen="32" Index="#x6001" Sub="#x0e">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [14]" BitLen="32" Index="#x6001" Sub="#x0f">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [15]" BitLen="32" Index="#x6001" Sub="#x10">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [16]" BitLen="32" Index="#x6001" Sub="#x11">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [17]" BitLen="32" Index="#x6001" Sub="#x12">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [18]" BitLen="32" Index="#x6001" Sub="#x13">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [19]" BitLen="32" Index="#x6001" Sub="#x14">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [20]" BitLen="32" Index="#x6001" Sub="#x15">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [21]" BitLen="32" Index="#x6001" Sub="#x16">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [22]" BitLen="32" Index="#x6001" Sub="#x17">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [23]" BitLen="32" Index="#x6001" Sub="#x18">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [24]" BitLen="32" Index="#x6001" Sub="#x19">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+							</Pdo>
+							<Pdo Name="PAI Samples 32" Index="#x1a0a" Flags="#x0010">
+								<ExcludePdo>#x1a01</ExcludePdo>
+								<ExcludePdo>#x1a02</ExcludePdo>
+								<ExcludePdo>#x1a03</ExcludePdo>
+								<ExcludePdo>#x1a04</ExcludePdo>
+								<ExcludePdo>#x1a05</ExcludePdo>
+								<ExcludePdo>#x1a06</ExcludePdo>
+								<ExcludePdo>#x1a07</ExcludePdo>
+								<ExcludePdo>#x1a08</ExcludePdo>
+								<ExcludePdo>#x1a09</ExcludePdo>
+								<ExcludePdo>#x1a0b</ExcludePdo>
+								<ExcludePdo>#x1a0c</ExcludePdo>
+								<ExcludePdo>#x1a0d</ExcludePdo>
+								<Entry Name="Samples__ARRAY [0]" BitLen="32" Index="#x6001" Sub="#x01">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [1]" BitLen="32" Index="#x6001" Sub="#x02">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [2]" BitLen="32" Index="#x6001" Sub="#x03">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [3]" BitLen="32" Index="#x6001" Sub="#x04">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [4]" BitLen="32" Index="#x6001" Sub="#x05">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [5]" BitLen="32" Index="#x6001" Sub="#x06">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [6]" BitLen="32" Index="#x6001" Sub="#x07">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [7]" BitLen="32" Index="#x6001" Sub="#x08">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [8]" BitLen="32" Index="#x6001" Sub="#x09">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [9]" BitLen="32" Index="#x6001" Sub="#x0a">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [10]" BitLen="32" Index="#x6001" Sub="#x0b">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [11]" BitLen="32" Index="#x6001" Sub="#x0c">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [12]" BitLen="32" Index="#x6001" Sub="#x0d">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [13]" BitLen="32" Index="#x6001" Sub="#x0e">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [14]" BitLen="32" Index="#x6001" Sub="#x0f">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [15]" BitLen="32" Index="#x6001" Sub="#x10">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [16]" BitLen="32" Index="#x6001" Sub="#x11">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [17]" BitLen="32" Index="#x6001" Sub="#x12">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [18]" BitLen="32" Index="#x6001" Sub="#x13">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [19]" BitLen="32" Index="#x6001" Sub="#x14">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [20]" BitLen="32" Index="#x6001" Sub="#x15">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [21]" BitLen="32" Index="#x6001" Sub="#x16">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [22]" BitLen="32" Index="#x6001" Sub="#x17">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [23]" BitLen="32" Index="#x6001" Sub="#x18">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [24]" BitLen="32" Index="#x6001" Sub="#x19">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [25]" BitLen="32" Index="#x6001" Sub="#x1a">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [26]" BitLen="32" Index="#x6001" Sub="#x1b">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [27]" BitLen="32" Index="#x6001" Sub="#x1c">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [28]" BitLen="32" Index="#x6001" Sub="#x1d">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [29]" BitLen="32" Index="#x6001" Sub="#x1e">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [30]" BitLen="32" Index="#x6001" Sub="#x1f">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [31]" BitLen="32" Index="#x6001" Sub="#x20">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+							</Pdo>
+							<Pdo Name="PAI Samples 40" Index="#x1a0b" Flags="#x0010">
+								<ExcludePdo>#x1a01</ExcludePdo>
+								<ExcludePdo>#x1a02</ExcludePdo>
+								<ExcludePdo>#x1a03</ExcludePdo>
+								<ExcludePdo>#x1a04</ExcludePdo>
+								<ExcludePdo>#x1a05</ExcludePdo>
+								<ExcludePdo>#x1a06</ExcludePdo>
+								<ExcludePdo>#x1a07</ExcludePdo>
+								<ExcludePdo>#x1a08</ExcludePdo>
+								<ExcludePdo>#x1a09</ExcludePdo>
+								<ExcludePdo>#x1a0a</ExcludePdo>
+								<ExcludePdo>#x1a0c</ExcludePdo>
+								<ExcludePdo>#x1a0d</ExcludePdo>
+								<Entry Name="Samples__ARRAY [0]" BitLen="32" Index="#x6001" Sub="#x01">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [1]" BitLen="32" Index="#x6001" Sub="#x02">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [2]" BitLen="32" Index="#x6001" Sub="#x03">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [3]" BitLen="32" Index="#x6001" Sub="#x04">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [4]" BitLen="32" Index="#x6001" Sub="#x05">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [5]" BitLen="32" Index="#x6001" Sub="#x06">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [6]" BitLen="32" Index="#x6001" Sub="#x07">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [7]" BitLen="32" Index="#x6001" Sub="#x08">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [8]" BitLen="32" Index="#x6001" Sub="#x09">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [9]" BitLen="32" Index="#x6001" Sub="#x0a">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [10]" BitLen="32" Index="#x6001" Sub="#x0b">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [11]" BitLen="32" Index="#x6001" Sub="#x0c">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [12]" BitLen="32" Index="#x6001" Sub="#x0d">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [13]" BitLen="32" Index="#x6001" Sub="#x0e">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [14]" BitLen="32" Index="#x6001" Sub="#x0f">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [15]" BitLen="32" Index="#x6001" Sub="#x10">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [16]" BitLen="32" Index="#x6001" Sub="#x11">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [17]" BitLen="32" Index="#x6001" Sub="#x12">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [18]" BitLen="32" Index="#x6001" Sub="#x13">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [19]" BitLen="32" Index="#x6001" Sub="#x14">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [20]" BitLen="32" Index="#x6001" Sub="#x15">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [21]" BitLen="32" Index="#x6001" Sub="#x16">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [22]" BitLen="32" Index="#x6001" Sub="#x17">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [23]" BitLen="32" Index="#x6001" Sub="#x18">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [24]" BitLen="32" Index="#x6001" Sub="#x19">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [25]" BitLen="32" Index="#x6001" Sub="#x1a">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [26]" BitLen="32" Index="#x6001" Sub="#x1b">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [27]" BitLen="32" Index="#x6001" Sub="#x1c">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [28]" BitLen="32" Index="#x6001" Sub="#x1d">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [29]" BitLen="32" Index="#x6001" Sub="#x1e">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [30]" BitLen="32" Index="#x6001" Sub="#x1f">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [31]" BitLen="32" Index="#x6001" Sub="#x20">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [32]" BitLen="32" Index="#x6001" Sub="#x21">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [33]" BitLen="32" Index="#x6001" Sub="#x22">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [34]" BitLen="32" Index="#x6001" Sub="#x23">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [35]" BitLen="32" Index="#x6001" Sub="#x24">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [36]" BitLen="32" Index="#x6001" Sub="#x25">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [37]" BitLen="32" Index="#x6001" Sub="#x26">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [38]" BitLen="32" Index="#x6001" Sub="#x27">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [39]" BitLen="32" Index="#x6001" Sub="#x28">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+							</Pdo>
+							<Pdo Name="PAI Samples 50" Index="#x1a0c" Flags="#x0010">
+								<ExcludePdo>#x1a01</ExcludePdo>
+								<ExcludePdo>#x1a02</ExcludePdo>
+								<ExcludePdo>#x1a03</ExcludePdo>
+								<ExcludePdo>#x1a04</ExcludePdo>
+								<ExcludePdo>#x1a05</ExcludePdo>
+								<ExcludePdo>#x1a06</ExcludePdo>
+								<ExcludePdo>#x1a07</ExcludePdo>
+								<ExcludePdo>#x1a08</ExcludePdo>
+								<ExcludePdo>#x1a09</ExcludePdo>
+								<ExcludePdo>#x1a0a</ExcludePdo>
+								<ExcludePdo>#x1a0b</ExcludePdo>
+								<ExcludePdo>#x1a0d</ExcludePdo>
+								<Entry Name="Samples__ARRAY [0]" BitLen="32" Index="#x6001" Sub="#x01">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [1]" BitLen="32" Index="#x6001" Sub="#x02">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [2]" BitLen="32" Index="#x6001" Sub="#x03">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [3]" BitLen="32" Index="#x6001" Sub="#x04">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [4]" BitLen="32" Index="#x6001" Sub="#x05">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [5]" BitLen="32" Index="#x6001" Sub="#x06">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [6]" BitLen="32" Index="#x6001" Sub="#x07">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [7]" BitLen="32" Index="#x6001" Sub="#x08">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [8]" BitLen="32" Index="#x6001" Sub="#x09">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [9]" BitLen="32" Index="#x6001" Sub="#x0a">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [10]" BitLen="32" Index="#x6001" Sub="#x0b">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [11]" BitLen="32" Index="#x6001" Sub="#x0c">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [12]" BitLen="32" Index="#x6001" Sub="#x0d">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [13]" BitLen="32" Index="#x6001" Sub="#x0e">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [14]" BitLen="32" Index="#x6001" Sub="#x0f">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [15]" BitLen="32" Index="#x6001" Sub="#x10">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [16]" BitLen="32" Index="#x6001" Sub="#x11">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [17]" BitLen="32" Index="#x6001" Sub="#x12">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [18]" BitLen="32" Index="#x6001" Sub="#x13">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [19]" BitLen="32" Index="#x6001" Sub="#x14">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [20]" BitLen="32" Index="#x6001" Sub="#x15">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [21]" BitLen="32" Index="#x6001" Sub="#x16">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [22]" BitLen="32" Index="#x6001" Sub="#x17">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [23]" BitLen="32" Index="#x6001" Sub="#x18">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [24]" BitLen="32" Index="#x6001" Sub="#x19">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [25]" BitLen="32" Index="#x6001" Sub="#x1a">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [26]" BitLen="32" Index="#x6001" Sub="#x1b">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [27]" BitLen="32" Index="#x6001" Sub="#x1c">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [28]" BitLen="32" Index="#x6001" Sub="#x1d">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [29]" BitLen="32" Index="#x6001" Sub="#x1e">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [30]" BitLen="32" Index="#x6001" Sub="#x1f">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [31]" BitLen="32" Index="#x6001" Sub="#x20">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [32]" BitLen="32" Index="#x6001" Sub="#x21">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [33]" BitLen="32" Index="#x6001" Sub="#x22">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [34]" BitLen="32" Index="#x6001" Sub="#x23">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [35]" BitLen="32" Index="#x6001" Sub="#x24">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [36]" BitLen="32" Index="#x6001" Sub="#x25">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [37]" BitLen="32" Index="#x6001" Sub="#x26">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [38]" BitLen="32" Index="#x6001" Sub="#x27">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [39]" BitLen="32" Index="#x6001" Sub="#x28">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [40]" BitLen="32" Index="#x6001" Sub="#x29">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [41]" BitLen="32" Index="#x6001" Sub="#x2a">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [42]" BitLen="32" Index="#x6001" Sub="#x2b">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [43]" BitLen="32" Index="#x6001" Sub="#x2c">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [44]" BitLen="32" Index="#x6001" Sub="#x2d">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [45]" BitLen="32" Index="#x6001" Sub="#x2e">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [46]" BitLen="32" Index="#x6001" Sub="#x2f">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [47]" BitLen="32" Index="#x6001" Sub="#x30">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [48]" BitLen="32" Index="#x6001" Sub="#x31">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [49]" BitLen="32" Index="#x6001" Sub="#x32">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+							</Pdo>
+							<Pdo Name="PAI Samples 64" Index="#x1a0d" Flags="#x0010">
+								<ExcludePdo>#x1a01</ExcludePdo>
+								<ExcludePdo>#x1a02</ExcludePdo>
+								<ExcludePdo>#x1a03</ExcludePdo>
+								<ExcludePdo>#x1a04</ExcludePdo>
+								<ExcludePdo>#x1a05</ExcludePdo>
+								<ExcludePdo>#x1a06</ExcludePdo>
+								<ExcludePdo>#x1a07</ExcludePdo>
+								<ExcludePdo>#x1a08</ExcludePdo>
+								<ExcludePdo>#x1a09</ExcludePdo>
+								<ExcludePdo>#x1a0a</ExcludePdo>
+								<ExcludePdo>#x1a0b</ExcludePdo>
+								<ExcludePdo>#x1a0c</ExcludePdo>
+								<Entry Name="Samples__ARRAY [0]" BitLen="32" Index="#x6001" Sub="#x01">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [1]" BitLen="32" Index="#x6001" Sub="#x02">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [2]" BitLen="32" Index="#x6001" Sub="#x03">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [3]" BitLen="32" Index="#x6001" Sub="#x04">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [4]" BitLen="32" Index="#x6001" Sub="#x05">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [5]" BitLen="32" Index="#x6001" Sub="#x06">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [6]" BitLen="32" Index="#x6001" Sub="#x07">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [7]" BitLen="32" Index="#x6001" Sub="#x08">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [8]" BitLen="32" Index="#x6001" Sub="#x09">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [9]" BitLen="32" Index="#x6001" Sub="#x0a">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [10]" BitLen="32" Index="#x6001" Sub="#x0b">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [11]" BitLen="32" Index="#x6001" Sub="#x0c">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [12]" BitLen="32" Index="#x6001" Sub="#x0d">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [13]" BitLen="32" Index="#x6001" Sub="#x0e">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [14]" BitLen="32" Index="#x6001" Sub="#x0f">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [15]" BitLen="32" Index="#x6001" Sub="#x10">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [16]" BitLen="32" Index="#x6001" Sub="#x11">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [17]" BitLen="32" Index="#x6001" Sub="#x12">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [18]" BitLen="32" Index="#x6001" Sub="#x13">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [19]" BitLen="32" Index="#x6001" Sub="#x14">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [20]" BitLen="32" Index="#x6001" Sub="#x15">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [21]" BitLen="32" Index="#x6001" Sub="#x16">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [22]" BitLen="32" Index="#x6001" Sub="#x17">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [23]" BitLen="32" Index="#x6001" Sub="#x18">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [24]" BitLen="32" Index="#x6001" Sub="#x19">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [25]" BitLen="32" Index="#x6001" Sub="#x1a">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [26]" BitLen="32" Index="#x6001" Sub="#x1b">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [27]" BitLen="32" Index="#x6001" Sub="#x1c">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [28]" BitLen="32" Index="#x6001" Sub="#x1d">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [29]" BitLen="32" Index="#x6001" Sub="#x1e">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [30]" BitLen="32" Index="#x6001" Sub="#x1f">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [31]" BitLen="32" Index="#x6001" Sub="#x20">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [32]" BitLen="32" Index="#x6001" Sub="#x21">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [33]" BitLen="32" Index="#x6001" Sub="#x22">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [34]" BitLen="32" Index="#x6001" Sub="#x23">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [35]" BitLen="32" Index="#x6001" Sub="#x24">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [36]" BitLen="32" Index="#x6001" Sub="#x25">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [37]" BitLen="32" Index="#x6001" Sub="#x26">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [38]" BitLen="32" Index="#x6001" Sub="#x27">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [39]" BitLen="32" Index="#x6001" Sub="#x28">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [40]" BitLen="32" Index="#x6001" Sub="#x29">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [41]" BitLen="32" Index="#x6001" Sub="#x2a">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [42]" BitLen="32" Index="#x6001" Sub="#x2b">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [43]" BitLen="32" Index="#x6001" Sub="#x2c">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [44]" BitLen="32" Index="#x6001" Sub="#x2d">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [45]" BitLen="32" Index="#x6001" Sub="#x2e">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [46]" BitLen="32" Index="#x6001" Sub="#x2f">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [47]" BitLen="32" Index="#x6001" Sub="#x30">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [48]" BitLen="32" Index="#x6001" Sub="#x31">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [49]" BitLen="32" Index="#x6001" Sub="#x32">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [50]" BitLen="32" Index="#x6001" Sub="#x33">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [51]" BitLen="32" Index="#x6001" Sub="#x34">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [52]" BitLen="32" Index="#x6001" Sub="#x35">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [53]" BitLen="32" Index="#x6001" Sub="#x36">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [54]" BitLen="32" Index="#x6001" Sub="#x37">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [55]" BitLen="32" Index="#x6001" Sub="#x38">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [56]" BitLen="32" Index="#x6001" Sub="#x39">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [57]" BitLen="32" Index="#x6001" Sub="#x3a">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [58]" BitLen="32" Index="#x6001" Sub="#x3b">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [59]" BitLen="32" Index="#x6001" Sub="#x3c">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [60]" BitLen="32" Index="#x6001" Sub="#x3d">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [61]" BitLen="32" Index="#x6001" Sub="#x3e">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [62]" BitLen="32" Index="#x6001" Sub="#x3f">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+								<Entry Name="Samples__ARRAY [63]" BitLen="32" Index="#x6001" Sub="#x40">
+									<Type>DINT</Type>
+									<Comment><![CDATA[Samples]]></Comment>
+								</Entry>
+							</Pdo>
+							<Pdo Name="PAI Synchronous Oversampling" Index="#x1a0e" Flags="#x0010">
+								<Entry Name="Synchronous Oversampling__Internal Buffer" BitLen="16" Index="#x6002" Sub="#x01">
+									<Type>UINT</Type>
+								</Entry>
+							</Pdo>
+							<Pdo Name="PAI Timestamp" Index="#x1a10" Flags="#x0010" SyncMan="3">
+								<Entry Name="StartTimeNextLatch__Low" BitLen="32" Index="#xf600" Sub="#x01">
+									<Type>UDINT</Type>
+								</Entry>
+								<Entry Name="StartTimeNextLatch__Hi" BitLen="32" Index="#xf600" Sub="#x02">
+									<Type>UDINT</Type>
+								</Entry>
+							</Pdo>
+							<Pdo Name="PAI Control" Index="#x1600" InOut="1" Flags="#x0010">
+								<Entry Name="Control__Integrator Reset" BitLen="1" Index="#x7000" Sub="#x01">
+									<Type>BIT</Type>
+									<Comment><![CDATA[restart of integration on rising edge]]></Comment>
+								</Entry>
+								<Entry Name="Control__Peak Hold Reset" BitLen="1" Index="#x7000" Sub="#x02">
+									<Type>BIT</Type>
+									<Comment><![CDATA[starts new peak hold measurement on rising edge]]></Comment>
+								</Entry>
+								<Entry Name="Control__" BitLen="14">
+									<Type GUID="{18071995-0000-0000-0000-00200000000E}">ARRAY [0..13] OF BIT</Type>
+								</Entry>
+							</Pdo>
+							<CoeProfile ProfileNo="22942601"/>
+						</EtherCAT>
+					</Box>
+					<Box Id="21" BoxType="9099" BoxFlags="#x00000020">
+						<Name>Term 21 (EL3202)</Name>
 						<ImageId>1001</ImageId>
 						<Xml>
 							<BeckhoffEcatSlavePlugIn>
 								<Channel>
 									<ChannelNo>0</ChannelNo>
-									<Data>01000000000000000100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001000000010000000000000001000000000000000000000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000</Data>
+									<Data>01000000000000000100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001000000020000000000000001000000000000000000000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000000000000000000000100000000000000010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000</Data>
 								</Channel>
 								<Channel>
 									<ChannelNo>1</ChannelNo>
@@ -1232,173 +4021,7 @@ Bit1: Value smaller than Limit2]]></Comment>
 								</Channel>
 							</BeckhoffEcatSlavePlugIn>
 						</Xml>
-						<EtherCAT SlaveType="2" PdiType="#x0005" MboxDataLinkLayer="true" StateMBoxPolling="true" CycleMBoxPollingTime="0" CoeType="7" FoeType="1" VendorId="#x00000002" ProductCode="#x0d173052" RevisionNo="#x00140000" InfoDataAddr="true" TimeoutMailbox2="2000" PortPhys="51" MaxSlotCount="256" MaxSlotGroupCount="1" SlotPdoIncrement="1" SlotIndexIncrement="16" Type="EL3351 1Ch. Ana. Input Resistor Bridge Terminal, Diff. 16bit" Desc="EL3351" PortABoxInfo="#x01000006">
-							<SyncMan>001080002600010001000000800080008000001026010000</SyncMan>
-							<SyncMan>801080002200010002000000800080008000801022010000</SyncMan>
-							<SyncMan>001100000400000003000000000000000000001104000000</SyncMan>
-							<SyncMan>80110c002000010004000000000000000c00801120010000</SyncMan>
-							<Fmmu>0000000000000000801100010100000002000000000000000000000000000000</Fmmu>
-							<Fmmu>00000000000000000d0800010100000003000000000000000000000000000000</Fmmu>
-							<BootStrapData>0010f400f410f400</BootStrapData>
-							<MBoxUserCmdData>0200030026000000000000000000000000000000000000000000000000000000300080011e0000002004000000000000010000000000000000000000000000000000ffff7f0000</MBoxUserCmdData>
-							<MBoxUserCmdData>0200030026000000000000000000000000000000000000000000000000000000301080011e0000000004000000000000010000000000000000000000000000000000ffff7f0000</MBoxUserCmdData>
-							<Pdo Name="AIBridge Inputs" Index="#x1a00" Flags="#x0010" SyncMan="3">
-								<Entry Name="Underrange" BitLen="1" Index="#x6000" Sub="#x01">
-									<Type>BIT</Type>
-								</Entry>
-								<Entry Name="Overrange" BitLen="1" Index="#x6000" Sub="#x02">
-									<Type>BIT</Type>
-								</Entry>
-								<Entry BitLen="4">
-									<Type GUID="{18071995-0000-0000-0000-002000000004}">ARRAY [0..3] OF BIT</Type>
-								</Entry>
-								<Entry Name="Error" BitLen="1" Index="#x6000" Sub="#x07">
-									<Type>BIT</Type>
-								</Entry>
-								<Entry BitLen="7">
-									<Type GUID="{18071995-0000-0000-0000-002000000007}">ARRAY [0..6] OF BIT</Type>
-								</Entry>
-								<Entry Name="TxPDO State" BitLen="1" Index="#x1800" Sub="#x07">
-									<Type>BIT</Type>
-								</Entry>
-								<Entry Name="TxPDO Toggle" BitLen="1" Index="#x1800" Sub="#x09">
-									<Type>BIT</Type>
-								</Entry>
-								<Entry Name="Value" BitLen="32" Index="#x6000" Sub="#x11">
-									<Type>DINT</Type>
-								</Entry>
-							</Pdo>
-							<Pdo Name="AISupply Inputs" Index="#x1a01" Flags="#x0010" SyncMan="3">
-								<Entry Name="Underrange" BitLen="1" Index="#x6010" Sub="#x01">
-									<Type>BIT</Type>
-								</Entry>
-								<Entry Name="Overrange" BitLen="1" Index="#x6010" Sub="#x02">
-									<Type>BIT</Type>
-								</Entry>
-								<Entry BitLen="4">
-									<Type GUID="{18071995-0000-0000-0000-002000000004}">ARRAY [0..3] OF BIT</Type>
-								</Entry>
-								<Entry Name="Error" BitLen="1" Index="#x6010" Sub="#x07">
-									<Type>BIT</Type>
-								</Entry>
-								<Entry BitLen="7">
-									<Type GUID="{18071995-0000-0000-0000-002000000007}">ARRAY [0..6] OF BIT</Type>
-								</Entry>
-								<Entry Name="TxPDO State" BitLen="1" Index="#x1801" Sub="#x07">
-									<Type>BIT</Type>
-								</Entry>
-								<Entry Name="TxPDO Toggle" BitLen="1" Index="#x1801" Sub="#x09">
-									<Type>BIT</Type>
-								</Entry>
-								<Entry Name="Value" BitLen="32" Index="#x6010" Sub="#x11">
-									<Type>DINT</Type>
-								</Entry>
-							</Pdo>
-							<CoeProfile ProfileNo="19665801"/>
-							<CoeProfile ProfileNo="19665801"/>
-						</EtherCAT>
-					</Box>
-					<Box Id="8" BoxType="9099">
-						<Name>Term 8 (EL9510)</Name>
-						<ImageId>1005</ImageId>
-						<EtherCAT SlaveType="1" PdiType="#x0104" CycleMBoxPollingTime="0" VendorId="#x00000002" ProductCode="#x25263052" RevisionNo="#x00120000" RepeatSupport="true" PortPhys="51" MaxSlotCount="256" MaxSlotGroupCount="1" SlotPdoIncrement="1" SlotIndexIncrement="16" Type="EL9510 Power supply terminal 10V" Desc="EL9510" PortABoxInfo="#x01000007">
-							<SyncMan>001001000000010004000000000000000000001000000000</SyncMan>
-							<Fmmu>0000000000000000001000010100000002000000000000000000000000000000</Fmmu>
-							<Pdo Name="Status Uo" Index="#x1a00" Flags="#x0011" SyncMan="0">
-								<Entry Name="Power OK" Index="#x6000" Sub="#x01">
-									<Type>BIT</Type>
-								</Entry>
-								<Entry Name="Overload" Index="#x6000" Sub="#x02">
-									<Type>BIT</Type>
-								</Entry>
-							</Pdo>
-						</EtherCAT>
-					</Box>
-					<Box Id="9" BoxType="9099" BoxFlags="#x00000020">
-						<Name>Term 9 (EL3351)</Name>
-						<ImageId>1001</ImageId>
-						<Xml>
-							<BeckhoffEcatSlavePlugIn>
-								<Channel>
-									<ChannelNo>0</ChannelNo>
-									<Data>01000000000000000100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001000000010000000000000001000000000000000000000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000</Data>
-								</Channel>
-								<Channel>
-									<ChannelNo>1</ChannelNo>
-									<Data>01000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000002000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000</Data>
-								</Channel>
-							</BeckhoffEcatSlavePlugIn>
-						</Xml>
-						<EtherCAT SlaveType="2" PdiType="#x0005" MboxDataLinkLayer="true" StateMBoxPolling="true" CycleMBoxPollingTime="0" CoeType="7" FoeType="1" VendorId="#x00000002" ProductCode="#x0d173052" RevisionNo="#x00140000" InfoDataAddr="true" TimeoutMailbox2="2000" PortPhys="51" MaxSlotCount="256" MaxSlotGroupCount="1" SlotPdoIncrement="1" SlotIndexIncrement="16" Type="EL3351 1Ch. Ana. Input Resistor Bridge Terminal, Diff. 16bit" Desc="EL3351" PortABoxInfo="#x01000008">
-							<SyncMan>001080002600010001000000800080008000001026010000</SyncMan>
-							<SyncMan>801080002200010002000000800080008000801022010000</SyncMan>
-							<SyncMan>001100000400000003000000000000000000001104000000</SyncMan>
-							<SyncMan>80110c002000010004000000000000000c00801120010000</SyncMan>
-							<Fmmu>0000000000000000801100010100000002000000000000000000000000000000</Fmmu>
-							<Fmmu>00000000000000000d0800010100000003000000000000000000000000000000</Fmmu>
-							<BootStrapData>0010f400f410f400</BootStrapData>
-							<MBoxUserCmdData>0200030026000000000000000000000000000000000000000000000000000000300080011e0000002004000000000000010000000000000000000000000000000000ffff7f0000</MBoxUserCmdData>
-							<MBoxUserCmdData>0200030026000000000000000000000000000000000000000000000000000000301080011e0000000004000000000000010000000000000000000000000000000000ffff7f0000</MBoxUserCmdData>
-							<Pdo Name="AIBridge Inputs" Index="#x1a00" Flags="#x0010" SyncMan="3">
-								<Entry Name="Underrange" BitLen="1" Index="#x6000" Sub="#x01">
-									<Type>BIT</Type>
-								</Entry>
-								<Entry Name="Overrange" BitLen="1" Index="#x6000" Sub="#x02">
-									<Type>BIT</Type>
-								</Entry>
-								<Entry BitLen="4">
-									<Type GUID="{18071995-0000-0000-0000-002000000004}">ARRAY [0..3] OF BIT</Type>
-								</Entry>
-								<Entry Name="Error" BitLen="1" Index="#x6000" Sub="#x07">
-									<Type>BIT</Type>
-								</Entry>
-								<Entry BitLen="7">
-									<Type GUID="{18071995-0000-0000-0000-002000000007}">ARRAY [0..6] OF BIT</Type>
-								</Entry>
-								<Entry Name="TxPDO State" BitLen="1" Index="#x1800" Sub="#x07">
-									<Type>BIT</Type>
-								</Entry>
-								<Entry Name="TxPDO Toggle" BitLen="1" Index="#x1800" Sub="#x09">
-									<Type>BIT</Type>
-								</Entry>
-								<Entry Name="Value" BitLen="32" Index="#x6000" Sub="#x11">
-									<Type>DINT</Type>
-								</Entry>
-							</Pdo>
-							<Pdo Name="AISupply Inputs" Index="#x1a01" Flags="#x0010" SyncMan="3">
-								<Entry Name="Underrange" BitLen="1" Index="#x6010" Sub="#x01">
-									<Type>BIT</Type>
-								</Entry>
-								<Entry Name="Overrange" BitLen="1" Index="#x6010" Sub="#x02">
-									<Type>BIT</Type>
-								</Entry>
-								<Entry BitLen="4">
-									<Type GUID="{18071995-0000-0000-0000-002000000004}">ARRAY [0..3] OF BIT</Type>
-								</Entry>
-								<Entry Name="Error" BitLen="1" Index="#x6010" Sub="#x07">
-									<Type>BIT</Type>
-								</Entry>
-								<Entry BitLen="7">
-									<Type GUID="{18071995-0000-0000-0000-002000000007}">ARRAY [0..6] OF BIT</Type>
-								</Entry>
-								<Entry Name="TxPDO State" BitLen="1" Index="#x1801" Sub="#x07">
-									<Type>BIT</Type>
-								</Entry>
-								<Entry Name="TxPDO Toggle" BitLen="1" Index="#x1801" Sub="#x09">
-									<Type>BIT</Type>
-								</Entry>
-								<Entry Name="Value" BitLen="32" Index="#x6010" Sub="#x11">
-									<Type>DINT</Type>
-								</Entry>
-							</Pdo>
-							<CoeProfile ProfileNo="19665801"/>
-							<CoeProfile ProfileNo="19665801"/>
-						</EtherCAT>
-					</Box>
-					<Box Id="10" BoxType="9099" BoxFlags="#x00000020">
-						<Name>Term 10 (EL3202)</Name>
-						<ImageId>1001</ImageId>
-						<EtherCAT SlaveType="2" PdiType="#x0005" MboxDataLinkLayer="true" StateMBoxPolling="true" CycleMBoxPollingTime="0" CoeType="3" FoeType="1" VendorId="#x00000002" ProductCode="#x0c823052" RevisionNo="#x00160000" InfoDataAddr="true" TimeoutMailbox2="2000" CheckRevisionNoType="3" PortPhys="51" MaxSlotCount="256" MaxSlotGroupCount="1" SlotPdoIncrement="1" SlotIndexIncrement="16" Type="EL3202 2Ch. Ana. Input PT100 (RTD)" Desc="EL3202" PortABoxInfo="#x01000009">
+						<EtherCAT SlaveType="2" PdiType="#x0005" MboxDataLinkLayer="true" StateMBoxPolling="true" CycleMBoxPollingTime="0" CoeType="3" FoeType="1" VendorId="#x00000002" ProductCode="#x0c823052" RevisionNo="#x00160000" InfoDataAddr="true" TimeoutMailbox2="2000" CheckRevisionNoType="3" PortPhys="51" MaxSlotCount="256" MaxSlotGroupCount="1" SlotPdoIncrement="1" SlotIndexIncrement="16" Type="EL3202 2Ch. Ana. Input PT100 (RTD)" Desc="EL3202" PortABoxInfo="#x01000014">
 							<SyncMan>001080002600010001000000800080008000001026010000</SyncMan>
 							<SyncMan>801080002200010002000000800080008000801022010000</SyncMan>
 							<SyncMan>001100000400000003000000000000000000001104000000</SyncMan>
@@ -1406,61 +4029,63 @@ Bit1: Value smaller than Limit2]]></Comment>
 							<Fmmu>0000000000000000801100010100000002000000000000000000000000000000</Fmmu>
 							<Fmmu>00000000000000000d0800010100000003000000000000000000000000000000</Fmmu>
 							<BootStrapData>0010f400f410f400</BootStrapData>
+							<MBoxUserCmdData>0200030022000000000000000000000000000000000000000000000000000000300080011a000000200400000000010000000000010000000000ffff00000000000000</MBoxUserCmdData>
+							<MBoxUserCmdData>0200030022000000000000000000000000000000000000000000000000000000301080011a000000000400000000010000000000000000000000ffff00000000000000</MBoxUserCmdData>
 							<Pdo Name="RTD Inputs Channel 1" Index="#x1a00" Flags="#x0011" SyncMan="3">
-								<Entry Name="Status__Underrange" Index="#x6000" Sub="#x01">
+								<Entry Name="Status__Underrange" BitLen="1" Index="#x6000" Sub="#x01" Flags="#x00050000">
 									<Type>BIT</Type>
 								</Entry>
-								<Entry Name="Status__Overrange" Index="#x6000" Sub="#x02">
+								<Entry Name="Status__Overrange" BitLen="1" Index="#x6000" Sub="#x02" Flags="#x00050000">
 									<Type>BIT</Type>
 								</Entry>
-								<Entry Name="Status__Limit 1" Index="#x6000" Sub="#x03">
+								<Entry Name="Status__Limit 1" BitLen="2" Index="#x6000" Sub="#x03" Flags="#x00050000">
 									<Type>BIT2</Type>
 								</Entry>
-								<Entry Name="Status__Limit 2" Index="#x6000" Sub="#x05">
+								<Entry Name="Status__Limit 2" BitLen="2" Index="#x6000" Sub="#x05" Flags="#x00050000">
 									<Type>BIT2</Type>
 								</Entry>
-								<Entry Name="Status__Error" Index="#x6000" Sub="#x07">
+								<Entry Name="Status__Error" BitLen="1" Index="#x6000" Sub="#x07" Flags="#x00050000">
 									<Type>BIT</Type>
 								</Entry>
-								<Entry>
+								<Entry BitLen="7">
 									<Type GUID="{18071995-0000-0000-0000-002000000007}">ARRAY [0..6] OF BIT</Type>
 								</Entry>
-								<Entry Name="Status__TxPDO State" Index="#x1800" Sub="#x07">
+								<Entry Name="Status__TxPDO State" BitLen="1" Index="#x1800" Sub="#x07" Flags="#x00050000">
 									<Type>BIT</Type>
 								</Entry>
-								<Entry Name="Status__TxPDO Toggle" Index="#x1800" Sub="#x09">
+								<Entry Name="Status__TxPDO Toggle" BitLen="1" Index="#x1800" Sub="#x09" Flags="#x00050000">
 									<Type>BIT</Type>
 								</Entry>
-								<Entry Name="Value" Index="#x6000" Sub="#x11" Flags="#x00050000">
+								<Entry Name="Value" BitLen="16" Index="#x6000" Sub="#x11" Flags="#x00050000">
 									<Type>INT</Type>
 								</Entry>
 							</Pdo>
 							<Pdo Name="RTD Inputs Channel 2" Index="#x1a01" Flags="#x0011" SyncMan="3">
-								<Entry Name="Status__Underrange" Index="#x6010" Sub="#x01">
+								<Entry Name="Status__Underrange" BitLen="1" Index="#x6010" Sub="#x01" Flags="#x00050000">
 									<Type>BIT</Type>
 								</Entry>
-								<Entry Name="Status__Overrange" Index="#x6010" Sub="#x02">
+								<Entry Name="Status__Overrange" BitLen="1" Index="#x6010" Sub="#x02" Flags="#x00050000">
 									<Type>BIT</Type>
 								</Entry>
-								<Entry Name="Status__Limit 1" Index="#x6010" Sub="#x03">
+								<Entry Name="Status__Limit 1" BitLen="2" Index="#x6010" Sub="#x03" Flags="#x00050000">
 									<Type>BIT2</Type>
 								</Entry>
-								<Entry Name="Status__Limit 2" Index="#x6010" Sub="#x05">
+								<Entry Name="Status__Limit 2" BitLen="2" Index="#x6010" Sub="#x05" Flags="#x00050000">
 									<Type>BIT2</Type>
 								</Entry>
-								<Entry Name="Status__Error" Index="#x6010" Sub="#x07">
+								<Entry Name="Status__Error" BitLen="1" Index="#x6010" Sub="#x07" Flags="#x00050000">
 									<Type>BIT</Type>
 								</Entry>
-								<Entry>
+								<Entry BitLen="7">
 									<Type GUID="{18071995-0000-0000-0000-002000000007}">ARRAY [0..6] OF BIT</Type>
 								</Entry>
-								<Entry Name="Status__TxPDO State" Index="#x1801" Sub="#x07">
+								<Entry Name="Status__TxPDO State" BitLen="1" Index="#x1801" Sub="#x07" Flags="#x00050000">
 									<Type>BIT</Type>
 								</Entry>
-								<Entry Name="Status__TxPDO Toggle" Index="#x1801" Sub="#x09">
+								<Entry Name="Status__TxPDO Toggle" BitLen="1" Index="#x1801" Sub="#x09" Flags="#x00050000">
 									<Type>BIT</Type>
 								</Entry>
-								<Entry Name="Value" Index="#x6010" Sub="#x11" Flags="#x00050000">
+								<Entry Name="Value" BitLen="16" Index="#x6010" Sub="#x11" Flags="#x00050000">
 									<Type>INT</Type>
 								</Entry>
 							</Pdo>
@@ -1468,16 +4093,16 @@ Bit1: Value smaller than Limit2]]></Comment>
 							<CoeProfile ProfileNo="20976521"/>
 						</EtherCAT>
 					</Box>
-					<Box Id="13" BoxType="9099">
-						<Name>Term 13 (EL9011)</Name>
+					<Box Id="24" BoxType="9099">
+						<Name>Term 24 (EL9011)</Name>
 						<ImageId>1002</ImageId>
-						<EtherCAT CycleMBoxPollingTime="0" VendorId="#x00000002" ProductCode="#x23333050" InfoDataState="false" MaxSlotCount="256" MaxSlotGroupCount="1" SlotPdoIncrement="1" SlotIndexIncrement="16" Type="EL9011 End Terminal" Desc="EL9011" PortABoxInfo="#x0100000a"/>
+						<EtherCAT CycleMBoxPollingTime="0" VendorId="#x00000002" ProductCode="#x23333050" InfoDataState="false" MaxSlotCount="256" MaxSlotGroupCount="1" SlotPdoIncrement="1" SlotIndexIncrement="16" Type="EL9011 End Terminal" Desc="EL9011" PortABoxInfo="#x01000015"/>
 					</Box>
 				</Box>
-				<Box Id="11" BoxType="9099" BoxFlags="#x00000020">
-					<Name>Drive 11 (Elmo Drive )</Name>
+				<Box Id="22" BoxType="9099" BoxFlags="#x00000020">
+					<Name>Drive 22 (Elmo Drive )</Name>
 					<ImageId>1006</ImageId>
-					<EtherCAT SlaveType="2" PdiType="#x0c05" CycleMBoxPolling="true" CoeType="15" EoeType="1" FoeType="1" VendorId="#x0000009a" ProductCode="#x00030925" RevisionNo="#x00010420" InfoDataAddr="true" InfoDataSoeDS401="true" InfoDataDcTimes="true" DdTime0420="10000" EnableWdDivider0400="true" EnableWdTime0410="true" EnableWdTime0420="true" PortPhys="17" IdentificationAdo="308" MaxSlotCount="256" MaxSlotGroupCount="1" SlotPdoIncrement="1" SlotIndexIncrement="16" Type="Gold EtherCAT GCON Drive ID Selector Rev:0x00010420" Desc="Elmo Drive " PortABoxInfo="#x02000003">
+					<EtherCAT SlaveType="2" PdiType="#x0c05" CycleMBoxPolling="true" CoeType="15" EoeType="1" FoeType="1" VendorId="#x0000009a" ProductCode="#x00030925" RevisionNo="#x00010420" InfoDataAddr="true" InfoDataSoeDS401="true" InfoDataDcTimes="true" DdTime0420="10000" EnableWdDivider0400="true" EnableWdTime0410="true" EnableWdTime0420="true" PortPhys="17" IdentificationAdo="308" MaxSlotCount="256" MaxSlotGroupCount="1" SlotPdoIncrement="1" SlotIndexIncrement="16" Type="Gold EtherCAT GCON Drive ID Selector Rev:0x00010420" Desc="Elmo Drive " PortABoxInfo="#x02000010">
 						<SyncMan>00188c0026000100010000008c008c008c00001826010000</SyncMan>
 						<SyncMan>00198c0022000100020000008c008c008c00001922010000</SyncMan>
 						<SyncMan>00110a006400010003000000000020002000001164010000</SyncMan>
@@ -2001,7 +4626,7 @@ Bit1: Value smaller than Limit2]]></Comment>
 	<Mappings>
 		<MappingInfo Identifier="{00000000-0020-0304-1000-040320000403}" Id="#x02030010"/>
 		<OwnerA Name="TIRT^Task 2">
-			<OwnerB Name="TIID^Device 3 (EtherCAT)^Term 1 (EK1100)^Term 2 (EL3104)">
+			<OwnerB Name="TIID^Device 3 (EtherCAT)^Term 14 (EK1100)^Term 15 (EL3104)">
 				<Link VarA="Inputs^Var 243" VarB="AI Standard Channel 1^Value"/>
 			</OwnerB>
 		</OwnerA>

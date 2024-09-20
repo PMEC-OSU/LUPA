@@ -5,7 +5,13 @@ Simulink/*.cpp
 Simulink/*.asv
 Simulink/*.mldatx
 Simulink/*.mat
+Simulink/*.pdb
 Simulink/utils/*.mat
 Simulink/utils/*.asv
-TwinCAT/LUPAandMiniDAQ/_Boot
-TwinCAT/LUPAandMiniDAQ/_Config
+TwinCAT/LUPA/_Boot
+TwinCAT/Homing/_Boot
+TwinCAT/Homing/.vs
+TwinCAT/Homing/*.bak
+
+Homing/*.cpp
+Homing/*.mat
