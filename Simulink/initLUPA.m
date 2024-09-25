@@ -26,6 +26,7 @@ sprocketPitchRadius = sprocket(sprocketTeeth);
 % choose decimation values for app and logging
 [appDecimation,appDecimationAxes,decimationLog] = decimationDef(Ts);
 
+lowpass_dt = c2d(tf([1 0],[1 2*pi/100]),Ts,'impulse');
 bandpass_dt = c2d(tf([1 0],[1 2*pi/100])*tf(2*pi*200,[1 2*pi*200]),Ts,'impulse');
 
 mdlInfo = Simulink.MDLInfo(mdlName);
