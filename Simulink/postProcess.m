@@ -11,7 +11,8 @@ tgName = getVariable(modelWorkspace,'tgName');
 dateDir = datestr(now,'yyyymmdd');
 timeDir = datestr(now,'HHMMss');
 sharename = 'Z:';
-year = datestr(now,'yyyy');
+% year = datestr(now,'yyyy');
+year = '2025'; % initial tests in 2024, remove in 2025
 
 if(~exist('app','var'))
     %% if running this script manually change these values!!!!!
@@ -98,37 +99,37 @@ fname = ['d',datestr(output.timestamp.UTCtime(1),formatOut)];
 save([datadirname,'\',fname,'.mat'],'output','-v7.3');
 
 disp(['Data saved to ',datadirname,'\',fname,'.mat'])
-
-% if(~isempty(app))
-%         % push data to share
-%         % build the directory structure. assumes HWRL project share conventions
-%         if ~exist(sharename,'dir') % give up if no HWRL share
-%             disp([projectName,': cannot find ',sharename])
-%         elseif ~exist(fullfile(sharename,'projects'),'dir') % give up if no projects folder
-%             disp([projectName,': cannot find ',fullfile(sharename,'projects')])
-%         elseif ~exist(fullfile(sharename,'projects',year),'dir') % give up if no projects/year folder
-%             disp([projectName,': cannot find ',fullfile(sharename,'projects',year)])
-%         elseif ~exist(fullfile(sharename,'projects',year,projectName),'dir') % give up if no project folder
-%             disp([projectName,': cannot find ',fullfile(sharename,'projects',year,projectName)])
-%         elseif ~exist(fullfile(sharename,'projects',year,projectName,'data','raw'),'dir') % give up if no raw folder
-%             disp([projectName,': cannot find ',fullfile(projectName,'data','raw')])
-%         else % we found the raw folder and can proceed
-%             expdirname = fullfile(sharename,'projects',year,projectName,'data','onboard',expname);
-%             if ~exist(expdirname,'dir') % create a experiment data directory if it doesn't exist yet
-%                 mkdir(expdirname);
-%             end
-%             trialdirname = fullfile(expdirname,trialname);
-%             if ~exist(trialdirname,'dir') % create a trial data directory if it doesn't exist yet
-%                 mkdir(trialdirname);
-%             end
-%             copyfile([datadirname,'\',fname,'.mat'],trialdirname)
-%             disp(['Data saved to ',trialdirname,'\',fname,'.mat'])
-%         end
-% end
-% addpath(genpath(dataexpname))
-% load([fname,'.mat'])
+if(strcmp(app.HWRLShareSwitch.Value,'Yes'))
+    if(~isempty(app))
+        % push data to share
+        % build the directory structure. assumes HWRL project share conventions
+        if ~exist(sharename,'dir') % give up if no HWRL share
+            disp([projectName,': cannot find ',sharename])
+        elseif ~exist(fullfile(sharename,'projects'),'dir') % give up if no projects folder
+            disp([projectName,': cannot find ',fullfile(sharename,'projects')])
+        elseif ~exist(fullfile(sharename,'projects',year),'dir') % give up if no projects/year folder
+            disp([projectName,': cannot find ',fullfile(sharename,'projects',year)])
+        elseif ~exist(fullfile(sharename,'projects',year,projectName),'dir') % give up if no project folder
+            disp([projectName,': cannot find ',fullfile(sharename,'projects',year,projectName)])
+        elseif ~exist(fullfile(sharename,'projects',year,projectName,'data','raw'),'dir') % give up if no raw folder
+            disp([projectName,': cannot find ',fullfile(projectName,'data','raw')])
+        else % we found the raw folder and can proceed
+            expdirname = fullfile(sharename,'projects',year,projectName,'data','onboard',expname);
+            if ~exist(expdirname,'dir') % create a experiment data directory if it doesn't exist yet
+                mkdir(expdirname);
+            end
+            trialdirname = fullfile(expdirname,trialname);
+            if ~exist(trialdirname,'dir') % create a trial data directory if it doesn't exist yet
+                mkdir(trialdirname);
+            end
+            copyfile([datadirname,'\',fname,'.mat'],trialdirname)
+            disp(['Data saved to ',trialdirname,'\',fname,'.mat'])
+        end
+    end
+else
+    disp('Data not saved to HWRL Share')
 end
-
+end
 function tg = pull_data(tgName,dateDir,timeDir,mdlName,matFileName)
 
 %% === test speedgoat connection ==========================================
