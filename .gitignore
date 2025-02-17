@@ -10,7 +10,6 @@ Simulink/*.slxc
 Simulink/*.log
 Simulink/utils/*.mat
 Simulink/utils/*.asv
-Simulink/RLdata
 Simulink/slprj
 TwinCAT/LUPA/_Boot
 TwinCAT/Homing/_Boot
