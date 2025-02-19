@@ -7,7 +7,6 @@ mdlName = bdroot;
 modelWorkspace = get_param(mdlName,'ModelWorkspace');
 tgName = getVariable(modelWorkspace,'tgName');
 
-
 dateDir = datestr(now,'yyyymmdd');
 timeDir = datestr(now,'HHMMss');
 sharename = 'Z:';
@@ -19,8 +18,8 @@ if(~exist('app','var'))
     buildDir = fullfile('C:','simulink_build');
     % mdlName = 'LUPA';
     tgName = 'performance4';
-    projectName = 'TEAMERLUPA5';
-    expname = 'DAQtest';
+    projectName = 'TEAMERMTULUPA5';
+    expname = 'Ramps';
     trialNumber = 1;
     %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
     app = [];
