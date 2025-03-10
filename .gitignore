@@ -11,10 +11,12 @@ Simulink/*.log
 Simulink/utils/*.mat
 Simulink/utils/*.asv
 Simulink/slprj
+Simulink/rtwmakecfg.m
 TwinCAT/LUPA/_Boot
 TwinCAT/Homing/_Boot
 TwinCAT/Homing/.vs
 TwinCAT/Homing/*.bak
+
 
 Homing/*.cpp
 Homing/*.mat
