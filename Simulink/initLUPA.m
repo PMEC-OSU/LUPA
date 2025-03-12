@@ -3,7 +3,7 @@ clear; clc; close all
 addpath('utils')
 %% === Assign Constants ===================================================
 disp('*** Setting model parameters ***')
-period = 2.5; % period for forced oscillation sine wave
+
 excelFile = 'ExcelGains/freg0p500Hz_Stiff_AND_Damping.xlsx';
 gainTstep = 1/0.5*10; % time between change in excel gains (s) (Represents the wave period times 20 waves)
 
@@ -36,11 +36,16 @@ mdlVersion = mdlInfo.ModelVersion;
 
 T = 5;
 Ts = 0.001;
-Tsin = 2.5;
+Tsin = 2.25;
 stepTime = 10;
 t = 25:25:200;
 
 save('modelWorkspace.mat')
+
+load('refSigs.mat')
+ExcelGains = readtable(excelFile);  % read from excel spreadsheet gain values
+ExcelGains = table2array(ExcelGains);
+
 
 % %% === Open the model =========================================
 % disp('*** Open Simulink Model ***')
