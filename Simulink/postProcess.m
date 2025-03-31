@@ -18,9 +18,9 @@ if(~exist('app','var'))
     buildDir = fullfile('C:','simulink_build');
     % mdlName = 'LUPA';
     tgName = 'performance4';
-    projectName = 'TEAMERMTULUPA5';
-    expname = 'Ramps';
-    trialNumber = 1;
+    projectName = 'TEAMERAOELUPA6';
+    expname = '20250319_Regular_Ctrl';
+    trialNumber = 16;
     %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
     app = [];
 else
