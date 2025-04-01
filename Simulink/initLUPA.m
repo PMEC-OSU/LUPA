@@ -46,32 +46,6 @@ load('refSigs.mat')
 ExcelGains = readtable(excelFile);  % read from excel spreadsheet gain values
 ExcelGains = table2array(ExcelGains);
 
-%% AOE initialization
-
-%% Setting optimal constants
-%Optimal Design - 12 April 2018
-inputs.CylDiam1 = 0.7549;
-inputs.CylLength1 = 2;
-inputs.CylDiam2 = 1.8148;
-inputs.CylLength2 = 2.7098 ;
-inputs.CylDiam3 = 1.5734;
-inputs.CylLength3 = 3.8491 ;
-inputs.Pressure = 8.000e+05; %AOE.Unit3.OutletTankCheckValve.CrackPressure
-inputs.InletPressure = 4.000e+05; % at Unit 1 Chamber 1 
-inputs.PressureRatio = 2; % at Unit 1 tank 
-inputs.OutletPressure = inputs.InletPressure*inputs.PressureRatio; %AOE.Unit1.Tank.InitialPressure = AOE.Unit3.OutletTankCheckValve.CrackPressure*0.275;
-inputs.OrificeRatio = 0.2447;
-inputs.alpha = 10; 
-inputs.gamma = 1.4;
-inputs.PistonVol1 = pi*(inputs.CylDiam1/2)^2 * inputs.CylLength1;
-inputs.initialposition = inputs.CylLength1*.5;
-inputs.CylArea1 = pi*(inputs.CylDiam1/2)^2;
-
-
-[AOE] = Constants_3Body_v2(inputs);
-
-%% end AOE initialization
-
 
 
 % %% === Open the model =========================================

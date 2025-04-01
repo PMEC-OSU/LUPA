@@ -18,9 +18,9 @@ if(~exist('app','var'))
     buildDir = fullfile('C:','simulink_build');
     % mdlName = 'LUPA';
     tgName = 'performance4';
-    projectName = 'TEAMERAOELUPA6';
-    expname = '20250319_Regular_Ctrl';
-    trialNumber = 16;
+    projectName = 'LUPA7';
+    expname = 'Ramps';
+    trialNumber = 1;
     %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
     app = [];
 else
@@ -68,14 +68,14 @@ if(~isempty(app))
     output.feedback.time = 0:app.TsEditField.Value:length(output.feedback.vel_filt_radpers)*app.TsEditField.Value-app.TsEditField.Value;
     output.control.CurrentLimit = app.CurrentLimitSpinner.Value;
     output.trialData.Project = app.ProjectEditField.Value;
-    output.trialData.Experiment = app.ExperimentEditField.Value;
+    output.trialData.Experiment = app.ExpEditField.Value;
     output.trialData.TrialNumber = app.TrialSpinner.Value;
     output.trialData.Ts = app.TsEditField.Value;
     output.trialData.sprocketTeeth = app.SprocketEditField.Value;
     output.trialData.Mode = app.ModeEditField.Value;
 
     projectName = app.ProjectEditField.Value;
-    expname = app.ExperimentEditField.Value;
+    expname = app.ExpEditField.Value;
     trialNumber = app.TrialSpinner.Value;
 
 else

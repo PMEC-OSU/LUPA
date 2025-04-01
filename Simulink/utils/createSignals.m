@@ -2,15 +2,14 @@ clear; clc; close all
 
 
 %% ------------MultiSine-------------------------------
-fmin = 0.05; % min frequency for multisine
-fmax = 2; % max frequency for multisine
+fmins = 7/15; % min frequency for multisine
+fmaxs = 13/20; % max frequency for multisine
 fs = 1000;
 rLen = 300;  %% length of created signal (s) for multisine
 nRepeats = 4; % times signal is repeated
 nExp = 3; % number of phase realizations
 NumPhases = 2000;
-fmins = 0.1;
-fmaxs = 0.6;
+
 msnames = {'MS1','MS2','MS3'};
 seed = 13;
 
