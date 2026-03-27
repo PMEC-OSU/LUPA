@@ -1,0 +1,504 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--Device:HBM Genesis High Speed-->
+<!--Author:Hottinger Baldwin Messtechnik GmbH-->
+<EtherCATInfo xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="EtherCATInfo.xsd" Version="1.3">
+  <Vendor>
+    <Id>#x0000011D</Id>
+    <Name>Hottinger Baldwin Messtechnik GmbH</Name>
+    <ImageData16x14>424DE6000000000000007600000028000000100000000E000000010004000000000070000000000000000000000000000000000000000000000000008000008000000080800080000000800080008080000080808000C0C0C0000000FF0000FF000000FFFF00FF000000FF00FF00FFFF0000FFFFFF004FFF4F444FF4FFF44FFF4F4FF4F4FFF444444F444FF4F4F44FFF4F4FF4F44F444FFF4F444FF4FFF4FFFFFFFFFFFFFFFF44444444444444444FFFFFFFFFF444F44FFFFFFFFF4FFF444FFFFFFFFF4FFF444FFFFFFFFF4FFF444FFFFFFFFFF444F44FFFFFFFFFFFFFF44444444444444444</ImageData16x14>
+  </Vendor>
+  <Descriptions>
+    <Groups>
+      <Group>
+        <Type>Genesis HighSpeed</Type>
+        <Name LcId="1033">Genesis HighSpeed</Name>
+        <ImageData16x14>424DB8000000000000004600000028000000100000000E000000010004000000000072000000120B0000120B0000040000000400000000000000FFFFFF005F321B00D7CCC600111111111111111111111111111111111111111111111111132231211212223112112121121111211211212112111121121221211211112112111122221322311211212112121111121121211212111113223121121322211111111111111111111111111111111111111111111111110000</ImageData16x14>
+      </Group>
+    </Groups>
+    <Devices>
+      <Device Physics="YY">
+        <Type RevisionNo="#x00000002" ProductCode="#x00000D01">GEN Series DAQ System</Type>
+        <Name LcId="1033"><![CDATA[GEN Series DAQ System]]></Name>
+        <URL LcId="1033"><![CDATA[http://www.hbm.com]]></URL>
+        <Info>
+          <StateMachine>
+            <Timeout>
+              <PreopTimeout>120000</PreopTimeout>
+              <SafeopOpTimeout>10000</SafeopOpTimeout>
+              <BackToInitTimeout>5000</BackToInitTimeout>
+              <BackToSafeopTimeout>5000</BackToSafeopTimeout>
+            </Timeout>
+          </StateMachine>
+          <Mailbox>
+            <Timeout>
+              <RequestTimeout>1000</RequestTimeout>
+              <ResponseTimeout>10000</ResponseTimeout>
+            </Timeout>
+          </Mailbox>
+        </Info>
+        <GroupType>Genesis HighSpeed</GroupType>
+        <Profile>
+          <Dictionary>
+            <DataTypes>
+              <DataType>
+                <Name>UINT</Name>
+                <BitSize>16</BitSize>
+              </DataType>
+              <DataType>
+                <Name>USINT</Name>
+                <BitSize>8</BitSize>
+              </DataType>
+              <DataType>
+                <Name>UDINT</Name>
+                <BitSize>32</BitSize>
+              </DataType>
+              <DataType>
+                <Name>DT0001</Name>
+                <BitSize>112</BitSize>
+                <SubItem>
+                  <SubIdx>0</SubIdx>
+                  <Name>NumberOfProperties</Name>
+                  <Type>USINT</Type>
+                  <BitSize>8</BitSize>
+                  <BitOffs>0</BitOffs>
+                  <Flags>
+                    <Access>ro</Access>
+                  </Flags>
+                </SubItem>
+                <SubItem>
+                  <SubIdx>1</SubIdx>
+                  <Name>Execute Command (0:1)</Name>
+                  <Type>UINT</Type>
+                  <BitSize>16</BitSize>
+                  <BitOffs>16</BitOffs>
+                  <Flags>
+                    <Access>rw</Access>
+                  </Flags>
+                </SubItem>
+                <SubItem>
+                  <SubIdx>2</SubIdx>
+                  <Name>Recorder (2)</Name>
+                  <Type>UINT</Type>
+                  <BitSize>16</BitSize>
+                  <BitOffs>32</BitOffs>
+                  <Flags>
+                    <Access>rw</Access>
+                  </Flags>
+                </SubItem>
+                <SubItem>
+                  <SubIdx>3</SubIdx>
+                  <Name>Channel (3:4)</Name>
+                  <Type>UINT</Type>
+                  <BitSize>16</BitSize>
+                  <BitOffs>48</BitOffs>
+                  <Flags>
+                    <Access>rw</Access>
+                  </Flags>
+                </SubItem>
+                <SubItem>
+                  <SubIdx>4</SubIdx>
+                  <Name>Value (5:6)</Name>
+                  <Type>UINT</Type>
+                  <BitSize>16</BitSize>
+                  <BitOffs>64</BitOffs>
+                  <Flags>
+                    <Access>rw</Access>
+                  </Flags>
+                </SubItem>
+                <SubItem>
+                  <SubIdx>5</SubIdx>
+                  <Name>ReturnCode (7)</Name>
+                  <Type>UINT</Type>
+                  <BitSize>16</BitSize>
+                  <BitOffs>80</BitOffs>
+                  <Flags>
+                    <Access>ro</Access>
+                  </Flags>
+                </SubItem>
+                <SubItem>
+                  <SubIdx>6</SubIdx>
+                  <Name>Busy</Name>
+                  <Type>UINT</Type>
+                  <BitSize>16</BitSize>
+                  <BitOffs>96</BitOffs>
+                  <Flags>
+                    <Access>ro</Access>
+                  </Flags>
+                </SubItem>
+              </DataType>
+              <DataType>
+                <Name>DT0002</Name>
+                <BitSize>144</BitSize>
+                <SubItem>
+                  <SubIdx>0</SubIdx>
+                  <Name>NumberOfProperties</Name>
+                  <Type>USINT</Type>
+                  <BitSize>8</BitSize>
+                  <BitOffs>0</BitOffs>
+                  <Flags>
+                    <Access>ro</Access>
+                  </Flags>
+                </SubItem>
+                <SubItem>
+                  <SubIdx>1</SubIdx>
+                  <Name>Vendor ID</Name>
+                  <Type>UDINT</Type>
+                  <BitSize>32</BitSize>
+                  <BitOffs>16</BitOffs>
+                  <Flags>
+                    <Access>ro</Access>
+                  </Flags>
+                </SubItem>
+                <SubItem>
+                  <SubIdx>2</SubIdx>
+                  <Name>Product code</Name>
+                  <Type>UDINT</Type>
+                  <BitSize>32</BitSize>
+                  <BitOffs>48</BitOffs>
+                  <Flags>
+                    <Access>ro</Access>
+                  </Flags>
+                </SubItem>
+                <SubItem>
+                  <SubIdx>3</SubIdx>
+                  <Name>Revision</Name>
+                  <Type>UDINT</Type>
+                  <BitSize>32</BitSize>
+                  <BitOffs>80</BitOffs>
+                  <Flags>
+                    <Access>ro</Access>
+                  </Flags>
+                </SubItem>
+                <SubItem>
+                  <SubIdx>4</SubIdx>
+                  <Name>Serial number</Name>
+                  <Type>UDINT</Type>
+                  <BitSize>32</BitSize>
+                  <BitOffs>112</BitOffs>
+                  <Flags>
+                    <Access>ro</Access>
+                  </Flags>
+                </SubItem>
+              </DataType>
+            </DataTypes>
+            <Objects>
+              <Object>
+                <Index>4096</Index>
+                <Name>Device type</Name>
+                <Type>UDINT</Type>
+                <BitSize>32</BitSize>
+                <Flags>
+                  <Access>ro</Access>
+                </Flags>
+              </Object>
+              <Object>
+                <Index>4120</Index>
+                <Name>Identity</Name>
+                <Type>DT0002</Type>
+                <BitSize>144</BitSize>
+                <Flags>
+                  <Access>ro</Access>
+                </Flags>
+              </Object>
+              <Object>
+                <Index>12288</Index>
+                <Name>GHS Remote Control</Name>
+                <Type>DT0001</Type>
+                <BitSize>112</BitSize>
+                <Flags>
+                  <Access>ro</Access>
+                </Flags>
+              </Object>
+            </Objects>
+          </Dictionary>
+        </Profile>
+        <Fmmu>MBoxState</Fmmu>
+        <Fmmu Sm="2">Outputs</Fmmu>
+        <Fmmu Sm="3" Su="0">Inputs</Fmmu>
+        <Sm Enable="1" ControlByte="#x26" StartAddress="#x1000" DefaultSize="512" MaxSize="512" MinSize="46">MBoxOut</Sm>
+        <Sm Enable="1" ControlByte="#x22" StartAddress="#x1200" DefaultSize="512" MaxSize="512" MinSize="46">MBoxIn</Sm>
+        <Sm ControlByte="#x24" StartAddress="#x1400" DefaultSize="8" MaxSize="39" MinSize="0">Outputs</Sm>
+        <Sm ControlByte="#x60" StartAddress="#x1475" DefaultSize="64" MaxSize="1459" MinSize="0">Inputs</Sm>
+        <Su>SyncUnit1</Su>
+        <RxPdo Sm="2" Mandatory="true" Fixed="true">
+          <Index>5632</Index>
+          <Name>Remote Control (Rx)</Name>
+          <Entry>
+            <Index>6400</Index>
+            <SubIndex>1</SubIndex>
+            <BitLen>16</BitLen>
+            <Name>Command</Name>
+            <DataType>UINT</DataType>
+          </Entry>
+          <Entry>
+            <Index>6400</Index>
+            <SubIndex>2</SubIndex>
+            <BitLen>16</BitLen>
+            <Name>Recorder</Name>
+            <DataType>UINT</DataType>
+          </Entry>
+          <Entry>
+            <Index>6400</Index>
+            <SubIndex>3</SubIndex>
+            <BitLen>16</BitLen>
+            <Name>Channel</Name>
+            <DataType>UINT</DataType>
+          </Entry>
+          <Entry>
+            <Index>6400</Index>
+            <SubIndex>4</SubIndex>
+            <BitLen>16</BitLen>
+            <Name>Value</Name>
+            <DataType>UINT</DataType>
+          </Entry>
+        </RxPdo>
+        <TxPdo Sm="3" Mandatory="true" Fixed="true">
+          <Index>6656</Index>
+          <Name>AcquisitionState</Name>
+          <Entry>
+            <Index>8192</Index>
+            <SubIndex>1</SubIndex>
+            <BitLen>8</BitLen>
+            <Name>AcquisitionState_S</Name>
+            <DataType>USINT</DataType>
+          </Entry>
+        </TxPdo>
+        <TxPdo Sm="3" Mandatory="true" Fixed="true">
+          <Index>6657</Index>
+          <Name>AcquisitionTime</Name>
+          <Entry>
+            <Index>8193</Index>
+            <SubIndex>2</SubIndex>
+            <BitLen>64</BitLen>
+            <Name>AcquisitionTime_V</Name>
+            <DataType>LREAL</DataType>
+          </Entry>
+        </TxPdo>
+        <TxPdo Sm="3" Mandatory="true" Fixed="true">
+          <Index>6658</Index>
+          <Name>Latency</Name>
+          <Entry>
+            <Index>8194</Index>
+            <SubIndex>1</SubIndex>
+            <BitLen>8</BitLen>
+            <Name>Latency_S</Name>
+            <DataType>USINT</DataType>
+          </Entry>
+          <Entry>
+            <Index>8194</Index>
+            <SubIndex>2</SubIndex>
+            <BitLen>32</BitLen>
+            <Name>Latency_V</Name>
+            <DataType>REAL</DataType>
+          </Entry>
+        </TxPdo>
+        <TxPdo Sm="3" Mandatory="true" Fixed="true">
+          <Index>6659</Index>
+          <Name>Powersource.out.Cycle_interval</Name>
+          <Entry>
+            <Index>8195</Index>
+            <SubIndex>1</SubIndex>
+            <BitLen>8</BitLen>
+            <Name>Powersource.out.Cycle_interval_S</Name>
+            <DataType>USINT</DataType>
+          </Entry>
+          <Entry>
+            <Index>8195</Index>
+            <SubIndex>2</SubIndex>
+            <BitLen>32</BitLen>
+            <Name>Powersource.out.Cycle_interval_V</Name>
+            <DataType>REAL</DataType>
+          </Entry>
+        </TxPdo>
+        <TxPdo Sm="3" Mandatory="true" Fixed="true">
+          <Index>6660</Index>
+          <Name>Powersource.out.Cycle_Check</Name>
+          <Entry>
+            <Index>8196</Index>
+            <SubIndex>1</SubIndex>
+            <BitLen>8</BitLen>
+            <Name>Powersource.out.Cycle_Check_S</Name>
+            <DataType>USINT</DataType>
+          </Entry>
+          <Entry>
+            <Index>8196</Index>
+            <SubIndex>2</SubIndex>
+            <BitLen>32</BitLen>
+            <Name>Powersource.out.Cycle_Check_V</Name>
+            <DataType>REAL</DataType>
+          </Entry>
+        </TxPdo>
+        <TxPdo Sm="3" Mandatory="true" Fixed="true">
+          <Index>6661</Index>
+          <Name>Powersource.out.Frequency</Name>
+          <Entry>
+            <Index>8197</Index>
+            <SubIndex>1</SubIndex>
+            <BitLen>8</BitLen>
+            <Name>Powersource.out.Frequency_S</Name>
+            <DataType>USINT</DataType>
+          </Entry>
+          <Entry>
+            <Index>8197</Index>
+            <SubIndex>2</SubIndex>
+            <BitLen>32</BitLen>
+            <Name>Powersource.out.Frequency_V</Name>
+            <DataType>REAL</DataType>
+          </Entry>
+        </TxPdo>
+        <TxPdo Sm="3" Mandatory="true" Fixed="true">
+          <Index>6662</Index>
+          <Name>Powersource.out.I</Name>
+          <Entry>
+            <Index>8198</Index>
+            <SubIndex>1</SubIndex>
+            <BitLen>8</BitLen>
+            <Name>Powersource.out.I_S</Name>
+            <DataType>USINT</DataType>
+          </Entry>
+          <Entry>
+            <Index>8198</Index>
+            <SubIndex>2</SubIndex>
+            <BitLen>32</BitLen>
+            <Name>Powersource.out.I_V</Name>
+            <DataType>REAL</DataType>
+          </Entry>
+        </TxPdo>
+        <TxPdo Sm="3" Mandatory="true" Fixed="true">
+          <Index>6663</Index>
+          <Name>Powersource.out.U</Name>
+          <Entry>
+            <Index>8199</Index>
+            <SubIndex>1</SubIndex>
+            <BitLen>8</BitLen>
+            <Name>Powersource.out.U_S</Name>
+            <DataType>USINT</DataType>
+          </Entry>
+          <Entry>
+            <Index>8199</Index>
+            <SubIndex>2</SubIndex>
+            <BitLen>32</BitLen>
+            <Name>Powersource.out.U_V</Name>
+            <DataType>REAL</DataType>
+          </Entry>
+        </TxPdo>
+        <TxPdo Sm="3" Mandatory="true" Fixed="true">
+          <Index>6664</Index>
+          <Name>Powersource.out.i_mean</Name>
+          <Entry>
+            <Index>8200</Index>
+            <SubIndex>1</SubIndex>
+            <BitLen>8</BitLen>
+            <Name>Powersource.out.i_mean_S</Name>
+            <DataType>USINT</DataType>
+          </Entry>
+          <Entry>
+            <Index>8200</Index>
+            <SubIndex>2</SubIndex>
+            <BitLen>32</BitLen>
+            <Name>Powersource.out.i_mean_V</Name>
+            <DataType>REAL</DataType>
+          </Entry>
+        </TxPdo>
+        <TxPdo Sm="3" Mandatory="true" Fixed="true">
+          <Index>6665</Index>
+          <Name>Powersource.out.u_mean</Name>
+          <Entry>
+            <Index>8201</Index>
+            <SubIndex>1</SubIndex>
+            <BitLen>8</BitLen>
+            <Name>Powersource.out.u_mean_S</Name>
+            <DataType>USINT</DataType>
+          </Entry>
+          <Entry>
+            <Index>8201</Index>
+            <SubIndex>2</SubIndex>
+            <BitLen>32</BitLen>
+            <Name>Powersource.out.u_mean_V</Name>
+            <DataType>REAL</DataType>
+          </Entry>
+        </TxPdo>
+        <TxPdo Sm="3" Mandatory="true" Fixed="true">
+          <Index>6666</Index>
+          <Name>Powersource.out.P</Name>
+          <Entry>
+            <Index>8202</Index>
+            <SubIndex>1</SubIndex>
+            <BitLen>8</BitLen>
+            <Name>Powersource.out.P_S</Name>
+            <DataType>USINT</DataType>
+          </Entry>
+          <Entry>
+            <Index>8202</Index>
+            <SubIndex>2</SubIndex>
+            <BitLen>32</BitLen>
+            <Name>Powersource.out.P_V</Name>
+            <DataType>REAL</DataType>
+          </Entry>
+        </TxPdo>
+        <TxPdo Sm="3" Mandatory="true" Fixed="true">
+          <Index>6667</Index>
+          <Name>Remote Control (Tx)</Name>
+          <Entry>
+            <Index>8203</Index>
+            <SubIndex>1</SubIndex>
+            <BitLen>16</BitLen>
+            <Name>Command</Name>
+            <DataType>UINT</DataType>
+          </Entry>
+          <Entry>
+            <Index>8203</Index>
+            <SubIndex>2</SubIndex>
+            <BitLen>16</BitLen>
+            <Name>Recorder</Name>
+            <DataType>UINT</DataType>
+          </Entry>
+          <Entry>
+            <Index>8203</Index>
+            <SubIndex>3</SubIndex>
+            <BitLen>16</BitLen>
+            <Name>Channel</Name>
+            <DataType>UINT</DataType>
+          </Entry>
+          <Entry>
+            <Index>8203</Index>
+            <SubIndex>4</SubIndex>
+            <BitLen>16</BitLen>
+            <Name>Value</Name>
+            <DataType>UINT</DataType>
+          </Entry>
+          <Entry>
+            <Index>8203</Index>
+            <SubIndex>5</SubIndex>
+            <BitLen>16</BitLen>
+            <Name>ReturnCode</Name>
+            <DataType>UINT</DataType>
+          </Entry>
+        </TxPdo>
+        <Mailbox DataLinkLayer="1">
+          <CoE SegmentedSdo="1" CompleteAccess="0" PdoUpload="1" PdoConfig="0" PdoAssign="0" SdoInfo="1">
+          </CoE>
+        </Mailbox>
+        <Dc PotentialReferenceClock="1" ExternalRefClock="0" Unknown64Bit="0" UnknownFRMW="0">
+          <OpMode>
+            <Name>DcOff</Name>
+            <Desc>Free Run</Desc>
+            <AssignActivate>#x0000</AssignActivate>
+          </OpMode>
+          <OpMode>
+            <Name>DcSync0</Name>
+            <Desc>DC-Synchronous</Desc>
+            <AssignActivate>#x0330</AssignActivate>
+            <CycleTimeSync0 Factor="1">0</CycleTimeSync0>
+            <ShiftTimeSync0>0</ShiftTimeSync0>
+          </OpMode>
+        </Dc>
+        <Eeprom>
+          <ByteSize>4096</ByteSize>
+          <ConfigData>800C00CC</ConfigData>
+        </Eeprom>
+        <ImageData16x14>424DB8000000000000004600000028000000100000000E000000010004000000000072000000120B0000120B0000040000000400000000000000FFFFFF005F321B00D7CCC600122112212112122111121211211212111121122121121221121112112112121111221221221212211111111111111111132231222212112112112121111211211211212111121321121221211112122112111122221232211211212111122321121121211112212113223122221231210000</ImageData16x14>
+      </Device>
+    </Devices>
+  </Descriptions>
+</EtherCATInfo>
