@@ -5,20 +5,22 @@
 %% === parameters =========================================================
 mdlName = bdroot;
 modelWorkspace = get_param(mdlName,'ModelWorkspace');
-tgName = getVariable(modelWorkspace,'tgName');
+tgName = app.tgNameLabel.Text;
+
+
 
 dateDir = datestr(now,'yyyymmdd');
 timeDir = datestr(now,'HHMMss');
 sharename = 'Z:';
-% year = datestr(now,'yyyy');
-year = '2025'; % initial tests in 2024, remove in 2025
+year = datestr(now,'yyyy');
+% year = '2026'; % initial tests in 202?, remove in 202?
 
 if(~exist('app','var'))
     %% if running this script manually change these values!!!!!
     buildDir = fullfile('C:','simulink_build');
     % mdlName = 'LUPA';
     tgName = 'performance4';
-    projectName = 'LUPA7';
+    projectName = 'mCDRLUPA8';
     expname = 'Ramps';
     trialNumber = 1;
     %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%

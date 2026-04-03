@@ -1,0 +1,1242 @@
+[Drive Configuration Parameters]
+Config_Version=2816 2816 6 6
+Rated_Peak_Current=400
+Rated_Continuous_Current=200
+Bus_Over_Voltage=3939
+Bus_Under_Voltage=545
+Max_Switching_Freq=20
+Rated_Shunt_Power=0
+Internal_Shunt_Resistance=0
+Internal_Shunt_Inductance=0
+Max_Shunt_Freq=5
+Internal_Shunt_Max_Cont_Current=15
+Shunt_Configuration=2
+Controlboard=CAU314SEF
+Powerboard=PLA40A40C
+
+[Drive Parameters Section]
+Drive_Control=1
+Drive_Control_1=0
+External_Analog_Temperature_Disable_Level=100
+External_Analog_Temperature_Enable_Level=95
+Thermistor_Disable_Resistance=2600
+Thermistor_Enable_Resistance=2400
+Thermistor_Configuration_Option=0
+Start_Up_Sequence_Control=5
+Start_Up_PhaseDetect_Config=0
+Delay_After_Applying_Brakes=0
+Delay_Before_Disengaging_Brakes=0
+Quick_Stop_Deacceleration_Limit=6666666.6651144623756
+Quick_Stop_Deacceleration_Limit_Velocity_Mode=6666666.6651144623756
+Stop_Jerk_Limit_Torque_Mode=0.49999999976716935635
+
+[Software Parameters Section]
+User/Aux_Position_Unit=257
+User/Aux_Velocity_Distance_Unit=514
+User/Aux_Velocity_Time_Unit=257
+User/Aux_Acceleration_Velocity_Distance_Unit=514
+User/Aux_Acceleration_Velocity_Time_Unit=257
+User/Aux_Acceleration_Time_Unit=514
+User/Aux_Torque_Force=257
+User/Aux_Torque_Distance_Unit=257
+User_Temperature_Unit=513
+Load_Position_Pre_Scale_Factor=1
+Load_Velocity_Pre_Scale_Factor=1
+Load_Acceleration_Pre_Scale_Factor=1
+Load_Torque_Pre_Scale_Factor=1
+Load_Position_Scale_Factor=1
+Load_Velocity_Scale_Factor=1
+Load_Acceleration_Scale_Factor=1
+Load_Torque_Scale_Factor=1
+Load_Units_Position_and_velocity_labels=0
+Load_Units_acceleration_and_torque_labels=0
+User_Position_PreScaling=1
+User_Velocity_PreScaling=1
+User_Acceleration_PreScaling=1
+User_Torque_PreScaling=1
+User_Temperature_PreScaling=1
+User_Position_Scale_Factor=1
+User_Velocity_Scale_Factor=1
+User_Acceleration_Scale_Factor=1
+User_Torque_Scale_Factor=1
+User_Temp_Scale_Factor=1
+User_Units_Position_And_Velocity_Labels=cnt             rpm
+User_Units_Acceleration_And_Torque_Labels=rpm/s           N-m
+User_Units_Temperature_label=°C
+Use_Custom_User/Aux_Values=0
+Load_Coordinate_System=0
+Motor_Page_Temperature=0
+Motor_Page_Velocity_Distance_And_Time=513
+Motor_Page_Distance=9
+Stored_User_Units_Version_id=0
+Stored_User_Units_Data_Crc_Value=60438
+nominal_bus_voltage=150
+configurator_value=0
+Motor_Commutation_Value=4
+Analog_Output_Signal=0
+Feedback_Availability=2
+Enable_External_Brake=0
+Caputre_Signals=1
+Caputre_Signals_2=2
+Caputre_One_Set_Reset_Source=65535
+Caputre_Two_Set_Reset_Source=65535
+Caputre_Three_Set_Reset_Source=65535
+Custom_Halls_Deviation=10
+AuxEncoderPresent=0
+AuxEncoderType=0
+AuxEncoderLineCount=4000
+AuxEncoderLabel=Lines/rev
+AuxEncoderPolarity=1
+AuxIndexPresent=0
+AuxIndexCount=1
+Drive_Library_Option=0
+Emulated_Encoder_Index_Period_User=0
+Gain_Config_Switch_State_Word=0
+Digital_Absolute_Encoder_Manufacturer=Renishaw
+Selected_Network_Protocol=2
+Stored_Setup_Software_Data_Crc_Value=12426
+Drive_Name=DPEANIU-040A400
+Firmware_Name=DPEANIUX2.BISS-7.6.0.0.aff
+Stored_User_Parameters_Version_Id=0
+Stored_User_Parameters_Data_Crc_Value=35996
+
+[Motor Parameters Section]
+Motor_Manufacturer=Akribis
+Motor_Model=ADR220-B175
+Motor_Back_EMF_Constant=727
+Motor_Torque_Constant=7.8600001335144
+Motor_resistance=5.86999988555908
+Motor_Inductance=53.5999984741211
+Motor_Thermal_Constant=1
+Motor_Maximum_Current=16.2000007629395
+Motor_Maximum_Speed=150
+Motor_Maximum_Current_At_Maximum_Velocity=1
+Motor_Continuous_Rated_Current=5.40000009536743
+Motor_Feedback_Model=120° Halls, 1000 Line Encoder
+Motor_Number_of_Poles=24
+Motor_Hall_Phasing=120
+Motor_Phase_Pair=A and B
+Motor_Back_EMF_Constant_Units=V/Krpm
+Motor_Power=750
+TModel_R2=9.99999997475243e-07
+TModel_X1=9.99999997475243e-07
+TModel_X2=9.99999997475243e-07
+TModel_Xm=9.99999997475243e-07
+Motor_Power_Factor=0
+Motor_Efficiency=0.00999999977648258
+ACInduction_Motor_Model=1
+Motor_Power_Units=0
+Motor_Winding=0
+Rated_Bus_Voltage=1
+Stored_Motor_Parameters_Version_Id=0
+Stored_Motor_Parameters_Data_Crc_Value=38493
+Motor_Torque_Constant_Units=N-m/A
+Motor_Pole_Pitch_Units=e.c./rev
+Motor_Maximum_Speed_Units=rpm
+Motor_Feedback_Device=1
+Motor_Commutation_Type=2
+H_CW_S_Count=-1
+H_CCW_S_Count=-1
+E_C_S_Count=-1
+E_CCW_S_Count=-1
+H_S_P_A_Error=3641
+H_S_P_A_Error_Adj=182
+E_S_P_A_Error=3641
+E_S_P_A_Error_Adj=182
+Hall_One_Plus_Selection_One=0
+Hall_One_Minus_Selection_One=0
+Hall_One_Plus_Selection_Two=0
+Hall_One_Minus_Selection_Two=0
+Hall_One_Plus_Selection_Three=0
+Hall_One_Minus_Selection_Three=0
+Hall_One_Plus_Selection_Four=0
+Hall_One_Minus_Selection_Four=0
+Hall_Two_Plus_Selection_One=0
+Hall_Two_Minus_Selection_One=0
+Hall_Two_Plus_Selection_Two=0
+Hall_Two_Minus_Selection_Two=0
+Hall_Two_Plus_Selection_Three=0
+Hall_Two_Minus_Selection_Three=0
+Hall_Two_Plus_Selection_Four=0
+Hall_Two_Minus_Selection_Four=0
+Hall_Three_Plus_Selection_One=0
+Hall_Three_Minus_Selection_One=0
+Hall_Three_Plus_Selection_Two=0
+Hall_Three_Minus_Selection_Two=0
+Hall_Three_Plus_Selection_Three=0
+Hall_Three_Minus_Selection_Three=0
+Hall_Three_Plus_Selection_four=0
+Hall_Three_Minus_Selection_four=0
+Encoder_One_Plus_Selection_One=0
+Encoder_One_Minus_Selection_One=0
+Encoder_One_Plus_Selection_Two=0
+Encoder_One_Minus_Selection_Two=0
+Encoder_One_Plus_Selection_Three=0
+Encoder_One_Minus_Selection_Three=0
+Encoder_One_Plus_Selection_Four=0
+Encoder_One_Minus_Selection_Four=0
+Encoder_Two_Plus_Selection_One=0
+Encoder_Two_Minus_Selection_One=0
+Encoder_Two_Plus_Selection_Two=0
+Encoder_Two_Minus_Selection_Two=0
+Encoder_Two_Plus_Selection_Three=0
+Encoder_Two_Minus_Selection_Three=0
+Encoder_Two_Plus_Selection_Four=0
+Encoder_Two_Minus_Selection_Four=0
+Encoder_Index_Plus_Selection_One=0
+Encoder_Index_Minus_Selection_One=0
+Encoder_Index_Plus_Selection_Two=0
+Encoder_Index_Minus_Selection_Two=0
+Encoder_Index_Plus_Selection_Three=0
+encoder_Index_Minus_Selection_Three=0
+Encoder_Index_Plus_Selection_Four=0
+Encoder_Index_Minus_Selection_Four=0
+Motor_A_Selection_One=0
+Motor_A_Selection_Two=0
+Motor_A_Selection_Three=0
+Motor_A_Selection_Four=0
+Motor_B_Selection_One=0
+Motor_B_Selection_Two=0
+Motor_B_Selection_Three=0
+Motor_B_Selection_Four=0
+Motor_C_Selection_One=0
+Motor_C_Selection_Two=0
+Motor_C_Selection_Three=0
+Motor_C_Selection_Four=0
+Motor_number_of_Indices=0
+Motor_Maximum_temperature=100
+Aux_Encoder_One_Plus_Selection_One=0
+Aux_Encoder_One_Minus_Selection_One=0
+Aux_Encoder_One_Plus_Selection_Two=0
+Aux_Encoder_One_Minus_Selection_Two=0
+Aux_Encoder_One_Plus_Selection_Three=0
+Aux_Encoder_One_Minus_Selection_Three=0
+Aux_Encoder_One_Plus_Selection_Four=0
+Aux_Encoder_One_Minus_Selection_Four=0
+Aux_Encoder_Two_Plus_Selection_One=0
+Aux_Encoder_Two_Minus_Selection_One=0
+Aux_Encoder_Two_Plus_Selection_Two=0
+Aux_Encoder_Two_Minus_Selection_Two=0
+Aux_Encoder_Two_Plus_Selection_Three=0
+Aux_Encoder_Two_Minus_Selection_Three=0
+Aux_Encoder_Two_Plus_Selection_Four=0
+Aux_Encoder_Two_Minus_Selection_Four=0
+Aux_Encoder_Index_Plus_Selection_One=0
+Aux_Encoder_Index_Minus_Selection_One=0
+Aux_Encoder_Index_Plus_Selection_Two=0
+Aux_Encoder_Index_Minus_Selection_Two=0
+Aux_Encoder_Index_Plus_Selection_Three=0
+Aux_encoder_Index_Minus_Selection_Three=0
+Aux_Encoder_Index_Plus_Selection_Four=0
+Aux_Encoder_Index_Minus_Selection_Four=0
+Resolver_Cycles_Per_Rev=1
+Resolver_Multi_Speed=0
+Stored_Motor_2_Parameters_Version_Id=0
+Stored_Motor_2_Parameters_Data_Crc_Value=16697
+Encoder_Wiring_Polarity=1
+Maximum_Phase_Detection_Current=0
+Maximum_Phase_Detection_Time_Limit=1000
+Maximum_Phase_Detection_Brake_Limit=1000
+Maximum_Phase_Detection_Motion=2730
+Resolver_Resolution=0
+Serial_Encoder_Type=3
+Position_Interpolation=9
+Encoder_Steps_Per_Encoder_Sine_Period=1
+Secondary_Encoder_Position_Interpolation=1
+Torque_Constant_Over_Inertia=0
+Encoder_Emulation_Divide=1
+Encoder_SinCos_Error_Window=0.5
+Encoder_Emulation_Mode=0
+Encoder_Position_Of_Emulated_Index=0
+Encoder_Emulated_Counts_Per_Emulated_Index=8192
+Serial_Encoder_Resolution=26
+Serial_Encoder_Format=26
+
+[Drive Connection Section]
+Rs232_Drive_Address=63
+Rs232_Baud_Rate=5
+Rs485_Drive_Address=63
+Rs485_Baud_Rate=5
+RS485_Modbus_Disable=0
+
+[Auxiliary Section]
+Auxiliary_Input_One_Counts=1
+Auxiliary_Output_One_Counts=1
+Auxiliary_Input_One_Counts_Mode1=1
+Auxiliary_Output_One_Counts_Mode1=1
+
+[Commanded Input Section]
+Commanded_Input_One=0
+Commanded_Input_Two=0
+Commanded_Input_Three=0
+Commanded_Input_Four=0
+
+[I/O Section]
+DO_Active_Level_Mask=0
+StartUp_Disabled_Mask=0
+Internal_Error_Mask=0
+Short_Circuit_Mask=0
+Over_Current_Mask=0
+Under_Voltage_Mask=0
+Over_Voltage_Mask=0
+Over_Temperature_Mask=0
+Parameter_Restore_Error_Mask=0
+Parameter_Save_Error_Mask=0
+Commutation_State_Error_Mask=0
+Encoder_Synchronization_Error_Mask=0
+Motor_Over_Temperature_Mask=0
+Phase_Detection_Fault_Mask=0
+Feedback_Sensor_Error_Mask=0
+Log_Entry_Missed_Mask=0
+Commanded_Disable_Mask=0
+DO_User_Disable_Mask=0
+Positive_Limit_Active_Mask=0
+Negative_Limit_Active_Mask=0
+Current_Limiting__Foldback_Mask=0
+Current_Limit_Reached_Mask=0
+Current_Loop_Saturated_Mask=0
+User_Under_Voltage_Mask=0
+User_Over_Voltage_Mask=0
+Nonsinusoidal_Commutation_Mask=0
+DO_Phase_Detection_Mask=0
+DO_User_Aux_Disable_Mask=0
+Shunt_Regulator_Active_Mask=0
+Phase_Detection_Complete_Mask=0
+Command_Profiler_Active_Mask=0
+Motor_Over_Speed_Mask=0
+At_Command_Mask=0
+Zero_Speed_Indicator_Mask=0
+Velocity_Following_Error_Limit_Exceeded_Mask=0
+Positive_Target_Velocity_Limit_Exceeded_Mask=0
+Negative_Target_Velocity_Limit_Exceeded_Mask=0
+Upper_Measured_Position_Limit_Exceeded_Mask=0
+Lower_Measured_Position_Limit_Exceeded_Mask=0
+At_Home_Position_Mask=0
+Position_Following_Error_Limit_Exceeded_Mask=0
+Upper_Target_Position_Limit_Exceeded_Mask=0
+Lower_Target_Position_Limit_Exceeded_Mask=0
+DO_Load_Preset_Position_Mask=0
+Homing_Active_Mask=0
+Apply_Brake_Mask=0
+Pvt_Buffer_Full=0
+Pvt_Buffer_Empty=0
+Pvt_Buffer_Threshold=0
+Pvt_Buffer_Failure=0
+Pvt_Buffer_Empty_Stop=0
+Pvt_Sequence_Error=0
+Comm_Channel_Error=0
+Homing_Complete=0
+Commanded_Quick_Stop=0
+External_Quick_Stop=0
+Bridge_Active=1
+Dynamic_Break_Active=0
+Quick_Stop_Active=0
+Positive_Stop_Active=0
+Negative_Stop_Active=0
+Positive_Torque_Inhibit_Active=0
+Negative_Torque_Inhibit_Active=0
+Virual_Output_1=0
+Virual_Output_2=0
+Virual_Output_3=0
+Virual_Output_4=0
+Virual_Output_5=0
+Virual_Output_6=0
+Virual_Output_7=0
+Virual_Output_8=0
+Virual_Output_9=0
+Virual_Output_10=0
+Virual_Output_11=0
+Virual_Output_12=0
+Virual_Output_13=0
+Virual_Output_14=0
+Virual_Output_15=0
+Virual_Output_16=0
+Capture_One=0
+Capture_Two=0
+Capture_Three=0
+Commanded_Positive_Limit=0
+Commanded_Negative_Limit=0
+Safe_Torque_Off=0
+Zero_Position_Error=0
+Motion_Engine_Fault=0
+Motion_Engine_Active=0
+Active_Motion_Busy=0
+Active_Motion_Done=0
+Active_Motion_Error=0
+Active_Motion_Active=0
+Active_Motion_Aborted=0
+Active_Motion_Execute=0
+Active_Motion_Motion_Done=0
+Active_Motion_Sequence_Done=0
+Valid_Reference_Frame=0
+Jog_Active=0
+PWM_And_Direction_Broken_Wire=0
+PLS_Pulse_One_Post_Active_Level=0
+PLS_Pulse_Two_Post_Active_Level=0
+Active_Motion_Interrrupt_Mask=0
+DI_Active_Level_Mask=0
+DI_User_Disable_Mask=0
+Positive_Limit_Mask=0
+Negative_Limit_Mask=0
+Motor_Over_Temperature_Inhibit_Mask=0
+DI_Phase_Detection_Mask=0
+User_Aux_Disable_Mask=0
+DI_Load_Preset_Position_Mask=0
+Start_Homing_Mask=0
+Home_Switch_Mask=0
+Quick_Stop_Mask=0
+Capture One Arm=0
+Capture Two Arm=0
+Capture Three Arm=0
+Event History Reset=0
+Mode Select Address Line 0=0
+Engage Cam=0
+Enable Gain Set 1=0
+Zero Position Error=0
+Profiler Parameters Select=0
+Source Modifier Parameters Select=0
+Motion Engine Page Load=0
+Motion Engine Enable=0
+Motion Engine Motion Start=0
+Motion Engine Motion Select Address Line 0=0
+Motion Engine Motion Select Address Line 1=0
+Motion Engine Motion Select Address Line 2=0
+Motion Engine Motion Select Address Line 3=0
+Interrupt Active Motion Mask=0
+Jog Plus=0
+Jog Minus=0
+Jog Select=0
+Jog Select1=0
+Output_One_Source_Enum_Lower=0
+Output_One_Source_Enum_Upper=0
+Output_One_Offset=0
+Output_One_Gain=0
+Output_One_Right_Shift=0
+Output_Two_Source_Enum_Lower=0
+Output_Two_Source_Enum_Upper=0
+Output_Two_Offset=0
+Output_Two_Gain=0
+Output_Two_Right_Shift=0
+Input_One_Offset_Config0=0
+Input_One_ScaleFactor_Config0=0
+Input_Two_Offset_Config0=0
+Input_two_ScaleFactor_Config0=0
+Input_Three_Offset_Config0=0
+Input_Three_ScaleFactor_Config0=0
+Input_four_Offset_Config0=0
+Input_Four_ScaleFactor_Config0=0
+Input_One_Offset_Config1=0
+Input_One_ScaleFactor_Config1=0
+Input_Two_Offset_Config1=0
+Input_two_ScaleFactor_Config1=0
+Input_Three_Offset_Config1=0
+Input_Three_ScaleFactor_Config1=0
+Input_four_Offset_Config1=0
+Input_Four_ScaleFactor_Config1=0
+
+[Communication Two Parameters]
+Ip Address=3232261121
+Ip Address Net Mask=4294967040
+Ip Address Gateway=3232261360
+EPL Node Id=1
+NMT Cycle Length=2000
+Multiple Cycle Count=1
+
+[Control Loops Configuration Section]
+P_H_A=0
+D_C_D_I_C_A=0
+D_C_M_C0=274
+D_C_M_C1=49426
+M_T_F=0
+C_LMT_S=0
+V_L_F_C0=4
+V_L_F_C1=4
+P_L_F_C0=7
+P_L_F_C1=7
+C_S_C0=0
+C_S_C1=0
+B_V_F_C0=0
+B_V_F_C1=0
+B_P_F_C0=0
+B_P_F_C1=0
+B_S_C0=0
+B_S_C1=0
+B_C_I_C0=0
+B_C_I_C1=0
+B_V_I_C0=0
+B_V_I_C1=0
+B_P_I_C0=0
+B_P_I_C1=0
+S_N_O_S_C0=0
+S_N_O_S_C1=0
+D_C_T_C_O_S_C0=36
+D_C_T_C_O_S_C1=0
+D_C_V_O_S_C0=37
+D_C_V_O_S_C1=0
+D_C_P_O_S_C0=0
+D_C_P_O_S_C1=0
+
+[Commutation Section]
+Encoder_Res_F=67108864
+E_Index_Offset=0
+Analog_Feedback_Position_Scaling=0
+Analog_Feedback_Velocity_Scaling=0
+Analog_Feedback_Position_Coord=0
+Analog_Feedback_Velocity_Coord=0
+Analog_Feedback_Position_Geometry=0
+Analog_Feedback_Velocity_Geometry=0
+Analog_Feedback_Position_Unit_ID=0
+Analog_Feedback_Velocity_Unit_ID=0
+Encoder_Multi_Turn_Count=0
+Encoder_Version_Id=0
+Encoder_Data_Crc_Value=41833
+
+[Voltage Section]
+Over-Voltage_Limit=389.99201385498048467
+Under-Voltage_Limit=54.98107360839843949
+Shunt_Regulator_Enable_Threshold=369.99889617919922102
+Shunt_Regulator_Configuration=0
+External_Shunt_Resistance=0
+External_Shunt_Power=100
+External_Shunt_Inductance=0
+
+[Current Section]
+Torque_Loop_Proportional_Gain=29.78125
+Torque_Loop_Integral_Gain=0.1640625
+Torque_Target_Offset=0
+Peak_Current_Limit=16.1962890625
+Peak_Current_Hold_Time=2000
+Continuous_Current_Limit=5.3955078125
+Peak_to_Continuous_Current_Tansition_Time=10000
+Flux_Ref_Proportional_Gain=0
+Flux_Ref_Integral_Gain=0
+Rated_Line_Current=14.0966796875
+NoLoad_Magnetization_Current=14.0966796875
+Rated_Line_Frequency_Variable=60
+Rated_Rotor_Base_Speed=1725
+F_W_Threshold_Speed=578
+Motor_Type=2
+Auxiliary_Commutation_Mode=0
+Encoder_Direction=3
+S_Mode=8
+E_Counts/E_Cycle=5592405
+H_S_Angle1=0
+H_S_Angle2=0
+Index_S_Angle1=0
+Index_S_Angle2=0
+N_T_A_At_E_Z_P=17038
+Max_S_P_A_Error=3641
+Max_S_P_A_Adj=182
+E_Cycle_Adj_Count=3
+E_Counts/Cycles_Adj=1
+V_H_S_Mask=255
+H_Angle1=0
+H_Angle2=0
+H_Angle3=0
+H_Angle4=0
+H_Angle5=0
+H_Angle6=0
+H_Angle7=0
+H_Angle8=0
+Phase_Detect_Control=0
+Phase_Offset=0
+Current_Limiting_Control=1
+Torque_At_Command_Window=0.399169921875
+
+[Velocity Section]
+Feedback_Direction=3
+Feedback_Filter_Coefficient=0.030927573330684507424
+Proportional_Gain=0.006072998046875
+Integral_Gain=1.1990778148174285889e-07
+Derivative_Gain=0
+Acceleration_Feed_Forward_Gain=0
+Integrator_Decay_Rate=0
+Proportional_Gain_Set1=0
+Integral_Gain_Set1=0
+Derivative_Gain_Set1=0
+Acceleration_Feed_Forward_Gain_Set1=0
+Motor_Over_Speed_Limit=327680.0537109375
+Zero_Speed_Limit=327679999.84741210938
+Velocity_At_Speed_Limit=327679999.84741210938
+Velocity_Loop_Following_Error_Limit=327679999.84741210938
+Positive_Velocity_Limit=327680.0537109375
+Negative_Velocity_Limit=-327680.0537109375
+Velocity_Loop_Integrator_Decay_Window=0
+
+[Position Section]
+Proportional_Gain=1.7306301742792129517e-06
+Integral_Gain=0
+Derivative_Gain=0
+Velocity_Feed_Forward_Gain=0
+Acceleration_Feed_Forward_Gain=0
+Feedback_Direction=3
+Integrator_Decay_Rate=0
+Proportional_Gain_Set1=0
+Integral_Gain_Set1=0
+Derivative_Gain_Set1=0
+Velocity_Feed_Forward_Gain_Set1=0
+Acceleration_Feed_Forward_Gain_Set1=0
+Preset_Position_Value=0
+Home_Position_Value=0
+Upper_Measured_Position_Limit=2147483647
+Lower_Measured_Position_Limit=-2147483647
+In_Home_Position_Window=2147483647
+In_Position_Window=2147483647
+Following_Error_Window=2147483647
+Upper_Target_position_Limit=2147483647
+Lower_Target_Position_Limit=-2147483647
+Position_Limits_Control=0
+Position_Loop_Integrator_Decay_Window=0
+Speed_During_Search_for_Switch=6666.56494140625
+Speed_During_Search_for_Zero=6666.56494140625
+Homing_Method=35
+Acceleration=66666.607744991779327
+
+[PVT Generator Section]
+Minimum_Point_In_Buffer=0
+Input_Mode=0
+
+[Command Profiler Section]
+Positive_Target_Positve_Change_Config0=32767.999999993946403
+Positive_Target_Negative_Change_Config0=32767.999999993946403
+Negative_Target_Negative_Change_Config0=32767.999999993946403
+Negative_Target_Positive_Change_Config0=32767.999999993946403
+Positive_Target_Positve_Change_Config1=32767.999999993946403
+Positive_Target_Negative_Change_Config1=32767.999999993946403
+Negative_Target_Negative_Change_Config1=32767.999999993946403
+Negative_Target_Positive_Change_Config1=32767.999999993946403
+S_Curve_Max_Velocity_Config0=1118.4810666667763144
+S_Curve_Max_Acceleration_Config0=0.0010000020265579223633
+S_Curve_Max_Deceleration_Config0=0.0010000020265579223633
+S_Curve_Max_Velocity_Config1=32767.999999993946403
+S_Curve_Max_Acceleration_Config1=1
+S_Curve_Max_Deceleration_Config1=1
+
+[Event Handling Section]
+Event_Action_Parameter_Restore_Error=1
+Event_Action_Parameter_Save_Error=1
+Event_Action_Commutation_State_Error=1
+Event_Action_Commutation_Sync_Fault=0
+Event_Action_Motor_Over_Temperature=1
+Event_Action_Feedback_Sensor_Error=1
+Event_Action_Log_Entry_Missed=0
+Event_Action_Current_Limiting_Active=0
+Event_Action_Continuous_Current_Limiting_Active=0
+Event_Action_Current_Loop_Saturated=0
+Event_Action_User_Under_Voltage=0
+Event_Action_User_Over_Voltage=0
+Event_Action_Shunt_regulator_Active=0
+Event_Action_Command_Profiler_Active=0
+Event_Action_Motor_Over_Speed=1
+Event_Action_At_Command=0
+Event_Action_Zero_Speed=0
+Event_Action_Velocity_Following_Error_Limit_Exceeded=0
+Event_Action_Positive_Target_Velocity_Limit_Exceeded=0
+Event_Action_Negative_Target_Velocity_Limit_Exceeded=0
+Event_Action_Upper_Measured_Position_Limit_Exceeded=0
+Event_Action_Lower_Measured_Position_Limit_Exceeded=0
+Event_Action_At_Home_Position=0
+Event_Action_Position_Following_Error_Limit_Exceeded=1
+Event_Action_Upper_Target_Position_Limit_Exceeded=0
+Event_Action_Lower_Target_Position_Limit_Exceeded=0
+Event_Action_PVT_Buffer_Full=0
+Event_Action_PVT_Buffer_Empty=0
+Event_Action_PVT_Buffer_Threshold=0
+Event_Action_PVT_Buffer_Failure=0
+Event_Action_PVT_Buffer_Empty_Stop=0
+Event_Action_PVT_Sequence_Number=0
+Event_Action_Comm_Channel=1
+Event_Action_Positive_Limit=5
+Event_Action_Negative_Limit=6
+Event_Action_Drive_Reset=1
+Event_Action_Internal_Error=1
+Event_Action_Short_Circuit=1
+Event_Action_Over_Current=1
+Event_Action_Drive_Under_Voltage=1
+Event_Action_Drive_Over_Voltage=1
+Event_Action_Drive_Over_Temp=1
+Event_Action_Commanded_Disable=1
+Event_Action_User_Disable=1
+Event_Action_Aux_User_Disable=4
+Event_Action_Phase_Detect_Fault=1
+Event_Action_Commanded_Positive_Limit_Fault=2
+Event_Action_Commanded_Negative_Limit_Fault=3
+Event_Action_Pwm_And_Direction_Broken_Wire=1
+Maximum_Recoveries_Short_Circuit=0
+Maximum_Recoveries_Hard_Under_Voltage=0
+Maximum_Recoveries_Hard_Over_Voltage=0
+Maximum_Recoveries_Drive_Over_Temperature=0
+Maximum_Recoveries_Commutation_State_Error=0
+Maximum_Recoveries_Phase_Synchronization_Error=65535
+Maximum_Recoveries_Motor_Over_Temperature=0
+Maximum_Recoveries_Phase_Detection_Failure=0
+Maximum_Recoveries_Feedback_Sensor_Error=0
+Maximum_Recoveries_Log_Entry_Missed=65535
+Maximum_Recoveries_User_Disable=0
+Maximum_Recoveries_Positive_Limit=0
+Maximum_Recoveries_Negative_Limit=0
+Maximum_Recoveries_Current_Limiting_Active=65535
+Maximum_Recoveries_Continuous_Current_Limiting_Active=65535
+Maximum_Recoveries_Current_Loop_Saturated=65535
+Maximum_Recoveries_User_Under_Voltage=65535
+Maximum_Recoveries_User_Over_Voltage=65535
+Maximum_Recoveries_User_Aux_Disable=0
+Maximum_Recoveries_Shunt_Regulator_Active=65535
+Maximum_Recoveries_Command_Profiler_Active=65535
+Maximum_Recoveries_Motor_Over_Speed=0
+Maximum_Recoveries_At_Command=65535
+Maximum_Recoveries_Zero_Speed=65535
+Maximum_Recoveries_Velocity_Following_Error_limit_Exceeded=65535
+Maximum_Recoveries_Positive_Target_Velocity_Limit_Exceeded=65535
+Maximum_Recoveries_Negative_Target_Velocity_Limit_Exceeded=65535
+Maximum_Recoveries_Upper_Measured_Position_Limit_Exceeded=65535
+Maximum_Recoveries_Lower_Measured_Position_Limit_Exceeded=65535
+Maximum_Recoveries_At_Home_Position=65535
+Maximum_Recoveries_Position_Following_Error_Limit_Exceeded=0
+Maximum_Recoveries_Upper_Target_Position_Limit_Exceeded=65535
+Maximum_Recoveries_Lower_Target_Position_Limit_Exceeded=65535
+Maximum_Recoveries_PVT_Buffer_Full=65535
+Maximum_Recoveries_PVT_Buffer_Empty=65535
+Maximum_Recoveries_PVT_Buffer_Threshold=65535
+Maximum_Recoveries_PVT_Buffer_Failure=65535
+Maximum_Recoveries_PVT_Buffer_Empty_Stop=65535
+Maximum_Recoveries_PVT_Sequence_Number=65535
+Maximum_Recoveries_Comm_Channel=0
+Maximum_Recoveries_External_Quick_Stop=65535
+Maximum_Recoveries_Pwm_And_Direction_Broken_Wire=0
+Maximum_Recoveries_Motion_Engine_Fault=0
+Recovery_Time_Motor_Over_Temperature=0
+Recovery_Time_Feedback_Sensor_Error=0
+Recovery_Time_Log_Entry_Missed=0
+Recovery_Time_User_Disable=0
+Recovery_Time_Positive_Torque_Inhibit=0
+Recovery_Time_Negative_Torque_Inhibit=0
+Recovery_Time_Current_Limiting_Active=0
+Recovery_Time_Continuous_Current_Limiting_Active=0
+Recovery_Time_Current_Loop_Saturated=0
+Recovery_Time_User_Under_Voltage=0
+Recovery_Time_User_Over_Voltage=0
+Recovery_Time_User_Aux_Disable=0
+Recovery_Time_Shunt_Regulator_Active=0
+Recovery_Time_Command_Profiler_Active=0
+Recovery_Time_Motor_Over_Speed=0
+Recovery_Time_At_Command=0
+Recovery_Time_Zero_Speed=0
+Recovery_Time_Velocity_Following_Error_Limit_Exceeded=0
+Recovery_Time_Positive_Target_Velocity_Limit_Exceeded=0
+Recovery_Time_Negative_Target_Velocity_Limit_Exceeded=0
+Recovery_Time_Upper_Measured_Position_Limit_Exceeded=0
+Recovery_Time_Lower_Measured_Position_Limit_Exceeded=0
+Recovery_Time_At_Home_Position=10
+Recovery_Time_Position_Following_Error_Limit_Exceeded=0
+Recovery_Time_Upper_Target_Position_Limit_Exceeded=0
+Recovery_Time_Lower_Target_Position_Limit_Exceeded=0
+Recovery_Time_PVT_Buffer_Full=0
+Recovery_Time_PVT_Buffer_Empty=0
+Recovery_Time_PVT_Buffer_Threshold=0
+Recovery_Time_PVT_Buffer_Failure=0
+Recovery_Time_PVT_Buffer_Empty_Stop=0
+Recovery_Time_PVT_Sequence_Number=0
+Recovery_Time_Comm_Channel=0
+Recovery_Time_External_Quick_Stop=0
+Recovery_Time_Pwm_And_Direction_Broken_Wire=0
+Time-out_Window_Motor_Over_Temperature=0
+Time-out_Window_Feedback_Sensor_Error=0
+Time-out_Window_User_Disable=100
+Time-out_Window_Positive_Limit=100
+Time-out_Window_Negative_Limit=100
+Time-out_Window_Current_Limiting_Active=100
+Time-out_Window_Continuous_Current_Limiting_Active=0
+Time-out_Window_Current_Loop_Saturated=100
+Time-out_Window_UserUnder_Voltage=100
+Time-out_Window_User_Over_Voltage=100
+Time-out_Window_User_Aux_Disable=100
+Time-out_Window_Shunt_Regulator_Active=100
+Time-out_Window_Command_Profiler_Active=0
+Time-out_Window_Motor_Over_Speed=100
+Time-out_Window_At_Command=100
+Time-out_Window_Zero_Speed=100
+Time-out_Window_Velocity_Error_Limit_Exceeded=100
+Time-out_Window_Positive_Velocity_Limit_Exceeded=100
+Time-out_Window_Negative_Velocity_Limit_Exceeded=100
+Time-out_Window_Upper_Measured_Position_Limit_Exceeded=100
+Time-out_Window_Lower_Measured_Position_Limit_Exceeded=100
+Time-out_Window_At_Home_Position=0
+Time-out_Window_Position_Following_Error_Limit_Exceeded=100
+Time-out_Window_Upper_Target_Position_Limit_Exceeded=100
+Time-out_Window_Lower_Target_Position_Limit_Exceeded=100
+Time-out_Window_PVT_Buffer_Full=0
+Time-out_Window_PVT_Buffer_Empty=0
+Time-out_Window_PVT_Buffer_Threshold=0
+Time-out_Window_PVT_Buffer_Failure=0
+Time-out_Window_PVT_Buffer_Empty_Stop=0
+Time-out_Window_PVT_Sequence_Number=0
+Time-out_Window_Comm_Channel=0
+Time-out_Window_External_Quick_Stop=100
+Time-out_Window_Pwm_And_Direction_Broken_Wire=100
+Response_Time_Motor_Over_Temperature=0
+Response_Time_Feedback_Sensor_Error=0
+Response_Time_Log_Entry_Missed=0
+Response_Time_User_Disable=0
+Response_Time_Positive_Limit=0
+Response_Time_Negative_Limit=0
+Response_Time_Current_Limiting_Active=0
+Response_Time_Continuous_Current_Limiting_Active=0
+Response_Time_Current_Loop_Saturated=0
+Response_Time_User_Under_Voltage=0
+Response_Time_User_Over_Voltage=0
+Response_Time_Motor_Over_Speed=0
+Response_Time_User_Aux_Disable=0
+Response_Time_Shunt_Regulator_Active=0
+Response_Time_Command_Profiler_Active=0
+Response_Time_At_Command=0
+Response_Time_Zero_Speed=0
+Response_Time_Velocity_Following_Error_Limit_Exceeded=0
+Response_Time_Positive_Target_Velocity_limit_Exceeded=0
+Response_Time_Negative_Target_Velocity_Limit_Exceeded=0
+Response_Time_At_Home_Position=0
+Response_Time_Position_following_Error_Limit_Exceeded=0
+Response_Time_Upper_Target_Position_Limit_Exceeded=0
+Response_Time_Lower_Target_Position_Limit_Exceeded=0
+Response_Time_Upper_Measured_Position_Limit_Exceeded=0
+Response_Time_Lower_Measured_Position_Limit_Exceeded=0
+Response_Time_PVT_Buffer_Full=0
+Response_Time_PVT_Buffer_Empty=0
+Response_Time_PVT_Buffer_Threshold=0
+Response_Time_PVT_Buffer_Failure=0
+Response_Time_PVT_Buffer_Empty_Stop=0
+Response_Time_PVT_Sequence_Number=0
+Response_Time_Comm_Channel=0
+Response_Time_External_Quick_Stop=0
+Response_Time_Pwm_And_Direction_Broken_Wire=0
+
+[Scope Data Section]
+Trace_Mode=0
+Trigger_Selector=0
+Trigger_Threshold=0
+Trigger_Count=0
+Post_Trigger_Count=0
+Initial_Skip_count=0
+Skip_Count=0
+Buffer_Size=800
+Parameter_1_Selector=0
+Parameter_2_Selector=0
+Parameter_3_Selector=0
+Parameter_4_Selector=0
+Parameter_5_Selector=0
+Parameter_6_Selector=0
+Parameter_7_Selector=0
+Parameter_8_Selector=0
+
+[Capture Configuration Parameters]
+Capture One Edge Configuration=0
+Capture One Trigger=0
+Capture One Source Low=0
+Capture One Source High=0
+Capture Two Edge Configuration=0
+Capture Two Trigger=0
+Capture Two Source Low=0
+Capture Two Source High=0
+Capture Three Edge Configuration=0
+Capture Three Trigger=0
+Capture Three Source Low=0
+Capture Three Source High=0
+
+[Reset Status History Events]
+Reset Action Status=255
+Reset Drive Protection=127
+Reset System Protection=8191
+Reset System Status 1=65535
+Reset System Status 2=57343
+Reset System Status 3=8191
+
+[DeadBand Section]
+T_config0=0
+W_Config0=0
+S_Config0=0
+T_Config1=0
+W_Config1=0
+S_Config1=0
+
+;******************************************;
+;* BEGIN READ-ONLY SECTIONS - DO NOT EDIT *;
+;******************************************;
+;******************************************;
+;* BEGIN READ-ONLY SECTIONS - DO NOT EDIT *;
+;******************************************;
+[Powerboard Section]
+Data_Structure_ID=4
+Name=PLA40A40C
+Version=0.04
+Serial_Number=96565-1019
+Build_Date=05/13/25
+Build_Time=07:28:53
+R_B_V=30
+B_U_V=545
+B_O_V=3939
+B_V_M_G=82941300
+B_V_M_Offset=0
+R_P_C=400
+R_C_C=200
+Max_P_C_T=200
+Max_P_To_C_T=1000
+O_C_Level=700
+C_M_G_A=7950000
+C_M_G_B=7950000
+C_M_G_C=0
+C_S_T=0
+Max_S_F=20
+D_T_AT_P_C=1250
+D_T_AT_N_C=1250
+P_L_C_R=250
+N_L_C_R=250
+I_S_R_Max_F=5
+S_R_R_P=0
+D_T_S_I=75
+D_T_S_E=65
+R_T=75
+A_T_G_C=0
+A_T_Offset_C=0
+I_S_R=0
+I_S_Max_C_C=15
+S_C=2
+O_S_F=20
+C_S_C_C_F=0
+C_S_D_C_F=0
+C_S_R_C_F=0
+P_B_S_D_T=0
+P_T_S_D_T=0
+D_C_F_C=5000
+R_C_F_C=50000
+
+[Controlboard Section]
+Hardware_ID=410
+Name=CAU314SEF
+Version=0.03
+Serial_Number=96402-1014
+build_Date=05/17/25
+Build_Time=06:21:28
+N_D_I=11
+N_D_O=7
+N_A_I=2
+N_A_O=0
+Product Name=DPEANIU-040A400F
+Product Version=0.06
+Product Serial Number=97182-1001
+Product Build Date=06/07/25
+Product Build Time=07:19:42
+File Storage Area Size=8192
+Motion Engine Script Storage Area Size=8192
+Gain Scheduling Table Storage Area Size=8192
+Camming Table Storage Area Size=8192
+Feature Key One=0
+Feature Key Two=0
+
+;**************************;
+;* END READ-ONLY SECTIONS *;
+;**************************;
+
+;**************************;
+;* END READ-ONLY SECTIONS *;
+;**************************;
+
+;**************************************************;
+;* BEGIN INTERNAL USE ONLY SECTIONS - DO NOT EDIT *;
+;**************************************************;
+;**************************************************;
+;* BEGIN INTERNAL USE ONLY SECTIONS - DO NOT EDIT *;
+;**************************************************;
+[Functionality ID Values]
+Supported_Firmware_Functionality_1=21845
+Supported_Firmware_Functionality_2=1365
+Step_And_Direction_Support_Data=8194
+Step_And_Direction_Consumed_Hardware_Inputs=0
+Step_And_Direction_Consumed_Hardware_Outputs=0
+Aux_Encoder_Support_Data=9
+Aux_Encoder_Consumed_Hardware_Inputs=24576
+Aux_Encoder_Consumed_Hardware_Outputs=0
+Aux_Encoder_Index_Support_Data=9
+Aux_Enocder_Index_Consumed_Hardware_Inputs=32768
+Aux_Encoder_Index_Consumed_Hardware_Outputs=0
+Capture_Unit_Support_Data=4103
+Capture_Unit_Consumed_Hardware_Inputs=0
+Capture_Unit_Consumed_Hardware_Outputs=0
+Capture_1_Support_Data=7
+Capture_1_Consumed_Hardware_Inputs=32768
+Capture_1_Consumed_Hardware_Outputs=0
+Capture_2_Support_Data=7
+Capture_2_Consumed_Hardware_Inputs=2048
+Capture_2_Consumed_Hardware_Outputs=0
+Capture_3_Support_Data=7
+Capture_3_consumed_Hardware_Inputs=4096
+Capture_3_Consumed_Hardware_Outputs=0
+PWM_Input_Support_data=4100
+PWM_Input_Consumed_Hardware_Inputs=128
+PWM_Input_Consumed_Hardware_Outputs=0
+PWM_Direction_Support_Data=4
+PWM_Direction_Consumed_Hardware_Inputs=256
+PWM_Direction_Consumed_Hardware_Outputs=0
+Hall_Velocity_Support_Data=10
+Hall_Velocity_Consumed_Hardware_Inputs=0
+Hall_Velocity_Consumed_Hardware_Outputs=0
+Encoder_Emulation_Support_Data=12
+Encoder_Emulation_Consumed_Hardware_Inputs=0
+Encoder_Emulation_Consumed_Hardware_Outputs=0
+DXIO_Channel_Support_Data=2062
+DXIO_Channel_Consumed_Hardware_Inputs=0
+DXIO_Channel_Consumed_Hardware_Outputs=0
+DX_Digital_Inputs_Bank_1_Support_Data=14
+DX_Digital_Input_Bank_1_Consumed_Hardware_Inputs=0
+DX_Digital_Input_Bank_1_Consumed_Hardware_Outputs=0
+DX_Digital_Input_Bank_2_Support_Data=14
+DX_Digital_Input_Bank_2_Consumed_Hardware_Inputs=0
+DX_Digital_Input_Bank_2_Consumed_Hardware_Outputs=0
+DX_Digital_Input_Bank_3_Support_Data=14
+DX_Digital_Input_Bank_3_Consumed_Hardware_Inputs=0
+DX_Digital_Input_Bank_3_Consumed_Hardware_Outputs=0
+DX_Digital_Input_Bank_4_Support_Data=14
+DX_Digital_Input_Bank_4_Consumed_Hardware_Inputs=0
+DX_Digital_Input_Bank_4_Consumed_Hardware_Outputs=0
+DX_Digital_Output_Bank_1_Support_Data=14
+DX_Digital_Output_Bank_1_Consumed_Hardware_Inputs=0
+DX_Digital_Output_Bank_1_Consumed_Hardware_Outputs=0
+DX_Digital_Output_Bank_2_Support_Data=14
+DX_Digital_Output_Bank_2_Consumed_Hardware_Inputs=0
+DX_Digital_Output_Bank_2_Consumed_Hardware_Outputs=0
+DX_Digital_Output_Bank_3_Support_Data=14
+DX_Digital_Output_Bank_3_Consumed_Hardware_Inputs=0
+DX_Digital_Output_Bank_3_Consumed_Hardware_Outputs=0
+DX_Digital_Output_Bank_4_Support_Data=14
+DX_Digital_Output_Bank_4_Consumed_Hardware_Inputs=0
+DX_Digital_Output_Bank_4_Consumed_Hardware_Outputs=0
+DX_ADC_Bank_1_Support_Data=14
+DX_ADC_Bank_1_Consumed_Hardware_Inputs=0
+DX_ADC_Bank_1_Consumed_Hardware_Outputs=0
+DX_ADC_Bank_2_Support_Data=14
+DX_ADC_Bank_2_Consumed_Digital_Inputs=0
+DX_ADC_Bank_2_Consumed_Digital_Outputs=0
+DX_ADC_Bank_3_Support_Data=14
+DX_ADC_Bank_3_Consumed_Hardware_Inputs=0
+DX_ADC_Bank_3_Consumed_Hardware_Outputs=0
+DX_ADC_Bank_4_Support_Data=14
+DX_ADC_Bank_4_Consumed_Hardware_Inputs=0
+DX_ADC_Bank_4_Consumed_Hardware_Outputs=0
+DX_DAC_Bank_1_Support_Data=14
+DX_DAC_Bank_1_Consumed_Hardware_Inputs=0
+DX_DAC_Bank_1_Consumed_Hardware_Outputs=0
+DX_DAC_Bank_2_Support_Data=14
+DX_DAC_Bank_2_Consumed_Hardware_Inputs=0
+DX_DAC_Bank_2_Consumed_Hardware_Outputs=0
+DX_DAC_Bank_3_Support_Data=14
+DX_DAC_Bank_3_Consumed_Hardware_Inputs=0
+DX_DAC_Bank_3_Consumed_Hardware_Outputs=0
+DX_DAC_Bank_4_Support_Data=14
+DX_DAC_Bank_4_Consumed_Hardware_Inputs=0
+DX_DAC_Bank_4_Consumed_Hardware_Outputs=0
+
+;**********************************;
+;* END INTERNAL USE ONLY SECTIONS *;
+;**********************************;
+
+;**********************************;
+;* END INTERNAL USE ONLY SECTIONS *;
+;**********************************;
+
+;**************************************************;
+;* BEGIN INTERNAL USE ONLY SECTIONS - DO NOT EDIT *;
+;**************************************************;
+;**************************************************;
+;* BEGIN INTERNAL USE ONLY SECTIONS - DO NOT EDIT *;
+;**************************************************;
+[Additional Data]
+Ctn_Data=0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000c6a0c6d000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000244000000000000024400000000000002440000000000000244000000000000000000000000000000000000000000000144000000000000000000100000004070407001d04090409001e00
+
+;**********************************;
+;* END INTERNAL USE ONLY SECTIONS *;
+;**********************************;
+
+;**********************************;
+;* END INTERNAL USE ONLY SECTIONS *;
+;**********************************;
+
+[Firmware]
+Bootloader=Bootloader_EL 7.2.1
+FPGA=CAU314SE_410_Image 1.1.9
+Main=Cpu314de 7.6.0.0
+MicroBlaze=uB_ECAT_002 1.2.31
+Motion Engine Version=256
+Motion Engine Program Page Size=1024
+
+[CanOpen Mode Of Operation]
+Mode_Of_Operation=10
+Can_Options=0
+Cyclic_Period_Mantissa=1
+Cyclic_Period_Exponent=-3
+
+[CanOpen Pdo Mapping]
+RPDO_1_Sub_Index_0=6
+RPDO_1_Object_1=1614807056
+RPDO_1_Object_2=1618608160
+RPDO_1_Object_3=1627324448
+RPDO_1_Object_4=1618018320
+RPDO_1_Object_5=536937232
+RPDO_1_Object_6=1616904208
+RPDO_1_Object_7=0
+RPDO_1_Object_8=0
+RPDO_1_Object_9=0
+RPDO_1_Object_10=0
+RPDO_1_Object_11=0
+RPDO_1_Object_12=0
+RPDO_1_Object_13=0
+RPDO_1_Object_14=0
+RPDO_1_Object_15=0
+RPDO_1_Object_16=0
+TPDO_1_Sub_Index_0=7
+TPDO_1_Object_1=1614872592
+TPDO_1_Object_2=1617166368
+TPDO_1_Object_3=1617690656
+TPDO_1_Object_4=1618411536
+TPDO_1_Object_5=539164944
+TPDO_1_Object_6=537854224
+TPDO_1_Object_7=1616969744
+TPDO_1_Object_8=0
+TPDO_1_Object_9=0
+TPDO_1_Object_10=0
+TPDO_1_Object_11=0
+TPDO_1_Object_12=0
+TPDO_1_Object_13=0
+TPDO_1_Object_14=0
+TPDO_1_Object_15=0
+TPDO_1_Object_16=0
+
+[Pwm And Direction Input Parameters]
+Pwm_And_Direction_Configuration=0
+Pwm_Input_Offset_Config0=0
+Pwm_Input_Scale_Factor_Config0=0
+Pwm_Input_Offset_Config1=0
+Pwm_Input_Scale_Factor_Config1=-4194304
+
+[Cam Configuration]
+Cam_Configuration=0
+Max_Number_Of_Table_Entries=1
+Initial_Table_Position=0
+Cam_Modulo_Length=1
+Cam_Transition_Time=0
+
+[Cam Table Entry One]
+Segment_0_Scale_Term=0
+Segment_0_Constant_Term=-8388621
+Segment_0_Linear_Term=-8388621
+Segment_0_Quadratic_Term=-8388621
+Segment_0_Cubic_Term=-8388621
+Segment_1_Start_Position=-8388621
+Segment_1_Scale_Term=0
+Segment_1_Constant_Term=-8388621
+Segment_1_Linear_Term=-8388621
+Segment_1_Quadratic_Term=-8388621
+Segment_1_Cubic_Term=-8388621
+Segment_2_Start_Position=-8388621
+Segment_2_Scale_Term=0
+Segment_2_Constant_Term=-8388621
+Segment_2_Linear_Term=-8388621
+Segment_2_Quadratic_Term=-8388621
+Segment_2_Cubic_Term=-8388621
+Segment_3_Start_Position=-8388621
+Segment_3_Scale_Term=0
+Segment_3_Constant_Term=-8388621
+Segment_3_Linear_Term=-8388621
+Segment_3_Quadratic_Term=-8388621
+Segment_3_Cubic_Term=-8388621
+
+[BiQuad Filter Parameters]
+BiQuad_Stage_1_Gain=0.99999999999948618878
+BiQuad_Stage_1_B0=0.99999999999948618878
+BiQuad_Stage_1_B1=0
+BiQuad_Stage_1_B2=0
+BiQuad_Stage_1_A1=0
+BiQuad_Stage_1_A2=0
+BiQuad_Stage_2_Gain=0.99999999999948618878
+BiQuad_Stage_2_B0=0.99999999999948618878
+BiQuad_Stage_2_B1=0
+BiQuad_Stage_2_B2=0
+BiQuad_Stage_2_A1=0
+BiQuad_Stage_2_A2=0
+BiQuad_Stage_3_Gain=0.99999999999948618878
+BiQuad_Stage_3_B0=0.99999999999948618878
+BiQuad_Stage_3_B1=0
+BiQuad_Stage_3_B2=0
+BiQuad_Stage_3_A1=0
+BiQuad_Stage_3_A2=0
+BiQuad_Stage_4_Gain=0.99999999999948618878
+BiQuad_Stage_4_B0=0.99999999999948618878
+BiQuad_Stage_4_B1=0
+BiQuad_Stage_4_B2=0
+BiQuad_Stage_4_A1=0
+BiQuad_Stage_4_A2=0
+BiQuad_Stage_5_Gain=0.99999999999948618878
+BiQuad_Stage_5_B0=0.99999999999948618878
+BiQuad_Stage_5_B1=0
+BiQuad_Stage_5_B2=0
+BiQuad_Stage_5_A1=0
+BiQuad_Stage_5_A2=0
+BiQuad_Stage_6_Gain=0.99999999999948618878
+BiQuad_Stage_6_B0=0.99999999999948618878
+BiQuad_Stage_6_B1=0
+BiQuad_Stage_6_B2=0
+BiQuad_Stage_6_A1=0
+BiQuad_Stage_6_A2=0
+
+[Next Gear Ratio]
+Input_Count=1
+Output_Count=1
+
+[Voltage Mode Parameters]
+IR Compensation=0
+Voltage Constant=0.5
+Power Board Compensation Dead Band=104857600
+Power Board Compensation Gain=463404
+
+[Drive Signature Parameters]
+Time_Stamp=0
+Comm_Parameters_Signature=35142
+Comm_Primary_Parameters_Signature=13123
+Non_Axis_Parameters_Signature=1
+Axis_Parameters_Signature=1
+
+[Jog Parameters]
+Maximum_Acceleration=0.00067138671875
+Maximum_Deceleration=0.00067138671875
+Jog_0_Speed=0.666656494140625
+Jog_1_Speed=1.33331298828125
+Jog_2_Speed=2
+Jog_3_Speed=2.666656494140625
+
+[Index Sequence Parameters]
+Index_Sequence_Program=5061636b656420493153310000000000000000000000000000000000000000000100010000040200000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000004b000000000000004b00000000000000000000004eae0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+
+[User Storage Memory]
+User Storage=0c00000002000000000000000000000a0008dd856ff79110e33f21f1496e646578203000000100617b5d0d0d0d0d0d0d0d0d0d0d0d0d0d0d0d0d0d0d0d0d0d0d0d0d0d0d0d0d0d0d0d0d0d0d0d0d0d0d0d0d0d0d0d0d0d0d0d0d0d0d0d0d0d0d0d0d0d0d0d0d0d0d0d0d0d0d0d0d0d0d0d0d0d0d0d0d0d0d0d0d0d0d0d0d0d00ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+
+[Network IO Configuration]
+Drive_PDI_Source_Select=0
+Network_PDO_Control_Mux=0
+Drive_ADC_Source_Select=0
+Network_DAC_Control_Mux=0
+
+[Motion Engine Configuration]
+Motion_Engine_Config_Word=0
+
+[Programmable limit Switch]
+Configuration=0
+RolloverPositionCount=20000
+Pulse_Generator_One_Config=0
+Pulse_One_Lower_Position_Value=1000
+Pusle_One_Upper_Position_Value=1750
+Pulse_One_Repeat_Delta_Value=3000
+Pulse_One_Pulse_Width_Time_Window=10
+Pulse_Generator_Two_Config=0
+Pulse_Two_Lower_Position_Value=2000
+Pulse_Two_Upper_Position_Value=2500
+Pulse_Two_Repeat_Delta_Value=2000
+Pulse_Two_Width_Time_Window=10
+

@@ -12,7 +12,7 @@ tgName = getVariable(modelWorkspace,'tgName');
 dateDir = datestr(now,'yyyymmdd');
 timeDir = datestr(now,'HHMMss');
 sharename = 'Z:';
-year = '2025'; %year(datetime('now'));
+year = '2026'; %year(datetime('now'));
 
 if(~exist('app','var'))
     %% if running this script manually change these values!!!!!
