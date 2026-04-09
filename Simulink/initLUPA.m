@@ -4,10 +4,9 @@ addpath('utils')
 %% === Assign Constants ===================================================
 disp('*** Setting model parameters ***')
 
-
-
-excelFile = 'ExcelGains/dampStiffPer4.xlsx';
-gainTstep = 4*10; % time between change in excel gains (s) (Represents the wave period times 20 waves)
+wavePeriod = 3;
+excelFile = ['Z:\projects\2026\mCDRLUPA8\docs\setup\ExcelGains\dampPer',num2str(wavePeriod),'.xlsx'];
+gainTstep = wavePeriod*10; % time between change in excel gains (s) (Represents the wave period times 20 waves)
 
 Mode = 'One Body Heave Only'; % 'One Body Heave Only' 'Two Body Heave Only' 'Six DOF'
 Ts = 0.001; % sampling period 0.001, or 0.0005, or 0.00025 (doesn't get past state 2)

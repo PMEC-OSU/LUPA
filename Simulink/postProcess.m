@@ -60,15 +60,10 @@ temp = output.timestamp.UTCtime;
 temp.TimeZone = 'America/Los_Angeles';
 output.timestamp.LocalTime = temp;
 if(~isempty(app))
-    output.reference.Amplitude = app.AmplitudeSpinner.Value;
     output.reference.Signal = app.SignalDropDown.Value;
-    output.reference.CurrentLimit = app.CurrentLimitSpinner.Value;
     output.reference.SinePeriod = app.SinePeriodEditField.Value;
     output.control.Source = app.SourceDropDown.Value;
-    output.feedback.Damping = app.DampingSpinner.Value;
-    output.feedback.Stiffness = app.StiffnessSpinner.Value;
-    output.feedback.time = 0:app.TsEditField.Value:length(output.feedback.vel_filt_radpers)*app.TsEditField.Value-app.TsEditField.Value;
-    output.control.CurrentLimit = app.CurrentLimitSpinner.Value;
+    % output.feedback.time = 0:app.TsEditField.Value:length(output.feedback.vel_filt_radpers)*app.TsEditField.Value-app.TsEditField.Value;
     output.trialData.Project = app.ProjectEditField.Value;
     output.trialData.Experiment = app.ExpEditField.Value;
     output.trialData.TrialNumber = app.TrialSpinner.Value;
