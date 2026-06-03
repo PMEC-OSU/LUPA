@@ -21,8 +21,8 @@ if(~exist('app','var'))
     % mdlName = 'LUPA';
     tgName = 'performance4';
     projectName = 'mCDRLUPA8';
-    expname = 'Ramps';
-    trialNumber = 1;
+    expname = 'RegDampCap';
+    trialNumber = 4;
     %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
     app = [];
 else
@@ -162,7 +162,7 @@ rtRun = Simulink.sdi.getRun(runID); % get data for last run
 
 SignalData = rtRun.export;
 
-save('simdata.mat','SignalData')
+save('simdata.mat','SignalData','-v7.3')
 % Simulink.sdi.exportRun(runID,'to','file','filename',matFileName); % export to .mat
 
 end
