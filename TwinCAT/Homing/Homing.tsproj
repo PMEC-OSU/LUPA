@@ -83,7 +83,7 @@
 		<ImageData Id="1005">424dd6020000000000003600000028000000100000000e0000000100180000000000a002000000000000000000000000000000000000ff00ffff00ffff00ffff00ffff00ffff00ff808080808080808080808080808080ff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffc0c0c0000000c0c0c0000000808080ff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffc0c0c000ffffc0c0c000ffff808080ff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffc0c0c0c0c0c0c0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffc0c0c0000000c0c0c0000000808080ff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffc0c0c0ff0000c0c0c0ff0000808080ff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffc0c0c0c0c0c0c0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ff00ff0000ff0000ff0000ff0000ff0000ff00c0c0c0000000c0c0c0000000808080ff00ffff00ffff00ffff00ffff00ff00ff0000ff0000ff0000ff0000ff0000ff00c0c0c00000ffc0c0c00000ff808080ff00ffff00ffff00ffff00ffff00ff00ff0000ff0000ff0000ff0000ff0000ff00c0c0c0c0c0c0c0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ff00ff0000ff0000ff0000ff0000ff0000ff00c0c0c0000000c0c0c0000000808080ff00ffff00ffff00ffff00ffff00ff00ff0000ff0000ff0000ff0000ff0000ff00c0c0c0c0c0c0c0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ff00ff0000ff0000ff0000ff0000ff0000ff00c0c0c0008000c0c0c0008000808080ff00ffff00ffff00ffff00ffff00ff00ff0000ff0000ff0000ff0000ff0000ff00c0c0c0c0c0c0c0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ff</ImageData>
 		<ImageData Id="1006">424de6000000000000007600000028000000100000000e000000010004000000000070000000c40e0000c40e000000000000000000000000000000008000008000000080800080000000800080008080000080808000c0c0c0000000ff0000ff000000ffff00ff000000ff00ff00ffff0000ffffff00ffffffffffffffffffffffffffffffff79999997ffffffff99977999ffffffff9998ff89ffffffff99999fffffffffff999997ffff777777999999ffff777777799999ffff877777fffffffffff77777ffffffff78ff8777ffffffff77777777ffffffff77777777ffffffffffffffff</ImageData>
 	</ImageDatas>
-	<Project ProjectGUID="{7F02FE9D-43D3-4AA4-81BB-89AB886FACF2}" Target64Bit="true" ShowHideConfigurations="#x6">
+	<Project ProjectGUID="{578B8B02-579B-4FE0-93D3-880C573AE43F}" Target64Bit="true" ShowHideConfigurations="#x6">
 		<System>
 			<Tasks>
 				<Task Id="2" Priority="1" CycleTime="10000" AmsPort="301">
@@ -91,7 +91,7 @@
 					<Vars VarGrpType="1" InsertType="1">
 						<Name>Inputs</Name>
 						<Var>
-							<Name>Var 250</Name>
+							<Name>Var 243</Name>
 							<Type>INT</Type>
 						</Var>
 					</Vars>
@@ -105,7 +105,7 @@
 			</Tasks>
 		</System>
 		<Io>
-			<Device Id="3" DevType="111" DevFlags="#x0003" AmsPort="28675" AmsNetId="192.168.7.2.4.1" RemoteName="Device 3 (EtherCAT)" InfoImageId="4">
+			<Device Id="3" DevType="111" DevFlags="#x0003" AmsPort="28675" AmsNetId="192.168.7.2.4.1" RemoteName="Device 3 (EtherCAT)" InfoImageId="3">
 				<Name>Device 3 (EtherCAT)</Name>
 				<AddressInfo>
 					<Pnp>
@@ -114,7 +114,7 @@
 						<DeviceData>001b21eedd70</DeviceData>
 					</Pnp>
 				</AddressInfo>
-				<Image Id="3" AddrType="9" ImageType="3">
+				<Image Id="2" AddrType="9" ImageType="3">
 					<Name>Image</Name>
 				</Image>
 				<Box Id="14" BoxType="9099">
@@ -4106,7 +4106,7 @@ Bit1: Value smaller than Limit2]]></Comment>
 						<SyncMan>00188c0026000100010000008c008c008c00001826010000</SyncMan>
 						<SyncMan>00198c0022000100020000008c008c008c00001922010000</SyncMan>
 						<SyncMan>00110a006400010003000000000020002000001164010000</SyncMan>
-						<SyncMan>80110a002000010004000000000020002000801120010000</SyncMan>
+						<SyncMan>801120002000010004000000000020002000801120010000</SyncMan>
 						<Fmmu>0000000000000000001100020100000001000000000000000000000000000000</Fmmu>
 						<Fmmu>0000000000000000801100010100000002000000000000000000000000000000</Fmmu>
 						<SwitchPortData>00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000</SwitchPortData>
@@ -4220,7 +4220,7 @@ Bit1: Value smaller than Limit2]]></Comment>
 								<Type>UINT</Type>
 							</Entry>
 						</Pdo>
-						<Pdo Name="Inputs" Index="#x1a0b" Flags="#x0010">
+						<Pdo Name="Inputs" Index="#x1a0b" Flags="#x0010" SyncMan="3">
 							<Entry Name="Mode of operation display" Index="#x6061">
 								<Type>SINT</Type>
 							</Entry>
@@ -4233,7 +4233,7 @@ Bit1: Value smaller than Limit2]]></Comment>
 								<Type>DINT</Type>
 							</Entry>
 						</Pdo>
-						<Pdo Name="Inputs" Index="#x1a0d" Flags="#x0010">
+						<Pdo Name="Inputs" Index="#x1a0d" Flags="#x0010" SyncMan="3">
 							<Entry Name="Actual position [counts]" Index="#x6063">
 								<Type>DINT</Type>
 							</Entry>
@@ -4243,7 +4243,7 @@ Bit1: Value smaller than Limit2]]></Comment>
 								<Type>DINT</Type>
 							</Entry>
 						</Pdo>
-						<Pdo Name="Inputs" Index="#x1a0f" Flags="#x0010">
+						<Pdo Name="Inputs" Index="#x1a0f" Flags="#x0010" SyncMan="3">
 							<Entry Name="Velocity sensor actual value [counts/sec]" Index="#x6069">
 								<Type>DINT</Type>
 							</Entry>
@@ -4263,7 +4263,7 @@ Bit1: Value smaller than Limit2]]></Comment>
 								<Type>INT</Type>
 							</Entry>
 						</Pdo>
-						<Pdo Name="Inputs" Index="#x1a13" Flags="#x0010">
+						<Pdo Name="Inputs" Index="#x1a13" Flags="#x0010" SyncMan="3">
 							<Entry Name="Torque actual value" Index="#x6077">
 								<Type>INT</Type>
 							</Entry>
@@ -4288,12 +4288,12 @@ Bit1: Value smaller than Limit2]]></Comment>
 								<Type>DINT</Type>
 							</Entry>
 						</Pdo>
-						<Pdo Name="Inputs" Index="#x1a18" Flags="#x0010">
+						<Pdo Name="Inputs" Index="#x1a18" Flags="#x0010" SyncMan="3">
 							<Entry Name="DC link circuit voltage" Index="#x6079">
 								<Type>UDINT</Type>
 							</Entry>
 						</Pdo>
-						<Pdo Name="Inputs" Index="#x1a19" Flags="#x0010">
+						<Pdo Name="Inputs" Index="#x1a19" Flags="#x0010" SyncMan="3">
 							<Entry Name="Position Following error" Index="#x60f4">
 								<Type>DINT</Type>
 							</Entry>
@@ -4323,7 +4323,7 @@ Bit1: Value smaller than Limit2]]></Comment>
 								<Type>DINT</Type>
 							</Entry>
 						</Pdo>
-						<Pdo Name="Inputs" Index="#x1a1f" Flags="#x0010">
+						<Pdo Name="Inputs" Index="#x1a1f" Flags="#x0010" SyncMan="3">
 							<Entry Name="Current actual value" Index="#x6078">
 								<Type>INT</Type>
 							</Entry>
@@ -4358,7 +4358,7 @@ Bit1: Value smaller than Limit2]]></Comment>
 								<Type>UINT</Type>
 							</Entry>
 						</Pdo>
-						<Pdo Name="Outputs" Index="#x1600" InOut="1" Flags="#x0010" SyncMan="2">
+						<Pdo Name="Outputs" Index="#x1600" InOut="1" Flags="#x0010">
 							<ExcludePdo>#x1601</ExcludePdo>
 							<ExcludePdo>#x1602</ExcludePdo>
 							<ExcludePdo>#x1603</ExcludePdo>
@@ -4500,12 +4500,12 @@ Bit1: Value smaller than Limit2]]></Comment>
 						</Pdo>
 						<Pdo Name="Outputs" Index="#x1607" InOut="1" Flags="#x0000"/>
 						<Pdo Name="Outputs" Index="#x1608" InOut="1" Flags="#x0000"/>
-						<Pdo Name="Outputs" Index="#x160a" InOut="1" Flags="#x0010">
+						<Pdo Name="Outputs" Index="#x160a" InOut="1" Flags="#x0010" SyncMan="2">
 							<Entry Name="Control word" Index="#x6040">
 								<Type>UINT</Type>
 							</Entry>
 						</Pdo>
-						<Pdo Name="Outputs" Index="#x160b" InOut="1" Flags="#x0010">
+						<Pdo Name="Outputs" Index="#x160b" InOut="1" Flags="#x0010" SyncMan="2">
 							<Entry Name="Mode of operation" Index="#x6060">
 								<Type>SINT</Type>
 							</Entry>
@@ -4518,7 +4518,7 @@ Bit1: Value smaller than Limit2]]></Comment>
 								<Type>INT</Type>
 							</Entry>
 						</Pdo>
-						<Pdo Name="Outputs" Index="#x160d" InOut="1" Flags="#x0010">
+						<Pdo Name="Outputs" Index="#x160d" InOut="1" Flags="#x0010" SyncMan="2">
 							<Entry Name="Max. Torque" Index="#x6072">
 								<Type>UINT</Type>
 							</Entry>
@@ -4528,7 +4528,7 @@ Bit1: Value smaller than Limit2]]></Comment>
 								<Type>UINT</Type>
 							</Entry>
 						</Pdo>
-						<Pdo Name="Outputs" Index="#x160f" InOut="1" Flags="#x0010">
+						<Pdo Name="Outputs" Index="#x160f" InOut="1" Flags="#x0010" SyncMan="2">
 							<Entry Name="Target Position" Index="#x607a">
 								<Type>DINT</Type>
 							</Entry>
@@ -4624,9 +4624,10 @@ Bit1: Value smaller than Limit2]]></Comment>
 		</Io>
 	</Project>
 	<Mappings>
+		<MappingInfo Identifier="{00000000-0020-0304-1000-040320000403}" Id="#x02030010"/>
 		<OwnerA Name="TIRT^Task 2">
 			<OwnerB Name="TIID^Device 3 (EtherCAT)^Term 14 (EK1100)^Term 15 (EL3104)">
-				<Link VarA="Inputs^Var 250" VarB="AI Standard Channel 1^Value"/>
+				<Link VarA="Inputs^Var 243" VarB="AI Standard Channel 1^Value"/>
 			</OwnerB>
 		</OwnerA>
 	</Mappings>
