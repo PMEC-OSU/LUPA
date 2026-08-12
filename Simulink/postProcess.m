@@ -5,22 +5,24 @@
 %% === parameters =========================================================
 mdlName = bdroot;
 modelWorkspace = get_param(mdlName,'ModelWorkspace');
-tgName = getVariable(modelWorkspace,'tgName');
+tgName = app.tgNameLabel.Text;
+
+
 
 dateDir = datestr(now,'yyyymmdd');
 timeDir = datestr(now,'HHMMss');
 sharename = 'Z:';
-% year = datestr(now,'yyyy');
-year = '2025'; % initial tests in 2024, remove in 2025
+year = datestr(now,'yyyy');
+% year = '2026'; % initial tests in 202?, remove in 202?
 
 if(~exist('app','var'))
     %% if running this script manually change these values!!!!!
     buildDir = fullfile('C:','simulink_build');
     % mdlName = 'LUPA';
     tgName = 'performance4';
-    projectName = 'TEAMERAOELUPA6';
-    expname = '20250319_Regular_Ctrl';
-    trialNumber = 16;
+    projectName = 'mCDRLUPA8';
+    expname = 'RegDampCap';
+    trialNumber = 4;
     %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
     app = [];
 else
@@ -58,24 +60,19 @@ temp = output.timestamp.UTCtime;
 temp.TimeZone = 'America/Los_Angeles';
 output.timestamp.LocalTime = temp;
 if(~isempty(app))
-    output.reference.Amplitude = app.AmplitudeSpinner.Value;
     output.reference.Signal = app.SignalDropDown.Value;
-    output.reference.CurrentLimit = app.CurrentLimitSpinner.Value;
     output.reference.SinePeriod = app.SinePeriodEditField.Value;
     output.control.Source = app.SourceDropDown.Value;
-    output.feedback.Damping = app.DampingSpinner.Value;
-    output.feedback.Stiffness = app.StiffnessSpinner.Value;
-    output.feedback.time = 0:app.TsEditField.Value:length(output.feedback.vel_filt_radpers)*app.TsEditField.Value-app.TsEditField.Value;
-    output.control.CurrentLimit = app.CurrentLimitSpinner.Value;
+    % output.feedback.time = 0:app.TsEditField.Value:length(output.feedback.vel_filt_radpers)*app.TsEditField.Value-app.TsEditField.Value;
     output.trialData.Project = app.ProjectEditField.Value;
-    output.trialData.Experiment = app.ExperimentEditField.Value;
+    output.trialData.Experiment = app.ExpEditField.Value;
     output.trialData.TrialNumber = app.TrialSpinner.Value;
     output.trialData.Ts = app.TsEditField.Value;
     output.trialData.sprocketTeeth = app.SprocketEditField.Value;
     output.trialData.Mode = app.ModeEditField.Value;
 
     projectName = app.ProjectEditField.Value;
-    expname = app.ExperimentEditField.Value;
+    expname = app.ExpEditField.Value;
     trialNumber = app.TrialSpinner.Value;
 
 else
@@ -165,7 +162,7 @@ rtRun = Simulink.sdi.getRun(runID); % get data for last run
 
 SignalData = rtRun.export;
 
-save('simdata.mat','SignalData')
+save('simdata.mat','SignalData','-v7.3')
 % Simulink.sdi.exportRun(runID,'to','file','filename',matFileName); % export to .mat
 
 end
