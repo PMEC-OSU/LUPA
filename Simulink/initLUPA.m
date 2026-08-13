@@ -13,7 +13,7 @@ Ts = 0.001; % sampling period 0.001
 CL = 13;  % Current limit parameter
 Kt = 7.86;  % Determined experimentally  % Kt = 8.51;  % From datasheet
 sprocketTeeth = 50;  % small:32 medium:50 large:80
-tgName = 'performance4';
+tgName = 'performance2';
 
 %% change things above this line for each run
 
