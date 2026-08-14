@@ -1,9 +1,9 @@
-<?xml version="1.0"?>
+<?xml version="1.0" encoding="utf-8"?>
 <EtherCATConfig xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="EtherCATConfig.xsd" Version="1.3">
 	<Config>
 		<Master>
 			<Info>
-				<Name><![CDATA[Device 4 (EtherCAT)]]></Name>
+				<Name><![CDATA[Device 2 (EtherCAT)]]></Name>
 				<Destination>010105010000</Destination>
 				<Source>001b21ee53bd</Source>
 				<EtherType>a488</EtherType>
@@ -533,7 +533,7 @@
 				<ProductRevision>EL3104-0000-0020</ProductRevision>
 			</Info>
 			<ProcessData>
-				<Recv>
+				<Recv Sm3="true">
 					<BitStart>568</BitStart>
 					<BitLength>128</BitLength>
 				</Recv>
@@ -1317,7 +1317,7 @@ Bit1: Value smaller than Limit2</Comment>
 					<Cmd>5</Cmd>
 					<Adp>1002</Adp>
 					<Ado>2448</Ado>
-					<Data>70e3f7ffffffffff</Data>
+					<Data>50e5f7ffffffffff</Data>
 					<Cnt>1</Cnt>
 					<Retries>3</Retries>
 				</InitCmd>
@@ -1650,7 +1650,7 @@ Bit1: Value smaller than Limit2</Comment>
 				<ReferenceClock>true</ReferenceClock>
 				<CycleTime0>1000000</CycleTime0>
 				<CycleTime1>25000</CycleTime1>
-				<ShiftTime>-531600</ShiftTime>
+				<ShiftTime>-531120</ShiftTime>
 			</DC>
 		</Slave>
 		<Slave>
@@ -2049,7 +2049,7 @@ Bit1: Value smaller than Limit2</Comment>
 				<ProductRevision>EL5002-0000-0020</ProductRevision>
 			</Info>
 			<ProcessData>
-				<Recv>
+				<Recv Sm3="true">
 					<BitStart>696</BitStart>
 					<BitLength>96</BitLength>
 				</Recv>
@@ -2555,7 +2555,7 @@ Bit1: Value smaller than Limit2</Comment>
 					<Cmd>5</Cmd>
 					<Adp>1004</Adp>
 					<Ado>2448</Ado>
-					<Data>106af9ffffffffff</Data>
+					<Data>f06bf9ffffffffff</Data>
 					<Cnt>1</Cnt>
 					<Retries>3</Retries>
 				</InitCmd>
@@ -2888,7 +2888,7 @@ Bit1: Value smaller than Limit2</Comment>
 				<ReferenceClock>false</ReferenceClock>
 				<CycleTime0>1000000</CycleTime0>
 				<CycleTime1>15000</CycleTime1>
-				<ShiftTime>-431600</ShiftTime>
+				<ShiftTime>-431120</ShiftTime>
 			</DC>
 		</Slave>
 		<Slave>
@@ -2904,7 +2904,7 @@ Bit1: Value smaller than Limit2</Comment>
 				<ProductRevision>EL3751-0000-0023</ProductRevision>
 			</Info>
 			<ProcessData>
-				<Recv>
+				<Recv Sm3="true">
 					<BitStart>792</BitStart>
 					<BitLength>416</BitLength>
 				</Recv>
@@ -5907,7 +5907,7 @@ Bit1: Value smaller than Limit2</Comment>
 					<Cmd>5</Cmd>
 					<Adp>1005</Adp>
 					<Ado>2448</Ado>
-					<Data>8099f5ffffffffff</Data>
+					<Data>609bf5ffffffffff</Data>
 					<Cnt>1</Cnt>
 					<Retries>3</Retries>
 				</InitCmd>
@@ -6262,7 +6262,7 @@ Bit1: Value smaller than Limit2</Comment>
 				<ReferenceClock>false</ReferenceClock>
 				<CycleTime0>1000000</CycleTime0>
 				<CycleTime1>0</CycleTime1>
-				<ShiftTime>-681600</ShiftTime>
+				<ShiftTime>-681120</ShiftTime>
 			</DC>
 		</Slave>
 		<Slave>
@@ -6278,7 +6278,7 @@ Bit1: Value smaller than Limit2</Comment>
 				<ProductRevision>EL3751-0000-0024</ProductRevision>
 			</Info>
 			<ProcessData>
-				<Recv>
+				<Recv Sm3="true">
 					<BitStart>1208</BitStart>
 					<BitLength>416</BitLength>
 				</Recv>
@@ -9284,7 +9284,7 @@ Bit1: Value smaller than Limit2</Comment>
 					<Cmd>5</Cmd>
 					<Adp>1006</Adp>
 					<Ado>2448</Ado>
-					<Data>8099f5ffffffffff</Data>
+					<Data>609bf5ffffffffff</Data>
 					<Cnt>1</Cnt>
 					<Retries>3</Retries>
 				</InitCmd>
@@ -9639,7 +9639,7 @@ Bit1: Value smaller than Limit2</Comment>
 				<ReferenceClock>false</ReferenceClock>
 				<CycleTime0>1000000</CycleTime0>
 				<CycleTime1>0</CycleTime1>
-				<ShiftTime>-681600</ShiftTime>
+				<ShiftTime>-681120</ShiftTime>
 			</DC>
 		</Slave>
 		<Slave>
@@ -9655,7 +9655,7 @@ Bit1: Value smaller than Limit2</Comment>
 				<ProductRevision>EL3202-0000-0022</ProductRevision>
 			</Info>
 			<ProcessData>
-				<Recv>
+				<Recv Sm3="true">
 					<BitStart>1624</BitStart>
 					<BitLength>64</BitLength>
 				</Recv>
@@ -10406,13 +10406,13 @@ Bit1: Value smaller than Limit2</Comment>
 				<SerialNo>0</SerialNo>
 			</Info>
 			<ProcessData>
-				<Send>
+				<Send Sm2="true">
 					<BitStart>1784</BitStart>
 					<BitLength>64</BitLength>
 				</Send>
-				<Recv>
+				<Recv Sm3="true">
 					<BitStart>1784</BitStart>
-					<BitLength>256</BitLength>
+					<BitLength>208</BitLength>
 				</Recv>
 				<Sm2>
 					<Type>Outputs</Type>
@@ -10441,8 +10441,6 @@ Bit1: Value smaller than Limit2</Comment>
 					<Pdo>6671</Pdo>
 					<Pdo>6675</Pdo>
 					<Pdo>6680</Pdo>
-					<Pdo>6684</Pdo>
-					<Pdo>6687</Pdo>
 				</Sm3>
 				<TxPdo Fixed="true">
 					<Index>#x1a00</Index>
@@ -10842,7 +10840,7 @@ Bit1: Value smaller than Limit2</Comment>
 						<DataType>DINT</DataType>
 					</Entry>
 				</TxPdo>
-				<TxPdo Fixed="true" Sm="3">
+				<TxPdo Fixed="true">
 					<Index>#x1a1c</Index>
 					<Name>Inputs</Name>
 					<Entry>
@@ -10875,7 +10873,7 @@ Bit1: Value smaller than Limit2</Comment>
 						<DataType>DINT</DataType>
 					</Entry>
 				</TxPdo>
-				<TxPdo Fixed="true" Sm="3">
+				<TxPdo Fixed="true">
 					<Index>#x1a1f</Index>
 					<Name>Inputs</Name>
 					<Entry>
@@ -11672,30 +11670,12 @@ Bit1: Value smaller than Limit2</Comment>
 						</InitCmd>
 						<InitCmd Fixed="true">
 							<Transition>PS</Transition>
-							<Comment><![CDATA[download pdo 0x1C13:09 index]]></Comment>
-							<Timeout>0</Timeout>
-							<Ccs>1</Ccs>
-							<Index>7187</Index>
-							<SubIndex>9</SubIndex>
-							<Data>1c1a</Data>
-						</InitCmd>
-						<InitCmd Fixed="true">
-							<Transition>PS</Transition>
-							<Comment><![CDATA[download pdo 0x1C13:10 index]]></Comment>
-							<Timeout>0</Timeout>
-							<Ccs>1</Ccs>
-							<Index>7187</Index>
-							<SubIndex>10</SubIndex>
-							<Data>1f1a</Data>
-						</InitCmd>
-						<InitCmd Fixed="true">
-							<Transition>PS</Transition>
 							<Comment><![CDATA[download pdo 0x1C13 count]]></Comment>
 							<Timeout>0</Timeout>
 							<Ccs>1</Ccs>
 							<Index>7187</Index>
 							<SubIndex>0</SubIndex>
-							<Data>0a</Data>
+							<Data>08</Data>
 						</InitCmd>
 						<InitCmd>
 							<Transition>PS</Transition>
@@ -12072,7 +12052,7 @@ Bit1: Value smaller than Limit2</Comment>
 					<Cmd>5</Cmd>
 					<Adp>1008</Adp>
 					<Ado>2072</Ado>
-					<Data>8011200020000100</Data>
+					<Data>80111a0020000100</Data>
 					<Cnt>1</Cnt>
 					<Retries>3</Retries>
 				</InitCmd>
@@ -12092,7 +12072,7 @@ Bit1: Value smaller than Limit2</Comment>
 					<Cmd>5</Cmd>
 					<Adp>1008</Adp>
 					<Ado>1552</Ado>
-					<Data>00080001200000078011000101000000</Data>
+					<Data>000800011a0000078011000101000000</Data>
 					<Cnt>1</Cnt>
 					<Retries>3</Retries>
 				</InitCmd>
@@ -12388,7 +12368,7 @@ Bit1: Value smaller than Limit2</Comment>
 					<Comment><![CDATA[cyclic cmd]]></Comment>
 					<Cmd>12</Cmd>
 					<Addr>16779264</Addr>
-					<DataLength>32</DataLength>
+					<DataLength>26</DataLength>
 					<Cnt>3</Cnt>
 					<InputOffs>213</InputOffs>
 					<OutputOffs>213</OutputOffs>
@@ -12403,14 +12383,14 @@ Bit1: Value smaller than Limit2</Comment>
 					<Ado>304</Ado>
 					<DataLength>2</DataLength>
 					<Cnt>8</Cnt>
-					<InputOffs>257</InputOffs>
-					<OutputOffs>257</OutputOffs>
+					<InputOffs>251</InputOffs>
+					<OutputOffs>251</OutputOffs>
 				</Cmd>
 			</Frame>
 		</Cyclic>
 		<ProcessImage>
 			<Inputs>
-				<ByteSize>1536</ByteSize>
+				<ByteSize>1677</ByteSize>
 				<Variable>
 					<Name>Term 2 (EL3104).AI Standard Channel 1.Status</Name>
 					<DataType>Status_7EBB4A47</DataType>
@@ -12592,24 +12572,12 @@ Bit1: Value smaller than Limit2</Comment>
 					<BitOffs>1960</BitOffs>
 				</Variable>
 				<Variable>
-					<Name>Drive 8 (Elmo Drive ).Inputs_8.Digital Inputs</Name>
-					<DataType>UDINT</DataType>
-					<BitSize>32</BitSize>
-					<BitOffs>1992</BitOffs>
-				</Variable>
-				<Variable>
-					<Name>Drive 8 (Elmo Drive ).Inputs_9.Current actual value</Name>
-					<DataType>INT</DataType>
-					<BitSize>16</BitSize>
-					<BitOffs>2024</BitOffs>
-				</Variable>
-				<Variable>
 					<Name>Inputs.Frm0State</Name>
 					<Comment><![CDATA[0x0001 = 1. EtherCAT command not sent (NOP requested)
-0x0002 = 2. EtherCAT command not sent (NOP requested)
-0x0004 = 3. EtherCAT command not sent (NOP requested)
+0x0002 = 2. EtherCAT command not sent (NOP requested
+0x0004 = 3. EtherCAT command not sent (NOP requested
 ...
-0x4000 = 15. EtherCAT command not sent (NOP requested)
+0x4000 = 15. EtherCAT command not sent (NOP requested
 0x8000 = complete frame not sent
 ]]></Comment>
 					<DataType>UINT</DataType>
@@ -13243,11 +13211,11 @@ Bit1: Value smaller than Limit2</Comment>
 				</Variable>
 				<Variable>
 					<Name>Outputs.Frm0Ctrl</Name>
-					<Comment><![CDATA[0x0001 = prevent 1. EtherCAT command from sending (request NOP)
-0x0002 = prevent 2. EtherCAT command from sending (request NOP)
-0x0004 = prevent 3. EtherCAT command from sending (request NOP)
+					<Comment><![CDATA[0x0001 = prevent 1. EtherCAT command from sending (request NOP
+0x0002 = prevent 2. EtherCAT command from sending (request NOP
+0x0004 = prevent 3. EtherCAT command from sending (request NOP
 ...
-0x4000 = prevent 15. EtherCAT command from sending (request NOP)
+0x4000 = prevent 15. EtherCAT command from sending (request NOP
 0x8000 = prevent complete frame from sending
 ]]></Comment>
 					<DataType>UINT</DataType>

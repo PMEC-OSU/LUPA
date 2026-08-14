@@ -1,0 +1,288 @@
+<?xml version="1.0"?>
+<TcEventSources Version="2">
+	<Translations>
+		<Text TxtId="Calibration data saved">
+			<Text LcId="1031">Abgleichdaten wurden gespeichert</Text>
+		</Text>
+		<Text TxtId="Calibration data will be applied and saved after sending the command &quot;0x5AFE&quot;">
+			<Text LcId="1031"><![CDATA[Abgleichdaten werden erst nach dem Senden des Kommandos "0x5AFE" übernommen und gespeichert]]></Text>
+		</Text>
+		<Text TxtId="Channel in saturation">
+			<Text LcId="1031">Kanal in Sättigung</Text>
+		</Text>
+		<Text TxtId="Channel is not in overload anymore">
+			<Text LcId="1031">Kanal ist nicht mehr überlastet</Text>
+		</Text>
+		<Text TxtId="Channel is not in saturation anymore">
+			<Text LcId="1031">Kanal ist nicht mehr in Sättigung</Text>
+		</Text>
+		<Text TxtId="Channel overload">
+			<Text LcId="1031">Kanalüberlastung</Text>
+		</Text>
+		<Text TxtId="Channel range error">
+			<Text LcId="1031">Messbereichsfehler des Kanals</Text>
+		</Text>
+		<Text TxtId="Channel/Interface not calibrated">
+			<Text LcId="1031">Kanal/Interface nicht abgeglichen</Text>
+		</Text>
+		<Text TxtId="CPU usage returns in normal range (&lt; 85%)">
+			<Text LcId="1031"><![CDATA[Prozessorauslastung ist wieder im normalen Bereich (< 85%)]]></Text>
+		</Text>
+		<Text TxtId="EL3751 1Ch. Ana. Input +/-30V, +/-20mA, RTD, Resistor Bridge, 24 bit, high precision">
+			<Text LcId="1031">EL3751 1K. Ana. Eingang +/-30V, +/-20mA, RTD, Widerstandsbrücke, 24 bit, hochgenau</Text>
+		</Text>
+		<Text TxtId="EtherCAT Frame missed (change Settings or DC Operation Mode or Sync0 Shift Time)">
+			<Text LcId="1031">EtherCAT Frame verpasst (Einstellungen, DC Operation Mode oder Sync0 Shift Time ändern)</Text>
+		</Text>
+		<Text TxtId="no ADC clock">
+			<Text LcId="1031">kein ADC Takt vorhanden</Text>
+		</Text>
+		<Text TxtId="No channel range error anymore">
+			<Text LcId="1031">Es liegt kein Messbereichsfehler mehr vor</Text>
+		</Text>
+		<Text TxtId="No overtemperature anymore">
+			<Text LcId="1031">Gerätetemperatur ist wieder ok</Text>
+		</Text>
+		<Text TxtId="No slave controller found">
+			<Text LcId="1031">Kein Slave Controller gefunden</Text>
+		</Text>
+		<Text TxtId="Operatingtime was manipulated">
+			<Text LcId="1031">Betriebslaufzeit wurde manipuliert</Text>
+		</Text>
+		<Text TxtId="Overloadtime was manipulated">
+			<Text LcId="1031">Überlastzeit wurde manipuliert</Text>
+		</Text>
+		<Text TxtId="Oversampling setting changed. Effective sample rate: {0} Hz">
+			<Text LcId="1031">Oversampling Einstellung wurde geändert. Effektive Abtastrate: {0} Hz</Text>
+		</Text>
+		<Text TxtId="Oversampling setting is not possible">
+			<Text LcId="1031">Oversampling Einstellung nicht möglich</Text>
+		</Text>
+		<Text TxtId="Overtemperature in device">
+			<Text LcId="1031">Übertemperatur im Gerät</Text>
+		</Text>
+		<Text TxtId="Overtemperaturetime was manipulated">
+			<Text LcId="1031">Übertemperaturzeit wurde manipuliert</Text>
+		</Text>
+		<Text TxtId="Processor usage at {0} %">
+			<Text LcId="1031">Prozessorauslastung bei {0} %</Text>
+		</Text>
+		<Text TxtId="Processor usage too high (&gt;= 100%)">
+			<Text LcId="1031"><![CDATA[Prozessorauslastung zu hoch (>= 100%)]]></Text>
+		</Text>
+		<Text TxtId="Saturationtime was manipulated">
+			<Text LcId="1031">Sättigungszeit wurde manipuliert</Text>
+		</Text>
+		<Text TxtId="Slave controller is not in Bootstrap">
+			<Text LcId="1031">Slave Controller ist nicht im Bootstrap</Text>
+		</Text>
+	</Translations>
+	<Source>
+		<GUID>{28111931-0002-0000-5230-A70E00001700}</GUID>
+		<Name>EL3751 1Ch. Ana. Input +/-30V, +/-20mA, RTD, Resistor Bridge, 24 bit, high precision</Name>
+		<Event>
+			<Id>5893</Id>
+			<Message><![CDATA[CPU usage returns in normal range (< 85%)]]></Message>
+		</Event>
+		<Event>
+			<Id>5894</Id>
+			<Message>Channel is not in saturation anymore</Message>
+		</Event>
+		<Event>
+			<Id>5895</Id>
+			<Message>Channel is not in overload anymore</Message>
+		</Event>
+		<Event>
+			<Id>5898</Id>
+			<Message>No channel range error anymore</Message>
+		</Event>
+		<Event>
+			<Id>5900</Id>
+			<Message>Calibration data saved</Message>
+		</Event>
+		<Event>
+			<Id>5901</Id>
+			<Message><![CDATA[Calibration data will be applied and saved after sending the command "0x5AFE"]]></Message>
+		</Event>
+		<Event>
+			<Id>5902</Id>
+			<Message>No overtemperature anymore</Message>
+		</Event>
+		<Event>
+			<Id>18178</Id>
+			<Message>Oversampling setting changed. Effective sample rate: {0} Hz</Message>
+		</Event>
+		<Event>
+			<Id>18181</Id>
+			<Message>Processor usage at {0} %</Message>
+		</Event>
+		<Event>
+			<Id>18186</Id>
+			<Message>EtherCAT Frame missed (change Settings or DC Operation Mode or Sync0 Shift Time)</Message>
+		</Event>
+		<Event>
+			<Id>18190</Id>
+			<Message>Overtemperature in device</Message>
+		</Event>
+		<Event>
+			<Id>34560</Id>
+			<Message>Channel/Interface not calibrated</Message>
+		</Event>
+		<Event>
+			<Id>34561</Id>
+			<Message>Operatingtime was manipulated</Message>
+		</Event>
+		<Event>
+			<Id>34562</Id>
+			<Message>Oversampling setting is not possible</Message>
+		</Event>
+		<Event>
+			<Id>34563</Id>
+			<Message>No slave controller found</Message>
+		</Event>
+		<Event>
+			<Id>34564</Id>
+			<Message>Slave controller is not in Bootstrap</Message>
+		</Event>
+		<Event>
+			<Id>34565</Id>
+			<Message><![CDATA[Processor usage too high (>= 100%)]]></Message>
+		</Event>
+		<Event>
+			<Id>34566</Id>
+			<Message>Channel in saturation</Message>
+		</Event>
+		<Event>
+			<Id>34567</Id>
+			<Message>Channel overload</Message>
+		</Event>
+		<Event>
+			<Id>34568</Id>
+			<Message>Overloadtime was manipulated</Message>
+		</Event>
+		<Event>
+			<Id>34569</Id>
+			<Message>Saturationtime was manipulated</Message>
+		</Event>
+		<Event>
+			<Id>34570</Id>
+			<Message>Channel range error</Message>
+		</Event>
+		<Event>
+			<Id>34571</Id>
+			<Message>no ADC clock</Message>
+		</Event>
+		<Event>
+			<Id>34572</Id>
+			<Message>Overtemperaturetime was manipulated</Message>
+		</Event>
+		<Property>
+			<Name>DisplayTxtId</Name>
+			<Value>true</Value>
+		</Property>
+	</Source>
+	<Source>
+		<GUID>{28111931-0002-0000-5230-A70E00001800}</GUID>
+		<Name>EL3751 1Ch. Ana. Input +/-30V, +/-20mA, RTD, Resistor Bridge, 24 bit, high precision</Name>
+		<Event>
+			<Id>5893</Id>
+			<Message><![CDATA[CPU usage returns in normal range (< 85%)]]></Message>
+		</Event>
+		<Event>
+			<Id>5894</Id>
+			<Message>Channel is not in saturation anymore</Message>
+		</Event>
+		<Event>
+			<Id>5895</Id>
+			<Message>Channel is not in overload anymore</Message>
+		</Event>
+		<Event>
+			<Id>5898</Id>
+			<Message>No channel range error anymore</Message>
+		</Event>
+		<Event>
+			<Id>5900</Id>
+			<Message>Calibration data saved</Message>
+		</Event>
+		<Event>
+			<Id>5901</Id>
+			<Message><![CDATA[Calibration data will be applied and saved after sending the command "0x5AFE"]]></Message>
+		</Event>
+		<Event>
+			<Id>5902</Id>
+			<Message>No overtemperature anymore</Message>
+		</Event>
+		<Event>
+			<Id>18178</Id>
+			<Message>Oversampling setting changed. Effective sample rate: {0} Hz</Message>
+		</Event>
+		<Event>
+			<Id>18181</Id>
+			<Message>Processor usage at {0} %</Message>
+		</Event>
+		<Event>
+			<Id>18186</Id>
+			<Message>EtherCAT Frame missed (change Settings or DC Operation Mode or Sync0 Shift Time)</Message>
+		</Event>
+		<Event>
+			<Id>18190</Id>
+			<Message>Overtemperature in device</Message>
+		</Event>
+		<Event>
+			<Id>34560</Id>
+			<Message>Channel/Interface not calibrated</Message>
+		</Event>
+		<Event>
+			<Id>34561</Id>
+			<Message>Operatingtime was manipulated</Message>
+		</Event>
+		<Event>
+			<Id>34562</Id>
+			<Message>Oversampling setting is not possible</Message>
+		</Event>
+		<Event>
+			<Id>34563</Id>
+			<Message>No slave controller found</Message>
+		</Event>
+		<Event>
+			<Id>34564</Id>
+			<Message>Slave controller is not in Bootstrap</Message>
+		</Event>
+		<Event>
+			<Id>34565</Id>
+			<Message><![CDATA[Processor usage too high (>= 100%)]]></Message>
+		</Event>
+		<Event>
+			<Id>34566</Id>
+			<Message>Channel in saturation</Message>
+		</Event>
+		<Event>
+			<Id>34567</Id>
+			<Message>Channel overload</Message>
+		</Event>
+		<Event>
+			<Id>34568</Id>
+			<Message>Overloadtime was manipulated</Message>
+		</Event>
+		<Event>
+			<Id>34569</Id>
+			<Message>Saturationtime was manipulated</Message>
+		</Event>
+		<Event>
+			<Id>34570</Id>
+			<Message>Channel range error</Message>
+		</Event>
+		<Event>
+			<Id>34571</Id>
+			<Message>no ADC clock</Message>
+		</Event>
+		<Event>
+			<Id>34572</Id>
+			<Message>Overtemperaturetime was manipulated</Message>
+		</Event>
+		<Property>
+			<Name>DisplayTxtId</Name>
+			<Value>true</Value>
+		</Property>
+	</Source>
+</TcEventSources>

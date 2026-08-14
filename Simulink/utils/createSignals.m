@@ -8,7 +8,7 @@ fs = 1000;
 rLen = 300;  %% length of created signal (s) for multisine
 nRepeats = 4; % times signal is repeated
 nExp = 3; % number of phase realizations
-NumPhases = 500;
+NumPhases = 2000;
 
 msnames = {'MS1','MS2','MS3'};
 seed = 16;
