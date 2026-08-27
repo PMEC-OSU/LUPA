@@ -1,5 +1,11 @@
 %% Main LUPA initialization script
 clear; clc; close all
+
+%% initialization for AOE model
+AOE_inputs
+[AOE] = AOE_constants(inputs);
+%%
+
 addpath('utils')
 %% === Assign Constants ===================================================
 disp('*** Setting model parameters ***')
