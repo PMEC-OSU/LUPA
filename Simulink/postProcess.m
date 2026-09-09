@@ -80,6 +80,7 @@ else
     output.trialData.Experiment = expname;
     output.trialData.TrialNumber = trialNumber;
 end
+output.AOE = evalin('base', 'AOE');
 
 trialname = ['\Trial',num2str(trialNumber,'%02d')];
 

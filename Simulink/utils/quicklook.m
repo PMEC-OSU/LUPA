@@ -28,9 +28,10 @@ sgtitle('Mechanical Power')
 figure('Name','Shore ADC')
 plot(output.time,output.shoreADC.wmstart)
 hold on
+plot(output.time,output.shoreADC.awastart)
 plot(output.time,output.shoreADC.led)
 
-legend('wmstart','led')
+legend('wmstart','awastart','led')
 grid on
 xlabel('time(s)')
 ylabel('V')
@@ -79,6 +80,7 @@ ylabel('F(N)')
 
 %% plot stringpots and converted rotation
 figure('Name','Displacement')
+subplot(2,1,1)
 plot(output.time,output.sensors.drawWire_m)
 hold on
 plot(output.time,output.customControl.z)
@@ -88,7 +90,11 @@ ylabel('displacement (m)')
 grid on
 ylim([-0.3 0.3])
 title('Linear Position')
-
+subplot(2,1,2)
+plot(output.time,output.ELMO.pos_counts)
+ylabel('counts')
+xlabel('time')
+grid on
 
 
 %% AOE specific outputs
