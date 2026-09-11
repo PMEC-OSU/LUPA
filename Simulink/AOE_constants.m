@@ -82,7 +82,7 @@ AOE.Cylinder.LowEndLimit          = 0.05*AOE.Cylinder.Length;
 AOE.Cylinder.HighEndLimit         = 0.05*AOE.Cylinder.Length;
 AOE.Cylinder.CoulombFrictionLimit = 0.4*AOE.Cylinder.Diameter*1E3;      %This was referenced by Helen, Nov. 8/16
 AOE.Cylinder.CoulombFrictionGain  = 100000;
-AOE.Cylinder.InitialOffset        = 0;   % Offset to account for -0.42m * 10 = -4.2m initial displacement to pretension mooring
+AOE.Cylinder.InitialOffset        = inputs.Offset;   % Offset to account for -0.42m * 10 = -4.2m initial displacement to pretension mooring
 
 %% InletCylinderOrifice
 

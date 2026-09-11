@@ -15,14 +15,14 @@ MOGA = 0;
 
 % Design input
 if MOGA == 0
-    design = [310000	1.75	0.5717	2.5	0.25];
+    design = [101300	2.217413623	1	3.255	0.25 0];
     
     inputs.InletPressure    = design(1); 
     inputs.PressureRatio    = design(2);
     inputs.CylDiam          = design(3);
     inputs.CylLength        = design(4);
     inputs.OrificeRatio     = design(5);
-    %inputs.Offset           = design(6)*design(2)/2;
+    inputs.Offset           = design(6);
 
 % Multi-objective genetic algorithm optimization
 elseif MOGA == 1
