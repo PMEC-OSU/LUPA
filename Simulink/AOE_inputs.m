@@ -15,7 +15,7 @@ MOGA = 0;
 
 % Design input
 if MOGA == 0
-    design = [101300	2.217413623	1	3.255	0.25 0];
+    design = [101300	2.217413623	1	3.255	0.25 0.679];
     
     inputs.InletPressure    = design(1); 
     inputs.PressureRatio    = design(2);

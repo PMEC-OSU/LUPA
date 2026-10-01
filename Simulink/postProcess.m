@@ -19,7 +19,7 @@ if(~exist('app','var'))
     %% if running this script manually change these values!!!!!
     buildDir = fullfile('C:','simulink_build');
     % mdlName = 'LUPA';
-    tgName = 'performance2';
+    tgName = 'performance3';
     projectName = 'mCDRLUPA8';
     expname = 'RegDampCap';
     trialNumber = 4;

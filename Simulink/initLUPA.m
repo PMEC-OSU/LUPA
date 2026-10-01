@@ -14,12 +14,12 @@ wavePeriod = 2.25;
 excelFile = ['Z:\projects\2026\mCDRLUPA8\docs\setup\ExcelGains\dampPer',num2str(wavePeriod),'.xlsx'];
 gainTstep = wavePeriod*10; % time between change in excel gains (s) (Represents the wave period times 20 waves)
 
-Mode = 'One Body Heave Only'; % 'One Body Heave Only' 'Two Body Heave Only' 'Six DOF'
+Mode = 'Six DOF'; % 'One Body Heave Only' 'Two Body Heave Only' 'Six DOF'
 Ts = 0.001; % sampling period 0.001
 CL = 13;  % Current limit parameter
 Kt = 7.86;  % Determined experimentally  % Kt = 8.51;  % From datasheet
 sprocketTeeth = 50;  % small:32 medium:50 large:80
-tgName = 'performance2';
+tgName = 'performance3';
 
 %% change things above this line for each run
 
